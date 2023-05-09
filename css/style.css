@@ -1,3 +1,4 @@
+/* Style Partials */
 html {
   font-size: 16px;
   overflow-x: hidden;
@@ -456,7 +457,6 @@ header ul a.active, header ul a:hover {
 }
 
 .section4 {
-  background: url("/html/images/section_4.png");
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -494,7 +494,6 @@ header ul a.active, header ul a:hover {
 }
 
 .section5 {
-  background-image: url(/html/images/section_5.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: -200px;

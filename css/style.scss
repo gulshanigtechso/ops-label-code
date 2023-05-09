@@ -3,14 +3,15 @@ $fonts: 'Neuzeit Grotesk';
 $fonts-noto: 'NotoSans';
 
 
-//Style Partials
+/* Style Partials */
+
+// base-partials
 @import "./partials/base/variables";
 @import "./partials/base/mixins";
 @import "./partials/base/reset";
 @import "./partials/base/common";
-// @import "_components/header";
-// @import "_components/footer";
 
+// ui-partials
 @import "./partials/ui/header";
 @import "./partials/ui/hero";
 @import "./partials/ui/services";
@@ -23,6 +24,7 @@ $fonts-noto: 'NotoSans';
 @import "./partials/ui/footer";
 
 
+// fonts
 @font-face {
   font-family: 'Neuzeit Grotesk';
   src: url('../fonts/NeuzeitGroExt-Bla.eot');
@@ -95,7 +97,7 @@ $fonts-noto: 'NotoSans';
   font-style: normal;
 }
 
-// fonts
+
 @font-face {
   font-family: 'NotoSans';
   src: url('../fonts/NotoSans-Black.ttf') format('truetype');
@@ -132,7 +134,6 @@ $fonts-noto: 'NotoSans';
   font-weight: 300;
   font-style: normal;
 }
-
 
 
 html,
