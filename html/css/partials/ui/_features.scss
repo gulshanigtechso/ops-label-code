@@ -1,0 +1,27 @@
+.section3 {
+    background: url('../images/section_3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.features-text {
+    .semi-font-text {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+}
+
+.leadgenUl {
+    display: grid;
+    gap: 1rem;
+
+    li {
+        background: url('../images/stars.png');
+        background-repeat: no-repeat;
+        padding-left: 46px;
+
+        strong {
+            font-weight: 800;
+        }
+    }
+}

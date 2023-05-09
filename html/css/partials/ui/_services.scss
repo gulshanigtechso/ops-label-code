@@ -1,0 +1,98 @@
+.services_sect {
+    background: url('../images/section_2.png');
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+    margin-top: -140px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .row.ser_row {
+        margin: 50px 30px;
+    }
+
+    .title_h2 {
+        color: #ffffff;
+        padding-top: 20px;
+
+    }
+
+    .titleh3 {
+        color: #ffffff;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 1.3rem;
+
+    }
+
+    .box {
+        background: #eaeeef;
+        border-radius: 30px;
+        border: 5px solid #030405;
+        border-radius: 30px;
+        padding: 30px;
+        position: relative;
+
+        .star_icon {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -36px;
+            margin: auto;
+            display: block;
+            text-align: center;
+        }
+
+        .btn {
+            position: absolute;
+            bottom: -22px;
+            left: 0;
+            right: 0;
+            max-width: 86%;
+            margin: auto;
+            padding: 0.4rem 0;
+        }
+
+        p {
+            @include margin-y(1.1rem, 1rem)
+        }
+
+        .ser-icon {
+            text-align: center;
+
+            img {
+                height: 160px;
+            }
+        }
+    }
+}
+
+.bottom_tex {
+    .boldP {
+        color: #fff;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        font-style: italic;
+
+        a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    }
+
+    .guarantee {
+        background: #fff;
+        font-size: 20px;
+        max-width: 356px;
+        border-radius: 10px;
+        padding: 15px;
+        border: 5px solid #030405;
+        text-align: center;
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}

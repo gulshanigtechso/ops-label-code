@@ -1,0 +1,116 @@
+.main-hero {
+    background: #d8dce0;
+    padding-bottom: 100px;
+}
+
+/* logo-section */
+.logo-section {
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    // background: #E3EEED;
+    // width: 96%;
+    // margin-left: auto;
+    // margin-right: auto;
+
+    .site-logo {
+        width: 200px;
+        max-width: 100%;
+    }
+}
+
+
+.hero-section {
+    background: #E3EEED;
+    height: 750px;
+    position: relative;
+    width: 98%;
+    margin-left: auto;
+    // margin-right: auto;
+
+    .hero-left {
+        margin-bottom: 2.4rem;
+
+        h1 {
+            font-weight: bold;
+            font-style: italic;
+            color: #030405;
+
+            span {
+                color: #129740;
+            }
+        }
+
+        p {
+            color: #000;
+            margin-top: 1.5rem;
+            width: 489px;
+            // font-weight: 500;
+            font-size: 16px;
+        }
+    }
+
+    .star-section {
+        .stars {
+            img {
+                width: 25px;
+                margin-bottom: 10px;
+            }
+        }
+
+        p {
+            color: #000;
+            font-size: 15px;
+        }
+    }
+
+    .watch-video {
+        a.simple-link {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            margin-left: 2px;
+            font-size: 16px;
+
+            &:hover {
+                color: #129740;
+            }
+        }
+    }
+
+    .hero-img {
+        position: relative;
+
+        &::after {
+            content: "";
+            background-image: url(../images/banner-circle1.png);
+            position: absolute;
+            right: 0px;
+            top: -90px;
+            width: 750px;
+            height: 100%;
+            background-repeat: no-repeat;
+            pointer-events: none;
+        }
+    }
+
+    .hand-img {
+        width: 100%;
+        margin-top: -110px;
+        object-fit: cover;
+        z-index: 1;
+        position: relative;
+    }
+}
+
+
+// .hero-section::after {
+//     content: "";
+//     background-image: url(../images/banner-circle1.png);
+//     position: absolute;
+//     right: 0px;
+//     top: 100px;
+//     width: 850px;
+//     height: 100%;
+//     background-repeat: no-repeat;
+//     pointer-events: none;
+// }
