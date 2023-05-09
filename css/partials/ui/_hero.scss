@@ -1,6 +1,6 @@
 .main-hero {
     background: #d8dce0;
-    padding-bottom: 100px;
+    padding-bottom: 300px;
 }
 
 /* logo-section */
@@ -94,8 +94,9 @@
     }
 
     .hand-img {
-        width: 100%;
+        width: 70%;
         margin-top: -110px;
+        margin-left: 50px;
         object-fit: cover;
         z-index: 1;
         position: relative;

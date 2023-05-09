@@ -1,8 +1,19 @@
-// #faq {
-//     border: 1px solid black;
-// }
+#faq {
+    position: relative;
+    background-image: url(../images/section_6.png);
+    @include bg-cover();
+    background-position: top;
 
-div#accordionExample {
+    &::after {
+        @include pseudo("", 0, auto, 10%, 10%);
+        right: 0;
+        background-image: url(../images/Asset-39.png);
+        background-repeat: no-repeat;
+    }
+}
+
+#accordionExample,
+#accordionExample2 {
     box-shadow: rgba(98, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 

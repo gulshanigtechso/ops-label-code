@@ -1,14 +1,18 @@
 footer {
     background: url(../images/footer.png);
-    // height: 800px !important;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: bottom;
-    padding-top: 2rem;
+    // background-position: bottom;
+    background-position-y: 340px;
+    padding-top: 8rem;
+
+    .contact-wrapper {
+        gap: 13rem;
+    }
 
     .contact-text {
-        @include mx-auto();
-        margin-top: 3rem;
+        // @include mx-auto();
+        margin-top: 6rem;
 
         h5 {
             margin-bottom: 2rem;
@@ -21,7 +25,7 @@ footer {
 
     .contact-box {
         position: relative;
-        @include mx-auto();
+        // @include mx-auto();
         // &::before {
         //     @include pseudo($content: "", $top: 0, $left: 0, $width: 100%, $height: 100%);
         //     background-image: url(/html/images/OPSLABLE-LOGO.png);
@@ -88,15 +92,15 @@ footer {
 
                 h3.contact-title {
                     color: #1e1b15;
-                    // font-size: 35px;
-                    margin-bottom: 20px;
+                    font-size: 35px;
+                    margin-bottom: 25px;
                     font-weight: bold;
                     font-style: italic;
                 }
 
                 ul.contact-btns {
                     display: grid;
-                    gap: 2.2rem;
+                    gap: 2.5rem;
 
                     li {
                         width: 100%;
@@ -114,8 +118,8 @@ footer {
                                     background-image: url('../images/bg-star.png');
                                     content: "";
                                     position: absolute;
-                                    right: -110px;
-                                    top: 126px;
+                                    right: -115px;
+                                    top: 138px;
                                     width: 230px;
                                     height: 80px;
                                     background-repeat: no-repeat;
@@ -130,7 +134,7 @@ footer {
                                     content: "";
                                     position: absolute;
                                     left: -93px;
-                                    top: 317px;
+                                    top: 340px;
                                     width: 230px;
                                     height: 80px;
                                     background-repeat: no-repeat;
@@ -155,8 +159,9 @@ footer {
     }
 
     .footer-section {
-        padding-top: 50px;
-        padding-bottom: 40px;
+        letter-spacing: 0.8px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
 
         .container-fluid {
             @include padding-x(5rem, 5rem);
@@ -164,8 +169,7 @@ footer {
 
         p {
             color: white;
-            font-size: 18px;
-            margin: 0px;
+            font-size: 1.2rem;
             font-weight: 100;
             padding-right: 90px;
         }
@@ -174,44 +178,51 @@ footer {
             color: white;
             font-style: italic;
             font-size: 26px;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            margin-top: 2.5rem;
+            margin-bottom: 1.2rem;
         }
 
         a {
             color: white;
 
             &:hover {
-                color: #129740;
-                text-decoration: underline;
+                // color: #129740;
+                color: #feeca6;
+                // text-decoration: underline;
 
             }
         }
 
         ul.social-icons {
             display: flex;
-            padding-left: 0px;
-            margin-top: 10px;
+            gap: 1rem;
+            margin-top: 1.5rem;
 
             li {
-                list-style: none;
-                margin-right: 6px;
+                transition: transform 0.2s;
+
+                &:hover {
+                    transform: translateY(-3px);
+                }
             }
         }
 
         ul.footer-links {
-            padding-left: 0px;
+            display: grid;
+            gap: 0.3rem;
 
             li {
-                list-style: none;
                 font-weight: 100;
+                font-size: 1.1rem;
 
                 a {
                     color: white;
+                    transition: color 0.2s;
 
                     &:hover {
-                        color: #129740;
-                        text-decoration: underline;
+                        // color: #129740;
+                        color: #feeca6;
+                        // text-decoration: underline;
                     }
                 }
             }

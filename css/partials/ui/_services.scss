@@ -3,9 +3,17 @@
     position: relative;
     z-index: 1;
     margin-top: 0;
-    margin-top: -140px;
+    margin-top: -340px;
     background-repeat: no-repeat;
     background-size: cover;
+
+    &.section2 {
+        &::after {
+            @include pseudo("", 30px, 50%, 70%, 70%);
+            background-image: url(../images/plane.png);
+            background-repeat: no-repeat;
+        }
+    }
 
     .row.ser_row {
         margin: 50px 30px;

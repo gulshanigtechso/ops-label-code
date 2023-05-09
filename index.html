@@ -13,6 +13,9 @@
     <!-- Swiper-slider CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8.3.0/swiper-bundle.min.css" />
 
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -61,7 +64,7 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 p-0">
+                    <div class="col-md-6 p-0" data-aos="fade-right">
                         <div class="hero-left">
                             <h1>#TOP UK BUSINESS INTRODUCTION <br> & SALES AGENCY FOR<br>
                                 <span>CLOSING MORE DEALS</span>
@@ -92,8 +95,8 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6 hero-img">
-                        <img class="hand-img" src="./images/banner-mobile.png " alt="main-img">
+                    <div class="col-md-6 hero-img" data-aos="fade-up">
+                        <img class="hand-img" src="./images/hero-img.png" alt="main-img">
                     </div>
                 </div>
             </div>
@@ -106,7 +109,7 @@
             <h2 class="title_h2">TAKE 99% OFF YOUR PLATE...</h2>
             <h3 class="titleh3">OUR SERVICES</h3>
             <div class="row ser_row">
-                <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12 col-md-4" data-aos="fade-up">
                     <div class="box">
                         <figure class="ser-icon ser-icon1">
                             <img src="./images/ser1.png" alt="ser1">
@@ -119,7 +122,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12 col-md-4" data-aos="fade-up">
                     <div class="box">
                         <div class="star_icon">
                             <img src="./images/star.png" alt="star">
@@ -135,7 +138,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12 col-md-4" data-aos="fade-up">
                     <div class="box">
                         <figure class="ser-icon ser-icon3">
                             <img src="./images/ser3.png" alt="ser3">
@@ -162,7 +165,7 @@
         <div class="container">
             <h2 class="title_h2 text-center pt-5 pb-5">LEAD GENERATION DONE RIGHT</h2>
             <div class="row">
-                <div class="col-md-7 features-text">
+                <div class="col-md-7 features-text" data-aos="fade-right">
                     <p class="text-center semi-font-text">NO ONE likes slimy sales people > So we do the <br> OPPOSITE
                         by
                         really personally connecting with leads + close sales <br> FOR YOU (if you choose to!)
@@ -186,7 +189,7 @@
                     </ul>
                 </div>
 
-                <div class="col-md-5 features-img">
+                <div class="col-md-5 features-img" data-aos="fade-left">
                     <div class="leadGImg">
                         <img src="./images/leadG-img.png" alt="ser3">
                     </div>
@@ -244,39 +247,40 @@
     </section>
 
     <!-- Testi-section -->
-    <section class="section4 cp pb-5" style="background-image: url(./images/section_4.png);">
+    <section class="section4 cp pb-5">
         <div class="container">
-            <h2 class="title_h2 text-center pt-5 pb-5">WHAT THEY SAY ABOUT US...</h2>
-            <div class="row">
+            <h2 class="title_h2 text-center pb-5">WHAT THEY SAY ABOUT US...</h2>
+            <div class="row justify-content-between">
                 <div class="col-md-5">
-                    <div class="swiper testi-swiper-img">
+                    <div class="swiper testi-swiper-img" data-aos="fade-right">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <p class="t1"><b>Client:</b> Whitney <br><b>Business Type</b>: Copy Writing + Coach</p>
-                                <div>
+                                <div class="testi-img">
                                     <img src="./images/Asset-16.png">
                                 </div>
                             </div>
 
                             <div class="swiper-slide">
                                 <p class="t1"><b>Client:</b> Whitney <br><b>Business Type</b>: Copy Writing + Coach</p>
-                                <div>
+                                <div class="testi-img">
                                     <img src="./images/Asset-16.png">
                                 </div>
                             </div>
 
                             <div class="swiper-slide">
                                 <p class="t1"><b>Client:</b> Whitney <br><b>Business Type</b>: Copy Writing + Coach</p>
-                                <div>
+                                <div class="testi-img">
                                     <img src="./images/Asset-16.png">
                                 </div>
                             </div>
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
 
-                <div class="col-md-7">
-                    <div class="swiper testi-swiper-txt">
+                <div class="col-md-6">
+                    <div class="swiper testi-swiper-txt" data-aos="fade-left">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="qt_text">"You showed me that getting to £12-16K months <br>for me is really
@@ -321,17 +325,21 @@
                 </div>
             </div>
         </div>
+
+        <div class="info-txt">
+            <p>From £12 to £16K months <br> in just 2 weeks!</p>
+        </div>
     </section>
 
     <!-- Works-section -->
-    <section class="section5 services_sect cp" style="background-image: url(./images/section_5.png);">
+    <section class="section5 services_sect cp">
         <div class="container-fluid">
             <div class="text-center">
                 <h2 class="title_h2">HOW OUR SERVICE WORKS</h2>
                 <p>Simplifying your Appointment Setting and Sales Closing Process</p>
             </div>
             <div class="row ser_row align-items-center">
-                <div class="col-xs-12 col-md-3">
+                <div class="col-xs-12 col-md-3" data-aos="fade-right">
                     <div class="box">
                         <p><span>1</span></p>
                         <a class="btn sky-btn-light" href="#">BOOK YOUR KICKOFF CALL</a>
@@ -348,7 +356,7 @@
                     <img class="arrow-right" src="./images/arrow-right.png" alt="arrow">
                 </div>
 
-                <div class="col-xs-12 col-md-3">
+                <div class="col-xs-12 col-md-3" data-aos="fade-down">
                     <div class="box">
                         <p><span>2</span></p>
                         <div class="star_icon"><img src="./images/star.png" alt="star"></div>
@@ -367,7 +375,7 @@
                     <img class="arrow-right" src="./images/arrow-right.png" alt="arrow">
                 </div>
 
-                <div class="col-xs-12 col-md-3">
+                <div class="col-xs-12 col-md-3" data-aos="fade-left">
                     <div class="box">
                         <p><span>3</span></p>
                         <a class="btn orange-btn-light" href="#">RECIEVE LEADS/
@@ -390,7 +398,7 @@
             <h3 class="site-title text-center pb-5">Frequently Asked Questions
             </h3>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-up" data-aos-duration="700">
                     <div class="accordion accordian-left" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
@@ -476,8 +484,8 @@
                     <a class="btn green-btn float-start mt-5" href="#">Book a Guarantee</a>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="accordion accordian-right" id="accordionExample">
+                <div class="col-md-6" data-aos="fade-down" data-aos-duration="700">
+                    <div class="accordion accordian-right" id="accordionExample2">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingFive">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -486,7 +494,7 @@
                                 </button>
                             </h2>
                             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                                data-bs-parent="#accordionExample">
+                                data-bs-parent="#accordionExample2">
                                 <div class="accordion-body">
                                     <strong>This is the First item's accordion body.</strong> It is hidden by default,
                                     until the collapse plugin adds the appropriate classes that we use to style each
@@ -506,7 +514,7 @@
                                 </button>
                             </h2>
                             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                                data-bs-parent="#accordionExample">
+                                data-bs-parent="#accordionExample2">
                                 <div class="accordion-body">
                                     <strong>This is the second item's accordion body.</strong> It is hidden by default,
                                     until the collapse plugin adds the appropriate classes that we use to style each
@@ -526,7 +534,7 @@
                                 </button>
                             </h2>
                             <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
-                                data-bs-parent="#accordionExample">
+                                data-bs-parent="#accordionExample2">
                                 <div class="accordion-body">
                                     <strong>This is the third item's accordion body.</strong> It is hidden by default,
                                     until the collapse plugin adds the appropriate classes that we use to style each
@@ -546,7 +554,7 @@
                                 </button>
                             </h2>
                             <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
-                                data-bs-parent="#accordionExample">
+                                data-bs-parent="#accordionExample2">
                                 <div class="accordion-body">
                                     <strong>This is the Fourth item's accordion body.</strong> It is hidden by default,
                                     until the collapse plugin adds the appropriate classes that we use to style each
@@ -566,7 +574,7 @@
     </section>
 
     <!-- Ready-section  -->
-    <section id="ready" class="section7 cp">
+    <section id="ready" class="section7 cp" data-aos="zoom-in" data-aos-duration="900">
         <div class="container">
             <div class="row">
                 <h3 class="site-upercase-title">READY TO GET STARTED?</h3>
@@ -591,8 +599,8 @@
     <footer class="footer">
         <section id="contact" class="contact-section">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-4 contact-text">
+                <div class="row justify-content-center contact-wrapper">
+                    <div class="col-lg-4 contact-text" data-aos="fade-right">
                         <h5>WANT TO WORK WITH US?</h5>
                         <p>Awesome! Please contact us > DM or booking a call is the
                             QUICKEST for immediate sales needs or to get started as soon
@@ -600,7 +608,7 @@
                             what are you waiting for!</p>
                     </div>
                     <!-- <div class="col-lg-1"></div> -->
-                    <div class="col-lg-4 contact-box">
+                    <div class="col-lg-3 contact-box" data-aos="fade-up">
                         <div class="contact-outer">
                             <img src="./images/OPSLABLE-LOGO.png" alt="">
                             <h3 class="header-white">
@@ -691,6 +699,9 @@
 
     <!-- Swiper-slider -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8.3.0/swiper-bundle.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"

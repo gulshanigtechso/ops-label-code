@@ -41,6 +41,14 @@ button:not(:disabled) {
         font-size: 14px;
         float: right;
         font-style: italic;
+        position: relative;
+
+        &::after {
+            @include pseudo($content: "", $top: -15px, $left: auto, $width: 50px, $height: 25px);
+            background-image: url(../images/plane.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
     }
 
     &.sky-btn {
@@ -78,7 +86,7 @@ button:not(:disabled) {
 }
 
 .cp {
-    @include padding-y(5rem, 5rem)
+    @include padding-y(6rem, 6rem)
 }
 
 h2.title_h2 {
