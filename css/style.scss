@@ -23,6 +23,10 @@ $fonts-noto: 'NotoSans';
 @import "./partials/ui/ready";
 @import "./partials/ui/footer";
 
+// ---- pages
+
+@import "./partials/ui/featurePage";
+
 
 // fonts
 @font-face {
