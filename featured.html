@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>OPSLABEL</title>
+</head>
+
+<body>
+  <div class="services-template">
+    <div class="services-left_block">
+      <div class="services-left_block-logo"><img src="images/OPSLABLE-LOGO.png"></div>
+      <div class="services-left_block-toggle"><img src="images/toggle.jpg"></div>
+      <div class="services-left_social_media">
+        <div class="social_media_contact">
+            <div><img src="./images/linkedin.png" alt="social_media_contact" /></div>
+            <div><img src="./images/mail.png" alt="social_media_contact" /></div>
+            <div><img src="./images/insta.png" alt="social_media_contact" /></div>
+        </div>
+      </div>
+    </div>
+    <div class="services-main">
+        <div class="feature-right_block">
+            <div class="case_studies">
+                <div class="case_studies_heading">
+                    Featured Case Studies
+                </div>
+                <div class="circular_div_section">
+                    <div style='background-color: #9ed0d6;'></div>
+                    <div style='background-color: #b383c5;'></div>
+                    <div style='background-color: #2a1e67;'></div>
+                </div>
+                <div class="case_studies_paragraph">
+                    <p>CEOs and Sales people from leading companies have worked with the Opslabels team in order to generate new sales opportunities and scale their revenue generation.</p>
+                    <p>Join over 4000+ clients, benefiting from generating new lead and appointments in their calendar & to close more sales.</p>
+                </div>
+                <hr />
+                <div class="case_studies_btn_grid">
+                    <div class="btn green-btn">marketting/pr</div>
+                    <div class="btn perple-btn">finance/hr</div>
+                    <div class="btn perple-btn">coaches/consultants</div>
+                    <div class="btn perple-btn">production/creative</div>
+                    <div class="btn perple-btn">it/software</div>
+                    <div class="btn perple-btn">all other</div>
+                </div>
+            </div>
+            <div class="image_grid">
+                <div><img src="./images/Asset 45.png" alt="case_studies" /></div>
+                <div><img src="./images/Asset 46.png" alt="case_studies" /></div>
+                <div><img src="./images/Asset 44.png" alt="case_studies" /></div>
+                <div><img src="./images/Asset 43.png" alt="case_studies" /></div>
+            </div>
+        </div>
+        <div class="feature-right_bottom">
+            <div style="width:12%">
+                <p>Trusted by leading brands and startups</p>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+  </div>
+
+
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
+
+
+  <script>
+    JS;
+    const triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'));
+    triggerTabList.forEach((triggerEl) => {
+      const tabTrigger = new mdb.Tab(triggerEl);
+
+      triggerEl.addEventListener('click', (event) => {
+        event.preventDefault();
+        tabTrigger.show();
+      });
+    });
+  </script>
+  <script>
+    const triggerEl = document.querySelector('#myTab a[href="#profile"]');
+    mdb.Tab.getInstance(triggerEl).show(); // Select tab by name
+
+    const triggerFirstTabEl = document.querySelector('#myTab li:first-child a');
+    mdb.Tab.getInstance(triggerFirstTabEl).show(); // Select first tab
+  </script>
+</body>
+
+</html>
