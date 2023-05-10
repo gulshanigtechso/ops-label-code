@@ -31,6 +31,7 @@
             background: #ffffff;
             padding: 30px 30px;
             position: relative;
+            height: auto;
 
             img.arrow-right {
                 position: absolute;
@@ -54,6 +55,8 @@
                 padding-top: 10px;
                 text-align: center;
                 line-height: 1.4;
+                margin-top: 1.1rem;
+                margin-bottom: 1rem;
             }
 
             p {

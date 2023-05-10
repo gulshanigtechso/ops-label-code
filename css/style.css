@@ -299,8 +299,9 @@ header ul a.active, header ul a:hover {
   border-radius: 30px;
   border: 5px solid #030405;
   border-radius: 30px;
-  padding: 30px;
+  padding: 2rem 2rem 2.6rem;
   position: relative;
+  height: 530px;
 }
 .services_sect .box .star_icon {
   position: absolute;
@@ -320,15 +321,8 @@ header ul a.active, header ul a:hover {
   margin: auto;
   padding: 0.4rem 0;
 }
-.services_sect .box p {
-  margin-top: 1.1rem;
-  margin-bottom: 1rem;
-}
 .services_sect .box .ser-icon {
   text-align: center;
-}
-.services_sect .box .ser-icon img {
-  height: 160px;
 }
 
 .bottom_tex .boldP {
@@ -355,6 +349,108 @@ header ul a.active, header ul a:hover {
   left: 0;
   right: 0;
   margin: auto;
+}
+
+.services-swiper1,
+.services-swiper2,
+.services-swiper3 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.services-swiper1 .swiper-pagination,
+.services-swiper2 .swiper-pagination,
+.services-swiper3 .swiper-pagination {
+  width: auto;
+}
+.services-swiper1 .swiper-pagination .swiper-pagination-bullet,
+.services-swiper2 .swiper-pagination .swiper-pagination-bullet,
+.services-swiper3 .swiper-pagination .swiper-pagination-bullet {
+  background: #000;
+  width: 11px;
+  height: 11px;
+}
+.services-swiper1 .swiper-pagination .swiper-pagination-bullet:not(.swiper-pagination-bullet-active),
+.services-swiper2 .swiper-pagination .swiper-pagination-bullet:not(.swiper-pagination-bullet-active),
+.services-swiper3 .swiper-pagination .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+  border: 2px solid #000;
+  background: none;
+  opacity: 0.3;
+}
+.services-swiper1 .swiper-button-next,
+.services-swiper2 .swiper-button-next,
+.services-swiper3 .swiper-button-next {
+  font-size: 2.8rem;
+  top: auto;
+  width: auto;
+  height: auto;
+  color: #000;
+}
+.services-swiper1 .swiper-button-next::after,
+.services-swiper2 .swiper-button-next::after,
+.services-swiper3 .swiper-button-next::after {
+  content: "";
+}
+.services-swiper1 .swiper-slide.slide1 p,
+.services-swiper2 .swiper-slide.slide1 p,
+.services-swiper3 .swiper-slide.slide1 p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.services-swiper1 .swiper-slide.slide2,
+.services-swiper2 .swiper-slide.slide2,
+.services-swiper3 .swiper-slide.slide2 {
+  text-align: center;
+}
+.services-swiper1 .swiper-slide.slide2 ul,
+.services-swiper2 .swiper-slide.slide2 ul,
+.services-swiper3 .swiper-slide.slide2 ul {
+  text-align: left;
+}
+.services-swiper1 .swiper-slide.slide2 h6,
+.services-swiper2 .swiper-slide.slide2 h6,
+.services-swiper3 .swiper-slide.slide2 h6 {
+  color: deeppink;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+.services-swiper1 .swiper-slide.slide2 .plus-btn,
+.services-swiper2 .swiper-slide.slide2 .plus-btn,
+.services-swiper3 .swiper-slide.slide2 .plus-btn {
+  position: unset;
+  padding: 0.2rem 4.5rem;
+  max-width: unset;
+  font-weight: 800;
+  font-size: 1rem;
+  pointer-events: none;
+  margin-top: 1.2rem;
+  margin-bottom: 2rem;
+}
+.services-swiper1 .swiper-slide.slide3,
+.services-swiper2 .swiper-slide.slide3,
+.services-swiper3 .swiper-slide.slide3 {
+  text-align: center;
+}
+.services-swiper1 .swiper-slide.slide3 p:nth-child(2),
+.services-swiper2 .swiper-slide.slide3 p:nth-child(2),
+.services-swiper3 .swiper-slide.slide3 p:nth-child(2) {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.services-swiper1 .swiper-slide.slide3 div a,
+.services-swiper2 .swiper-slide.slide3 div a,
+.services-swiper3 .swiper-slide.slide3 div a {
+  text-decoration: underline;
+}
+.services-swiper1 .check-img,
+.services-swiper2 .check-img,
+.services-swiper3 .check-img {
+  width: 16px;
+}
+.services-swiper1 .burn-img,
+.services-swiper2 .burn-img,
+.services-swiper3 .burn-img {
+  width: 20px;
 }
 
 .section3 {
@@ -622,6 +718,7 @@ header ul a.active, header ul a:hover {
   background: #ffffff;
   padding: 30px 30px;
   position: relative;
+  height: auto;
 }
 .section5.services_sect .box img.arrow-right {
   position: absolute;
@@ -643,6 +740,8 @@ header ul a.active, header ul a:hover {
   padding-top: 10px;
   text-align: center;
   line-height: 1.4;
+  margin-top: 1.1rem;
+  margin-bottom: 1rem;
 }
 .section5.services_sect .box p span {
   position: absolute;
@@ -903,7 +1002,6 @@ footer .contact-section .container-fluid {
   padding-right: 4rem;
 }
 footer .footer-section {
-  letter-spacing: 0.8px;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }

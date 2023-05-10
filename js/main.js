@@ -4,6 +4,40 @@ AOS.init({
 });
 
 
+const servicesSwiper1 = new Swiper('.services-swiper1', {
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+    },
+});
+
+const servicesSwiper2 = new Swiper('.services-swiper2', {
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+    },
+});
+
+const servicesSwiper3 = new Swiper('.services-swiper3', {
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+    },
+});
+
+
 const brandsSwiper = new Swiper('.brands-swiper', {
     loop: true,
     autoplay: true,
