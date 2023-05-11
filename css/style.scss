@@ -13,6 +13,7 @@ $fonts-noto: 'NotoSans';
 
 // ui-partials
 @import "./partials/ui/header";
+@import "./partials/ui/menubar";
 @import "./partials/ui/hero";
 @import "./partials/ui/services";
 @import "./partials/ui/features";
@@ -23,8 +24,7 @@ $fonts-noto: 'NotoSans';
 @import "./partials/ui/ready";
 @import "./partials/ui/footer";
 
-// ---- pages
-
+// pages-partials
 @import "./partials/ui/featurePage";
 
 

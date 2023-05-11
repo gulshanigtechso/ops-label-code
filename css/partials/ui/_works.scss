@@ -1,37 +1,31 @@
 .section5 {
-    background-image: url(../images/section_5.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: -200px;
+    position: relative;
+
+    .bg-img {
+        position: absolute;
+        top: -135px;
+        right: -176px;
+        pointer-events: none;
+    }
 
     .container-fluid {
+        position: relative;
+        z-index: 1;
         @include padding-x(4rem, 4rem);
     }
 
-    .title_h2 {
-        color: #000000;
-        padding-top: 0;
-    }
-
-    &.services_sect {
-        margin-top: 0;
-
-
-        .row.ser_row {
-            margin: 70px 0px !important;
-            justify-content: space-between;
-
-            .col-sm-4 {
-                width: 28.333333%;
-            }
-        }
+    .works_row {
+        @include margin-y(70px, 70px);
+        justify-content: space-between;
 
         .box {
+            position: relative;
             margin-top: 50px;
             background: #ffffff;
-            padding: 30px 30px;
-            position: relative;
+            padding: 2.5rem 1.5rem 1.5rem;
             height: auto;
+            border: 5px solid #030405;
+            border-radius: 30px;
 
             img.arrow-right {
                 position: absolute;
@@ -40,48 +34,56 @@
                 width: 65px;
             }
 
-            .btn {
-                top: -44px;
-                bottom: auto;
-                max-width: 70%;
-                padding: 33px 10px;
+            .info_text {
+                position: absolute;
+                top: -50px;
+                left: 0;
+                right: 0;
+                max-width: 80%;
                 height: 90px;
-                font-size: 16px;
-                line-height: 1.3;
-            }
-
-            p {
-                min-height: auto;
-                padding-top: 10px;
+                @include mx-auto();
+                border: 4px solid black;
+                border-radius: 24px;
+                padding: 2rem 0.1rem;
+                box-shadow: none;
+                box-shadow: rgba(0, 0, 0, 4.15) 4px 4px 0.6px;
                 text-align: center;
-                line-height: 1.4;
-                margin-top: 1.1rem;
-                margin-bottom: 1rem;
-            }
 
-            p {
+                &.sky-btn {
+                    background-color: #dcefee;
+                }
+
+                &.purple-btn {
+                    background-color: #e0cce4;
+                }
+
+                &.orange-btn {
+                    background-color: #feeca6;
+                }
+
                 span {
                     position: absolute;
+                    top: -45px;
                     left: 0;
                     right: 0;
-                    top: -78px;
-                    margin: auto;
-                    text-align: center;
+                    @include mx-auto();
                     background: black;
+                    color: white;
                     width: 65px;
                     height: 65px;
-                    color: white;
                     font-weight: 600;
-                    font-size: 48px;
+                    font-size: 42px;
                     font-style: italic;
-                    z-index: 1;
-                    display: flex;
                     border-radius: 50%;
                     align-items: center;
                     font-family: 'NotoSans';
-                    justify-content: center;
-                    padding-right: 10px;
+                    padding-right: 7px;
                 }
+            }
+
+            p {
+                text-align: center;
+                margin-top: 1.5rem;
             }
         }
     }

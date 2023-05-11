@@ -24,44 +24,71 @@
 
 <body>
 
+    <!-- Header -->
+    <header>
+        <div class="menu_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="container">
+            <div class="navbar">
+                <div>
+                    <img class="site-logo" src="./images/OPSLABLE-LOGO.png" alt="logo">
+                </div>
+                <div>
+                    <a class="btn green-btn" href="#">Book a Free Demo</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menubar -->
+    <div id="menubar">
+        <div class="row menu_content">
+            <div class="col-lg-6 menu_left_col">
+                <div>
+                    <nav>
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Case Studies</a>
+                        <a href="#">Why Opslabel</a>
+                        <a href="#">Contact</a>
+                    </nav>
+
+                    <div class="menu_btns_group">
+                        <a class="btn green-btn" href="#">Book a Free Demo</a>
+                        <a class="btn perple-btn" href="#">Claim your 1 free appt offer!</a>
+                    </div>
+                </div>
+                <div class="arrowfly-img">
+                    <img src="./images/arrow-fly.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 menu_right_col">
+                <div>
+                    <img src="./images/menubar/1.jpg" alt="">
+                </div>
+
+                <div>
+                    <img src="./images/menubar/2.jpg" alt="">
+                </div>
+
+                <div>
+                    <img src="./images/menubar/3.jpg" alt="">
+                </div>
+
+                <div>
+                    <img src="./images/menubar/4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Hero Section -->
     <div id="#" class="main-hero">
         <div class="hero-section">
-            <header>
-                <div class="container">
-                    <ul>
-                        <li>
-                            <a class="active" href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#services">About</a>
-                        </li>
-                        <li>
-                            <a href="services.html">Services</a>
-                        </li>
-                        <li>
-                            <a href="#faq">FAQs</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </header>
-
-            <div class="logo-outer logo-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img class="site-logo" src="./images/OPSLABLE-LOGO.png" alt="logo">
-                        </div>
-                        <div class="col-md-6 pt-md-3">
-                            <a class="btn green-btn" href="#">Book a Free Demo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 p-0" data-aos="fade-right">
@@ -381,6 +408,11 @@
                 </div>
             </div>
         </div>
+
+        <div class="bg-img">
+            <img src="./images/section_3-1.png" alt="">
+            <img src="./images/section_3-2.png" alt="">
+        </div>
     </section>
 
     <!-- Brands-section -->
@@ -511,23 +543,25 @@
             </div>
         </div>
 
-        <div class="info-txt">
+        <div class="guarantee_text">
             <p>From £12 to £16K months <br> in just 2 weeks!</p>
         </div>
     </section>
 
     <!-- Works-section -->
-    <section class="section5 services_sect cp">
+    <section class="section5 works_sect cp">
         <div class="container-fluid">
             <div class="text-center">
                 <h2 class="title_h2">HOW OUR SERVICE WORKS</h2>
                 <p>Simplifying your Appointment Setting and Sales Closing Process</p>
             </div>
-            <div class="row ser_row align-items-center">
+            <div class="row works_row align-items-center">
                 <div class="col-xs-12 col-md-3" data-aos="fade-right">
                     <div class="box">
-                        <p><span>1</span></p>
-                        <a class="btn sky-btn-light" href="#">BOOK YOUR KICKOFF CALL</a>
+                        <div class="info_text sky-btn">
+                            <span>1</span>
+                            <div>BOOK YOUR KICKOFF CALL</div>
+                        </div>
                         <p>Let’s Rock ‘N’ Roll & Get You Leads!
                             We match your with your Campaign Manager by outlining
                             your ideal target audience, goals & needs . Prior to this
@@ -543,9 +577,10 @@
 
                 <div class="col-xs-12 col-md-3" data-aos="fade-down">
                     <div class="box">
-                        <p><span>2</span></p>
-                        <div class="star_icon"><img src="./images/star.png" alt="star"></div>
-                        <a class="btn perple-btn" href="#">STRATEGY APPROVAL & LAUNCH</a>
+                        <div class="info_text purple-btn">
+                            <span>2</span>
+                            <div>STRATEGY APPROVAL & LAUNCH</div>
+                        </div>
                         <p>READY! > OpsLabel will begin engaging with hundreds of your ideal clients into 1:1 direct
                             conversations with real people. <br><br>
                             We'll monitor your sales campaign, provide weekly
@@ -562,9 +597,11 @@
 
                 <div class="col-xs-12 col-md-3" data-aos="fade-left">
                     <div class="box">
-                        <p><span>3</span></p>
-                        <a class="btn orange-btn-light" href="#">RECIEVE LEADS/
-                            APPOINTMENTS& SALES £!</a>
+                        <div class="info_text orange-btn">
+                            <span>3</span>
+                            <div>RECIEVE LEADS/
+                                APPOINTMENTS& SALES £!</div>
+                        </div>
                         <p>HOT LEADS coming your way.
                             Within days or even hours of the service starting,
                             you can expect to receive your first interested
@@ -574,6 +611,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="bg-img">
+            <img src="./images/section_5.png" alt="">
         </div>
     </section>
 
@@ -595,12 +635,17 @@
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the First item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <p>Opslabel offers the most complete all-in-one SAAS Lead Generation and Meeting
+                                        booking service on the market. This includes the Industry leading B2B Lead
+                                        Generation Platform, which offers up to 500 invites per week, plus inmail,
+                                        email, automated likes, follows, endorsements plus an inbuilt CRM pipeline
+                                        funnel feature, and a data enrichment tool to give you the ultimate edge when
+                                        growing your pipeline.</p>
+
+                                    <p>Plus you get access to hundreds of unique products and services, that no other
+                                        company offers such as Done for you Lead Generation and Appointment Setting, Ai
+                                        Sales Reps (Linkedin Profile Bots), Discounted Linkedin Sales Navigator, Landing
+                                        pages and more!</p>
                                 </div>
                             </div>
                         </div>
@@ -609,18 +654,15 @@
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    How are you different to other SAAS Lead Generation Platforms?
+                                    What is your definition of a lead?
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <p>We define a lead in our company as a prospect who meets your Ideal Client Profile
+                                        (ICP) criteria with an active interest in your product/service and/ or with the
+                                        intent for a call/further discussion.</p>
                                 </div>
                             </div>
                         </div>
@@ -629,18 +671,15 @@
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    How are you different to other SAAS Lead Generation Platforms?
+                                    What is your Minimum Term?
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <p>There is no minimum term. We offer our services on a monthly, quarterly and
+                                        annual basis. Quarterly and Annual payments are required upfront, message our
+                                        support to set this up.</p>
                                 </div>
                             </div>
                         </div>
@@ -649,18 +688,38 @@
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    How are you different to other SAAS Lead Generation Platforms?
+                                    Do I need a LinkedIn Premium account to use Opslabel?
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the Fourth item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <p>No you can run outreach on a Basic Linkedin account but we would recommend that
+                                        you purchase our discounted sales navigator as it enables more outreach sent and
+                                        more targeted prospect lists.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Do you provide a guarantee for booked appointments?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Yes we can include a guarantee if you opt for the Guarantee option which includes
+                                        an upgrade on your plan.</p>
+
+                                    <p>For the standard plans we do not provide a service guarantee with our outreach
+                                        service.</p>
+
+                                    <p>Fortunately, because of our expertise and previous successful campaigns we can
+                                        give you an estimated average of the number of appointments we expect to
+                                        achieve.</p>
                                 </div>
                             </div>
                         </div>
@@ -672,41 +731,18 @@
                 <div class="col-md-6" data-aos="fade-down" data-aos-duration="700">
                     <div class="accordion accordian-right" id="accordionExample2">
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFive">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    How are you different to other SAAS Lead Generation Platforms?
-                                </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                                data-bs-parent="#accordionExample2">
-                                <div class="accordion-body">
-                                    <strong>This is the First item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
                             <h2 class="accordion-header" id="headingSix">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    How are you different to other SAAS Lead Generation Platforms?
+                                    Is Newson GDPR compliant?
                                 </button>
                             </h2>
                             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                 data-bs-parent="#accordionExample2">
                                 <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <p>GDPR doesn’t affect LinkedIn outreach campaigns. We also ensure our email
+                                        campaigns are fully GDPR compliant by specific protocols led by our outreach
+                                        team.</p>
                                 </div>
                             </div>
                         </div>
@@ -715,18 +751,21 @@
                             <h2 class="accordion-header" id="headingSeven">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                    How are you different to other SAAS Lead Generation Platforms?
+                                    How does the onboarding process work?
                                 </button>
                             </h2>
                             <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
                                 data-bs-parent="#accordionExample2">
                                 <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <p>Newson has a simple but very effective lead generation and appointment booking
+                                        strategy. We ask you to submit our onboarding questionnaire with information
+                                        about the product/service you want to go to market and we then build a bespoke
+                                        campaign taking 24-48 hours. You will also be invited to have a call with your
+                                        Campaign Manager on a 1 on 1 call. Once built, we send to you for approval then
+                                        launch it using our Ai outreach software. We sync our lead gen platform with you
+                                        on slack so you get automatic updates everytime a prospect replies to the
+                                        automated outreach and when a conversation is tagged in the inbox as a lead or
+                                        booked appointment.</p>
                                 </div>
                             </div>
                         </div>
@@ -735,18 +774,54 @@
                             <h2 class="accordion-header" id="headingEight">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                    How are you different to other SAAS Lead Generation Platforms?
+                                    What support do you provide for the Lead plans?
                                 </button>
                             </h2>
                             <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
                                 data-bs-parent="#accordionExample2">
                                 <div class="accordion-body">
-                                    <strong>This is the Fourth item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <p>With our Lead plan we find your ideal customers and provide our tried and tested
+                                        high response rate templates for the lead generation campaigns so you can be in
+                                        the best position to generate leads and new opportunities for your business.</p>
+
+                                    <p>We generate the Lead, you handle the response and appointment setting.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNine">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    How do you integrate with Newson?
+                                </button>
+                            </h2>
+                            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                                data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <p>With Newson you can integrate it with your team on slack and email so you get
+                                        automated notifications every time a lead, booked call, deal won is generated.
+                                        You can even export Google Sheets with all campaign data. Get all the important
+                                        data automatically in real-time with these powerful integrations. Our live lead
+                                        sheets can be accessed on your pc or mobile via our app.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTen">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                    What is your Support infrastructure?
+                                </button>
+                            </h2>
+                            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                                data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <p>Newson offers 1-2 minimum sales experts working on your campaigns and 1 Dedicated
+                                        Campaign Manager with our Done for you plans. Our Done With You plans you get
+                                        access to a Campaign Manager and our Done By You plans you get access to our
+                                        support team via our Live Chat feature.</p>
                                 </div>
                             </div>
                         </div>
@@ -755,6 +830,11 @@
                     <img src="./images/arrow-fly.png" alt="arrow-fly" class="fly-arrow">
                 </div>
             </div>
+        </div>
+
+        <div class="bg-img">
+            <img src="./images/section_6-1.png" alt="">
+            <img src="./images/section_6-2.png" alt="">
         </div>
     </section>
 
