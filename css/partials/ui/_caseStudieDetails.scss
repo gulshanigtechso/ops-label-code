@@ -1,0 +1,81 @@
+// left - #eaeeef
+// right - #2b2a2b
+
+.studiesDetails-template{
+    width:100%;
+    height:100%;
+    display: inline-flex;
+
+    .logo{
+        position: absolute;
+        top: 73px;
+        left: 30px;
+        z-index: 1;
+        background-image: url("../../../images/OPSLABLE-LOGO.png");
+        background-size: cover;
+        height: 147px;
+        width: 249px;
+    }
+
+    .studiesDetails-left_block{
+        width:6%;
+        background-color: #eaeeef;
+        height:99vh;
+
+        .menu_tab{
+            position: absolute;
+            top: 40%;
+            left: 0;
+            width: 6%;
+            padding: 28px;
+
+            div{
+                width: 93%;
+                margin: auto;
+                background-color: black;
+                height: 3px;
+                margin-bottom:7px;
+            }
+        }
+    }
+    .studiesDetails-right_block{
+        width:94%;
+        background-color: #2b2a2b;
+        height:99vh;
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+
+
+        .sales_acc_closer{
+            padding:240px 40px 40px 40px;
+            height:99vh;
+            color:white;
+
+            .sales_acc_heading{
+                font-size:51px;
+                font-style: italic;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-top:10px;
+            }
+    
+            .sales_acc_para{
+                font-size: 28px;
+                line-height: 31px;
+                font-weight: 300;
+            }
+
+        }
+
+        .sales_acc_closer_right{
+            padding-top:90px;
+            color:white;
+
+            .green-btn{
+                margin-right: 58px;
+            }
+        }
+
+       
+    }
+}

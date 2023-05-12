@@ -1423,33 +1423,186 @@ footer .footer-section ul.footer-links li a:hover {
   grid-template-columns: repeat(2, 1fr);
   gap: 0;
 }
-.feature-right_block .image_grid div img {
+.feature-right_block .image_grid .image {
+  position: relative;
+}
+.feature-right_block .image_grid .image:hover .hide {
+  display: block;
+}
+.feature-right_block .image_grid .image a img {
+  width: 100%;
+  height: 100%;
+}
+.feature-right_block .image_grid .image .show_on_hover {
+  position: absolute;
+  bottom: 46px;
+  left: 0;
+  width: 100%;
+  text-transform: uppercase;
+}
+.feature-right_block .image_grid .image .show_on_hover div {
+  padding: 20px;
+  width: 90%;
+  margin: auto;
+  border: 2px solid white;
+  background-color: white;
+  font-size: 0.9rem;
+  text-align: justify;
+  line-height: 19px;
+}
+.feature-right_block .image_grid .image .show_on_hover div h2 {
+  font-weight: bold;
+}
+.feature-right_block .image_grid .image .show_on_hover div p {
+  font-size: 1.2rem;
+}
+.feature-right_block .image_grid .image .hide {
+  display: none;
+}
+
+.case_studies-right_bottom {
+  height: 113px;
+  background-color: #f7f8fb;
+}
+.case_studies-right_bottom img {
   width: 100%;
   height: 100%;
 }
 
-.feature-right_bottom {
-  height: 113px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  padding-top: 10px;
-}
-.feature-right_bottom div {
-  width: 10%;
-}
-.feature-right_bottom div p {
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  padding-top: 23px;
-  font-weight: 500;
-  color: #c2ced3;
-  letter-spacing: 0.01rem;
-}
-.feature-right_bottom div img {
+.popup-box {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
   width: 100%;
   height: 100%;
+}
+.popup-box .popup-box_slide_div {
+  width: 100%;
+  height: 100%;
+  background-color: #2a2a2a;
+  color: white;
+}
+.popup-box .popup-box_slide_div .slider_top_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+  padding: 15px;
+}
+
+.fancybox__slide {
+  background-color: #2a2a2a;
+}
+
+.fancybox__caption {
+  align-self: center;
+  max-width: 100%;
+  flex-shrink: 0;
+  margin: 0;
+  overflow-wrap: anywhere;
+  line-height: 1.375;
+  color: var(--fancybox-color, currentColor);
+  opacity: var(--fancybox-opacity, 1);
+  cursor: auto;
+  visibility: visible;
+  width: 100%;
+  background-color: black;
+  height: 220px;
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: -207px;
+  padding: 20px 490px !important;
+}
+
+.fancybox__footer {
+  display: none;
+}
+
+.is-absolute {
+  background-color: black;
+}
+
+.fancybox__slide.has-image > .fancybox__content {
+  height: 595px !important;
+  margin-top: 40px;
+}
+
+.fancybox__caption div {
+  width: 66%;
+  margin: auto;
+}
+.fancybox__caption div p {
+  font-size: 23px;
+  line-height: 25px;
+  margin-top: 30px;
+}
+
+.studiesDetails-template {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+}
+.studiesDetails-template .logo {
+  position: absolute;
+  top: 73px;
+  left: 30px;
+  z-index: 1;
+  background-image: url("../../../images/OPSLABLE-LOGO.png");
+  background-size: cover;
+  height: 147px;
+  width: 249px;
+}
+.studiesDetails-template .studiesDetails-left_block {
+  width: 6%;
+  background-color: #eaeeef;
+  height: 99vh;
+}
+.studiesDetails-template .studiesDetails-left_block .menu_tab {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 6%;
+  padding: 28px;
+}
+.studiesDetails-template .studiesDetails-left_block .menu_tab div {
+  width: 93%;
+  margin: auto;
+  background-color: black;
+  height: 3px;
+  margin-bottom: 7px;
+}
+.studiesDetails-template .studiesDetails-right_block {
+  width: 94%;
+  background-color: #2b2a2b;
+  height: 99vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.studiesDetails-template .studiesDetails-right_block .sales_acc_closer {
+  padding: 240px 40px 40px 40px;
+  height: 99vh;
+  color: white;
+}
+.studiesDetails-template .studiesDetails-right_block .sales_acc_closer .sales_acc_heading {
+  font-size: 51px;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.studiesDetails-template .studiesDetails-right_block .sales_acc_closer .sales_acc_para {
+  font-size: 28px;
+  line-height: 31px;
+  font-weight: 300;
+}
+.studiesDetails-template .studiesDetails-right_block .sales_acc_closer_right {
+  padding-top: 90px;
+  color: white;
+}
+.studiesDetails-template .studiesDetails-right_block .sales_acc_closer_right .green-btn {
+  margin-right: 58px;
 }
 
 @font-face {
