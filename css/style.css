@@ -1190,8 +1190,9 @@ footer .footer-section ul.footer-links li a:hover {
   top: 73px;
   left: 30px;
   z-index: 1;
-  background-image: url("../../../images/OPSLABLE-LOGO.png");
-  background-size: cover;
+  background-image: url(../../../images/OPSLABLE-LOGO.png);
+  background-size: 78%;
+  background-repeat: no-repeat;
   height: 147px;
   width: 249px;
 }
