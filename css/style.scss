@@ -24,8 +24,13 @@ $fonts-noto: 'NotoSans';
 @import "./partials/ui/ready";
 @import "./partials/ui/footer";
 
+
 // pages-partials
 @import "./partials/ui/featurePage";
+// ---- pages
+
+@import "./partials/ui/caseStudies";
+@import "./partials//ui/caseStudieDetails";
 
 
 // fonts
