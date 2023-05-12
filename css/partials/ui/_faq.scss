@@ -1,8 +1,5 @@
 #faq {
     position: relative;
-    // background-image: url(../images/section_6.png);
-    // @include bg-cover();
-    // background-position: top;
 
     .bg-img {
         pointer-events: none;
@@ -12,19 +9,19 @@
 
             &:first-child {
                 top: 0;
-                left: -70px;
+                left: -100px;
             }
 
             &:last-child {
-                bottom: 0;
+                top: 50px;
                 right: -30px;
             }
         }
     }
 
     &::after {
-        @include pseudo("", 0, auto, 10%, 10%);
-        right: 0;
+        @include pseudo("", -60px, auto, 10%, 10%);
+        right: 120px;
         background-image: url(../images/Asset-39.png);
         background-repeat: no-repeat;
     }
@@ -118,4 +115,5 @@
 .fly-arrow {
     padding-left: 30px;
     width: 15rem;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
 }

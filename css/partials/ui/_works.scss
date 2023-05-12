@@ -14,8 +14,27 @@
         @include padding-x(4rem, 4rem);
     }
 
+    .works-title {
+        position: relative;
+
+        img {
+            width: 20%;
+            position: absolute;
+
+            &:first-child {
+                top: 0;
+                left: 150px;
+            }
+
+            &:last-child {
+                top: -40px;
+                right: 150px;
+            }
+        }
+    }
+
     .works_row {
-        @include margin-y(70px, 70px);
+        @include margin-y(8rem, 70px);
         justify-content: space-between;
 
         .box {
@@ -26,6 +45,7 @@
             height: auto;
             border: 5px solid #030405;
             border-radius: 30px;
+            filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
 
             img.arrow-right {
                 position: absolute;

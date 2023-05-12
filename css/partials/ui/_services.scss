@@ -1,21 +1,28 @@
 .services_sect {
-    background: url('../images/section_2.png');
+    background: url(../images/section_2.png);
     position: relative;
     z-index: 1;
     margin-top: -340px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    background-position-x: -3px;
 
-    &.section2 {
-        &::after {
-            @include pseudo("", 30px, 50%, 70%, 70%);
-            background-image: url(../images/plane.png);
-            background-repeat: no-repeat;
-        }
+    &::after {
+        @include pseudo("", 45px, 50%, 90px, 90px);
+        background-image: url(../images/plane.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &::before {
+        @include pseudo("", 180px, 0, 100%, 100%);
+        background-image: url(../images/section2-line.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 
     .row.ser_row {
-        margin: 50px 30px;
+        margin: 100px 30px;
     }
 
     .title_h2 {
@@ -29,7 +36,6 @@
         font-weight: bold;
         font-style: italic;
         font-size: 1.3rem;
-
     }
 
     .box {
@@ -39,7 +45,7 @@
         border-radius: 30px;
         padding: 2rem 2rem 2.6rem;
         position: relative;
-        height: 530px;
+        // height: 530px;
 
         .star_icon {
             position: absolute;
@@ -94,6 +100,7 @@
         left: 0;
         right: 0;
         margin: auto;
+        filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
     }
 }
 

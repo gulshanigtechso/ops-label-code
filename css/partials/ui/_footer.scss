@@ -1,10 +1,20 @@
 footer {
-    background: url(../images/footer.png);
+    position: relative;
+    background: url(../images/footer_1.png);
     background-size: contain;
     background-repeat: no-repeat;
-    // background-position: bottom;
-    background-position-y: 340px;
+    background-position: bottom;
     padding-top: 8rem;
+
+    &::after {
+        @include pseudo("", 0, 0, 100%, 100%);
+        background-image: url(../images/footer_2.png);
+        @include bg-cover();
+        background-size: contain;
+        z-index: -1;
+        opacity: 0.4;
+        background-position-y: 360px;
+    }
 
     .contact-wrapper {
         gap: 13rem;
@@ -26,17 +36,12 @@ footer {
     .contact-box {
         position: relative;
         width: 28%;
-        // @include mx-auto();
-        // &::before {
-        //     @include pseudo($content: "", $top: 0, $left: 0, $width: 100%, $height: 100%);
-        //     background-image: url(/html/images/OPSLABLE-LOGO.png);
-        // }
+        filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
 
         .contact-outer {
             border: 4px solid black;
-            border-radius: 30px;
+            border-radius: 12px;
             text-align: center;
-            overflow: hidden;
 
             img {
                 position: absolute;
@@ -45,19 +50,7 @@ footer {
                 width: 240px;
             }
 
-            // &::before {
-            //     position: absolute;
-            //     content: "";
-            //     left: 0px;
-            //     top: 0px;
-            //     background-image: url('../images/OPSLABLE-LOGO.png');
-            //     width: 200px;
-            //     height: 200px;
-            // }
-
             h3.header-white {
-                // height: 50px;
-                // margin-bottom: 0px;
                 border-bottom: 4px solid black;
                 padding: 0.6rem 0.95rem;
                 display: flex;
@@ -70,8 +63,6 @@ footer {
                     font-size: 0px;
                     border-radius: 50%;
                     border: 3px solid black;
-                    // float: right;
-                    // margin-right: 10px;
 
                     &.sky-circle {
                         background: #a0d2d6;
@@ -89,7 +80,9 @@ footer {
 
             .contact-inner {
                 background: #dcefee;
-                padding: 1.6rem 1.4rem 2.5rem;
+                padding: 1.6rem 1.4rem;
+                border-bottom-left-radius: inherit;
+                border-bottom-right-radius: inherit;
 
                 h3.contact-title {
                     color: #1e1b15;
@@ -106,43 +99,45 @@ footer {
                     li {
                         width: 100%;
 
+                        &.star-bg {
+                            position: relative;
+
+                            img {
+                                position: absolute;
+                                right: -150px;
+                                left: auto;
+                                top: -8px;
+                            }
+                        }
+
+                        &.heart-bg {
+                            position: relative;
+
+                            img {
+                                position: absolute;
+                                top: -8px;
+                                left: -160px;
+                            }
+                        }
+
                         a {
                             width: inherit;
                             padding: 0.6rem 0.3rem;
                             font-weight: 400;
                             font-size: 1.3rem;
 
-                            &.star-bg {
-                                // position: relative;
-
-                                &.star-bg::after {
-                                    background-image: url('../images/bg-star.png');
-                                    content: "";
-                                    position: absolute;
-                                    right: -115px;
-                                    top: 138px;
-                                    width: 230px;
-                                    height: 80px;
-                                    background-repeat: no-repeat;
-                                }
-                            }
-
-                            &.heart-bg {
-                                // position: relative;
-
-                                &.heart-bg::after {
-                                    background-image: url('../images/bg-heart.png');
-                                    content: "";
-                                    position: absolute;
-                                    left: -93px;
-                                    top: 340px;
-                                    width: 230px;
-                                    height: 80px;
-                                    background-repeat: no-repeat;
-                                }
+                            &.btn {
+                                filter: none;
                             }
                         }
                     }
+                }
+
+                p.contact-foot-title {
+                    margin-top: 1.2rem;
+                    text-transform: uppercase;
+                    text-align: right;
+                    font-size: 1.12rem;
                 }
             }
         }
@@ -180,15 +175,17 @@ footer {
             font-size: 26px;
             margin-top: 2.5rem;
             margin-bottom: 1.2rem;
+
+            &.footer-links-title {
+                margin-bottom: 2.2rem;
+            }
         }
 
         a {
             color: white;
 
             &:hover {
-                // color: #129740;
-                color: #feeca6;
-                // text-decoration: underline;
+                color: #4fd743;
 
             }
         }
@@ -220,9 +217,7 @@ footer {
                     transition: color 0.2s;
 
                     &:hover {
-                        // color: #129740;
-                        color: #feeca6;
-                        // text-decoration: underline;
+                        color: #4fd743;
                     }
                 }
             }
