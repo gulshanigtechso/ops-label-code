@@ -1,28 +1,7 @@
 .section3 {
-    position: relative;
-
-    .bg-img {
-        pointer-events: none;
-
-        img {
-            position: absolute;
-
-            &:first-child {
-                top: 100px;
-                left: -131px;
-            }
-
-            &:last-child {
-                bottom: -160px;
-                right: -100px;
-            }
-        }
-    }
-
-    .container {
-        position: relative;
-        z-index: 1;
-    }
+    background: url('../images/section_3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .features-text {

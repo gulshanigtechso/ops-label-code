@@ -33,14 +33,13 @@ button:not(:disabled) {
     padding: 6px 55px;
     box-shadow: none;
     box-shadow: rgba(0, 0, 0, 4.15) 4px 4px 0.6px;
-    filter: drop-shadow(6px 10px 11px rgba(0, 0, 0, 0.6));
 
     &.green-btn {
         background: #9ccd98;
         font-weight: bold;
         text-transform: uppercase;
         font-size: 14px;
-        // float: right;
+        float: right;
         font-style: italic;
         position: relative;
 
@@ -109,11 +108,6 @@ h2.title_h2 {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 40px;
-}
-
-
-.overflow_hide {
-    overflow: hidden;
 }
 
 

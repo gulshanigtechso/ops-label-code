@@ -1,26 +1,8 @@
 #faq {
     position: relative;
-    // background-image: url(../images/section_6.png);
-    // @include bg-cover();
-    // background-position: top;
-
-    .bg-img {
-        pointer-events: none;
-
-        img {
-            position: absolute;
-
-            &:first-child {
-                top: 0;
-                left: -70px;
-            }
-
-            &:last-child {
-                bottom: 0;
-                right: -30px;
-            }
-        }
-    }
+    background-image: url(../images/section_6.png);
+    @include bg-cover();
+    background-position: top;
 
     &::after {
         @include pseudo("", 0, auto, 10%, 10%);

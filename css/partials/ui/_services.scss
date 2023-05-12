@@ -2,6 +2,7 @@
     background: url('../images/section_2.png');
     position: relative;
     z-index: 1;
+    margin-top: 0;
     margin-top: -340px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,9 +38,8 @@
         border-radius: 30px;
         border: 5px solid #030405;
         border-radius: 30px;
-        padding: 2rem 2rem 2.6rem;
+        padding: 30px;
         position: relative;
-        height: 530px;
 
         .star_icon {
             position: absolute;
@@ -61,8 +61,16 @@
             padding: 0.4rem 0;
         }
 
+        p {
+            @include margin-y(1.1rem, 1rem)
+        }
+
         .ser-icon {
             text-align: center;
+
+            img {
+                height: 160px;
+            }
         }
     }
 }
@@ -94,95 +102,5 @@
         left: 0;
         right: 0;
         margin: auto;
-    }
-}
-
-.services-swiper1,
-.services-swiper2,
-.services-swiper3 {
-    @include padding-y(2rem, 2rem);
-
-    .swiper-pagination {
-        width: auto;
-
-        .swiper-pagination-bullet {
-            background: #000;
-            @include dimension(11px, 11px);
-
-            &:not(.swiper-pagination-bullet-active) {
-                border: 2px solid #000;
-                background: none;
-                opacity: 0.3;
-            }
-        }
-    }
-
-    .swiper-button-next {
-        font-size: 2.8rem;
-        top: auto;
-        @include dimension(auto, auto);
-        color: #000;
-
-        &::after {
-            content: '';
-        }
-    }
-
-    .swiper-slide {
-
-        &.slide1 {
-            p {
-                @include margin-y(1rem, 1rem);
-            }
-        }
-
-        &.slide2 {
-            text-align: center;
-
-            ul {
-                text-align: left;
-            }
-
-            h6 {
-                color: deeppink;
-                font-size: 1.1rem;
-                font-weight: 600;
-                margin-bottom: 0.6rem;
-            }
-
-            .plus-btn {
-                position: unset;
-                padding: 0.2rem 4.5rem;
-                max-width: unset;
-                font-weight: 800;
-                font-size: 1rem;
-                pointer-events: none;
-                @include margin-y(1.2rem, 2rem);
-            }
-        }
-
-        &.slide3 {
-            text-align: center;
-
-            p {
-                &:nth-child(2) {
-                    @include margin-y(1.5rem, 1.5rem);
-                }
-            }
-
-            div {
-                a {
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-
-    .check-img {
-        width: 16px;
-    }
-
-    .burn-img {
-        width: 20px;
     }
 }

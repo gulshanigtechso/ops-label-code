@@ -1,0 +1,208 @@
+.studiesDetails-template{
+    .studiesSub-right_block{
+        // height:100vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding:40px;
+        background-color: #2b2a2b;
+        width:94%;
+
+        .left_section{
+            padding:40px;
+
+            .subSection_left_block{
+                margin-top: 20%;
+
+                .subSection_text_part{
+                    padding:20px;
+                    color:white;
+                    position:relative;
+
+                    h1{
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-style: italic;
+                        @include margin-y(5px, 25px);
+                    }
+
+                    p{
+                        font-size: 1.5rem;
+                        line-height: 29px;
+                    }
+
+                    .dotted_line{
+                        background-image: url("../images/Asset 14.svg");
+                        background-repeat: no-repeat;
+                        background-size: 142% 99%;
+                        width: 156%;
+                        height: 273px;
+                        position: absolute;
+                        top: 25.5%;
+                        right: -5%;
+                    }
+
+                    .result_section{
+                        margin-top:30%;
+                        position:relative;
+
+                        h4{
+                            font-style: italic;
+                            font-weight:700;
+                        }
+
+                        .star_bgImg{
+                            background-image: url("../images/Asset-14.png");
+                            background-repeat: no-repeat;
+                            background-size: 100% 100%;
+                            height: 82px;
+                            width: 14%;
+                            position: absolute;
+                            left: 92%;
+                            top: 0%;
+                        }
+
+                        .orange-btn-light{
+                            background-color: #f1f9f8;
+                            padding: 25px 30px 25px 30px;
+                            margin-top:14px;
+
+                            &:hover{
+                                color:black;
+                            }
+                        }
+                    }
+                }
+            }
+
+            
+
+        }
+
+        .right_section{
+            padding:40px 40px 40px 0px;
+
+            .subSection_right_block{
+
+               
+
+                .client_deloite{
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    width:100%;
+
+                    .client_deloite_details{
+                        margin-top:30px;
+
+                        p{
+                            font-weight:bold;
+                            font-style: italic;
+                            color:white;
+                            font-size:1.5rem;
+                        }
+
+                        .three_circle_bg{
+                           display:flex;
+                           flex-direction: row;
+                           gap: 20px;
+                           position: relative;
+                           z-index: 1;
+                           top: 19px;
+                           left: 65.5%;
+                           width: 39%;
+
+                           div{
+                            height:35px;
+                            width:35px;
+                            border-radius: 50%;
+                            border: 4px solid black;
+                           }
+                        }
+
+                        .deloitte_img{
+                            border:4px solid black;
+                            height:377px;
+
+                            div{
+                                &:first-child{
+                                    height:46px;
+                                    background-color:#f5f5f4;
+                                    border-bottom: 4px solid black;
+                                }
+
+                                &:last-child{
+                                    background-image: url("../images/Asset 43.png");
+                                    background-size: cover;
+                                    background-repeat: no-repeat;
+                                    height:88%;
+                                    width:100%;
+                                }
+                            }
+                        }
+                    }
+
+                    .client_service_details{
+                        margin-top:130px;
+                        
+
+                        .details_sub_section{
+                            padding:0px 0px 0px 60px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap:23px;
+                            height:400px;
+                            .service_details_1{
+                                background-image: url("../images/Asset 4.png");
+                                background-repeat: no-repeat;
+                                background-size: 100% 124px;
+                                height: 126px;
+                                width: 80%;
+                                text-align: center;
+                                padding-top:25px;
+    
+                                h3{
+                                    font-size: 1.2rem;
+                                    text-transform: uppercase;
+                                }
+    
+                            }
+    
+                            .update_1{
+                                background-image: url("../images/Asset 6.png");
+                            }
+    
+                            .update_2{
+                                background-image: url("../images/Asset 5.png");
+                            }
+                        }
+
+                        
+                    }
+                }
+            }
+
+            .sub_section_txt{
+                margin-top: 30px;
+                width: 95%;
+                color:white;
+                margin-bottom:10px;
+
+                .sub_section_text1{
+                    h4{
+                        text-transform: uppercase;
+                        font-weight:700;
+                        
+                        font-style:italic;
+                    }
+
+                    p{
+                        margin-top: 25px;
+                        font-size: 1.25rem;
+                        line-height: 23px;
+                    }
+                }
+            }
+        }
+
+    }
+}

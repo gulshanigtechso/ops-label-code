@@ -4,8 +4,7 @@
     background-color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -100px;
-    background-position-x: center;
+    background-position-y: -10px;
 
     &::before {
         @include pseudo("", -12px, 50%, 50%, 50%);
@@ -13,10 +12,10 @@
         background-repeat: no-repeat;
     }
 
-    .guarantee_text {
+    .info-txt {
         position: absolute;
-        bottom: 140px;
-        right: 130px;
+        bottom: 30px;
+        right: 200px;
         text-transform: uppercase;
         text-align: center;
         background: #FAF0EA;
