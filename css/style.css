@@ -1190,7 +1190,7 @@ footer .footer-section ul.footer-links li a:hover {
   top: 73px;
   left: 30px;
   z-index: 1;
-  background-image: url("../../../images/OPSLABLE-LOGO.png");
+  background-image: url("../images/OPSLABLE-LOGO.png");
   background-size: cover;
   height: 147px;
   width: 249px;
@@ -1245,10 +1245,10 @@ footer .footer-section ul.footer-links li a:hover {
 }
 .studiesDetails-template .studiesDetails-right_block .sales_acc_closer .dotted_line_bgImg {
   position: absolute;
-  width: 100%;
-  background-image: url("../../../images/Asset 1.png");
+  width: 112%;
+  background-image: url("../images/Asset 1.png");
   background-repeat: no-repeat;
-  background-size: 100% 95%;
+  background-size: 89% 95%;
   height: 165px;
   top: 54.5%;
   left: 3px;
@@ -1278,7 +1278,7 @@ footer .footer-section ul.footer-links li a:hover {
   z-index: 3;
   top: 34%;
   left: -40px;
-  background-image: url(../../../images/plane.png);
+  background-image: url("../images/plane.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 11%;
@@ -1288,7 +1288,7 @@ footer .footer-section ul.footer-links li a:hover {
   margin-right: 58px;
 }
 .studiesDetails-template .studiesDetails-right_block .sales_acc_closer_right .case_1_bgImg {
-  background-image: url("../../../images/case_1.png");
+  background-image: url("../images/case_1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -1299,7 +1299,7 @@ footer .footer-section ul.footer-links li a:hover {
   left: 36%;
 }
 .studiesDetails-template .studiesDetails-right_block .sales_acc_closer_right .case_2_bgImg {
-  background-image: url("../../../images/case_2.png");
+  background-image: url("../images/case_2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 47px;
@@ -1357,7 +1357,7 @@ footer .footer-section ul.footer-links li a:hover {
   width: 100%;
   background-color: #b8ddcf;
   height: 90%;
-  background-image: url("../../../images/Asset 7.png");
+  background-image: url("../images/Asset 7.png");
   background-repeat: no-repeat;
   background-size: 80% 113%;
   background-position: center;
@@ -1375,7 +1375,7 @@ footer .footer-section ul.footer-links li a:hover {
   gap: 30px;
 }
 .studiesDetails-template .studiesDetails-right_block .sales_acc_closer_right .case_studies_subSection .subSection_right div {
-  background-image: url("../../../images/Asset 47.png");
+  background-image: url("../images/Asset 47.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
