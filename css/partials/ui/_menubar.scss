@@ -74,15 +74,35 @@
             flex-direction: column;
 
             a {
-                font-size: 3.5rem;
+                font-size: 4.5rem;
                 text-transform: uppercase;
                 font-style: italic;
                 font-weight: 700;
                 color: #fff;
                 transition: color 0.2s linear;
 
-                &:hover {
+                &:nth-child(1) {
+                    color: #fcc980;
+                }
+
+                &:nth-child(2) {
+                    color: #e0cce4;
+                }
+
+                &:nth-child(3) {
+                    color: #dcefee;
+                }
+
+                &:nth-child(4) {
                     color: #9ccd98;
+                }
+
+                &:nth-child(5) {
+                    color: #feeca6;
+                }
+
+                &:hover {
+                    color: #fff;
                 }
             }
         }

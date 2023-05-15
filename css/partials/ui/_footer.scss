@@ -22,7 +22,7 @@ footer {
 
     .contact-text {
         // @include mx-auto();
-        margin-top: 6rem;
+        margin-top: 9rem;
 
         h5 {
             margin-bottom: 2rem;
@@ -123,7 +123,7 @@ footer {
                         a {
                             width: inherit;
                             padding: 0.6rem 0.3rem;
-                            font-weight: 400;
+                            font-weight: bold;
                             font-size: 1.3rem;
 
                             &.btn {
@@ -144,10 +144,25 @@ footer {
     }
 
     .contact-section {
+        position: relative;
         text-align: center;
         font-size: 20px;
         color: black;
         line-height: 1.3;
+
+        &::after {
+            @include pseudo("", 180px, 0, 10%, 30%);
+            background-image: url(../images/footer-line1.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        &::before {
+            @include pseudo("", 40px, 680px, 12%, 12%);
+            background-image: url(../images/footer-line2.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
 
         .container-fluid {
             @include padding-x(4rem, 4rem);
@@ -185,8 +200,7 @@ footer {
             color: white;
 
             &:hover {
-                color: #4fd743;
-
+                color: #bc7aee;
             }
         }
 
@@ -217,7 +231,7 @@ footer {
                     transition: color 0.2s;
 
                     &:hover {
-                        color: #4fd743;
+                        color: #bc7aee;
                     }
                 }
             }

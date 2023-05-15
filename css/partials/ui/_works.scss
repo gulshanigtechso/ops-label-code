@@ -37,6 +37,10 @@
         @include margin-y(8rem, 70px);
         justify-content: space-between;
 
+        .col-md-3 {
+            width: 27%;
+        }
+
         .box {
             position: relative;
             margin-top: 50px;
@@ -99,11 +103,16 @@
                     font-family: 'NotoSans';
                     padding-right: 7px;
                 }
+
+                h6 {
+                    font-weight: bold;
+                }
             }
 
             p {
                 text-align: center;
                 margin-top: 1.5rem;
+                font-weight: bold;
             }
         }
     }

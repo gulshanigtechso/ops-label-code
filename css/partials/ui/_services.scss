@@ -40,21 +40,22 @@
 
     .box {
         background: #eaeeef;
+        color: #000;
         border-radius: 30px;
         border: 5px solid #030405;
         border-radius: 30px;
         padding: 2rem 2rem 2.6rem;
         position: relative;
-        // height: 530px;
 
-        .star_icon {
+        .heart_icon {
             position: absolute;
             left: 0;
             right: 0;
-            top: -36px;
+            top: -40px;
             margin: auto;
             display: block;
             text-align: center;
+            @include dimension(70px, 70px);
         }
 
         .btn {
@@ -68,7 +69,13 @@
         }
 
         .ser-icon {
-            text-align: center;
+            width: 200px;
+            @include mx-auto();
+            // filter: drop-shadow(3px 4px 6px rgba(0, 0, 0, 0.3));
+
+            img {
+                @include img-fit();
+            }
         }
     }
 }
@@ -91,7 +98,8 @@
         background: #fff;
         font-size: 20px;
         max-width: 356px;
-        border-radius: 10px;
+        width: 100%;
+        border-radius: 15px;
         padding: 15px;
         border: 5px solid #030405;
         text-align: center;
@@ -101,6 +109,14 @@
         right: 0;
         margin: auto;
         filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
+
+        &::after {
+            @include pseudo("", -12px, auto, 26px, 25px);
+            right: 40px;
+            background-image: url(../images/star-sm.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
     }
 }
 
@@ -108,6 +124,11 @@
 .services-swiper2,
 .services-swiper3 {
     @include padding-y(2rem, 2rem);
+
+    .swiper-wrapper {
+        align-items: center;
+        margin-bottom: 1.8rem;
+    }
 
     .swiper-pagination {
         width: auto;
@@ -139,7 +160,7 @@
 
         &.slide1 {
             p {
-                @include margin-y(1rem, 1rem);
+                @include margin-y(2.5rem, 2.5rem);
             }
         }
 
@@ -164,7 +185,8 @@
                 font-weight: 800;
                 font-size: 1rem;
                 pointer-events: none;
-                @include margin-y(1.2rem, 2rem);
+                filter: none;
+                @include margin-y(1.4rem, 2.2rem);
             }
         }
 
