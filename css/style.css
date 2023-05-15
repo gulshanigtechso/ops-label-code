@@ -1354,6 +1354,11 @@ footer .footer-section ul.footer-links li a:hover {
   }
 }
 
+.studiesDetails-left_menu .menu_btn {
+  position: absolute;
+  top: 40%;
+}
+
 .feature-right_block {
   display: flex;
   flex-direction: row;
@@ -1951,6 +1956,10 @@ footer .footer-section ul.footer-links li a:hover {
   font-weight: 600;
 }
 
+.studiesDetails-template .studiesDetails-left_block .menu_btn {
+  position: absolute;
+  top: 40%;
+}
 .studiesDetails-template .studiesSub-right_block {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

@@ -1,4 +1,12 @@
 .studiesDetails-template{
+
+    .studiesDetails-left_block{
+        .menu_btn{
+            position:absolute;
+            top:40%;
+        }
+    }
+
     .studiesSub-right_block{
         // height:100vh;
         display: grid;
