@@ -3,28 +3,14 @@
     padding-bottom: 300px;
 }
 
-/* logo-section */
-.logo-section {
-    padding-top: 1rem;
-    padding-bottom: 5rem;
-    // background: #E3EEED;
-    // width: 96%;
-    // margin-left: auto;
-    // margin-right: auto;
-
-    .site-logo {
-        width: 200px;
-        max-width: 100%;
-    }
-}
-
-
 .hero-section {
     background: #E3EEED;
     height: 750px;
     position: relative;
-    width: 98%;
+    width: 95%;
     margin-left: auto;
+    margin-right: auto;
+    padding-top: 220px;
     // margin-right: auto;
 
     .hero-left {
@@ -34,6 +20,7 @@
             font-weight: bold;
             font-style: italic;
             color: #030405;
+            margin-bottom: 1.5rem;
 
             span {
                 color: #129740;
@@ -42,40 +29,45 @@
 
         p {
             color: #000;
-            margin-top: 1.5rem;
             width: 489px;
-            // font-weight: 500;
             font-size: 16px;
         }
-    }
 
-    .star-section {
-        .stars {
-            img {
-                width: 25px;
-                margin-bottom: 10px;
+        .star-section {
+            @include margin-y(2rem, 2rem);
+
+            .stars {
+                img {
+                    width: 25px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            p {
+                color: #000;
+                font-size: 15px;
             }
         }
 
-        p {
-            color: #000;
-            font-size: 15px;
-        }
-    }
+        .watch-video {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
 
-    .watch-video {
-        a.simple-link {
-            text-decoration: none;
-            color: black;
-            text-transform: uppercase;
-            margin-left: 2px;
-            font-size: 16px;
+            a.simple-link {
+                text-decoration: none;
+                color: black;
+                text-transform: uppercase;
+                font-size: 16px;
 
-            &:hover {
-                color: #129740;
+                &:hover {
+                    color: #129740;
+                }
             }
         }
     }
+
+
 
     .hero-img {
         position: relative;

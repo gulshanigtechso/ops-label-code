@@ -70,7 +70,7 @@
         position: relative;
 
         nav {
-            display: flex;
+            display: inline-flex;
             flex-direction: column;
 
             a {
@@ -79,6 +79,11 @@
                 font-style: italic;
                 font-weight: 700;
                 color: #fff;
+                transition: color 0.2s linear;
+
+                &:hover {
+                    color: #9ccd98;
+                }
             }
         }
 

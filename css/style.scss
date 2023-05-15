@@ -22,6 +22,7 @@ $fonts-noto: 'NotoSans';
 @import "./partials/ui/faq";
 @import "./partials/ui/ready";
 @import "./partials/ui/footer";
+@import "./partials/ui/menubar";
 
 // ---- pages
 
@@ -203,7 +204,7 @@ h6 {
 .services-left_block-logo img {
   position: absolute;
   margin: 86px 0 0 28px;
-  z-index: 1;
+  z-index: 999;
   max-width: 217px;
 
   @include devices(lg){
