@@ -1219,7 +1219,7 @@ footer .footer-section ul.footer-links li a:hover {
   top: -94px;
   left: 75%;
   z-index: 1;
-  background-image: url(../images/Asset-14.png);
+  background-image: url("../images/Asset-14.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
