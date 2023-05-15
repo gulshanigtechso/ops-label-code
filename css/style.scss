@@ -173,6 +173,20 @@ h6 {
   width: 94%;
   position: relative;
   float: left;
+
+  @include devices(lg){
+    width:93%;
+  }
+
+  @include devices(md){
+    width:88%;
+    margin-left: 92px;
+  }
+
+  @include devices(sm){
+    width: 95%;
+    margin-left: 51px;
+  }
 }
 
 .services-logo-main {
@@ -180,6 +194,33 @@ h6 {
   margin: 0 0 0 80px;
   overflow: hidden;
   padding: 66px 0 0 0px;
+}
+
+.services-left_block-logo {
+  position: relative;
+}
+
+.services-left_block-logo img {
+  position: absolute;
+  margin: 86px 0 0 28px;
+  z-index: 1;
+  max-width: 217px;
+
+  @include devices(lg){
+    margin: 51px 0 0 21px;
+    max-width: 181px;
+  }
+
+
+  @include devices(md){
+    max-width:166px;
+    margin: 37px 0 0 24px;
+  }
+
+  @include devices(sm){
+    max-width: 133px;
+    margin: 29px 0 0 24px;
+  }
 }
 
 .services-logo-main .site-logo {
@@ -441,19 +482,31 @@ h6 {
   float: left;
   position: relative;
   background: #eaeeef;
-  height: 1051px;
+  height: 1125px;
+
+  @include devices(lg){
+    height: 1056px;
+    width:7%;
+  }
+
+  @include devices(md){
+    width:12%;
+    position: fixed;
+    background: #eaeeef;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+
+  @include devices(sm){
+    width:14%;
+  }
 }
 
-.services-left_block-logo {
-  position: relative;
-}
 
-.services-left_block-logo img {
-  position: absolute;
-  margin: 86px 0 0 28px;
-  z-index: 1;
-  max-width: 217px;
-}
+
+
 
 .services-left_block-toggle {
   position: absolute;
