@@ -18,10 +18,18 @@ menuBtn.addEventListener("click", () => {
 });
 
 
-
+// AOS
 AOS.init({
     duration: 600, // values from 0 to 3000, with step 50ms
     mirror: true, // whether elements should animate out while scrolling past them
+});
+
+
+// Typed
+var typed = new Typed('#typedElement', {
+    strings: ['CLOSING MORE DEALS', '15-20+ Leads', '20-100+ Meetings', 'Valuable Connections'],
+    typeSpeed: 60,
+    loop: true,
 });
 
 

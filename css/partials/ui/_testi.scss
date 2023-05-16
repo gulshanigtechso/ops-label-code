@@ -116,13 +116,25 @@
 
     .testi-img {
         position: relative;
+        @include dimension(410px, 310px);
         margin-left: 3rem;
         margin-top: 2rem;
 
+        figure {
+            @include dimension(100%, 100%);
+            border: 6px solid #000;
+            border-radius: 50px;
+            overflow: hidden;
+
+            img {
+                @include img-fit();
+            }
+        }
+
         &::after {
-            @include pseudo("", -25px, auto, 60px, 60px);
-            right: 130px;
-            background-image: url(../images/Asset-15.png);
+            @include pseudo("", -28px, auto, 65px, 65px);
+            right: -12px;
+            background-image: url(../images/chat.png);
             background-size: cover;
             background-position: center;
         }
