@@ -1,249 +1,282 @@
-// left - #eaeeef
-// right - #2b2a2b
+.caseStudies-details{
+    background-color: #2a2a2a;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
 
-.studiesDetails-template{
-    width:100%;
-    height:100%;
-    display: inline-flex;
 
-    .logo{
-        position: absolute;
-        top: 73px;
-        left: 30px;
-        z-index: 1;
-        background-image: url("../images/OPSLABLE-LOGO.png");
-        background-size: 78%;
-        background-repeat: no-repeat;
-        height: 147px;
-        width: 249px;
+    .caseStudies-details-header{
+        height:7vh;
+        background-color: #000;
+        width:100%;
     }
 
-    .studiesDetails-left_block{
-        width:6%;
-        background-color: #eaeeef;
-        // height:99vh;
-        padding-bottom:50px;
+    .caseStudies-client-details{
+        height:58vh;
+        width:100%;
 
-        .services-left_social_media{
-            width:6%;
+        @include devices(sm){
+            height:60vh;
+            padding-top:7px;
         }
 
-        .menu_tab{
-            position: absolute;
-            top: 40%;
-            left: 0;
-            width: 6%;
-            padding: 28px;
+        .client-details-img{
+            display:grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 68px;
+            width:75%;
+            height:97%;
+            margin:auto;
+            margin-top:1.5%;
 
-            div{
-                width: 93%;
-                margin: auto;
-                background-color: black;
-                height: 3px;
-                margin-bottom:7px;
-            }
-        }
-    }
-    .studiesDetails-right_block{
-        width:94%;
-        background-color: #2b2a2b;
-        // height:99vh;
-        display:grid;
-        grid-template-columns: repeat(2,1fr);
-        padding-bottom: 90px;
-
-        .sales_acc_closer{
-            padding:240px 40px 40px 40px;
-            height:99vh;
-            position: relative;
-            
-
-            .sales_acc_heading{
-                font-size:51px;
-                font-style: italic;
-                text-transform: uppercase;
-                font-weight: 700;
-                margin-top:10px;
-                color:white;
-            }
-    
-            .sales_acc_para{
-                font-size: 28px;
-                line-height: 31px;
-                font-weight: 300;
-                color:white;
+            @include devices(lg){
+                gap:30px;
+                margin-top:1%;
             }
 
-            .dotted_line_bgImg{
-                position:absolute;
-                width: 112%;
-                background-image: url("../../../images/Asset 14.svg");
-                background-repeat: no-repeat;
-                background-size: 105% 96%;
-                height: 240px;
-                top: 49%;
-                left: -72px;
+            @include devices(md){
+                gap:18px;
+                width:90%;
             }
 
-            .client_details{
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                color:white;
-                margin-top:16.2%;
+            @include devices(sm){
+                grid-template-columns: auto;
+                gap:0;
+            }
+
+            .client-details{
+                display: flex;
+                flex-direction: column;
+                gap:40px;
+                align-items: flex-end;
+                justify-content: center;
+                // width:30%;
+
+                @include devices(sm){
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    height:56px;
+                    gap:20px;
+                }
 
                 div{
+                    border:1px solid white;
+                    width:60%;
+                    height: 140px;
+                    border: 5px solid black;
+                    border-radius: 26px;
+                    border-bottom: 12px solid black;
+                    border-right: 12px solid black;
+                    text-align: center;
+                    padding-top: 32px;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    line-height:30px;
+
+                    @include devices(lg){
+                        height:100px;
+                        width:80%;
+                        padding-top:13px;
+                        font-size:0.8rem;
+                        line-height:28px;
+                    }
+
+                    @include devices(md){
+                        height: 87px;
+                        width: 75%;
+                        padding-top: 15px;
+                        font-size: 0.6rem;
+                        line-height: 21px;
+                    }
+
+                    @include devices(sm){
+                        height: 55px;
+                        width: 75%;
+                        padding-top: 6px;
+                        font-size: 0.6rem;
+                        line-height: 13px;
+                        border-radius: 18px;
+                    }
+
                     p{
-                        font-size:1.3rem;
-                        font-weight:600;
-                        font-style: italic;
-                        padding-top:10px;
-                    }
-                }
+                        &:last-child{
+                            font-weight:normal;
+                            font-size:2.5rem;
+                            font-style:italic;
 
-                div:nth-child(2){
-                    text-align: right;
-                }
-            }
-
-        }
-
-        .sales_acc_closer_right{
-            padding-top:90px;
-            color:white;
-            position: relative;
-
-            .arrow_bgImage{
-                position: absolute;
-                z-index: 3;
-                top: 34%;
-                left: -40px;
-                background-image: url("../../../images/plane.png");
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 11%;
-                height: 66px;
-            }
-
-            .green-btn{
-                margin-right: 58px;
-            }
-
-            .case_1_bgImg{
-                background-image: url("../../../images/case_1.png");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: 100% 100%;
-                height: 335px;
-                width: 335px;
-                position: absolute;
-                top: 32%;
-                left: 36%;            
-            }
-
-            .case_2_bgImg{
-                background-image: url("../../../images/case_2.png");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-position-y: 47px;
-                background-size: 100% 478px;
-                height: 374px;
-                width: 599px;
-                position: absolute;
-                top: 67%;
-                left: 51%;
-            }
-
-            .case_studies_subSection{
-                display: flex;
-                flex-direction: row;
-                gap:20px;
-
-                .subSection_left{
-                    padding-top: 76px;
-
-                    .circle_box_section{
-                        display: flex;
-                        justify-content: center;
-                        gap:20px;
-                        padding:0px 10px 0px 10px;
-                        position: absolute;
-                        top: 154px;
-                        z-index: 3;
-                        left: 30.5%;
-            
-                        div{
-                            height:35px;
-                            width: 35px;
-                            border-radius:50%;
-                            border:4px solid black;
-                            @include margin-y(1.2rem,1.2rem)
-                        }
-                    }
-
-                    .rectangle_box{
-                        border: 4px solid black;
-                        height: 679px;
-                        width: 402px;
-                        margin-top: 20px;
-                        position: absolute;
-                        /* top: 53px; */
-                        z-index: 2;
-                        display:flex;
-                        flex-direction: column;
-
-                        .rectangle_box_whiteBg{
-                            height:10%;
-                            width:100%;
-                            background-color: #f5f5f4;
-                            border-bottom:4px solid black;
-                        }
-
-                        .rectangle_box_blueBg{
-                            width:100%;
-                            background-color: #b8ddcf;
-                            height:90%;
-                            background-image: url("../../../images/Asset\ 7.png");
-                            background-repeat: no-repeat;
-                            background-size: 80% 113%;
-                            background-position: center;
-                        }
-
-                    }
-
-                }
-
-                .subSection_right{
-                    padding: 20px;
-                    /* z-index: 1; */
-                    position: absolute;
-                    width: 37%;
-                    top: 34%;
-                    left: 54%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    gap:30px;
-
-                    div{
-                        background-image: url('../../../images/Asset\ 47.png');
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        background-position: center;
-                        height: 111px;
-                        width: 85%;
-                        text-align:center;
-                        color:black;
-                        padding-top:20px;
-                        text-transform: uppercase;
-
-                        div{
-                            h5{
-                                font-weight:600;
+                            @include devices(lg){
+                                font-size:2rem;
+                            }
+                            @include devices(md){
+                                font-size:1.5rem;
+                            }
+                            @include devices(sm){
+                                font-size:0.9rem;
                             }
                         }
                     }
                 }
             }
-        }       
+
+            .flex-end{
+                align-items: flex-start;
+            }
+
+            .image-section{
+                // width:30%;
+                @include devices(sm){
+                    height: 199px;
+                    width: 79%;
+                    margin: auto;
+                    margin-bottom: 5.5px;
+                    margin-top:5px;
+                }
+                div{
+                    &:first-child{
+                        height:50px;
+                        width:100%;
+                        border:3px solid black;
+                        background-color: white;
+                        background-image: url("../images/Asset-39.png");
+                        background-repeat: no-repeat;
+                        background-position: 95%;
+                        background-size: 26% 60%;
+
+                        @include devices(sm){
+                            height: 36px;
+                        }
+                    }
+                    
+                    &:last-child{
+                        height:90%;
+                        width:100%;
+                        background-image: url("../images/Asset 44.png");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+
+                        @include devices(lg){
+                            background-size: 100% 100%;
+                        }
+                        @include devices(sm){
+                            height:82%;
+                        }
+                    }
+                }
+            }
+        }
+
     }
+
+    .caseStudies-business{
+        height:5vh;
+        text-align:right;
+        padding-right:3%;
+        font-size:1.2rem;
+        color:white;
+        font-weight: lighter;
+
+        @include devices(lg){
+            font-size:1rem;
+        }
+    }
+
+    .caseStudies-footer{
+        height:30vh;
+        width:100%;
+        background-color: #000;
+        color:white;
+
+        .plane-bg{
+            position: absolute;
+            top: 64%;
+            left: 8%;
+            height: 88px;
+            width: 78px;
+            background-image: url("../images/plane1.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+
+            @include devices(lg){
+                top: 63%;
+                left: 8%;
+                height: 78px;
+                width: 47px;
+            }
+            @include devices(sm){
+                top: 65%;
+                left: 5%;
+                height: 60px;
+                width: 31px;
+            }
+        }
+
+        .footer-div{
+            width:80%;
+            margin:auto;
+            height:100%;
+            padding:24px 0px;
+
+            @include devices(sm){
+                padding:15px 0px;
+            }
+
+            h1{
+                font-weight: 600;
+                font-style: italic;
+                line-height: 54px;
+
+                @include devices(lg){
+                    font-size:1.5rem;
+                    line-height:35px;
+                }
+                @include devices(sm){
+                    font-size: 1.05rem;
+                    line-height: 25px;
+                }
+            }
+
+            h3{
+                font-weight: 500;
+                font-style: italic;
+                margin-bottom: 20px;
+
+                @include devices(lg){
+                    font-weight:lighter;
+                    font-size: .9rem;
+                    margin-bottom:10px;
+                }
+
+                @include devices(sm){
+                    font-size: 0.72rem;
+                    margin-bottom: 8px;
+                }
+            }
+
+            p{
+                line-height: 28px;
+                font-size: 1.6rem;
+                font-weight: lighter;
+
+                @include devices(lg){
+                    line-height: 19px;
+                    font-size: .9rem;
+                }
+
+                @include devices(md){
+                    line-height: 14px;
+                    font-size: 0.71rem;
+                }
+
+                @include devices(sm){
+                    font-size: 0.68rem;
+                }
+            }
+
+        }
+
+    }
+
 }

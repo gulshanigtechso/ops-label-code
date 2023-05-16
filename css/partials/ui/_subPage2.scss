@@ -123,7 +123,7 @@
                 align-items: flex-start;
             }
 
-            .image-section-1{
+            .image-section-2{
                 // width:30%;
                 @include devices(sm){
                     height: 199px;
@@ -151,12 +151,10 @@
                     &:last-child{
                         height:90%;
                         width:100%;
-                        background-image: url("../images/Asset-45.png");
+                        background-image: url("../images/Asset 43.png");
                         background-position: center;
-                        background-size: 121% 116%;
-                        background-position-x: 0px;
-                        background-position-y: 0px;
-                        border: 3px solid black;
+                        background-repeat: no-repeat;
+                        background-size: 100%;
 
                         @include devices(lg){
                             background-size: 100% 100%;
