@@ -20,13 +20,67 @@
   <div class="services-template">
     <div class="services-left_block">
       <div class="services-left_block-logo"><img src="images/OPSLABLE-LOGO.png"></div>
-      <div class="services-left_block-toggle"><img src="images/toggle.jpg"></div>
+      <div class="studiesDetails-left_menu">
+        <div class="menu_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+    </div>
+      <!-- menubar -->
+      <div id="menubar">
+        <div class="row menu_content">
+            <div class="col-lg-6 menu_left_col">
+                <div>
+                    <nav>
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="caseStudies.html">Case Studies</a>
+                        <a href="#">Why Opslabel</a>
+                        <a href="#">Contact</a>
+                    </nav>
+
+                    <div class="menu_btns_group">
+                        <a class="btn green-btn" href="#">Book a Free Demo</a>
+                        <a class="btn perple-btn claim-btn" href="#">Claim your 1 free appt offer!</a>
+                    </div>
+                </div>
+                <div class="arrowfly-img">
+                    <img src="./images/arrow-fly.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 menu_right_col">
+                <div>
+                    <img src="./images/menubar/1.jpg" alt="">
+                </div>
+
+                <div>
+                    <img src="./images/menubar/2.jpg" alt="">
+                </div>
+
+                <div>
+                    <img src="./images/menubar/3.jpg" alt="">
+                </div>
+
+                <div>
+                    <img src="./images/menubar/4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="services-left_social_media">
+        <div class="social_media_contact">
+            <div style="background-color: rgb(245, 209, 143);"><img src="./images/Asset 28.png" alt="social_media_contact" /></div>
+            <div><img src="./images/Asset 29.png" alt="social_media_contact" /></div>
+            <div><img src="./images/Asset 30.png" alt="social_media_contact" /></div>
+        </div>
+      </div>
     </div>
     <div class="services-main">
 
       <div class="services-logo-main">
 
-        <div class="row">
+        <div class="row mt-5">
           <div class="col-md-6">
 
           </div>
@@ -45,32 +99,49 @@
         <div class="services-tabbs">
           <!-- Tabs navs -->
           <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
-            <li class="nav-item" role="presentation">
-              <a class="nav-link active" id="ex1-tab-1" data-mdb-toggle="tab" href="#ex1-tabs-1" role="tab"
-                aria-controls="ex1-tabs-1" aria-selected="true">LEAD CLIENT BOOSTER</a>
+            <li class="nav-item" role="presentation" id="ex1-tabs-1" onclick="show('ex1-tabs-1')">
+              <a class="nav-link active" data-toggle="tab" href="#ex1-tabs-1" >LEAD CLIENT BOOSTER</a>
             </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="ex1-tab-2" data-mdb-toggle="tab" href="#ex1-tabs-2" role="tab"
-                aria-controls="ex1-tabs-2" aria-selected="false"> APPOINTMENT SETTER</a>
+            <li class="nav-item" role="presentation" id="ex1-tabs-2" onclick="show('ex1-tabs-2')">
+              <a class="nav-link" data-toggle="tab" href="#ex1-tabs-2"> APPOINTMENT SETTER</a>
             </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="ex1-tab-3" data-mdb-toggle="tab" href="#ex1-tabs-3" role="tab"
-                aria-controls="ex1-tabs-3" aria-selected="false">SALES ACCELERATOR + CLOSER</a>
+            <li class="nav-item" role="presentation" id="ex1-tabs-3" onclick="show('ex1-tabs-3')">
+              <a class="nav-link" data-toggle="tab" href="#ex1-tabs-3">SALES ACCELERATOR + CLOSER</a>
             </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="ex1-tab-4" data-mdb-toggle="tab" href="#ex1-tabs-4" role="tab"
-                aria-controls="ex1-tabs-4" aria-selected="false">SALE CONTRIBUTORS</a>
+            <li class="nav-item" role="presentation" id="ex1-tabs-4" onclick="show('ex1-tabs-4')">
+              <a class="nav-link" data-toggle="tab" href="#ex1-tabs-4">SALE CONTRIBUTORS</a>
             </li>
           </ul>
           <!-- Tabs navs -->
 
           <!-- Tabs content -->
           <div class="tab-content" id="ex1-content">
-            <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+            <div class=" fade show "  >
               <div class="lead-booster-block">
                 <div class="lead-booster-block-container">
                   <div class="lead-booster-left sr-3">
-                    <div class="lead-booster-info">
+                    <div class="lead-booster-info tab-pane hide">
+                      <h2>LEAD BOOSTER -<span>$1750</span> </h2>
+                      <ul>
+                        <li><img src="images/CHECK.png">3 Linkedin & 3 Email accounts included</li>
+                        <li><img src="images/CHECK.png">7500 prospects contacted per month</li>
+                        <li><img src="images/CHECK.png">DONE FOR YOU service</li>
+                        <li><img src="images/BURN.jpg">HOT Leads supplied to your inbox</li>
+                        <li><img src="images/CHECK.png">QUALIFIED leads wanting more information</li>
+                        <li><img src="images/CHECK.png">Campaign Targeting and Messaging Design</li>
+                        <li><img src="images/CHECK.png">List Building included</li>
+                        <li><img src="images/CHECK.png">Sales outreach messaging included</li>
+                        <li><img src="images/CHECK.png">Enriched data – emails & phone numbers included</li>
+                        <li><img src="images/CHECK.png">Dedicated Account Manager</li>
+                        <li><img src="images/CHECK.png">Daily and Weekly Reports</li>
+                        <li><img src="images/CHECK.png">Real-time Sales Engagement CRM access</li>
+                        <li><img src="images/CHECK.png">Integrated with Pipedrive and Zapier</li>
+                        <li><img src="images/CHECK.png">Easy to use software & Auto rolling subscription</li>
+                      </ul>
+
+
+                    </div>
+                    <div class="lead-booster-info hide1">
                       <h2>LEAD BOOSTER -<span>$1750</span> </h2>
                       <ul>
                         <li><img src="images/CHECK.png">3 Linkedin & 3 Email accounts included</li>
@@ -92,9 +163,51 @@
 
                     </div>
 
+                    <div class="lead-booster-info hide2">
+                      <h2>LEAD BOOSTER -<span>$1750</span> </h2>
+                      <ul>
+                        <li><img src="images/CHECK.png">3 Linkedin & 3 Email accounts included</li>
+                        <li><img src="images/CHECK.png">7500 prospects contacted per month</li>
+                        <li><img src="images/CHECK.png">DONE FOR YOU service</li>
+                        <li><img src="images/BURN.jpg">HOT Leads supplied to your inbox</li>
+                        <li><img src="images/CHECK.png">QUALIFIED leads wanting more information</li>
+                        <li><img src="images/CHECK.png">Campaign Targeting and Messaging Design</li>
+                        <li><img src="images/CHECK.png">List Building included</li>
+                        <li><img src="images/CHECK.png">Sales outreach messaging included</li>
+                        <li><img src="images/CHECK.png">Enriched data – emails & phone numbers included</li>
+                        <li><img src="images/CHECK.png">Dedicated Account Manager</li>
+                        <li><img src="images/CHECK.png">Daily and Weekly Reports</li>
+                        <li><img src="images/CHECK.png">Real-time Sales Engagement CRM access</li>
+                        <li><img src="images/CHECK.png">Integrated with Pipedrive and Zapier</li>
+                        <li><img src="images/CHECK.png">Easy to use software & Auto rolling subscription</li>
+                      </ul>
+
+
+                    </div>
+
+                    <div class="lead-booster-info hide3">
+                      <h2>LEAD BOOSTER -<span>$1750</span> </h2>
+                      <ul>
+                        <li><img src="images/CHECK.png">3 Linkedin & 3 Email accounts included</li>
+                        <li><img src="images/CHECK.png">7500 prospects contacted per month</li>
+                        <li><img src="images/CHECK.png">DONE FOR YOU service</li>
+                        <li><img src="images/BURN.jpg">HOT Leads supplied to your inbox</li>
+                        <li><img src="images/CHECK.png">QUALIFIED leads wanting more information</li>
+                        <li><img src="images/CHECK.png">Campaign Targeting and Messaging Design</li>
+                        <li><img src="images/CHECK.png">List Building included</li>
+                        <li><img src="images/CHECK.png">Sales outreach messaging included</li>
+                        <li><img src="images/CHECK.png">Enriched data – emails & phone numbers included</li>
+                        <li><img src="images/CHECK.png">Dedicated Account Manager</li>
+                        <li><img src="images/CHECK.png">Daily and Weekly Reports</li>
+                        <li><img src="images/CHECK.png">Real-time Sales Engagement CRM access</li>
+                        <li><img src="images/CHECK.png">Integrated with Pipedrive and Zapier</li>
+                        <li><img src="images/CHECK.png">Easy to use software & Auto rolling subscription</li>
+                      </ul>
+
+
+                    </div>
                   </div>
-
-
+                  
                   <div class="lead-booster-left">
                     <div class="lead-booster-text">
                       <div class="lead-booster-btn"><a href="#" class="btn green-btn-secondary">MONTHLY</a><a href="#"
@@ -105,6 +218,9 @@
                         where you need them; supplied to your inbox- DONE FOR YOU.</p>
                     </div>
                     <div class="lead-booster-pro-section">
+                      <div class="lead-booster-pro-strip">
+                        <div class="lead-booster-pro-strip22"> <a href="#" class="btn pink-btn">PRO</a></div>
+                      </div>
                       <div class="lead-booster-pro-strip">
                         <div class="lead-booster-pro-strip22"> <a href="#" class="btn orange-btn">PRO</a></div><span>OUR
                           MOST POPULAR</span>
@@ -168,6 +284,8 @@
     const triggerFirstTabEl = document.querySelector('#myTab li:first-child a');
     mdb.Tab.getInstance(triggerFirstTabEl).show(); // Select first tab
   </script>
+
+<script src="./js/main.js"></script>
 </body>
 
 </html>

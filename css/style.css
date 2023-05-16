@@ -2016,6 +2016,7 @@ footer .footer-section ul.footer-links li a:hover {
   position: absolute;
   left: 92%;
   top: 0%;
+  z-index: 1;
 }
 .studiesDetails-template .studiesSub-right_block .left_section .subSection_left_block .subSection_text_part .result_section .orange-btn-light {
   background-color: #f1f9f8;
@@ -2119,6 +2120,31 @@ footer .footer-section ul.footer-links li a:hover {
   margin-top: 25px;
   font-size: 1.25rem;
   line-height: 23px;
+}
+
+.services-main .services-logo-main .services-tabbs .lead-booster-block-container .hide {
+  display: block;
+}
+.services-main .services-logo-main .services-tabbs .lead-booster-block-container .hide1 {
+  background-color: #f5b3d1;
+  display: none;
+}
+.services-main .services-logo-main .services-tabbs .lead-booster-block-container .hide2 {
+  background-color: #FFFF8F;
+  display: none;
+}
+.services-main .services-logo-main .services-tabbs .lead-booster-block-container .hide3 {
+  background-color: #fcc980;
+  display: none;
+}
+.services-main .services-logo-main .services-tabbs .lead-booster-block-container .lead-booster-left .lead-booster-pro-section .lead-booster-pro-strip .lead-booster-pro-strip22 .pink-btn {
+  background-color: #f5b3d1;
+  padding: 0px 88px;
+  font-size: 31px;
+  font-weight: bold;
+  color: #000;
+  line-height: 43px;
+  position: relative;
 }
 
 @font-face {
@@ -2440,13 +2466,14 @@ h6 {
   right: 0;
   margin: auto;
   bottom: 0;
-  border: 1px dashed #fff;
+  border: 1px dashed #7A7678;
 }
 
 .lead-booster-text p {
   color: #fff;
-  max-width: 580px;
-  margin: auto;
+  max-width: 763px;
+  margin-left: 268px;
+  text-align: justify;
   font-size: 20px;
   margin-top: 30px;
 }
@@ -2454,7 +2481,7 @@ h6 {
 .lead-booster-pro-section {
   width: 100%;
   display: inline-block;
-  margin: 42px 0 0 -100px;
+  margin: -67px 0 0 -130px;
 }
 
 .lead-booster-pro-strip {
@@ -2534,7 +2561,7 @@ h6 {
   float: left;
   position: relative;
   background: #eaeeef;
-  height: 1125px;
+  height: 1165px;
 }
 @media (max-width: 1199.98px) {
   .services-left_block {
@@ -2572,7 +2599,7 @@ h6 {
 .talk-btn::before {
   position: absolute;
   content: "";
-  background: url("../images/STAR.png");
+  background: url("../images/stars.png");
   background-repeat: repeat;
   background-size: auto;
   width: 69px;

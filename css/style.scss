@@ -30,6 +30,8 @@ $fonts-noto: 'NotoSans';
 @import "./partials//ui/caseStudieDetails";
 @import "./partials//ui/subPage";
 
+@import "./partials/ui/service-page";
+
 // fonts
 @font-face {
   font-family: 'Neuzeit Grotesk';
@@ -387,13 +389,14 @@ h6 {
   right: 0;
   margin: auto;
   bottom: 0;
-  border: 1px dashed #fff;
+  border: 1px dashed #7A7678;
 }
 
 .lead-booster-text p {
   color: #fff;
-  max-width: 580px;
-  margin: auto;
+  max-width: 763px;
+  margin-left: 268px;
+  text-align: justify;
   font-size: 20px;
   margin-top: 30px;
 }
@@ -401,7 +404,7 @@ h6 {
 .lead-booster-pro-section {
   width: 100%;
   display: inline-block;
-  margin: 42px 0 0 -100px;
+  margin: -67px 0 0 -130px;
 }
 
 .lead-booster-pro-strip {
@@ -483,7 +486,7 @@ h6 {
   float: left;
   position: relative;
   background: #eaeeef;
-  height: 1125px;
+  height: 1165px;
 
   @include devices(lg){
     height: 1056px;
@@ -522,7 +525,7 @@ h6 {
 .talk-btn::before {
   position: absolute;
   content: "";
-  background: url("../images/STAR.png");
+  background: url("../images/stars.png");
   background-repeat: repeat;
   background-size: auto;
   width: 69px;
