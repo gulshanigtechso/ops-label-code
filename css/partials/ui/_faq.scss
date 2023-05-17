@@ -6,10 +6,11 @@
 
         img {
             position: absolute;
+            filter: drop-shadow(0 3px 5px #000);
 
             &:first-child {
                 top: 0;
-                left: -100px;
+                left: -150px;
             }
 
             &:last-child {
