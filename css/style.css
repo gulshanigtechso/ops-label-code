@@ -2323,16 +2323,10 @@ footer .footer-section ul.footer-links li a:hover {
   display: block;
 }
 .services-main .services-logo-main .services-tabbs .lead-booster-block-container .hide1 {
-  background-color: #f5b3d1;
   display: none;
 }
-.services-main .services-logo-main .services-tabbs .lead-booster-block-container .hide2 {
-  background-color: #FFFF8F;
-  display: none;
-}
-.services-main .services-logo-main .services-tabbs .lead-booster-block-container .hide3 {
-  background-color: #fcc980;
-  display: none;
+.services-main .services-logo-main .services-tabbs .lead-booster-block-container .active {
+  display: block;
 }
 .services-main .services-logo-main .services-tabbs .lead-booster-block-container .lead-booster-left .lead-booster-pro-section .lead-booster-pro-strip .lead-booster-pro-strip22 .btn {
   width: 283px;
@@ -2899,7 +2893,7 @@ h6 {
 }
 
 .lead-booster-info h2 {
-  font-size: 40px;
+  font-size: 29px;
   color: #000;
   font-weight: bold;
   padding: 0 0 14px 0;

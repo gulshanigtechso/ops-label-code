@@ -1,28 +1,82 @@
 const header = document.querySelector("header");
 
+// services tab box
+
+
+let arr = document.querySelectorAll('.lead-booster-info');
+
 const show = (id)=>{
-    if(id=='ex1-tabs-1'){
-        document.querySelector(".hide").style.display = "block";
-        document.querySelector(".hide1").style.display = "none";
-        document.querySelector(".hide2").style.display = "none";
-        document.querySelector(".hide3").style.display = "none";
-    }else if(id=='ex1-tabs-2'){
-        document.querySelector(".hide").style.display = "none";
-        document.querySelector(".hide1").style.display = "block";
-        document.querySelector(".hide2").style.display = "none";
-        document.querySelector(".hide3").style.display = "none";
-    }else if(id=='ex1-tabs-3'){
-        document.querySelector(".hide").style.display = "none";
-        document.querySelector(".hide1").style.display = "none";
-        document.querySelector(".hide2").style.display = "block";
-        document.querySelector(".hide3").style.display = "none";
-    }else if(id=='ex1-tabs-4'){
-        document.querySelector(".hide").style.display = "none";
-        document.querySelector(".hide1").style.display = "none";
-        document.querySelector(".hide2").style.display = "none";
-        document.querySelector(".hide3").style.display = "block";
+    localStorage.setItem('id', id);
+    arr.forEach((item)=>{
+        item.classList.add('hide1');
+    });
+    arr.forEach((item)=>{
+        item.classList.remove('active');
+    })
+    document.querySelector(id).classList.add('active');
+}
+
+function starter(){
+    let id = localStorage.getItem('id');
+    arr.forEach((item)=>{
+        item.classList.add('hide1');
+    });
+    arr.forEach((item)=>{
+        item.classList.remove('active');
+    })
+    if(id==='#ex1-tabs-1'){
+        document.querySelector('#lead-starter').classList.add('active');
+    }
+    else if(id==='#ex1-tabs-2'){
+        document.querySelector('#appointment-starter').classList.add('active');
+    }else if(id==='#ex1-tabs-3'){
+        document.querySelector('#closer-starter').classList.add('active');
+    }else if(id==='#ex1-tabs-4'){
+        document.querySelector('#contributor-starter').classList.add('active');
     }
 }
+
+function pro(){
+    let id = localStorage.getItem('id');
+    arr.forEach((item)=>{
+        item.classList.add('hide1');
+    });
+    arr.forEach((item)=>{
+        item.classList.remove('active');
+    })
+    if(id==='#ex1-tabs-1'){
+        document.querySelector('#lead-pro').classList.add('active');
+    }
+    else if(id==='#ex1-tabs-2'){
+        document.querySelector('#appointment-pro').classList.add('active');
+    }else if(id==='#ex1-tabs-3'){
+        document.querySelector('#closer-pro').classList.add('active');
+    }else if(id==='#ex1-tabs-4'){
+        document.querySelector('#contributor-pro').classList.add('active');
+    }
+}
+
+function premium(){
+    let id = localStorage.getItem('id');
+    arr.forEach((item)=>{
+        item.classList.add('hide1');
+    });
+    arr.forEach((item)=>{
+        item.classList.remove('active');
+    })
+    if(id==='#ex1-tabs-1'){
+        document.querySelector('#lead-premium').classList.add('active');
+    }
+    else if(id==='#ex1-tabs-2'){
+        document.querySelector('#appointment-premium').classList.add('active');
+    }
+    else if(id==='#ex1-tabs-3'){
+        document.querySelector('#closer-premium').classList.add('active');
+    }else if(id==='#ex1-tabs-4'){
+        document.querySelector('#contributor-premium').classList.add('active');
+    }
+}
+
 
 window.addEventListener('scroll', () => {
     window.scrollY > 80 ? header.classList.add("sticky") : header.classList.remove("sticky");
