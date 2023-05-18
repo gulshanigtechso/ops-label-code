@@ -1,11 +1,34 @@
+const show = (id)=>{
+    if(id=='ex1-tabs-1'){
+        document.querySelector(".hide").style.display = "block";
+        document.querySelector(".hide1").style.display = "none";
+        document.querySelector(".hide2").style.display = "none";
+        document.querySelector(".hide3").style.display = "none";
+    }else if(id=='ex1-tabs-2'){
+        document.querySelector(".hide").style.display = "none";
+        document.querySelector(".hide1").style.display = "block";
+        document.querySelector(".hide2").style.display = "none";
+        document.querySelector(".hide3").style.display = "none";
+    }else if(id=='ex1-tabs-3'){
+        document.querySelector(".hide").style.display = "none";
+        document.querySelector(".hide1").style.display = "none";
+        document.querySelector(".hide2").style.display = "block";
+        document.querySelector(".hide3").style.display = "none";
+    }else if(id=='ex1-tabs-4'){
+        document.querySelector(".hide").style.display = "none";
+        document.querySelector(".hide1").style.display = "none";
+        document.querySelector(".hide2").style.display = "none";
+        document.querySelector(".hide3").style.display = "block";
+    }
+}
+
+
 // sticky header
 const header = document.querySelector("header");
 
 window.addEventListener('scroll', () => {
     window.scrollY > 80 ? header.classList.add("sticky") : header.classList.remove("sticky");
 });
-
-
 
 // menubar
 const menuBtn = document.querySelector(".menu_btn");

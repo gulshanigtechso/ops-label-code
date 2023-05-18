@@ -24,11 +24,12 @@ $fonts-noto: 'NotoSans';
 @import "./partials/ui/ready";
 @import "./partials/ui/footer";
 
-
 // pages-partials
 @import "./partials/ui/caseStudies";
 @import "./partials//ui/caseStudieDetails";
-
+@import "./partials//ui/subPage";
+@import "./partials/ui/service-page";
+@import "./partials//ui/subPage2";
 
 // fonts
 @font-face {
@@ -174,6 +175,20 @@ h6 {
   width: 94%;
   position: relative;
   float: left;
+
+  @include devices(lg){
+    width:93%;
+  }
+
+  @include devices(md){
+    width:88%;
+    margin-left: 92px;
+  }
+
+  @include devices(sm){
+    width: 95%;
+    margin-left: 51px;
+  }
 }
 
 .services-logo-main {
@@ -181,6 +196,33 @@ h6 {
   margin: 0 0 0 80px;
   overflow: hidden;
   padding: 66px 0 0 0px;
+}
+
+.services-left_block-logo {
+  position: relative;
+}
+
+.services-left_block-logo img {
+  position: absolute;
+  margin: 86px 0 0 28px;
+  z-index: 999;
+  max-width: 217px;
+
+  @include devices(lg){
+    margin: 51px 0 0 21px;
+    max-width: 181px;
+  }
+
+
+  @include devices(md){
+    max-width:166px;
+    margin: 37px 0 0 24px;
+  }
+
+  @include devices(sm){
+    max-width: 133px;
+    margin: 29px 0 0 24px;
+  }
 }
 
 .services-logo-main .site-logo {
@@ -202,7 +244,9 @@ h6 {
   background: #ede9cc;
   border-radius: 10px;
   color: #000;
-  padding: 10px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 17px;
 }
 
 .talk-btn a span {
@@ -252,6 +296,7 @@ h6 {
 
 .services-tabbs .nav-item {
   width: 25%;
+  font-weight: 500;
 }
 
 .services-tabbs #ex1 {
@@ -346,13 +391,14 @@ h6 {
   right: 0;
   margin: auto;
   bottom: 0;
-  border: 1px dashed #fff;
+  border: 1px dashed #7A7678;
 }
 
 .lead-booster-text p {
   color: #fff;
-  max-width: 580px;
-  margin: auto;
+  max-width: 763px;
+  margin-left: 268px;
+  text-align: justify;
   font-size: 20px;
   margin-top: 30px;
 }
@@ -360,7 +406,7 @@ h6 {
 .lead-booster-pro-section {
   width: 100%;
   display: inline-block;
-  margin: 42px 0 0 -100px;
+  margin: -67px 0 0 -130px;
 }
 
 .lead-booster-pro-strip {
@@ -442,18 +488,26 @@ h6 {
   float: left;
   position: relative;
   background: #eaeeef;
-  height: 1051px;
-}
+  height: 1165px;
 
-.services-left_block-logo {
-  position: relative;
-}
+  @include devices(lg){
+    height: 1056px;
+    width:7%;
+  }
 
-.services-left_block-logo img {
-  position: absolute;
-  margin: 86px 0 0 28px;
-  z-index: 1;
-  max-width: 217px;
+  @include devices(md){
+    width:12%;
+    position: fixed;
+    background: #eaeeef;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+
+  @include devices(sm){
+    width:14%;
+  }
 }
 
 .services-left_block-toggle {
@@ -469,7 +523,7 @@ h6 {
 .talk-btn::before {
   position: absolute;
   content: "";
-  background: url("../images/STAR.png");
+  background: url("../images/stars.png");
   background-repeat: repeat;
   background-size: auto;
   width: 69px;
