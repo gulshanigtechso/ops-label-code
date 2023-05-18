@@ -3,9 +3,9 @@
     background: url(../images/section_4.png);
     background-color: #fff;
     background-repeat: no-repeat;
-    background-size: 105% 100%;
-    background-position-y: -100px;
-    background-position-x: -7px;
+    background-size: 103% 100%;
+    background-position-y: -110px;
+    background-position-x: -20px;
     padding-top: 5rem;
 
     &::before {
@@ -14,34 +14,27 @@
         background-repeat: no-repeat;
     }
 
-    &::after {
-        @include pseudo("", 100px, auto, 300px, 300px);
-        right: -30px;
-        background-image: url(../images/section4-line.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
+    .bg-img {
+        pointer-events: none;
 
-    .guarantee_text {
-        position: absolute;
-        bottom: 140px;
-        right: 130px;
-        text-transform: uppercase;
-        text-align: center;
-        background: #FAF0EA;
-        padding: 1rem 4rem;
-        border: 4px solid black;
-        border-radius: 24px;
-        box-shadow: rgb(0, 0, 0) 4px 4px 0.6px;
-        filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
+        img {
+            position: absolute;
 
-        &::after {
-            @include pseudo("", -30px, auto, 50%, 70%);
-            background-image: url(../images/Asset-14.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            right: -135px;
+            &:first-child {
+                @include dimension(42px, auto);
+                top: 35px;
+                left: auto;
+                right: 280px;
+            }
+
+            &:last-child {
+                @include dimension(350px, auto);
+                top: 85px;
+                left: auto;
+                right: -85px;
+            }
         }
+
     }
 
     .title_h2 {
@@ -100,16 +93,75 @@
 
     .testi-img {
         position: relative;
+        @include dimension(410px, 310px);
         margin-left: 3rem;
         margin-top: 2rem;
 
+        figure {
+            @include dimension(100%, 100%);
+            border: 6px solid #000;
+            border-radius: 50px;
+            overflow: hidden;
+
+            img {
+                @include img-fit();
+            }
+        }
+
         &::after {
-            @include pseudo("", -25px, auto, 60px, 60px);
-            right: 130px;
-            background-image: url(../images/Asset-15.png);
+            @include pseudo("", -28px, auto, 65px, 65px);
+            right: -12px;
+            background-image: url(../images/chat.png);
             background-size: cover;
             background-position: center;
         }
 
+    }
+}
+
+.testi-swiper-txt {
+    height: 90%;
+    width: 800px;
+    padding-bottom: 4rem;
+
+    .swiper-slide {
+        position: relative;
+
+        .guarantee_text {
+            position: absolute;
+            top: auto;
+            bottom: 0;
+            right: 65px;
+            text-transform: uppercase;
+            text-align: center;
+            // background: #e0cce4;
+            font-weight: bold;
+            font-size: 0.9rem;
+            padding: 1rem 2.5rem;
+            border: 4px solid black;
+            border-radius: 24px;
+            box-shadow: rgb(0, 0, 0) 4px 4px 0.6px;
+            filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.4));
+
+            &.orange {
+                background-color: $orange;
+            }
+
+            &.sky {
+                background-color: $sky_light;
+            }
+
+            &.purple {
+                background-color: $purple;
+            }
+
+            &::after {
+                @include pseudo("", -32px, auto, 58px, 58px);
+                right: -34px;
+                background-image: url(../images/spark.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
     }
 }

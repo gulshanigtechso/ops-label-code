@@ -1,5 +1,3 @@
-const header = document.querySelector("header");
-
 const show = (id)=>{
     if(id=='ex1-tabs-1'){
         document.querySelector(".hide").style.display = "block";
@@ -24,6 +22,10 @@ const show = (id)=>{
     }
 }
 
+
+// sticky header
+const header = document.querySelector("header");
+
 window.addEventListener('scroll', () => {
     window.scrollY > 80 ? header.classList.add("sticky") : header.classList.remove("sticky");
 });
@@ -38,10 +40,21 @@ menuBtn.addEventListener("click", () => {
     menubar.classList.toggle("show");
 });
 
+
+// AOS
 AOS.init({
     duration: 600, // values from 0 to 3000, with step 50ms
     mirror: true, // whether elements should animate out while scrolling past them
 });
+
+
+// Typed
+var typed = new Typed('#typedElement', {
+    strings: ['CLOSING MORE DEALS', '15-20+ Leads', '20-100+ Meetings', 'Valuable Connections'],
+    typeSpeed: 60,
+    loop: true,
+});
+
 
 const servicesSwiper1 = new Swiper('.services-swiper1', {
     loop: true,

@@ -6,10 +6,11 @@
 
         img {
             position: absolute;
+            filter: drop-shadow(0 3px 5px #000);
 
             &:first-child {
                 top: 0;
-                left: -100px;
+                left: -150px;
             }
 
             &:last-child {
@@ -24,6 +25,18 @@
         right: 120px;
         background-image: url(../images/Asset-39.png);
         background-repeat: no-repeat;
+    }
+
+    .claim-btn {
+        margin-top: 12rem;
+        margin-left: 8rem;
+    }
+
+    .fly-arrow-img {
+        margin-top: 8rem;
+        margin-left: 12rem;
+        width: 15rem;
+        filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
     }
 }
 
@@ -110,10 +123,4 @@
 
 .accordian-left {
     margin-top: 66px;
-}
-
-.fly-arrow {
-    padding-left: 30px;
-    width: 15rem;
-    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
 }
