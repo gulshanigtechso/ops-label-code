@@ -18,6 +18,56 @@
         width:92.5%;
         height:100%;
         background-color: #151315;
+        position: relative;
+
+        .contact-bg-1{
+            background-image: url("../images/contact_1.svg");
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 499px;
+            width: 635px;
+            position: absolute;
+            top: -23%;
+            left: 74%;
+        }
+
+        .contact-bg-2{
+            background-image: url("../images/contact_2.svg");
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 370px;
+            width: 378px;
+            position: absolute;
+            top: 56%;
+            left: 66%;        
+        }
+
+        .contact-line-1{
+            background-image: url("../images/contact-line1.svg");
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 401px;
+            width: 791px;
+            position: absolute;
+            top: 49.5%;
+            left: 0;
+        }
+
+        .contact-line-2{
+            background-image: url("../images/contact-line2.svg");
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 401px;
+            width: 361px;
+            position: absolute;
+            top: 21.5%;
+            left: 79%;
+        }
+
     }
 
 }
