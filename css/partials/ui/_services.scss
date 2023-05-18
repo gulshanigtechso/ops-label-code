@@ -12,6 +12,10 @@
         background-image: url(../images/plane.png);
         background-repeat: no-repeat;
         background-size: contain;
+
+        @include devices(xl) {
+            @include dimension(70px, 70px);
+        }
     }
 
     &::before {
@@ -27,8 +31,7 @@
 
     .title_h2 {
         color: #ffffff;
-        padding-top: 20px;
-
+        @include padding-y(20px, 6px);
     }
 
     .titleh3 {
@@ -65,16 +68,23 @@
             left: 0;
             right: 0;
             font-size: 1.3rem;
-            font-weight: 600;
+            font-weight: bold;
             max-width: 85%;
             margin: auto;
             @include padding-y(0.4rem, 0.4rem);
+
+            @include devices(xl) {
+                font-size: 1rem;
+            }
         }
 
         .ser-icon {
             width: 200px;
             @include mx-auto();
-            // filter: drop-shadow(3px 4px 6px rgba(0, 0, 0, 0.3));
+
+            @include devices(xl) {
+                width: 150px;
+            }
 
             img {
                 @include img-fit();
@@ -114,6 +124,11 @@
         margin: auto;
         filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
 
+        @include devices(xl) {
+            font-size: 15px;
+            max-width: 320px;
+        }
+
         &::after {
             @include pseudo("", -12px, auto, 26px, 25px);
             right: 30px;
@@ -141,6 +156,10 @@
             background: #000;
             @include dimension(11px, 11px);
 
+            @include devices(xl) {
+                @include dimension(9px, 9px);
+            }
+
             &:not(.swiper-pagination-bullet-active) {
                 border: 2px solid #000;
                 background: none;
@@ -155,12 +174,20 @@
         @include dimension(auto, auto);
         color: #000;
 
+        @include devices(xl) {
+            font-size: 2.6rem;
+        }
+
         &::after {
             content: '';
         }
     }
 
     .swiper-slide {
+
+        @include devices(xl) {
+            font-size: 0.91vw;
+        }
 
         &.slide1 {
             p {
@@ -180,6 +207,10 @@
                 font-size: 1.1rem;
                 font-weight: 600;
                 margin-bottom: 0.2rem;
+
+                @include devices(xl) {
+                    font-size: 1rem;
+                }
             }
 
             .plus-btn {
@@ -211,11 +242,12 @@
         }
     }
 
-    .check-img {
-        width: 16px;
-    }
-
+    .check-img,
     .burn-img {
-        width: 20px;
+        width: 15px;
+
+        @include devices(xl) {
+            width: 11px;
+        }
     }
 }

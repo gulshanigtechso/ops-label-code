@@ -10,12 +10,15 @@
     height: 780px;
     position: relative;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 220px;
+    @include mx-auto();
+    padding-top: 190px;
+
+    @include devices(xl) {
+        padding-top: 170px;
+        height: 600px;
+    }
 
     .hero-left {
-        margin-bottom: 2.4rem;
         font-weight: bold;
 
         h1 {
@@ -24,6 +27,11 @@
             font-weight: bold;
             margin-bottom: 1.5rem;
             text-transform: uppercase;
+
+            @include devices(xl) {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
 
             span {
                 color: #129740;
@@ -34,11 +42,18 @@
             color: #333;
             width: 580px;
             font-size: 1rem;
-            font-weight: bold;
+
+            @include devices(xl) {
+                font-size: 0.92rem;
+            }
         }
 
         .star-section {
             @include margin-y(2rem, 2rem);
+
+            @include devices(xl) {
+                @include margin-y(1.6rem, 1.6rem);
+            }
 
             .stars {
                 display: flex;
@@ -48,6 +63,10 @@
                 img {
                     width: 24px;
                     filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.3));
+
+                    @include devices(xl) {
+                        width: 20px;
+                    }
                 }
             }
         }
@@ -59,11 +78,19 @@
 
             svg {
                 width: 25px;
+
+                @include devices(xl) {
+                    width: 20px;
+                }
             }
 
             span {
                 text-transform: uppercase;
                 font-size: 1.1rem;
+
+                @include devices(xl) {
+                    font-size: 0.95rem;
+                }
             }
 
             &:hover {
@@ -86,7 +113,7 @@
         position: relative;
 
         .hand-img {
-            margin-top: -110px;
+            margin-top: -50px;
             margin-left: 50px;
             object-fit: cover;
             position: relative;

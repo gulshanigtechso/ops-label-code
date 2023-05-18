@@ -3,7 +3,7 @@
     padding: 0px;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
 
     .container,
     .container-lg,
@@ -52,15 +52,24 @@ button:not(:disabled) {
         background: $green;
         font-weight: bold;
         text-transform: uppercase;
-        font-size: 16px;
+        font-size: 1rem;
         font-style: italic;
         position: relative;
+
+        @include devices(xl) {
+            font-size: 0.8rem;
+            @include padding-x(50px, 50px);
+        }
 
         &::after {
             @include pseudo($content: "", $top: -15px, $left: auto, $width: 50px, $height: 25px);
             background-image: url(../images/plane.png);
             background-repeat: no-repeat;
             background-size: contain;
+
+            @include devices(xl) {
+                width: 30px;
+            }
         }
     }
 
@@ -102,12 +111,23 @@ button:not(:disabled) {
             font-size: 16px;
             font-weight: bold;
 
+            @include devices(xl) {
+                font-size: 0.8rem;
+                @include padding-x(50px, 50px);
+            }
+
             &::after {
                 @include pseudo($content: "", $top: -48px, $left: auto, $width: 65px, $height: 65px);
                 right: -22px;
                 background-image: url(../images/spark.svg);
                 background-repeat: no-repeat;
                 background-size: contain;
+
+                @include devices(xl) {
+                    top: -35px;
+                    right: -10px;
+                    @include dimension(50px, 50px);
+                }
             }
         }
 
@@ -123,6 +143,10 @@ h2.title_h2 {
     font-size: 40px;
     font-weight: bold;
     font-style: italic;
+
+    @include devices(xl) {
+        font-size: 2rem;
+    }
 }
 
 .site-title {
@@ -135,8 +159,12 @@ h2.title_h2 {
 .semi-font-text {
     font-size: 19px;
     width: 80%;
-    margin: 0 auto;
+    @include mx-auto();
     margin-bottom: 40px;
+
+    @include devices(xl) {
+        font-size: 16px;
+    }
 }
 
 

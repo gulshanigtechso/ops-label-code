@@ -12,6 +12,11 @@
     overflow: hidden;
     transition: all 0.25s linear;
 
+    @include devices(xl) {
+        width: 40px;
+        left: 30px;
+    }
+
     span {
         background-color: $black;
         width: 100%;
@@ -79,11 +84,20 @@
             height: 100%;
             padding-bottom: 2.5rem;
 
+            @include devices(xl) {
+                gap: 1.5rem;
+                padding-bottom: 2rem;
+            }
+
             a {
                 transition: transform 0.3s;
 
                 img {
                     width: 45px;
+
+                    @include devices(xl) {
+                        width: 30px;
+                    }
                 }
 
                 &:hover {
@@ -110,6 +124,10 @@
                 font-weight: 700;
                 color: $white;
                 transition: color 0.2s linear;
+
+                @include devices(xl) {
+                    font-size: 3rem;
+                }
 
                 &:nth-child(1) {
                     color: $orange;
@@ -142,6 +160,10 @@
 
             .green-btn {
                 margin-right: 3rem;
+
+                @include devices(xl) {
+                    margin-right: 1.8rem;
+                }
             }
         }
 
@@ -149,13 +171,21 @@
             position: absolute;
             top: 30px;
             left: -80px;
-            @include dimension(200px, auto);
+            width: 200px;
+
+            @include devices(xl) {
+                width: 150px;
+            }
         }
 
         .arrowfly-img {
             position: absolute;
             top: 85px;
             right: -45px;
+
+            @include devices(xl) {
+                width: 180px;
+            }
         }
     }
 

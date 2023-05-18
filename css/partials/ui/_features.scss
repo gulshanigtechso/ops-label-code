@@ -53,6 +53,10 @@
     display: grid;
     gap: 2rem;
 
+    @include devices(xl) {
+        gap: 1.6rem;
+    }
+
     li {
         display: flex;
         align-items: center;
@@ -60,16 +64,28 @@
 
         img {
             width: 32px;
+
+            @include devices(xl) {
+                width: 25px;
+            }
         }
 
         strong {
             font-size: 1.1rem;
             font-weight: 800;
+
+            @include devices(xl) {
+                font-size: 0.95rem;
+            }
         }
 
         p {
             font-weight: bold;
             color: #333;
+
+            @include devices(xl) {
+                font-size: 0.9rem;
+            }
         }
     }
 }

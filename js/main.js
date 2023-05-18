@@ -1,26 +1,26 @@
-const show = (id)=>{
-    if(id=='ex1-tabs-1'){
+const show = (id) => {
+    if (id == 'ex1-tabs-1') {
         document.querySelector(".hide").style.display = "block";
         document.querySelector(".hide1").style.display = "none";
         document.querySelector(".hide2").style.display = "none";
         document.querySelector(".hide3").style.display = "none";
-    }else if(id=='ex1-tabs-2'){
+    } else if (id == 'ex1-tabs-2') {
         document.querySelector(".hide").style.display = "none";
         document.querySelector(".hide1").style.display = "block";
         document.querySelector(".hide2").style.display = "none";
         document.querySelector(".hide3").style.display = "none";
-    }else if(id=='ex1-tabs-3'){
+    } else if (id == 'ex1-tabs-3') {
         document.querySelector(".hide").style.display = "none";
         document.querySelector(".hide1").style.display = "none";
         document.querySelector(".hide2").style.display = "block";
         document.querySelector(".hide3").style.display = "none";
-    }else if(id=='ex1-tabs-4'){
+    } else if (id == 'ex1-tabs-4') {
         document.querySelector(".hide").style.display = "none";
         document.querySelector(".hide1").style.display = "none";
         document.querySelector(".hide2").style.display = "none";
         document.querySelector(".hide3").style.display = "block";
     }
-}
+};
 
 
 // sticky header
@@ -103,14 +103,19 @@ const testiSwiper1 = new Swiper('.testi-swiper-img', {
     loop: true,
     autoplay: true,
     slidesPerView: 1,
+    effect: "fade",
+    fadeEffect: { crossFade: true },
     grabCursor: true,
     pagination: {
         el: '.swiper-pagination',
+        clickable: true,
     },
 });
 
 const testiSwiper2 = new Swiper('.testi-swiper-txt', {
     loop: true,
+    effect: "fade",
+    fadeEffect: { crossFade: true },
     slidesPerView: 1,
     grabCursor: true
 });

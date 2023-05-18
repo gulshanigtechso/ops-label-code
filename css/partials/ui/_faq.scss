@@ -1,6 +1,12 @@
 #faq {
     position: relative;
 
+    .faq_row {
+        .col-md-5 {
+            width: 44%;
+        }
+    }
+
     .bg-img {
         pointer-events: none;
 
@@ -10,12 +16,20 @@
 
             &:first-child {
                 top: 0;
-                left: -150px;
+                left: -110px;
+
+                @include devices(xl) {
+                    width: 220px;
+                }
             }
 
             &:last-child {
                 top: 50px;
-                right: -30px;
+                right: -20px;
+
+                @include devices(xl) {
+                    width: 100px;
+                }
             }
         }
     }
@@ -30,6 +44,10 @@
     .claim-btn {
         margin-top: 12rem;
         margin-left: 8rem;
+
+        @include devices(xl) {
+            margin-top: 8rem;
+        }
     }
 
     .fly-arrow-img {
@@ -37,6 +55,11 @@
         margin-left: 12rem;
         width: 15rem;
         filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
+
+        @include devices(xl) {
+            width: 12rem;
+            margin-top: 5rem;
+        }
     }
 }
 
@@ -75,25 +98,21 @@
 .accordion-header button {
     font-weight: 600;
     font-size: 15px;
-}
-
-.accordion-header button {
-    font-weight: 600;
-    font-size: 15px;
     box-shadow: inset 0 -1px 0 rgb(0 0 0 / 4%) !important;
 
+    @include devices(xl) {
+        font-size: 13px;
+    }
 }
 
 .accordion-button {
-    padding: 1.5rem 1.25rem;
+    padding: 1.5rem;
     padding-left: 40px;
-
 }
 
 .accordion-item {
     background-color: #fff;
     border: 1px solid rgb(0 0 0 / 7%);
-    // border-radius: 0px;
 }
 
 .accordion-button::after {

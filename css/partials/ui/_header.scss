@@ -15,5 +15,9 @@ header {
 
     .site-logo {
         width: 160px;
+
+        @include devices(xl) {
+            width: 140px;
+        }
     }
 }

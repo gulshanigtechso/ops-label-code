@@ -14,6 +14,10 @@ footer {
         z-index: -1;
         opacity: 0.4;
         background-position-y: 400px;
+
+        @include devices(xl) {
+            background-position-y: 480px;
+        }
     }
 
     &::before {
@@ -32,13 +36,25 @@ footer {
         margin-top: 7rem;
         font-weight: bold;
 
+        @include devices(xl) {
+            margin-top: 10rem;
+        }
+
         h5 {
             margin-bottom: 1.3rem;
             font-weight: bold;
+
+            @include devices(xl) {
+                font-size: 1rem;
+            }
         }
 
         p {
             font-size: 1.2rem;
+
+            @include devices(xl) {
+                font-size: 1rem;
+            }
         }
     }
 
@@ -46,6 +62,10 @@ footer {
         position: relative;
         width: 28%;
         filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.4));
+
+        @include devices(xl) {
+            width: 33%;
+        }
 
         .contact-outer {
             border: 5px solid black;
@@ -57,6 +77,11 @@ footer {
                 top: 10px;
                 left: -120px;
                 width: 230px;
+
+                @include devices(xl) {
+                    width: 150px;
+                    left: -70px;
+                }
             }
 
             h3.header-white {
@@ -69,9 +94,12 @@ footer {
 
                 span.circle-span {
                     padding: 10px;
-                    font-size: 0px;
                     border-radius: 50%;
                     border: 3px solid black;
+
+                    @include devices(xl) {
+                        padding: 8px;
+                    }
 
                     &.sky-circle {
                         background: #a0d2d6;
@@ -99,11 +127,19 @@ footer {
                     margin-bottom: 25px;
                     font-weight: bold;
                     font-style: italic;
+
+                    @include devices(xl) {
+                        font-size: 30px;
+                    }
                 }
 
                 ul.contact-btns {
                     display: grid;
                     gap: 2.5rem;
+
+                    @include devices(xl) {
+                        gap: 2rem;
+                    }
 
                     li {
                         width: 100%;
@@ -116,6 +152,11 @@ footer {
                                 right: -150px;
                                 left: auto;
                                 top: -8px;
+
+                                @include devices(xl) {
+                                    top: 1px;
+                                    right: -100px;
+                                }
                             }
                         }
 
@@ -126,6 +167,11 @@ footer {
                                 position: absolute;
                                 top: -8px;
                                 left: -160px;
+
+                                @include devices(xl) {
+                                    top: 1px;
+                                    left: -100px;
+                                }
                             }
                         }
 
@@ -134,6 +180,10 @@ footer {
                             padding: 0.6rem 0.3rem;
                             font-weight: bold;
                             font-size: 1.3rem;
+
+                            @include devices(xl) {
+                                font-size: 1rem;
+                            }
 
                             &.btn {
                                 filter: none;
@@ -148,6 +198,10 @@ footer {
                     text-align: right;
                     font-size: 1.12rem;
                     font-weight: bold;
+
+                    @include devices(xl) {
+                        font-size: 1rem;
+                    }
                 }
             }
         }
@@ -164,6 +218,10 @@ footer {
             background-image: url(../images/footer-line1.svg);
             background-repeat: no-repeat;
             background-size: contain;
+
+            @include devices(xl) {
+                top: 180px;
+            }
         }
 
         &::before {
@@ -171,6 +229,11 @@ footer {
             background-image: url(../images/footer-line2.svg);
             background-repeat: no-repeat;
             background-size: contain;
+
+            @include devices(xl) {
+                top: 60px;
+                left: 480px;
+            }
         }
 
         .container-fluid {
@@ -182,6 +245,10 @@ footer {
         padding-top: 3rem;
         padding-bottom: 2rem;
 
+        @include devices(xl) {
+            @include padding-y(5rem, 1.2rem);
+        }
+
         .container-fluid {
             @include padding-x(5rem, 5rem);
         }
@@ -191,6 +258,10 @@ footer {
             font-size: 1.2rem;
             font-weight: 100;
             padding-right: 90px;
+
+            @include devices(xl) {
+                font-size: 0.95rem;
+            }
         }
 
         h3 {
@@ -200,8 +271,16 @@ footer {
             margin-top: 2.5rem;
             margin-bottom: 1.2rem;
 
+            @include devices(xl) {
+                font-size: 1.1rem;
+            }
+
             &.footer-links-title {
                 margin-bottom: 2.2rem;
+
+                @include devices(xl) {
+                    margin-bottom: 1.8rem;
+                }
             }
         }
 
@@ -218,11 +297,21 @@ footer {
             gap: 1rem;
             margin-top: 1.5rem;
 
+            @include devices(xl) {
+                margin-top: 1rem;
+            }
+
             li {
                 transition: transform 0.2s;
 
                 &:hover {
                     transform: translateY(-3px);
+                }
+
+                img {
+                    @include devices(xl) {
+                        width: 25px;
+                    }
                 }
             }
         }
@@ -234,6 +323,10 @@ footer {
             li {
                 font-weight: 100;
                 font-size: 1.1rem;
+
+                @include devices(xl) {
+                    font-size: 0.8rem;
+                }
 
                 a {
                     color: white;

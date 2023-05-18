@@ -24,17 +24,29 @@
             &:first-child {
                 top: 0;
                 left: 150px;
+
+                @include devices(xl) {
+                    left: 90px;
+                }
             }
 
             &:last-child {
                 top: -40px;
                 right: 150px;
+
+                @include devices(xl) {
+                    right: 90px;
+                }
             }
         }
 
         &+p {
             font-size: 1.1rem;
             margin-top: 0.8rem;
+
+            @include devices(xl) {
+                font-size: 1rem;
+            }
         }
     }
 
@@ -56,13 +68,6 @@
             border-radius: 30px;
             filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
 
-            img.arrow-right {
-                position: absolute;
-                right: -100px;
-                top: 115px;
-                width: 65px;
-            }
-
             .info_text {
                 position: absolute;
                 top: -46px;
@@ -78,6 +83,11 @@
                 box-shadow: rgba(0, 0, 0, 4.15) 4px 4px 0.6px;
                 text-align: center;
                 @include centered();
+
+                @include devices(xl) {
+                    height: 60px;
+                    top: -35px;
+                }
 
                 &.sky-btn {
                     background-color: #dcefee;
@@ -108,10 +118,20 @@
                     align-items: center;
                     font-family: 'NotoSans';
                     padding-right: 7px;
+
+                    @include devices(xl) {
+                        @include dimension(50px, 50px);
+                        font-size: 32px;
+                        top: -36px;
+                    }
                 }
 
                 h6 {
                     font-weight: bold;
+
+                    @include devices(xl) {
+                        font-size: 0.8rem;
+                    }
                 }
             }
 
@@ -119,7 +139,25 @@
                 text-align: center;
                 margin-top: 1.5rem;
                 font-weight: bold;
+
+                @include devices(xl) {
+                    margin-top: 0.9rem;
+                    font-size: 0.9rem;
+                }
             }
         }
+
+        .col-md-1 {
+            text-align: center;
+
+            .arrow-right {
+                width: 70px;
+
+                @include devices(xl) {
+                    width: 60px;
+                }
+            }
+        }
+
     }
 }
