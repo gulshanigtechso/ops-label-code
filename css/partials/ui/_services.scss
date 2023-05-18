@@ -22,7 +22,7 @@
     }
 
     .row.ser_row {
-        margin: 100px 30px;
+        margin: 100px 0;
     }
 
     .title_h2 {
@@ -40,21 +40,23 @@
 
     .box {
         background: #eaeeef;
+        color: #000;
+        font-weight: bold;
         border-radius: 30px;
         border: 5px solid #030405;
         border-radius: 30px;
-        padding: 2rem 2rem 2.6rem;
+        padding: 2rem 2rem 3rem;
         position: relative;
-        // height: 530px;
 
-        .star_icon {
+        .heart_icon {
             position: absolute;
             left: 0;
             right: 0;
-            top: -36px;
+            top: -40px;
             margin: auto;
             display: block;
             text-align: center;
+            @include dimension(70px, 70px);
         }
 
         .btn {
@@ -62,13 +64,21 @@
             bottom: -22px;
             left: 0;
             right: 0;
-            max-width: 86%;
+            font-size: 1.3rem;
+            font-weight: 600;
+            max-width: 85%;
             margin: auto;
-            padding: 0.4rem 0;
+            @include padding-y(0.4rem, 0.4rem);
         }
 
         .ser-icon {
-            text-align: center;
+            width: 200px;
+            @include mx-auto();
+            // filter: drop-shadow(3px 4px 6px rgba(0, 0, 0, 0.3));
+
+            img {
+                @include img-fit();
+            }
         }
     }
 }
@@ -89,9 +99,11 @@
 
     .guarantee {
         background: #fff;
-        font-size: 20px;
+        font-size: 17px;
+        font-weight: bold;
         max-width: 356px;
-        border-radius: 10px;
+        width: 100%;
+        border-radius: 15px;
         padding: 15px;
         border: 5px solid #030405;
         text-align: center;
@@ -101,6 +113,14 @@
         right: 0;
         margin: auto;
         filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
+
+        &::after {
+            @include pseudo("", -12px, auto, 26px, 25px);
+            right: 30px;
+            background-image: url(../images/star-sm.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
     }
 }
 
@@ -108,6 +128,11 @@
 .services-swiper2,
 .services-swiper3 {
     @include padding-y(2rem, 2rem);
+
+    .swiper-wrapper {
+        align-items: center;
+        margin-bottom: 1.8rem;
+    }
 
     .swiper-pagination {
         width: auto;
@@ -139,7 +164,7 @@
 
         &.slide1 {
             p {
-                @include margin-y(1rem, 1rem);
+                @include margin-y(2.5rem, 2.5rem);
             }
         }
 
@@ -154,7 +179,7 @@
                 color: deeppink;
                 font-size: 1.1rem;
                 font-weight: 600;
-                margin-bottom: 0.6rem;
+                margin-bottom: 0.2rem;
             }
 
             .plus-btn {
@@ -164,7 +189,8 @@
                 font-weight: 800;
                 font-size: 1rem;
                 pointer-events: none;
-                @include margin-y(1.2rem, 2rem);
+                filter: none;
+                @include margin-y(1.4rem, 2rem);
             }
         }
 

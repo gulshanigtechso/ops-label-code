@@ -1,26 +1,29 @@
 .main-hero {
-    background: #d8dce0;
+    // background: #d8dce0;
+    background-color: #EAEEEF;
     padding-bottom: 300px;
 }
 
 .hero-section {
-    background: #E3EEED;
-    height: 750px;
+    // background: #E3EEED;
+    // background-color: #EAEEEF;
+    height: 780px;
     position: relative;
-    width: 95%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 220px;
-    // margin-right: auto;
 
     .hero-left {
         margin-bottom: 2.4rem;
+        font-weight: bold;
 
         h1 {
-            font-weight: bold;
-            font-style: italic;
+            // font-style: italic;
             color: #030405;
+            font-weight: bold;
             margin-bottom: 1.5rem;
+            text-transform: uppercase;
 
             span {
                 color: #129740;
@@ -28,82 +31,78 @@
         }
 
         p {
-            color: #000;
-            width: 489px;
-            font-size: 16px;
+            color: #333;
+            width: 580px;
+            font-size: 1rem;
+            font-weight: bold;
         }
 
         .star-section {
             @include margin-y(2rem, 2rem);
 
             .stars {
-                img {
-                    width: 25px;
-                    margin-bottom: 10px;
-                }
-            }
+                display: flex;
+                gap: 0.8rem;
+                margin-bottom: 12px;
 
-            p {
-                color: #000;
-                font-size: 15px;
+                img {
+                    width: 24px;
+                    filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.3));
+                }
             }
         }
 
         .watch-video {
-            display: flex;
+            display: inline-flex;
             align-items: center;
             gap: 0.6rem;
 
-            a.simple-link {
-                text-decoration: none;
-                color: black;
-                text-transform: uppercase;
-                font-size: 16px;
+            svg {
+                width: 25px;
+            }
 
-                &:hover {
+            span {
+                text-transform: uppercase;
+                font-size: 1.1rem;
+            }
+
+            &:hover {
+
+                svg {
+                    .cls-1 {
+                        fill: #129740;
+                    }
+
+                }
+
+                span {
                     color: #129740;
                 }
             }
         }
     }
 
-
-
     .hero-img {
         position: relative;
 
-        &::after {
-            content: "";
-            background-image: url(../images/banner-circle1.png);
-            position: absolute;
-            right: 0px;
-            top: -90px;
-            width: 750px;
-            height: 100%;
-            background-repeat: no-repeat;
-            pointer-events: none;
+        .hand-img {
+            margin-top: -110px;
+            margin-left: 50px;
+            object-fit: cover;
+            position: relative;
+            z-index: 1;
         }
-    }
 
-    .hand-img {
-        width: 70%;
-        margin-top: -110px;
-        margin-left: 50px;
-        object-fit: cover;
-        z-index: 1;
-        position: relative;
+        // &::after {
+        //     content: "";
+        //     background-image: url(../images/banner-circle1.png);
+        //     position: absolute;
+        //     right: 0px;
+        //     top: -90px;
+        //     width: 750px;
+        //     height: 100%;
+        //     background-repeat: no-repeat;
+        //     pointer-events: none;
+        // }
     }
 }
-
-
-// .hero-section::after {
-//     content: "";
-//     background-image: url(../images/banner-circle1.png);
-//     position: absolute;
-//     right: 0px;
-//     top: 100px;
-//     width: 850px;
-//     height: 100%;
-//     background-repeat: no-repeat;
-//     pointer-events: none;
-// }
