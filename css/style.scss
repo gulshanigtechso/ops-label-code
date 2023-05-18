@@ -30,6 +30,7 @@ $fonts-noto: 'NotoSans';
 @import "./partials//ui/subPage";
 @import "./partials/ui/service-page";
 @import "./partials//ui/subPage2";
+@import "./partials/ui/contactPage";
 
 // fonts
 @font-face {
@@ -292,6 +293,7 @@ h6 {
   font-size: 20px;
   text-align: center;
   box-shadow: rgb(0, 0, 0) 4px 4px 0.6px;
+  cursor: pointer;
 }
 
 .services-tabbs .nav-item {
@@ -307,6 +309,7 @@ h6 {
   background-color: #f5b3d2 !important;
   border-color: #000 !important;
   color: #000 !important;
+  cursor: pointer;
 }
 
 .lead-booster-block {
@@ -404,9 +407,9 @@ h6 {
 }
 
 .lead-booster-pro-section {
-  width: 100%;
+  width: 76%;
   display: inline-block;
-  margin: -67px 0 0 -130px;
+  margin: -266px 0 0 -126px;
 }
 
 .lead-booster-pro-strip {
@@ -434,12 +437,13 @@ h6 {
 }
 
 .lead-booster-pro-strip span {
-  color: #db1063;
-  margin: 13px 0 0 0px;
+  color: rgb(219, 16, 99);
+  margin: 12px 0 0px 0;
   font-size: 18px;
-  width: 50%;
+  padding-top: 17px;
+  width: 49%;
   float: right;
-  text-align: center;
+  text-align: right;
 }
 
 .lead-booster-pro-strip .btn.orange-btn::after {
@@ -455,10 +459,11 @@ h6 {
 .lead-booster-pro-strip .btn.white-btn::after {
   position: absolute;
   content: "";
-  background: url("../images/Asset-36.png");
-  width: 163px;
+  background: url("../images/Asset-25.png");
+  background-size: 96% 100%;
+  width: 176px;
   height: 50px;
-  right: -131px;
+  right: -140px;
   top: -3px;
 }
 
@@ -553,3 +558,4 @@ h6 {
   text-transform: uppercase;
   font-size: 18px;
 }
+

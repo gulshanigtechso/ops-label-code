@@ -26,6 +26,7 @@
                             .lead-booster-pro-strip22{
                                 .btn{
                                     width: 283px;
+                                    text-align: center;
                                 }
 
                                 .pink-btn{
@@ -38,6 +39,28 @@
                                     position: relative;
                                 }
                             }
+                        }
+                    }
+
+                    .lead-booster-text{
+                        .btn-text{
+                            width: 100%;
+                            text-align: right;
+                            padding-left: 80px;
+                            position: relative;
+                            top: 2px;
+                            left: -3px;
+
+                            p{
+                                &:first-child{
+                                    color:#bd4560;
+                                }
+
+                                &:last-child{
+                                    color:#feeca7;
+                                }
+                            }
+
                         }
                     }
                 }

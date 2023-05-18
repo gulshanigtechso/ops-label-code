@@ -1,0 +1,23 @@
+.contact-page{
+    height: 100vh;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+
+    .contact-left-side{
+        width:7.5%;
+        height:100%;
+        background-color: #ebeef1;
+
+        .services-left_social_media{
+            width:7.5%;
+        }
+    }
+
+    .contact-right-side{
+        width:92.5%;
+        height:100%;
+        background-color: #151315;
+    }
+
+}

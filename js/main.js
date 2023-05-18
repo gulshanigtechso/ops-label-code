@@ -3,6 +3,9 @@
 // services tab box
 
 let arr = document.querySelectorAll('.lead-booster-info');
+let btn1 = document.querySelector('#pink-btn');
+let btn2 = document.querySelector('#orange-btn');
+let btn3 = document.querySelector("#white-btn");
 
 const show = (id)=>{
     localStorage.setItem('id', id);
@@ -13,6 +16,19 @@ const show = (id)=>{
         item.classList.remove('active');
     })
     document.querySelector(id).classList.add('active');
+    if(id=='#ex1-tabs-1'){
+        btn1.style.backgroundColor = '#d0f0ed';
+        btn2.style.backgroundColor = '#72c6ca';
+        btn3.style.backgroundColor = '#3aa4d8';
+    }else if(id=='#ex1-tabs-2'){
+        btn1.style.backgroundColor = '#ffe9a6';
+        btn2.style.backgroundColor = '#ffc47f';
+        btn3.style.backgroundColor = '#ff9027';
+    }else if(id=='#ex1-tabs-3'){
+        btn1.style.backgroundColor = '#fedfed';
+        btn2.style.backgroundColor = '#dec7e6';
+        btn3.style.backgroundColor = '#ad7bc0';
+    }
 }
 
 function starter(){
@@ -30,8 +46,8 @@ function starter(){
         document.querySelector('#appointment-starter').classList.add('active');
     }else if(id==='#ex1-tabs-3'){
         document.querySelector('#closer-starter').classList.add('active');
-    }else if(id==='#ex1-tabs-4'){
-        document.querySelector('#contributor-starter').classList.add('active');
+    }else{
+        document.querySelector(id).classList.add('active');
     }
 }
 
@@ -50,8 +66,8 @@ function pro(){
         document.querySelector('#appointment-pro').classList.add('active');
     }else if(id==='#ex1-tabs-3'){
         document.querySelector('#closer-pro').classList.add('active');
-    }else if(id==='#ex1-tabs-4'){
-        document.querySelector('#contributor-pro').classList.add('active');
+    }else{
+        document.querySelector(id).classList.add('active');
     }
 }
 
@@ -65,14 +81,13 @@ function premium(){
     })
     if(id==='#ex1-tabs-1'){
         document.querySelector('#lead-premium').classList.add('active');
-    }
-    else if(id==='#ex1-tabs-2'){
+    }else if(id==='#ex1-tabs-2'){
         document.querySelector('#appointment-premium').classList.add('active');
     }
     else if(id==='#ex1-tabs-3'){
         document.querySelector('#closer-premium').classList.add('active');
-    }else if(id==='#ex1-tabs-4'){
-        document.querySelector('#contributor-premium').classList.add('active');
+    }else{
+        document.querySelector(id).classList.add('active');
     }
 }
 
