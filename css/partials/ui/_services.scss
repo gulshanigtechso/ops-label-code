@@ -7,6 +7,10 @@
     background-size: 100% 100%;
     background-position-x: -3px;
 
+    @include devices(lg) {
+        background-size: 103% 100%;
+    }
+
     &::after {
         @include pseudo("", 45px, 50%, 90px, 90px);
         background-image: url(../images/plane.png);
@@ -16,6 +20,10 @@
         @include devices(xl) {
             @include dimension(70px, 70px);
         }
+
+        @include devices(md) {
+            top: 180px;
+        }
     }
 
     &::before {
@@ -23,15 +31,35 @@
         background-image: url(../images/section2-line.svg);
         background-repeat: no-repeat;
         background-size: contain;
+
+        @include devices(md) {
+            top: 360px;
+        }
     }
 
     .row.ser_row {
         margin: 100px 0;
+
+        @include devices(md) {
+            gap: 5rem;
+        }
+
+        .ser_box {
+            @include padding-x(0.2rem, 0.2rem);
+
+            @include devices(md) {
+                @include padding-x(1.5rem, 1.5rem);
+            }
+        }
     }
 
     .title_h2 {
         color: #ffffff;
         @include padding-y(20px, 6px);
+
+        @include devices(md) {
+            padding-top: 180px;
+        }
     }
 
     .titleh3 {
@@ -51,6 +79,15 @@
         padding: 2rem 2rem 3rem;
         position: relative;
 
+        @include devices(lg) {
+            padding-top: 1rem;
+            @include padding-x(1rem, 1rem);
+        }
+
+        @include devices(md) {
+            @include padding-x(3rem, 3rem);
+        }
+
         .heart_icon {
             position: absolute;
             left: 0;
@@ -60,6 +97,15 @@
             display: block;
             text-align: center;
             @include dimension(70px, 70px);
+
+            @include devices(lg) {
+                @include dimension(60px, 60px);
+                top: -35px;
+            }
+
+            @include devices(md) {
+                @include dimension(70px, 70px);
+            }
         }
 
         .btn {
@@ -74,7 +120,19 @@
             @include padding-y(0.4rem, 0.4rem);
 
             @include devices(xl) {
-                font-size: 1rem;
+                font-size: 0.9rem;
+            }
+
+            @include devices(lg) {
+                font-size: 0.8rem;
+                max-width: 90%;
+                bottom: -15px;
+            }
+
+            @include devices(md) {
+                font-size: 1.8rem;
+                max-width: 80%;
+                bottom: -27px;
             }
         }
 
@@ -84,6 +142,10 @@
 
             @include devices(xl) {
                 width: 150px;
+            }
+
+            @include devices(md) {
+                width: 250px;
             }
 
             img {
@@ -160,6 +222,10 @@
                 @include dimension(9px, 9px);
             }
 
+            @include devices(md) {
+                @include dimension(11px, 11px);
+            }
+
             &:not(.swiper-pagination-bullet-active) {
                 border: 2px solid #000;
                 background: none;
@@ -178,6 +244,10 @@
             font-size: 2.6rem;
         }
 
+        @include devices(md) {
+            font-size: 2.8rem;
+        }
+
         &::after {
             content: '';
         }
@@ -187,6 +257,14 @@
 
         @include devices(xl) {
             font-size: 0.91vw;
+        }
+
+        @include devices(lg) {
+            font-size: 1.16vw;
+        }
+
+        @include devices(md) {
+            font-size: 1.5rem;
         }
 
         &.slide1 {
@@ -211,6 +289,14 @@
                 @include devices(xl) {
                     font-size: 1rem;
                 }
+
+                @include devices(lg) {
+                    font-size: 0.8rem;
+                }
+
+                @include devices(md) {
+                    font-size: 1.5rem;
+                }
             }
 
             .plus-btn {
@@ -222,6 +308,16 @@
                 pointer-events: none;
                 filter: none;
                 @include margin-y(1.4rem, 2rem);
+
+                @include devices(lg) {
+                    font-size: 0.9rem;
+                    @include margin-y(1.2rem, 1.8rem);
+                }
+
+                @include devices(md) {
+                    font-size: 1.4rem;
+                    @include margin-y(1.4rem, 2rem);
+                }
             }
         }
 
@@ -248,6 +344,14 @@
 
         @include devices(xl) {
             width: 11px;
+        }
+
+        @include devices(lg) {
+            width: 10px;
+        }
+
+        @include devices(md) {
+            width: 16px;
         }
     }
 }
