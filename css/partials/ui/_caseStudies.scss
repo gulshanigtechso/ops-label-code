@@ -70,6 +70,17 @@
                 position: absolute;
                 top: 40%;
                 left: 27px;
+
+                @include devices(md){
+                    top:40%;
+                    left:15px;
+                }
+
+                span{
+                    @include devices(md){
+                        width: 84%;
+                    }
+                }
             }
         }
     }
@@ -252,12 +263,14 @@
                 @include devices(md) {
                     grid-template-columns: repeat(2, 1fr);
                     font-size: 0.9rem;
+                    padding-left: 14px;
                 }
     
                 @include devices(sm) {
                     grid-template-columns: auto;
                     gap: 0px;
                     margin-top: 0px;
+                    padding-left: 14px;
                 }
 
                 .btn{
@@ -267,7 +280,7 @@
                 .green-btn {
                     top: -23px;
                     left: 29px;
-                    height: 61px;
+                    height: 58px;
                     margin-top: 26px;
                     margin-right: 27px;
                     padding-top: 14px;
@@ -277,11 +290,27 @@
                         left: 10px;
                         width: 64px;
                         height: 42px;
+
+                        @include devices(md){
+                            top: -17px;
+                            left: 19px;
+                            width: 44px;
+                            height: 44px;
+                        }
                     }
 
                     @include devices(lg) {
-                        height: 87px;
-                        padding-top: 32px;
+                        height: 60px;
+                        padding-top: 15px;
+                    }
+
+                    @include devices(md){
+                        top: -12px;
+                        left: -4px;
+                        height: 58px;
+                        margin-top: 26px;
+                        padding-top: 14px;
+                        margin-right:0px;
                     }
                 }
     
@@ -296,6 +325,8 @@
     
                     @include devices(md) {
                         margin-top: 15px;
+                        height:55px;
+                        font-size: 11px;
                     }
     
                     @include devices(sm) {
@@ -322,11 +353,15 @@
                         }
     
                         @include devices(md) {
-                            top: -65px;
+                            top: -64px;
+                            left: 96%;
                         }
     
                         @include devices(sm) {
-                            top: -60px;
+                            top: -66px;
+                            left: 101%;
+                            height: 45px;
+                            width: 45px;
                         }
                     }
                 }
