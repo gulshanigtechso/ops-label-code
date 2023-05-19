@@ -3041,7 +3041,7 @@ h6 {
 .services-left_block-logo img {
   position: absolute;
   margin: 86px 0 0 28px;
-  z-index: 999;
+  z-index: 6;
   max-width: 217px;
 }
 @media (max-width: 1199.98px) {
