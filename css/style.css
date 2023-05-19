@@ -3050,19 +3050,14 @@ footer .footer-section ul.footer-links li a:hover {
   display: block;
 }
 .services-tabbs .lead-booster-block-container .hide1 {
-  background-color: #f5b3d1;
   display: none;
 }
-.services-tabbs .lead-booster-block-container .hide2 {
-  background-color: #FFFF8F;
-  display: none;
-}
-.services-tabbs .lead-booster-block-container .hide3 {
-  background-color: #fcc980;
-  display: none;
+.services-tabbs .lead-booster-block-container .active {
+  display: block;
 }
 .services-tabbs .lead-booster-block-container .lead-booster-left .lead-booster-pro-section .lead-booster-pro-strip .lead-booster-pro-strip22 .btn {
   width: 283px;
+  text-align: center;
 }
 .services-tabbs .lead-booster-block-container .lead-booster-left .lead-booster-pro-section .lead-booster-pro-strip .lead-booster-pro-strip22 .pink-btn {
   background-color: #f5b3d1;
@@ -3146,7 +3141,7 @@ footer .footer-section ul.footer-links li a:hover {
   border: 6px solid #000;
 }
 .lead-booster-info h2 {
-  font-size: 40px;
+  font-size: 29px;
   color: #000;
   font-weight: bold;
   padding: 0 0 14px 0;
@@ -3203,7 +3198,6 @@ footer .footer-section ul.footer-links li a:hover {
   bottom: 0;
   border: 1px dashed #7A7678;
 }
-
 .lead-booster-text p {
   color: #fff;
   max-width: 763px;
@@ -3212,11 +3206,25 @@ footer .footer-section ul.footer-links li a:hover {
   font-size: 20px;
   margin-top: 30px;
 }
+.lead-booster-text .btn-text {
+  width: 100%;
+  text-align: right;
+  padding-left: 80px;
+  position: relative;
+  top: 2px;
+  left: -3px;
+}
+.lead-booster-text .btn-text p:first-child {
+  color: #bd4560;
+}
+.lead-booster-text .btn-text p:last-child {
+  color: #feeca7;
+}
 
 .lead-booster-pro-section {
-  width: 100%;
+  width: 76%;
   display: inline-block;
-  margin: -67px 0 0 -130px;
+  margin: -266px 0 0 -126px;
 }
 
 .lead-booster-pro-strip {
@@ -3635,6 +3643,71 @@ footer .footer-section ul.footer-links li a:hover {
   .caseStudies-details .caseStudies-footer .footer-div p {
     font-size: 0.68rem;
   }
+}
+
+.contact-page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.contact-page .contact-left-side {
+  width: 7.5%;
+  height: 100%;
+  background-color: #ebeef1;
+}
+.contact-page .contact-left-side .services-left_social_media {
+  width: 7.5%;
+}
+.contact-page .contact-right-side {
+  width: 92.5%;
+  height: 100%;
+  background-color: #151315;
+  position: relative;
+}
+.contact-page .contact-right-side .contact-bg-1 {
+  background-image: url("../images/contact_1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 499px;
+  width: 635px;
+  position: absolute;
+  top: -23%;
+  left: 74%;
+}
+.contact-page .contact-right-side .contact-bg-2 {
+  background-image: url("../images/contact_2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 370px;
+  width: 378px;
+  position: absolute;
+  top: 56%;
+  left: 66%;
+}
+.contact-page .contact-right-side .contact-line-1 {
+  background-image: url("../images/contact-line1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 401px;
+  width: 791px;
+  position: absolute;
+  top: 49.5%;
+  left: 0;
+}
+.contact-page .contact-right-side .contact-line-2 {
+  background-image: url("../images/contact-line2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 401px;
+  width: 361px;
+  position: absolute;
+  top: 21.5%;
+  left: 79%;
 }
 
 @font-face {
