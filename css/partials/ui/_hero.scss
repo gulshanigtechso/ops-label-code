@@ -18,6 +18,14 @@
         height: 600px;
     }
 
+    @include devices(lg) {
+        height: 530px;
+    }
+
+    @include devices(md) {
+        height: 974px;
+    }
+
     .hero-left {
         font-weight: bold;
 
@@ -33,8 +41,17 @@
                 margin-bottom: 1rem;
             }
 
+            @include devices(lg) {
+                font-size: 1.7rem;
+            }
+
+            @include devices(md) {
+                font-size: 2rem;
+            }
+
             span {
-                color: #129740;
+                // color: #129740;
+                color: deeppink;
             }
         }
 
@@ -45,6 +62,15 @@
 
             @include devices(xl) {
                 font-size: 0.92rem;
+            }
+
+            @include devices(lg) {
+                width: 480px;
+            }
+
+            @include devices(md) {
+                font-size: 1.1rem;
+                width: 580px;
             }
         }
 
@@ -112,12 +138,24 @@
     .hero-img {
         position: relative;
 
+        @include devices(md) {
+            @include mx-auto();
+        }
+
         .hand-img {
             margin-top: -50px;
             margin-left: 50px;
             object-fit: cover;
             position: relative;
             z-index: 1;
+
+            @include devices(lg) {
+                margin-left: 30px;
+            }
+
+            @include devices(lg) {
+                margin: 0;
+            }
         }
 
         // &::after {

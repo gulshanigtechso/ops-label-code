@@ -2,9 +2,19 @@
     position: relative;
 
     .faq_row {
-        .col-md-5 {
-            width: 44%;
+
+        @include devices(md) {
+            gap: 6rem;
         }
+
+        .faq_box {
+            width: 44%;
+
+            @include devices(md) {
+                width: 85%;
+            }
+        }
+
     }
 
     .bg-img {
@@ -21,6 +31,10 @@
                 @include devices(xl) {
                     width: 220px;
                 }
+
+                @include devices(lg) {
+                    width: 180px;
+                }
             }
 
             &:last-child {
@@ -29,6 +43,10 @@
 
                 @include devices(xl) {
                     width: 100px;
+                }
+
+                @include devices(lg) {
+                    width: 80px;
                 }
             }
         }
@@ -48,6 +66,15 @@
         @include devices(xl) {
             margin-top: 8rem;
         }
+
+        @include devices(lg) {
+            margin-left: 3.5rem;
+        }
+
+        @include devices(md) {
+            margin-top: 5rem;
+            margin-left: 9rem;
+        }
     }
 
     .fly-arrow-img {
@@ -59,6 +86,16 @@
         @include devices(xl) {
             width: 12rem;
             margin-top: 5rem;
+        }
+
+        @include devices(lg) {
+            width: 10rem;
+            margin-left: 6rem;
+        }
+
+        @include devices(md) {
+            margin-left: 13rem;
+            margin-top: 8rem;
         }
     }
 }
@@ -102,6 +139,10 @@
 
     @include devices(xl) {
         font-size: 13px;
+    }
+
+    @include devices(md) {
+        font-size: 1.2rem;
     }
 }
 

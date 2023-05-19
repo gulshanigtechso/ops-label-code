@@ -17,6 +17,11 @@
         left: 30px;
     }
 
+    @include devices(lg) {
+        width: 40px;
+        left: 16px;
+    }
+
     span {
         background-color: $black;
         width: 100%;
@@ -116,6 +121,7 @@
         nav {
             display: inline-flex;
             flex-direction: column;
+            margin-top: 2rem;
 
             a {
                 font-size: 4.4rem;
@@ -127,6 +133,10 @@
 
                 @include devices(xl) {
                     font-size: 3rem;
+                }
+
+                @include devices(lg) {
+                    font-size: 2.5rem;
                 }
 
                 &:nth-child(1) {
@@ -164,6 +174,10 @@
                 @include devices(xl) {
                     margin-right: 1.8rem;
                 }
+
+                @include devices(lg) {
+                    margin-right: 0.7rem;
+                }
             }
         }
 
@@ -176,6 +190,11 @@
             @include devices(xl) {
                 width: 150px;
             }
+
+            @include devices(lg) {
+                width: 135px;
+                left: -60px;
+            }
         }
 
         .arrowfly-img {
@@ -185,6 +204,10 @@
 
             @include devices(xl) {
                 width: 180px;
+            }
+
+            @include devices(lg) {
+                width: 160px;
             }
         }
     }

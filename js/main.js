@@ -53,9 +53,27 @@ const servicesSwiper3 = new Swiper('.services-swiper3', {
 const brandsSwiper = new Swiper('.brands-swiper', {
     loop: true,
     autoplay: true,
-    slidesPerView: 6,
+    slidesPerView: 3,
     spaceBetween: 50,
-    grabCursor: true
+    grabCursor: true,
+
+    // Responsive breakpoints
+    breakpoints: {
+        // when window width is >= 480px
+        640: {
+            slidesPerView: 3,
+            // spaceBetween: 30
+        },
+        // when window width is >= 640px
+        768: {
+            slidesPerView: 4,
+            // spaceBetween: 40
+        },
+        1000: {
+            slidesPerView: 6,
+            // spaceBetween: 40
+        },
+    }
 });
 
 

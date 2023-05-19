@@ -40,6 +40,10 @@
     .features-row {
         margin-top: 5rem;
         align-items: center;
+
+        @include devices(md) {
+            gap: 4rem;
+        }
     }
 
     .leadGImg {
@@ -57,16 +61,36 @@
         gap: 1.6rem;
     }
 
+    @include devices(lg) {
+        gap: 1.3rem;
+    }
+
+    @include devices(md) {
+        gap: 2rem;
+    }
+
     li {
         display: flex;
         align-items: center;
         gap: 0.8rem;
+
+        @include devices(md) {
+            gap: 1.5rem;
+        }
 
         img {
             width: 32px;
 
             @include devices(xl) {
                 width: 25px;
+            }
+
+            @include devices(lg) {
+                width: 22px;
+            }
+
+            @include devices(md) {
+                width: 30px;
             }
         }
 
@@ -77,6 +101,14 @@
             @include devices(xl) {
                 font-size: 0.95rem;
             }
+
+            @include devices(lg) {
+                font-size: 0.875rem;
+            }
+
+            @include devices(md) {
+                font-size: 1.4rem;
+            }
         }
 
         p {
@@ -85,6 +117,14 @@
 
             @include devices(xl) {
                 font-size: 0.9rem;
+            }
+
+            @include devices(lg) {
+                font-size: 0.8rem;
+            }
+
+            @include devices(md) {
+                font-size: 1.2rem;
             }
         }
     }
