@@ -1,61 +1,67 @@
-.services-main {
-    background: #2a2a2a;
-    width: 94%;
-    position: relative;
-    float: left;
+.services-template{
+    width:100%;
+    display:flex;
+    flex-direction:row;
 
-    @include devices(lg) {
-        width: 93%;
-    }
-
-    @include devices(md) {
-        width: 88%;
-        margin-left: 92px;
-    }
-
-    @include devices(sm) {
-        width: 95%;
-        margin-left: 51px;
-    }
-}
-
-.services-logo-main {
-    max-width: 1530px;
-    margin: 0 0 0 80px;
-    overflow: hidden;
-    padding: 66px 0 0 0px;
-
-    .site-logo {
-        max-width: 260px;
-    }
-}
-
-.services-left_block-logo {
-    position: relative;
-
-    img {
-        position: absolute;
-        margin: 86px 0 0 28px;
-        z-index: 999;
-        max-width: 217px;
-
+    .services-main {
+        background: #2a2a2a;
+        width: 94%;
+        position: relative;
+        float: left;
+    
         @include devices(lg) {
-            margin: 51px 0 0 21px;
-            max-width: 181px;
+            width: 93%;
         }
-
+    
         @include devices(md) {
-            max-width: 166px;
-            margin: 37px 0 0 24px;
+            width: 88%;
+            margin-left: 92px;
         }
-
+    
         @include devices(sm) {
-            max-width: 133px;
-            margin: 29px 0 0 24px;
+            width: 95%;
+            margin-left: 51px;
         }
     }
+    
+    .services-logo-main {
+        max-width: 1530px;
+        margin: 0 0 0 80px;
+        overflow: hidden;
+        padding: 66px 0 0 0px;
+    
+        .site-logo {
+            max-width: 260px;
+        }
+    }
+    
+    .services-left_block-logo {
+        position: relative;
+    
+        img {
+            position: absolute;
+            margin: 86px 0 0 28px;
+            z-index: 999;
+            max-width: 217px;
+    
+            @include devices(lg) {
+                margin: 51px 0 0 21px;
+                max-width: 181px;
+            }
+    
+            @include devices(md) {
+                max-width: 166px;
+                margin: 37px 0 0 24px;
+            }
+    
+            @include devices(sm) {
+                max-width: 133px;
+                margin: 29px 0 0 24px;
+            }
+        }
+    }
+    
 }
-
 
 .talk-btn {
     float: right;
@@ -132,13 +138,8 @@
         color: #000;
         font-size: 20px;
         text-align: center;
+        cursor:pointer;
         box-shadow: rgb(0, 0, 0) 4px 4px 0.6px;
-
-        &.active {
-            background-color: #f5b3d2 !important;
-            border-color: #000 !important;
-            color: #000 !important;
-        }
     }
 
     .nav-item {
@@ -255,16 +256,6 @@
         max-width: 560px;
         margin: auto;
         font-size: 26px;
-
-        &::after {
-            position: absolute;
-            content: "";
-            left: 0;
-            right: 0;
-            margin: auto;
-            bottom: 0;
-            border: 1px dashed #7A7678;
-        }
     }
 
     p {
@@ -374,10 +365,11 @@
     }
 }
 
-.services-template {
-    width: 100%;
-    display: inline-block;
-}
+// .services-template {
+//     width: 100%;
+//     display: flex;
+//     flex-direction: row;
+// }
 
 .services-left_block {
     width: 6%;
@@ -385,25 +377,6 @@
     position: relative;
     background: #eaeeef;
     height: 1165px;
-
-    @include devices(lg) {
-        height: 1056px;
-        width: 7%;
-    }
-
-    @include devices(md) {
-        width: 12%;
-        position: fixed;
-        background: #eaeeef;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: 99;
-    }
-
-    @include devices(sm) {
-        width: 14%;
-    }
 }
 
 .services-left_block-toggle {
