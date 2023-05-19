@@ -145,7 +145,7 @@
                         background-repeat: no-repeat;
                         background-position: 95%;
                         background-size: 26% 60%;
-
+  
                         @include devices(sm) {
                             height: 36px;
                         }
@@ -198,7 +198,7 @@
             left: 8%;
             height: 88px;
             width: 78px;
-            background-image: url("../images/plane1.png");
+            background-image: url("../images/plane.png");
             background-repeat: no-repeat;
             background-size: 100%;
             background-position: center;
