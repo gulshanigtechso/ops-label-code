@@ -3,6 +3,21 @@
     padding-top: 4rem;
     padding-bottom: 5rem;
 
+    .site-upercase-title {
+        color: #1e1b15;
+        font-size: 40px;
+        font-weight: bold;
+        font-style: italic;
+
+        @include devices(xl) {
+            font-size: 35px;
+        }
+
+        @include devices(xs) {
+            font-size: 25px;
+        }
+    }
+
     .semi-font-text {
         margin-top: 2rem;
         margin-bottom: 2.5rem;
@@ -22,6 +37,10 @@
         @include devices(md) {
             width: 100%;
             font-size: 1.5rem;
+        }
+
+        @include devices(xs) {
+            font-size: 1rem;
         }
 
         a {
@@ -45,17 +64,10 @@
             @include devices(md) {
                 width: 32px;
             }
+
+            @include devices(xs) {
+                width: 22px;
+            }
         }
-    }
-}
-
-.site-upercase-title {
-    color: #1e1b15;
-    font-size: 40px;
-    font-weight: bold;
-    font-style: italic;
-
-    @include devices(xl) {
-        font-size: 35px;
     }
 }

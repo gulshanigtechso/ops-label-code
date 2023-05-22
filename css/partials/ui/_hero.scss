@@ -26,6 +26,15 @@
         height: 974px;
     }
 
+    @include devices(sm) {
+        height: 910px;
+    }
+
+    @include devices(xs) {
+        padding-top: 120px;
+        height: 710px;
+    }
+
     .hero-left {
         font-weight: bold;
 
@@ -47,6 +56,10 @@
 
             @include devices(md) {
                 font-size: 2rem;
+            }
+
+            @include devices(xs) {
+                font-size: 1.5rem;
             }
 
             span {
@@ -71,6 +84,11 @@
             @include devices(md) {
                 font-size: 1.1rem;
                 width: 580px;
+            }
+
+            @include devices(xs) {
+                font-size: 1rem;
+                width: auto;
             }
         }
 

@@ -13,12 +13,20 @@
             @include devices(md) {
                 width: 85%;
             }
+
+            @include devices(sm) {
+                width: 95%;
+            }
         }
 
     }
 
     .bg-img {
         pointer-events: none;
+
+        @include devices(xs) {
+            display: none;
+        }
 
         img {
             position: absolute;
@@ -53,27 +61,23 @@
     }
 
     &::after {
-        @include pseudo("", -60px, auto, 10%, 10%);
+        @include pseudo("", -60px, auto, 110px, 27px);
         right: 120px;
         background-image: url(../images/Asset-39.png);
         background-repeat: no-repeat;
     }
 
-    .claim-btn {
+    .claim-btn-box {
         margin-top: 12rem;
-        margin-left: 8rem;
+        display: flex;
+        justify-content: center;
 
         @include devices(xl) {
             margin-top: 8rem;
         }
 
-        @include devices(lg) {
-            margin-left: 3.5rem;
-        }
-
         @include devices(md) {
             margin-top: 5rem;
-            margin-left: 9rem;
         }
     }
 
@@ -90,12 +94,17 @@
 
         @include devices(lg) {
             width: 10rem;
-            margin-left: 6rem;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         @include devices(md) {
-            margin-left: 13rem;
             margin-top: 8rem;
+        }
+
+        @include devices(xs) {
+            width: 8rem;
+            margin-top: 6rem;
         }
     }
 }
@@ -143,6 +152,10 @@
 
     @include devices(md) {
         font-size: 1.2rem;
+    }
+
+    @include devices(sm) {
+        font-size: 1rem;
     }
 }
 
