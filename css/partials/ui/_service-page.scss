@@ -19,8 +19,8 @@
         }
     
         @include devices(sm) {
-            width: 95%;
-            margin-left: 51px;
+            width: 80%;
+            margin-left: 19%;
         }
 
         .options{
@@ -36,6 +36,10 @@
         margin: 0 0 0 80px;
         overflow: hidden;
         padding: 66px 0 0 0px;
+
+        @include devices(xl){
+            margin: 25px;
+        }
     
         .site-logo {
             max-width: 260px;

@@ -125,8 +125,8 @@
         </div>
         <!---------- image grid --------->
         <div class="image_grid" data-aos="fade-up" data-aos-duration="7000">
-          <div class="image" id="img" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <img src="../images/Asset-45.png" alt="case_studies" onclick="showPopUp()"/>
+          <div class="image" id="img" onclick="showPopUp()">
+            <!-- <img src="../images/Asset-45.png" alt="case_studies" "/> -->
             <div class="show_on_hover" data-aos="fade-up" data-aos-duration="3000">
               <div class="hide">
                 <h3>Perform With Pleasure</h3>
@@ -134,17 +134,15 @@
               </div>
             </div>
           </div>
-          <div class="image">
-            <img src="./images/Asset 46.png" alt="case_studies" onclick="showPopUp()"/>
+          <div class="image" id="img1" onclick="showPopUp()">
             <div class="show_on_hover" data-aos="fade-up" data-aos-duration="3000">
               <div class="hide">
                 <h3>Perform With Pleasure</h3>
                 <p>Appointment Setter Starter</p>
               </div>
             </div>
-          </div>
-          <div class="image">
-            <img src="../images/Asset 44.png" alt="case_studies" onclick="showPopUp()"/>
+          </div> 
+          <div class="image" id="img2" onclick="showPopUp()">
             <div class="show_on_hover" data-aos="fade-up" data-aos-duration="3000">
               <div class="hide">
                 <h3>Whitney</h3>
@@ -152,8 +150,7 @@
               </div>
             </div>
           </div>
-          <div class="image">
-            <img src="./images/Asset 43.png" alt="case_studies" onclick="showPopUp()"/>
+          <div class="image" id="img3" onclick="showPopUp()">
             <div class="show_on_hover" data-aos="fade-up" data-aos-duration="3000">
               <div class="hide">
                 <h3>Deloitte</h3>
@@ -218,6 +215,7 @@
   <div id="modals" >
     <div class="swiper caseSwiper">
       <div class="swiper-wrapper">
+        
         <div class="swiper-slide" id="staticBackdropLabel">
           <div class="caseStudies-details">
             <div class="caseStudies-details-header"><button type="button" data-bs-dismiss="modal" id="btn-close" onclick="hidePopUp()">X</button></div>

@@ -146,6 +146,10 @@
                         background-position: 95%;
                         background-size: 26% 60%;
   
+                        @include devices(xl){
+                            background-size: 26% 50%;
+                        }
+
                         @include devices(sm) {
                             height: 36px;
                         }
@@ -158,6 +162,10 @@
                         background-position: center;
                         background-repeat: no-repeat;
                         background-size: 100%;
+
+                        @include devices(xl){
+                            height: 86%;
+                        }
 
                         @include devices(lg) {
                             background-size: 100% 100%;

@@ -1,9 +1,13 @@
 .services-template{
     .services-left_block{
-        height: 1144px;
+        height: 1168px;
+
+        @include devices(xl){
+            height: 1129px;
+        }
     
         @include devices(lg) {
-            height: 1056px;
+            height: 1021px;
             width: 7%;
         }
     
@@ -95,7 +99,7 @@
         }
     
         .case_studies {
-            padding: 50px;
+            padding: 50px 50px 0px 50px;
             width: 50%;
             background-color: #2a2a2a;
             color: white;
@@ -109,7 +113,7 @@
             }
     
             @include devices(sm) {
-                padding: 20px;
+                padding: 14px;
             }
     
             .case_studies_heading {
@@ -120,6 +124,12 @@
                 line-height: 109px;
                 margin-top: 10rem;
                 padding: 0px 10px 0px 10px;
+
+                @include devices(xl){
+                    font-size: 83px;
+                    line-height: 84px;
+                    margin-top: 9.5rem;
+                }
     
                 @include devices(lg) {
                     font-size: 48px;
@@ -171,12 +181,21 @@
     
             .case_studies_paragraph {
                 padding: 0px 10px 0px 10px;
+
+                @include devices(xs){
+                    padding: 0px;
+                }
     
                 p {
                     font-size: 1.64rem;
                     padding-right: 51px;
                     line-height: 32px;
                     margin-bottom: 2rem;
+                    
+                    @include devices(xl){
+                        font-size: 1.54rem;
+                        padding-right: 0px;
+                    }
     
                     @include devices(lg) {
                         font-size: 1.1rem;
@@ -254,6 +273,10 @@
                 text-transform: uppercase;
                 font-style: italic;
                 font-weight: 700;
+
+                @include devices(xl){
+                    gap:0;
+                }
     
                 @include devices(lg) {
                     grid-template-columns: repeat(1, 1fr);
@@ -270,7 +293,7 @@
                     grid-template-columns: auto;
                     gap: 0px;
                     margin-top: 0px;
-                    padding-left: 14px;
+                    padding-left: 2px;
                 }
 
                 .btn{
@@ -297,6 +320,14 @@
                             width: 44px;
                             height: 44px;
                         }
+                        
+                    }
+
+                    @include devices(xl){
+                        left: -2px;
+                        width:100%;
+                        padding-top:11px;
+                        font-size:1rem;
                     }
 
                     @include devices(lg) {
@@ -310,7 +341,13 @@
                         height: 58px;
                         margin-top: 26px;
                         padding-top: 14px;
-                        margin-right:0px;
+                        margin-right:5px;
+                    }
+                    @include devices(xs){
+                        height: 47px;
+                        margin-top: 26px;
+                        padding-top: 11px;
+                        font-size:0.8rem;
                     }
                 }
     
@@ -322,15 +359,30 @@
                     margin-top: 5px;
                     font-size: 15px;
                     font-weight: bold;
+                    padding: 12px 22px;
+
+                    @include devices(xl){
+                        padding: 12px 20px;
+                        height:56px;
+                    }
+
+                    @include devices(lg){
+                        padding: 6px 22px;
+                    }
+
     
                     @include devices(md) {
                         margin-top: 15px;
                         height:55px;
-                        font-size: 11px;
+                        font-size: 13px;
+                        padding: 14px 22px;
                     }
     
                     @include devices(sm) {
                         margin-top: 5px;
+                        font-size:11px;
+                        height: 48px;
+                        padding:12px 27px;
                     }
     
                     .star_bg_img {
@@ -344,6 +396,12 @@
                         background-position: center;
                         height: 66px;
                         width: 66px;
+
+                        @include devices(xl){
+                            height: 60px;
+                            width: 60px;
+                            top:-70px;
+                        }
     
                         @include devices(lg) {
                             top: -72px;
@@ -358,8 +416,8 @@
                         }
     
                         @include devices(sm) {
-                            top: -66px;
-                            left: 101%;
+                            top: -58px;
+                            left: 91%;
                             height: 45px;
                             width: 45px;
                         }
@@ -380,7 +438,15 @@
     
             .image {
                 position: relative;
-    
+                background-size: 128% 105%;
+                background-position: center;
+                background-position-x: -12px;
+                background-position-y: -4px;
+                background-repeat: no-repeat;
+                border:2px solid black;
+                width: 100%;
+                height: 100%;
+
                 &:hover .hide {
                     display: block;
                 }
@@ -388,6 +454,7 @@
                         width: 100%;
                         height: 100%;
                         cursor:pointer;
+                        object-fit: cover;
                     }
     
                 .show_on_hover {
@@ -410,7 +477,11 @@
     
                         h3 {
                             font-size: 1.5rem;
-                        font-weight: bold;
+                            font-weight: bold;
+
+                            @include devices(xl){
+                                font-size:1rem !important;
+                            }
     
                             @include devices(sm) {
                                 font-size: 22px;
@@ -419,6 +490,10 @@
     
                         p {
                             font-size: 1.2rem;
+
+                            @include devices(xl){
+                                font-size: 1rem;
+                            }
     
                             @include devices(sm) {
                                 font-size: 1rem;
@@ -435,7 +510,25 @@
             }
     
             #img{
-                border: 4px solid black;
+                background-image: url("../images/Asset-45.png");
+            }
+
+            #img1{
+                background-image: url("../images/Asset_5_1.svg");
+                background-size: 129% 131%;
+                background-position: center;
+                background-position-y: -38px;
+            }
+
+            #img2{
+                background-image: url("../images/Asset_6_1.svg");
+                background-size: 149% 141%;
+                background-position-x: -76px;
+            }
+
+            #img3{
+                background-image: url("../images/Asset 43.png");
+                background-position-x: -10px;
             }
         }
     }
@@ -609,6 +702,12 @@
     margin-right: 23px;
     margin-top: 0;
     cursor:pointer;
+
+    @include devices(xl){
+        margin-right: 8px;
+        margin-top: -7px;
+        font-size:30px;
+    }
 }
 
 #btn-closer:hover{
