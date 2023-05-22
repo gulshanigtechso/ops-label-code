@@ -28,9 +28,12 @@ const caseSwiper = new Swiper('.caseSwiper', {
       },
 });
 
-let arr_1 = document.querySelectorAll(".nav-link")
+let arr_1 = document.querySelectorAll(".nav-link");
+let arr_2 = document.querySelectorAll(".price");
 
 const show = (id) => {
+    document.getElementById("sales_show").style.display = 'block';
+    document.getElementById('sales_hide').style.display = 'none';
     localStorage.setItem('id', id);
     arr.forEach((item) => {
         item.classList.add('hide1');
@@ -38,28 +41,22 @@ const show = (id) => {
     arr.forEach((item) => {
         item.classList.remove('active');
     });
+    arr_2.forEach((item)=>{item.style.backgroundColor='whitesmoke'});
     document.querySelector(id).classList.add('active');
     if (id == '#ex1-tabs-1') {
-        btn1.style.backgroundColor = '#d0f0ed';
-        btn2.style.backgroundColor = '#72c6ca';
-        btn3.style.backgroundColor = '#3aa4d8';
         arr_1.forEach((item)=>{item.style.backgroundColor='white'});
         document.getElementById("blue_bg").style.backgroundColor = "#3aa4d8";
     } else if (id == '#ex1-tabs-2') {
-        btn1.style.backgroundColor = '#ffe9a6';
-        btn2.style.backgroundColor = '#ffc47f';
-        btn3.style.backgroundColor = '#ff9027';
         arr_1.forEach((item)=>{item.style.backgroundColor='white'});
         document.getElementById("orng_bg").style.backgroundColor = "#ff9027";
     } else if (id == '#ex1-tabs-3') {
-        btn1.style.backgroundColor = '#fedfed';
-        btn2.style.backgroundColor = '#dec7e6';
-        btn3.style.backgroundColor = '#ad7bc0';
         arr_1.forEach((item)=>{item.style.backgroundColor='white'});
-        document.getElementById("prple_bg").style.backgroundColor = "#ad7bc0";
+        document.getElementById("prple_bg").style.backgroundColor = "#ad7bc0";       
     } else{
         arr_1.forEach((item)=>{item.style.backgroundColor='white'});
         document.getElementById("lprple_bg").style.backgroundColor = "#dec7e6";
+        document.getElementById("sales_show").style.display = 'none';
+        document.getElementById('sales_hide').style.display = 'block';
     }
 };
 
@@ -71,12 +68,15 @@ function starter() {
     arr.forEach((item) => {
         item.classList.remove('active');
     });
+    arr_2.forEach((item)=>{item.style.backgroundColor='whitesmoke'});
     if (id === '#ex1-tabs-1') {
+        btn1.style.backgroundColor = '#3aa4d8';
         document.querySelector('#lead-starter').classList.add('active');
-    }
-    else if (id === '#ex1-tabs-2') {
+    } else if (id === '#ex1-tabs-2') {
+        btn1.style.backgroundColor = '#ff9027';
         document.querySelector('#appointment-starter').classList.add('active');
     } else if (id === '#ex1-tabs-3') {
+        btn1.style.backgroundColor = '#ad7bc0';
         document.querySelector('#closer-starter').classList.add('active');
     } else {
         document.querySelector(id).classList.add('active');
@@ -91,12 +91,15 @@ function pro() {
     arr.forEach((item) => {
         item.classList.remove('active');
     });
+    arr_2.forEach((item)=>{item.style.backgroundColor='whitesmoke'});
     if (id === '#ex1-tabs-1') {
+        btn2.style.backgroundColor = '#3aa4d8';
         document.querySelector('#lead-pro').classList.add('active');
-    }
-    else if (id === '#ex1-tabs-2') {
+    }else if (id === '#ex1-tabs-2') {
+        btn2.style.backgroundColor = '#ff9027';
         document.querySelector('#appointment-pro').classList.add('active');
     } else if (id === '#ex1-tabs-3') {
+        btn2.style.backgroundColor = '#ad7bc0';
         document.querySelector('#closer-pro').classList.add('active');
     } else {
         document.querySelector(id).classList.add('active');
@@ -111,12 +114,15 @@ function premium() {
     arr.forEach((item) => {
         item.classList.remove('active');
     });
+    arr_2.forEach((item)=>{item.style.backgroundColor='whitesmoke'});
     if (id === '#ex1-tabs-1') {
+        btn3.style.backgroundColor = '#3aa4d8';
         document.querySelector('#lead-premium').classList.add('active');
     } else if (id === '#ex1-tabs-2') {
+        btn3.style.backgroundColor = '#ff9027';
         document.querySelector('#appointment-premium').classList.add('active');
-    }
-    else if (id === '#ex1-tabs-3') {
+    } else if (id === '#ex1-tabs-3') {
+        btn3.style.backgroundColor = '#ad7bc0';
         document.querySelector('#closer-premium').classList.add('active');
     } else {
         document.querySelector(id).classList.add('active');

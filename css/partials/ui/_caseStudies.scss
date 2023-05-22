@@ -408,8 +408,9 @@
                         text-align: justify;
                         line-height: 19px;
     
-                        h2 {
-                            font-weight: bold;
+                        h3 {
+                            font-size: 1.5rem;
+                        font-weight: bold;
     
                             @include devices(sm) {
                                 font-size: 22px;
@@ -434,7 +435,7 @@
             }
     
             #img{
-                border:3px solid black;
+                border: 4px solid black;
             }
         }
     }
