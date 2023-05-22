@@ -11,7 +11,11 @@ footer {
     }
 
     @include devices(md) {
-        background-size: 110% 63%;
+        background-size: 120% 64%;
+    }
+
+    @include devices(xs) {
+        background-size: 140% 74%;
     }
 
     &::after {
@@ -46,6 +50,57 @@ footer {
             display: none;
         }
     }
+}
+
+.contact-section {
+    position: relative;
+    text-align: center;
+    color: black;
+    line-height: 1.3;
+
+    &::after {
+        @include pseudo("", 150px, 0, 10%, 30%);
+        background-image: url(../images/footer-line1.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include devices(xl) {
+            top: 180px;
+        }
+
+        @include devices(md) {
+            display: none;
+        }
+    }
+
+    &::before {
+        @include pseudo("", 25px, 680px, 14%, 12%);
+        background-image: url(../images/footer-line2.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include devices(xl) {
+            top: 60px;
+            left: 480px;
+        }
+
+        @include devices(lg) {
+            top: 80px;
+            left: 300px;
+        }
+
+        @include devices(md) {
+            display: none;
+        }
+    }
+
+    .container-fluid {
+        @include padding-x(4rem, 4rem);
+
+        @include devices(xs) {
+            @include padding-x(0.75rem, 0.75rem);
+        }
+    }
 
     .contact-wrapper {
         gap: 15rem;
@@ -53,416 +108,466 @@ footer {
         @include devices(lg) {
             gap: 8rem;
         }
-    }
 
-    .contact-text {
-        // @include mx-auto();
-        margin-top: 7rem;
-        font-weight: bold;
-
-        @include devices(xl) {
-            margin-top: 10rem;
+        @include devices(xs) {
+            gap: 5rem;
         }
 
-        @include devices(lg) {
-            width: 38%;
-            @include padding-x(0, 0);
-        }
-
-        @include devices(md) {
-            width: 100%;
-        }
-
-        h5 {
-            margin-bottom: 1.3rem;
+        .contact-text {
+            // @include mx-auto();
+            margin-top: 7rem;
             font-weight: bold;
 
             @include devices(xl) {
-                font-size: 1rem;
+                margin-top: 10rem;
+            }
+
+            @include devices(lg) {
+                width: 38%;
+                @include padding-x(0, 0);
             }
 
             @include devices(md) {
-                font-size: 2rem;
+                width: 100%;
+                margin-top: 0;
+            }
+
+            @include devices(sm) {
+                @include padding-x(0.75rem, 0.75rem);
+            }
+
+            h5 {
+                margin-bottom: 1.3rem;
+                font-weight: bold;
+
+                @include devices(xl) {
+                    font-size: 1rem;
+                }
+
+                @include devices(md) {
+                    font-size: 2rem;
+                }
+
+                @include devices(xs) {
+                    font-size: 1.3rem;
+                }
+            }
+
+            p {
+                font-size: 1.2rem;
+
+                @include devices(xl) {
+                    font-size: 1rem;
+                }
+
+                @include devices(md) {
+                    font-size: 1.5rem;
+                }
+
+                @include devices(xs) {
+                    font-size: 1rem;
+                }
             }
         }
 
-        p {
-            font-size: 1.2rem;
+        .contact-box {
+            position: relative;
+            width: 28%;
+            filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.4));
 
             @include devices(xl) {
-                font-size: 1rem;
+                width: 33%;
+            }
+
+            @include devices(lg) {
+                width: 40%;
             }
 
             @include devices(md) {
-                font-size: 1.5rem;
+                width: 70%;
+            }
+
+            @include devices(sm) {
+                width: 85%;
+            }
+
+            @include devices(xs) {
+                width: 95%;
+            }
+
+            .contact-outer {
+                border: 5px solid black;
+                border-radius: 12px;
+                text-align: center;
+
+                img {
+                    position: absolute;
+                    top: 10px;
+                    left: -120px;
+                    width: 230px;
+
+                    @include devices(xl) {
+                        width: 150px;
+                        left: -70px;
+                    }
+
+                    @include devices(md) {
+                        width: 180px;
+                    }
+
+                    @include devices(xs) {
+                        width: 120px;
+                        left: 0;
+                    }
+                }
+
+                h3.header-white {
+                    border-bottom: 5px solid black;
+                    padding: 0.9rem 0.95rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: right;
+                    gap: 1rem;
+
+                    span.circle-span {
+                        padding: 10px;
+                        border-radius: 50%;
+                        border: 3px solid black;
+
+                        @include devices(xl) {
+                            padding: 8px;
+                        }
+
+                        @include devices(md) {
+                            padding: 10px;
+                        }
+
+                        @include devices(xs) {
+                            padding: 7px;
+                        }
+
+                        &.sky-circle {
+                            background: #a0d2d6;
+                        }
+
+                        &.purple-circle {
+                            background: #b183ba;
+                        }
+
+                        &.blue-cicle {
+                            background: #2d2765;
+                        }
+                    }
+                }
+
+                .contact-inner {
+                    background: #dcefee;
+                    padding: 1.6rem 1.4rem;
+                    border-bottom-left-radius: inherit;
+                    border-bottom-right-radius: inherit;
+
+                    h3.contact-title {
+                        color: #1e1b15;
+                        font-size: 35px;
+                        margin-bottom: 25px;
+                        font-weight: bold;
+                        font-style: italic;
+
+                        @include devices(xl) {
+                            font-size: 30px;
+                        }
+
+                        @include devices(md) {
+                            font-size: 40px;
+                        }
+
+                        @include devices(xs) {
+                            font-size: 1.7rem;
+                        }
+                    }
+
+                    ul.contact-btns {
+                        display: grid;
+                        gap: 2.5rem;
+
+                        @include devices(xl) {
+                            gap: 2rem;
+                        }
+
+                        @include devices(md) {
+                            gap: 2.6rem;
+                        }
+
+                        @include devices(xs) {
+                            gap: 1.5rem;
+                        }
+
+                        li {
+                            width: 100%;
+
+                            &.star-bg {
+                                position: relative;
+
+                                img {
+                                    position: absolute;
+                                    right: -150px;
+                                    left: auto;
+                                    top: -8px;
+
+                                    @include devices(xl) {
+                                        top: 1px;
+                                        right: -100px;
+                                    }
+
+                                    @include devices(md) {
+                                        top: 9px;
+                                    }
+
+                                    @include devices(xs) {
+                                        display: none;
+                                    }
+                                }
+                            }
+
+                            &.heart-bg {
+                                position: relative;
+
+                                img {
+                                    position: absolute;
+                                    top: -8px;
+                                    left: -160px;
+
+                                    @include devices(xl) {
+                                        top: 1px;
+                                        left: -100px;
+                                    }
+
+                                    @include devices(md) {
+                                        top: 9px;
+                                    }
+
+                                    @include devices(xs) {
+                                        display: none;
+                                    }
+                                }
+                            }
+
+                            a {
+                                width: inherit;
+                                padding: 0.6rem 0.3rem;
+                                font-weight: bold;
+                                font-size: 1.3rem;
+
+                                @include devices(xl) {
+                                    font-size: 1rem;
+                                }
+
+                                @include devices(md) {
+                                    font-size: 1.8rem;
+                                }
+
+                                @include devices(xs) {
+                                    font-size: 1.1rem;
+                                }
+
+                                &.btn {
+                                    filter: none;
+                                }
+                            }
+                        }
+                    }
+
+                    p.contact-foot-title {
+                        margin-top: 1.2rem;
+                        text-transform: uppercase;
+                        text-align: right;
+                        font-size: 1.12rem;
+                        font-weight: bold;
+
+                        @include devices(xl) {
+                            font-size: 1rem;
+                        }
+
+                        @include devices(md) {
+                            font-size: 1.3rem;
+                        }
+
+                        @include devices(xs) {
+                            font-size: 0.95rem;
+                        }
+                    }
+                }
             }
         }
     }
+}
 
-    .contact-box {
-        position: relative;
-        width: 28%;
-        filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.4));
+.footer-section {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+
+    @include devices(xl) {
+        @include padding-y(6rem, 1.2rem);
+    }
+
+    @include devices(md) {
+        padding-bottom: 3rem;
+        text-align: center;
+    }
+
+    @include devices(xs) {
+        padding-top: 2rem;
+    }
+
+    .container-fluid {
+        @include padding-x(5rem, 5rem);
+
+        @include devices(xs) {
+            @include padding-x(0.75rem, 0.75rem);
+        }
+    }
+
+    p {
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 100;
+        padding-right: 90px;
 
         @include devices(xl) {
-            width: 33%;
+            font-size: 0.95rem;
         }
 
         @include devices(lg) {
-            width: 40%;
+            padding-right: 3rem;
         }
 
         @include devices(md) {
-            width: 70%;
+            font-size: 1.5rem;
+            padding-right: 0;
         }
 
-        .contact-outer {
-            border: 5px solid black;
-            border-radius: 12px;
-            text-align: center;
+        @include devices(xs) {
+            font-size: 1.1rem;
+        }
 
-            img {
-                position: absolute;
-                top: 10px;
-                left: -120px;
-                width: 230px;
-
-                @include devices(xl) {
-                    width: 150px;
-                    left: -70px;
-                }
-
-                @include devices(md) {
-                    width: 180px;
-                }
-            }
-
-            h3.header-white {
-                border-bottom: 5px solid black;
-                padding: 0.9rem 0.95rem;
-                display: flex;
-                align-items: center;
-                justify-content: right;
-                gap: 1rem;
-
-                span.circle-span {
-                    padding: 10px;
-                    border-radius: 50%;
-                    border: 3px solid black;
-
-                    @include devices(xl) {
-                        padding: 8px;
-                    }
-
-                    @include devices(md) {
-                        padding: 10px;
-                    }
-
-                    &.sky-circle {
-                        background: #a0d2d6;
-                    }
-
-                    &.purple-circle {
-                        background: #b183ba;
-                    }
-
-                    &.blue-cicle {
-                        background: #2d2765;
-                    }
-                }
-            }
-
-            .contact-inner {
-                background: #dcefee;
-                padding: 1.6rem 1.4rem;
-                border-bottom-left-radius: inherit;
-                border-bottom-right-radius: inherit;
-
-                h3.contact-title {
-                    color: #1e1b15;
-                    font-size: 35px;
-                    margin-bottom: 25px;
-                    font-weight: bold;
-                    font-style: italic;
-
-                    @include devices(xl) {
-                        font-size: 30px;
-                    }
-
-                    @include devices(md) {
-                        font-size: 40px;
-                    }
-                }
-
-                ul.contact-btns {
-                    display: grid;
-                    gap: 2.5rem;
-
-                    @include devices(xl) {
-                        gap: 2rem;
-                    }
-
-                    @include devices(md) {
-                        gap: 2.6rem;
-                    }
-
-                    li {
-                        width: 100%;
-
-                        &.star-bg {
-                            position: relative;
-
-                            img {
-                                position: absolute;
-                                right: -150px;
-                                left: auto;
-                                top: -8px;
-
-                                @include devices(xl) {
-                                    top: 1px;
-                                    right: -100px;
-                                }
-
-                                @include devices(md) {
-                                    top: 9px;
-                                }
-                            }
-                        }
-
-                        &.heart-bg {
-                            position: relative;
-
-                            img {
-                                position: absolute;
-                                top: -8px;
-                                left: -160px;
-
-                                @include devices(xl) {
-                                    top: 1px;
-                                    left: -100px;
-                                }
-
-                                @include devices(md) {
-                                    top: 9px;
-                                }
-                            }
-                        }
-
-                        a {
-                            width: inherit;
-                            padding: 0.6rem 0.3rem;
-                            font-weight: bold;
-                            font-size: 1.3rem;
-
-                            @include devices(xl) {
-                                font-size: 1rem;
-                            }
-
-                            @include devices(md) {
-                                font-size: 1.8rem;
-                            }
-
-                            &.btn {
-                                filter: none;
-                            }
-                        }
-                    }
-                }
-
-                p.contact-foot-title {
-                    margin-top: 1.2rem;
-                    text-transform: uppercase;
-                    text-align: right;
-                    font-size: 1.12rem;
-                    font-weight: bold;
-
-                    @include devices(xl) {
-                        font-size: 1rem;
-                    }
-
-                    @include devices(md) {
-                        font-size: 1.3rem;
-                    }
-                }
-            }
+        &.foot-para {
+            margin-top: 1rem;
         }
     }
 
-    .contact-section {
-        position: relative;
-        text-align: center;
-        color: black;
-        line-height: 1.3;
-
-        &::after {
-            @include pseudo("", 150px, 0, 10%, 30%);
-            background-image: url(../images/footer-line1.svg);
-            background-repeat: no-repeat;
-            background-size: contain;
-
-            @include devices(xl) {
-                top: 180px;
-            }
-
-            @include devices(md) {
-                display: none;
-            }
-        }
-
-        &::before {
-            @include pseudo("", 25px, 680px, 14%, 12%);
-            background-image: url(../images/footer-line2.svg);
-            background-repeat: no-repeat;
-            background-size: contain;
-
-            @include devices(xl) {
-                top: 60px;
-                left: 480px;
-            }
-
-            @include devices(lg) {
-                top: 80px;
-                left: 300px;
-            }
-
-            @include devices(md) {
-                display: none;
-            }
-        }
-
-        .container-fluid {
-            @include padding-x(4rem, 4rem);
-        }
-    }
-
-    .footer-section {
-        padding-top: 3rem;
-        padding-bottom: 2rem;
+    h3 {
+        color: white;
+        font-style: italic;
+        font-size: 26px;
+        margin-top: 2.5rem;
+        margin-bottom: 1.2rem;
 
         @include devices(xl) {
-            @include padding-y(6rem, 1.2rem);
+            font-size: 1.1rem;
         }
 
         @include devices(md) {
-            padding-bottom: 3rem;
+            font-size: 1.6rem;
+            margin-top: 2rem;
         }
 
-        .container-fluid {
-            @include padding-x(5rem, 5rem);
+        @include devices(xs) {
+            font-size: 1rem;
         }
 
-        p {
-            color: white;
-            font-size: 1.2rem;
-            font-weight: 100;
-            padding-right: 90px;
+        &.footer-links-title {
+            margin-bottom: 2.2rem;
 
             @include devices(xl) {
-                font-size: 0.95rem;
+                margin-bottom: 1.8rem;
             }
 
-            @include devices(lg) {
-                padding-right: 3rem;
-            }
-
-            @include devices(md) {
-                font-size: 1.5rem;
-                padding-right: 0;
-            }
-
-            &.foot-para {
+            @include devices(xs) {
                 margin-top: 1rem;
             }
         }
+    }
 
-        h3 {
-            color: white;
-            font-style: italic;
-            font-size: 26px;
-            margin-top: 2.5rem;
-            margin-bottom: 1.2rem;
+    a {
+        color: white;
 
-            @include devices(xl) {
-                font-size: 1.1rem;
-            }
-
-            @include devices(md) {
-                font-size: 1.6rem;
-                margin-top: 2rem;
-            }
-
-            &.footer-links-title {
-                margin-bottom: 2.2rem;
-
-                @include devices(xl) {
-                    margin-bottom: 1.8rem;
-                }
-            }
+        @include devices(md) {
+            font-size: 1.4rem;
         }
 
-        a {
-            color: white;
+        @include devices(xs) {
+            font-size: 1rem;
+        }
 
-            @include devices(md) {
-                font-size: 1.4rem;
-            }
+        &:hover {
+            color: #bc7aee;
+        }
+    }
+
+    ul.social-icons {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1.5rem;
+
+        @include devices(xl) {
+            margin-top: 1rem;
+        }
+
+        @include devices(md) {
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        li {
+            transition: transform 0.2s;
 
             &:hover {
-                color: #bc7aee;
-            }
-        }
-
-        ul.social-icons {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1.5rem;
-
-            @include devices(xl) {
-                margin-top: 1rem;
+                transform: translateY(-3px);
             }
 
-            li {
-                transition: transform 0.2s;
-
-                &:hover {
-                    transform: translateY(-3px);
-                }
-
-                img {
-                    @include devices(xl) {
-                        width: 25px;
-                    }
-
-                    @include devices(md) {
-                        width: 40px;
-                    }
-                }
-            }
-        }
-
-        ul.footer-links {
-            display: grid;
-            gap: 0.3rem;
-
-            li {
-                font-weight: 100;
-                font-size: 1.1rem;
-
+            img {
                 @include devices(xl) {
-                    font-size: 0.8rem;
+                    width: 25px;
                 }
 
                 @include devices(md) {
-                    font-size: 1.1rem;
+                    width: 40px;
                 }
 
-                a {
-                    color: white;
-                    transition: color 0.2s;
+                @include devices(xs) {
+                    width: 25px;
+                }
+            }
+        }
+    }
 
-                    &:hover {
-                        color: #bc7aee;
-                    }
+    ul.footer-links {
+        display: grid;
+        gap: 0.3rem;
+
+        li {
+            font-weight: 100;
+            font-size: 1.1rem;
+
+            @include devices(xl) {
+                font-size: 0.8rem;
+            }
+
+            @include devices(md) {
+                font-size: 1.1rem;
+            }
+
+            @include devices(xs) {
+                font-size: 0.9rem;
+            }
+
+            a {
+                font-size: inherit;
+                color: white;
+                transition: color 0.2s;
+
+                &:hover {
+                    color: #bc7aee;
                 }
             }
         }
