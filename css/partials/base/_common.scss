@@ -61,6 +61,15 @@ button:not(:disabled) {
             @include padding-x(50px, 50px);
         }
 
+        @include devices(lg) {
+            @include padding-x(40px, 40px);
+        }
+
+        @include devices(md) {
+            font-size: 1rem;
+            @include padding-x(50px, 50px);
+        }
+
         &::after {
             @include pseudo($content: "", $top: -15px, $left: auto, $width: 50px, $height: 25px);
             background-image: url(../images/plane.png);
@@ -108,11 +117,20 @@ button:not(:disabled) {
         &.claim-btn {
             position: relative;
             font-style: italic;
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: bold;
 
             @include devices(xl) {
                 font-size: 0.8rem;
+                @include padding-x(50px, 50px);
+            }
+
+            @include devices(lg) {
+                @include padding-x(40px, 40px);
+            }
+
+            @include devices(md) {
+                font-size: 1rem;
                 @include padding-x(50px, 50px);
             }
 
@@ -127,6 +145,11 @@ button:not(:disabled) {
                     top: -35px;
                     right: -10px;
                     @include dimension(50px, 50px);
+                }
+
+                @include devices(lg) {
+                    top: -32px;
+                    @include dimension(45px, 45px);
                 }
             }
         }

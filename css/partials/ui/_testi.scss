@@ -82,6 +82,10 @@
     @include devices(xl) {
         font-size: 1.05rem;
     }
+
+    @include devices(lg) {
+        font-size: 0.95rem;
+    }
 }
 
 .qt_text-1 {
@@ -92,6 +96,10 @@
 
     @include devices(xl) {
         font-size: 1.05rem;
+    }
+
+    @include devices(lg) {
+        font-size: 1rem;
     }
 }
 
@@ -124,6 +132,10 @@
 
         @include devices(xl) {
             @include dimension(340px, 240px);
+        }
+
+        @include devices(lg) {
+            @include dimension(300px, 230px);
         }
 
         figure {

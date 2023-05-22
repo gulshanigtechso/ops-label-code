@@ -19,5 +19,9 @@ header {
         @include devices(xl) {
             width: 140px;
         }
+
+        @include devices(lg) {
+            margin-left: 3rem;
+        }
     }
 }

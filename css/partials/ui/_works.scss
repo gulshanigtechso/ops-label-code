@@ -54,19 +54,75 @@
         @include margin-y(8rem, 70px);
         justify-content: space-between;
 
-        .col-md-3 {
-            width: 27%;
+        @include devices(md) {
+            justify-content: center;
+            gap: 6rem;
         }
+
+        .works_box {
+            width: 27%;
+
+            @include devices(lg) {
+                width: 28%;
+                @include padding-x(0, 0);
+            }
+
+            @include devices(md) {
+                width: 100%;
+                @include padding-x(1.5rem, 1.5rem);
+            }
+        }
+
+        .works_box_1 {
+            text-align: center;
+
+            @include devices(lg) {
+                @include padding-x(0, 0);
+                width: 5%;
+            }
+
+            @include devices(md) {
+                width: 100%;
+                @include padding-x(1.5rem, 1.5rem);
+            }
+
+            .arrow-right {
+                width: 70px;
+
+                @include devices(xl) {
+                    width: 60px;
+                }
+
+                @include devices(lg) {
+                    width: 50px;
+                }
+
+                @include devices(md) {
+                    width: 90px;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+
 
         .box {
             position: relative;
             margin-top: 50px;
             background: #ffffff;
+            color: $black;
             padding: 2.5rem 1.5rem 1.5rem;
             height: auto;
             border: 5px solid #030405;
             border-radius: 30px;
             filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
+
+            @include devices(lg) {
+                @include padding-x(0.9rem, 0.9rem);
+            }
+
+            @include devices(md) {
+                padding: 5.8rem 2.2rem 2.5rem;
+            }
 
             .info_text {
                 position: absolute;
@@ -87,6 +143,11 @@
                 @include devices(xl) {
                     height: 60px;
                     top: -35px;
+                }
+
+                @include devices(md) {
+                    height: 140px;
+                    top: -75px;
                 }
 
                 &.sky-btn {
@@ -124,6 +185,11 @@
                         font-size: 32px;
                         top: -36px;
                     }
+
+                    @include devices(md) {
+                        @include dimension(65px, 65px);
+                        font-size: 42px;
+                    }
                 }
 
                 h6 {
@@ -131,6 +197,10 @@
 
                     @include devices(xl) {
                         font-size: 0.8rem;
+                    }
+
+                    @include devices(md) {
+                        font-size: 2rem;
                     }
                 }
             }
@@ -144,17 +214,9 @@
                     margin-top: 0.9rem;
                     font-size: 0.9rem;
                 }
-            }
-        }
 
-        .col-md-1 {
-            text-align: center;
-
-            .arrow-right {
-                width: 70px;
-
-                @include devices(xl) {
-                    width: 60px;
+                @include devices(md) {
+                    font-size: 2rem;
                 }
             }
         }

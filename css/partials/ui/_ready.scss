@@ -15,6 +15,15 @@
             margin-bottom: 2.3rem;
         }
 
+        @include devices(lg) {
+            width: 90%;
+        }
+
+        @include devices(md) {
+            width: 100%;
+            font-size: 1.5rem;
+        }
+
         a {
             font-weight: 800;
         }
@@ -31,6 +40,10 @@
 
             @include devices(xl) {
                 width: 26px;
+            }
+
+            @include devices(md) {
+                width: 32px;
             }
         }
     }
