@@ -235,7 +235,7 @@
             font-size: 15px;
             max-width: 320px;
         }
-
+ 
         &::after {
             @include pseudo("", -12px, auto, 26px, 25px);
             right: 30px;

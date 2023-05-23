@@ -143,6 +143,10 @@
                         background-position: 95%;
                         background-size: 26% 60%;
 
+                        @include devices(xl){
+                            background-size: 26% 50%;
+                        }
+
                         @include devices(sm){
                             height: 36px;
                         }
@@ -157,6 +161,7 @@
                         background-position-x: 0px;
                         background-position-y: 0px;
                         border: 3px solid black;
+                       
 
                         @include devices(lg){
                             background-size: 100% 100%;
@@ -190,13 +195,13 @@
         background-color: #000;
         color:white;
 
-        .plane-bg{
+        .plane-bg{ 
             position: absolute;
             top: 64%;
             left: 8%;
             height: 88px;
             width: 78px;
-            background-image: url("../images/plane1.png");
+            background-image: url("../images/plane.png");
             background-repeat: no-repeat;
             background-size: 100%;
             background-position: center;
