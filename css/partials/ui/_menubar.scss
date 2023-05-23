@@ -89,6 +89,7 @@
     }
 
     .menu_left_col {
+        padding-right: 0;
 
         div {
             display: flex;
@@ -123,7 +124,7 @@
     }
 
     .menu_mid_col {
-        background-color: #1E2224;
+        background-color: #2a2a2a;
         display: grid;
         place-items: center;
         position: relative;
@@ -275,6 +276,7 @@
     .menu_right_col {
         display: grid;
         min-height: 100vh;
+        border-left: 12px solid #1d1b15;
 
         @include devices(md) {
             display: none;

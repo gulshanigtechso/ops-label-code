@@ -4,7 +4,7 @@
     z-index: 1;
     margin-top: -340px;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 101% 100%;
     background-position-x: -3px;
 
     @include devices(lg) {
@@ -132,7 +132,7 @@
 
         .btn {
             position: absolute;
-            bottom: -22px;
+            bottom: -16px;
             left: 0;
             right: 0;
             font-size: 1.3rem;
@@ -140,6 +140,7 @@
             max-width: 85%;
             margin: auto;
             @include padding-x(0.4rem, 0.4rem);
+            pointer-events: none;
 
             @include devices(xl) {
                 font-size: 0.9rem;
@@ -361,17 +362,16 @@
 
             .plus-btn {
                 position: unset;
-                padding: 0.2rem 4.5rem;
+                padding: 0.2rem 4rem;
                 max-width: unset;
                 font-weight: 800;
                 font-size: 1rem;
                 pointer-events: none;
                 filter: none;
-                @include margin-y(1.4rem, 2rem);
+                @include margin-y(1.2rem, 1.8rem);
 
                 @include devices(lg) {
                     font-size: 0.9rem;
-                    @include margin-y(1.2rem, 1.8rem);
                 }
 
                 @include devices(md) {

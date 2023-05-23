@@ -561,6 +561,10 @@ footer {
                 font-size: 0.9rem;
             }
 
+            &:last-child {
+                margin-top: 0.7rem;
+            }
+
             a {
                 font-size: inherit;
                 color: white;
