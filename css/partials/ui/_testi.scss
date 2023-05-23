@@ -7,6 +7,18 @@
     background-position-y: -110px;
     background-position-x: -20px;
     padding-top: 5rem;
+    padding-bottom: 3rem;
+
+    @include devices(md) {
+        background-position-y: 0;
+        background-size: 118% 100%;
+        padding-bottom: 10rem;
+    }
+
+    @include devices(xs) {
+        background-size: 300% 100%;
+        padding-bottom: 10rem;
+    }
 
     &::before {
         @include pseudo("", -12px, 50%, 110px, 27px);
@@ -15,8 +27,23 @@
         transform: translateX(-50%);
     }
 
+    .testi_row {
+        @include devices(md) {
+            gap: 3rem;
+            text-align: center;
+        }
+
+        @include devices(sm) {
+            gap: 2rem;
+        }
+    }
+
     .bg-img {
         pointer-events: none;
+
+        @include devices(sm) {
+            display: none;
+        }
 
         img {
             position: absolute;
@@ -51,8 +78,12 @@
     }
 
     .title_h2 {
-        text-align: left !important;
+        text-align: left;
         color: #fff;
+
+        @include devices(sm) {
+            text-align: center;
+        }
     }
 
     h3 {
@@ -86,6 +117,14 @@
     @include devices(lg) {
         font-size: 0.95rem;
     }
+
+    br {
+        @include devices(xs) {
+            display: none;
+        }
+    }
+
+
 }
 
 .qt_text-1 {
@@ -111,6 +150,10 @@
         width: auto;
         top: 0;
         bottom: auto;
+
+        @include devices(md) {
+            width: 100%;
+        }
 
         .swiper-pagination-bullet {
             background: #fff;
@@ -138,6 +181,15 @@
             @include dimension(300px, 230px);
         }
 
+        @include devices(md) {
+            margin-left: 0;
+            @include mx-auto();
+        }
+
+        @include devices(xs) {
+            @include dimension(270px, 200px);
+        }
+
         figure {
             @include dimension(100%, 100%);
             border: 6px solid #000;
@@ -160,6 +212,12 @@
                 top: -24px;
                 @include dimension(55px, 55px);
             }
+
+            @include devices(xs) {
+                @include dimension(45px, 45px);
+                top: -15px;
+                right: -7px;
+            }
         }
 
     }
@@ -168,6 +226,11 @@
 .testi-swiper-txt {
     height: 90%;
     padding-bottom: 4rem;
+
+    @include devices(md) {
+        height: 100%;
+        padding-bottom: 7rem;
+    }
 
     .swiper-slide {
         position: relative;
@@ -192,6 +255,16 @@
                 padding: 0.8rem 2rem;
             }
 
+            @include devices(md) {
+                bottom: -90px;
+            }
+
+            @include devices(xs) {
+                @include padding-x(1rem, 1rem);
+                right: 14px;
+                bottom: -100px;
+            }
+
             &.orange {
                 background-color: $orange;
             }
@@ -210,6 +283,18 @@
                 background-image: url(../images/spark.svg);
                 background-repeat: no-repeat;
                 background-size: contain;
+
+                @include devices(xs) {
+                    @include dimension(40px, 40px);
+                    top: -21px;
+                    right: -20px;
+                }
+            }
+
+            br {
+                @include devices(xs) {
+                    display: none;
+                }
             }
         }
     }

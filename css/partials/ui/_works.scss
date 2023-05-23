@@ -6,12 +6,33 @@
         top: -135px;
         right: -176px;
         pointer-events: none;
+
+        @include devices(md) {
+            top: -70px;
+        }
+
+        @include devices(sm) {
+            top: -40px;
+        }
+
+        @include devices(xs) {
+            top: -20px;
+            right: -280px;
+        }
     }
 
     .container-fluid {
         position: relative;
         z-index: 1;
         @include padding-x(4rem, 4rem);
+
+        @include devices(sm) {
+            @include padding-x(3rem, 3rem);
+        }
+
+        @include devices(xs) {
+            @include padding-x(0.75rem, 0.75rem);
+        }
     }
 
     .works-title {
@@ -20,6 +41,10 @@
         img {
             width: 20%;
             position: absolute;
+
+            @include devices(xs) {
+                display: none;
+            }
 
             &:first-child {
                 top: 0;
@@ -59,6 +84,14 @@
             gap: 6rem;
         }
 
+        @include devices(sm) {
+            gap: 7rem;
+        }
+
+        @include devices(xs) {
+            gap: 4rem;
+        }
+
         .works_box {
             width: 27%;
 
@@ -70,6 +103,10 @@
             @include devices(md) {
                 width: 100%;
                 @include padding-x(1.5rem, 1.5rem);
+            }
+
+            @include devices(xs) {
+                @include padding-x(0.75rem, 0.75rem);
             }
         }
 
@@ -86,6 +123,10 @@
                 @include padding-x(1.5rem, 1.5rem);
             }
 
+            @include devices(xs) {
+                @include padding-x(0.75rem, 0.75rem);
+            }
+
             .arrow-right {
                 width: 70px;
 
@@ -100,6 +141,12 @@
                 @include devices(md) {
                     width: 90px;
                     transform: rotate(90deg);
+                    margin-bottom: 2rem;
+                }
+
+                @include devices(xs) {
+                    width: 60px;
+                    margin-bottom: 1.3rem;
                 }
             }
         }
@@ -122,6 +169,10 @@
 
             @include devices(md) {
                 padding: 5.8rem 2.2rem 2.5rem;
+            }
+
+            @include devices(xs) {
+                padding: 3rem 1.2rem 1.2rem;
             }
 
             .info_text {
@@ -148,6 +199,13 @@
                 @include devices(md) {
                     height: 140px;
                     top: -75px;
+                }
+
+                @include devices(xs) {
+                    max-width: 85%;
+                    height: 80px;
+                    top: -45px;
+                    padding: 1rem 0.5rem 0.3rem;
                 }
 
                 &.sky-btn {
@@ -190,6 +248,12 @@
                         @include dimension(65px, 65px);
                         font-size: 42px;
                     }
+
+                    @include devices(xs) {
+                        @include dimension(46px, 46px);
+                        font-size: 28px;
+                        top: -30px;
+                    }
                 }
 
                 h6 {
@@ -201,6 +265,14 @@
 
                     @include devices(md) {
                         font-size: 2rem;
+                    }
+
+                    @include devices(sm) {
+                        font-size: 1.6rem;
+                    }
+
+                    @include devices(xs) {
+                        font-size: 1.1rem;
                     }
                 }
             }
@@ -217,6 +289,14 @@
 
                 @include devices(md) {
                     font-size: 2rem;
+                }
+
+                @include devices(sm) {
+                    font-size: 1.6rem;
+                }
+
+                @include devices(xs) {
+                    font-size: 1.05rem;
                 }
             }
         }
