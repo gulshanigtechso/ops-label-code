@@ -3,6 +3,8 @@
     display:flex;
     flex-direction:row;
 
+
+
     .services-main {
         background: #2a2a2a;
         width: 94%;
@@ -28,6 +30,15 @@
             color:white;
             margin-top:55px;
             font-size:1rem;
+
+            @include devices(md){
+                margin-top:5px;
+            }
+
+            @include devices(sm){
+                font-size: .7rem;
+                margin-top:30px;
+            }
         }
     }
     
@@ -39,6 +50,10 @@
 
         @include devices(xl){
             margin: 25px;
+        }
+
+        @include devices(md){
+            padding:0;
         }
     
         .site-logo {
@@ -54,6 +69,12 @@
             margin: 86px 0 0 28px;
             z-index: 999;
             max-width: 217px;
+
+            @include devices(xl){
+                margin: 53px 0 0 28px;
+                z-index: 99;
+                max-width: 210px;
+            }
     
             @include devices(lg) {
                 margin: 51px 0 0 21px;
@@ -91,6 +112,11 @@
         font-size: 0.85rem;
         padding: 17px;
 
+        @include devices(sm){
+            font-size: 0.65rem;
+            padding: 8px;
+        }
+
         span {
             color: #ce036b;
         }
@@ -99,6 +125,22 @@
 
 .services-tabbs {
     padding: 17px 0 0 0;
+
+    .nav-tabs{
+        @include devices(md){
+            display:grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap:10px;
+
+            .nav-items{
+                width:100%;
+            }
+        }
+
+        @include devices(sm){
+            grid-template-columns: auto;
+        }
+    }
 
     #sales_show{
         display:block;
@@ -122,15 +164,37 @@
             display: block;
         }
 
+        #booster{
+            @include devices(md){
+                width:100%;
+            }
+        }
+
         .lead-booster-left {
 
             .lead-booster-pro-section {
+
+                @include devices(sm){
+                    display:none;
+                }
 
                 .lead-booster-pro-strip {
                     .lead-booster-pro-strip22 {
                         .btn {
                             width: 283px;
                             text-align: center;
+
+                            @include devices(xl){
+                                width:247px;
+                            }
+
+                            @include devices(lg){
+                                width: 193px;
+                            }
+
+                            @include devices(sm){                                
+                                width: 285px;
+                            }
                         }
 
                         .pink-btn {
@@ -141,6 +205,23 @@
                             color: #000;
                             line-height: 43px;
                             position: relative;
+
+                            @include devices(xl){
+                                padding: 0px 54px;
+                                font-size: 23px;
+                            }
+
+                            @include devices(lg){
+                                font-size: 18px;
+                                line-height: 36px;
+                            }
+                            @include devices(sm){
+                                font-size: 15px;
+                                line-height: 30px;
+                            }
+                            @include devices(xs){
+                                line-height: 38px;
+                            }
                         }
                     }
                 }
@@ -150,6 +231,11 @@
         .lead-booster-scnd-section{
             display:grid;
             grid-template-columns: repeat(2,1fr);
+
+            @include devices(md){
+                grid-template-columns: auto;
+                gap:20px;
+            }
 
 
             .lead-booster-sales{
@@ -161,13 +247,53 @@
                         position: relative;
                         top: 39px;
                         left: 23%;
+
+                        @include devices(xl){
+                            font-size:1rem;
+                        }
+
+                        @include devices(lg){
+                            font-size:0.85rem;
+                            top: 33px;
+                            left: 20%;
+                        }
+
+                        @include devices(md){
+                            left: 27%;
+                        }
+
+                        @include devices(xs){
+                            font-size: 0.65rem;
+                            top: 28px;
+                            left:14%;
+                        }
                     }
                     .sky-btn-light{
                         padding: 20px 50px;
+
+                        @include devices(xl){
+                            padding: 15px 24px;
+                        }
+
+                        @include devices(lg){
+                            padding: 15px 20px;
+                        }
+
+                        @include devices(xs){
+                            padding: 10px 17px;
+                        }
                         
                     }
                     .orange-btn{
                         padding:20px 120px;
+
+                        @include devices(xl){
+                            padding: 15px 79px;
+                        }
+
+                        @include devices(xs){
+                            padding: 10px 52px;
+                        }
                     }
                     .contact-details-div{
                         border: 4px solid black;
@@ -180,12 +306,54 @@
                         text-align: center;
                         font-weight:bold;
 
+                        img{
+                            @include devices(xs){
+                                width:15px;
+                                height:15px;
+                            }
+                        }
+
+                        @include devices(xl){
+                            padding: 53px 24px 24px 24px;
+                            width: 77%;
+                            font-size: 1.1rem;
+                        }
+
+                        @include devices(lg){
+                            padding: 53px 20px 20px 20px;
+                            width: 89%;
+                            font-size: 0.85rem;
+                        }
+
+                        @include devices(sm){
+                            padding: 49px 15px 15px 15px;
+                            width: 100%;
+                            font-size: 0.65rem;
+                        }
+
                         .heart-div{
                             position: absolute;
                             top: 245px;
                             left: 37%;
                             width: 19%;
                             height: 122px;
+                            
+                            @include devices(xl){
+                                top: 320px;
+                                width: 22%;
+                                height: 103px;
+                            }
+
+                            @include devices(lg){
+                                top: 248px;
+                                width: 25%;
+                                height: 103px;
+                                left: 37%;;
+                            }
+
+                            @include devices(md){
+                                display: none;
+                            }
 
                             div{
                                 &:first-child{
@@ -194,6 +362,10 @@
                                     background-size: 100% 100%;
                                     height:50%;
                                     width:100%;
+
+                                    @include devices(lg){
+                                        height:38%;
+                                    }
                                 }
                                 &:last-child{
                                     color: #e50764;
@@ -201,6 +373,12 @@
                                     margin-left: 100px;
                                     margin-top: 30px;
                                     font-weight:lighter;
+
+                                    @include devices(lg){
+                                        margin-left: 98px;
+                                        margin-top: 22px;
+                                        font-size: 0.75rem;
+                                    }
                                 }
                             }
                         }
@@ -208,12 +386,28 @@
                         .bg-image{
                             top:578px;
 
+                            @include devices(xl){
+                                top: 549px;
+                            }
+
+                            @include devices(lg){
+                                width: 21%;
+                                height: 99px;
+                                top:443px;
+                                left: 40%;
+                            }
+
                             div{
                                 &:first-child{
                                     background-image: url("../images/Asset_3.svg");
                                 }
                                 &:last-child{
                                     color:#e6d99b;
+
+                                    @include devices(lg){
+                                        margin-left: 66px;
+                                        margin-right: 13px;
+                                    }
                                 }
                             }
                         }
@@ -226,12 +420,16 @@
                 
                 .line_plane{
                     width: 93%;
-                    height:124px;
-                    background-image: url("../images/line.png");
+                    height: 95px;
+                    background-image: url("../images/ser-page-line.svg");
                     background-repeat: no-repeat;
-                    background-size: cover;
+                    background-size: 100%;
                     margin-right: 74px;
                     margin-top: 52px;
+
+                    @include devices(md){
+                        display:none;
+                    }
                 }
                 h2{
                     font-size: 2rem;
@@ -239,6 +437,19 @@
                     text-transform: uppercase;
                     text-decoration: underline;
                     text-align: center;
+
+                    @include devices(xl){
+                        font-size: 1.75rem;
+                    }
+
+                    @include devices(lg){
+                        font-size:1.5rem;
+                    }
+
+                    @include devices(xs){
+                        font-size: 17px;
+                        margin-top: 12px;
+                    }
 
                     &::after{
                         content:"";
@@ -248,6 +459,22 @@
                         width: 62%;
                         margin: auto;
                         border: 0.5px dashed #a4a1a2;
+
+                        @include devices(xl){
+                            top:33%;
+                        }
+
+                        @include devices(lg){
+                            top: 33.5%;
+                        }
+
+                        @include devices(md){
+                            top: 13.5%;
+                        }
+
+                        @include devices(xs){
+                            display: none;
+                        }
                     }
                 }
                 .consultant-text{
@@ -257,6 +484,29 @@
                     text-align: center;
                     color:white;
                     font-size: 1.1rem;
+
+                    @include devices(xl){
+                        margin-top: 79px;
+                        margin-left: 115px;
+                        font-size: 0.9rem;
+                    }
+
+                    @include devices(lg){
+                        margin-top: 46px;
+                        margin-left: 115px;
+                        font-size: 0.8rem;
+                    }
+
+                    @include devices(md){
+                        width: 80%;
+                        margin: auto;
+                        margin-top: 46px;
+                    }
+
+                    @include devices(xs){
+                        width:100%;
+                        text-align: justify;
+                    }
                 }
                 .refer-box{
                     width:70%;
@@ -267,11 +517,73 @@
                     background-color: white;
                     padding:20px;
 
+                    @include devices(xl){
+                        width:77%;
+                        margin-left:19%;
+                        margin-top:75px;
+                    }
+
+                    @include devices(lg){
+                        width: 81%;
+                        margin-left: 19%;
+                        margin-top: 32px;
+                        padding:10px;
+                    }
+
+                    @include devices(md){
+                        margin-left:10%;
+                    }
+
+                    @include devices(xs){
+                        width: 100%;
+                        margin:0;
+                        margin-top:32px;
+                        padding:7px;
+                    }
+
                     p{
                         text-transform: uppercase;
                         font-size:1.1rem;
                         font-weight:bold;
                         text-align: center;
+
+                        @include devices(xl){
+                            font-size:0.92rem;
+                        }
+
+                        @include devices(lg){
+                            font-size:0.72rem;
+                        }
+
+                        @include devices(xs){
+                            font-size: 0.6rem;
+                        }
+
+                        span{
+                            img{
+                                width:14px;
+                                height:14px;
+                            }
+                        }
+                    }
+
+                    .txt{
+                        font-size:0.71rem;
+
+                        @include devices(lg){
+                            font-size: 0.61rem;
+                        }
+
+                        @include devices(xs){
+                            font-size: 0.51rem;
+                        }
+                        
+                        span{
+                            img{
+                                width:14px;
+                                height:14px;
+                            }
+                        }
                     }
                 }
 
@@ -279,6 +591,10 @@
                     text-align: right;
                     color: white;
                     margin-top: 70px;
+
+                    @include devices(lg){
+                        margin-top: 20px;
+                    }
                 }
             }
         }
@@ -297,11 +613,29 @@
         text-align: center;
         cursor:pointer;
         box-shadow: rgb(0, 0, 0) 4px 4px 0.6px;
+
+
+        @include devices(xl){
+            font-size: 15px;
+        }
+
+        @include devices(lg){
+            font-size: 11px;
+            padding: 11px 16px;
+        }
+
+        @include devices(sm){
+                margin: 0 4px 0 0px;
+        }
     }
 
     .nav-item {
         width: 25%;
         font-weight: 500;
+
+        @include devices(md){
+            width:100%;
+        }
     }
 
     #ex1 {
@@ -318,6 +652,20 @@
     position: relative;
     padding: 0px 0 10px 0px;
 
+    @include devices(xl){
+        font-size: 53px;
+        margin-top:-20px;
+    }
+
+    @include devices(md){
+        font-size: 45px;
+    }
+
+    @include devices(sm){
+        font-size:30px;
+        margin-top: 10px;
+    }
+
     &::after {
         position: absolute;
         content: "";
@@ -330,6 +678,13 @@
     }
 }
 
+// @media screen and (max-width: 1445px){
+//     .services-head h1{
+//         font-size: 53px;
+//         padding:11px 0px 10px 0px;
+//     }
+// }
+
 .sr-1 {
     color: #fff;
     margin: 11px 0 0 0px;
@@ -341,11 +696,23 @@
     display: inline-block;
     margin: 16px 0 0 0;
     padding-bottom: 50px;
+
+    @include devices(xl){
+        padding-bottom:0px;
+    }
 }
 
 .lead-booster-left {
     width: 50%;
     float: left;
+
+    @include devices(md){
+        width: 75%;
+    }
+
+    @include devices(sm){
+        width: 100%;
+    }
 }
 
 .lead-booster-block-container {
@@ -359,11 +726,31 @@
     border-radius: 47px;
     border: 6px solid #000;
 
+    @include devices(xl){
+        padding: 30px 30px;
+    }
+
+    @include devices(sm){
+        padding: 20px 15px;
+        border-radius: 27px;
+    }
+
     h2 {
         font-size: 29px;
         color: #000;
         font-weight: bold;
         padding: 0 0 14px 0;
+
+        @include devices(lg){
+            font-size: 25px;
+        }
+
+        @include devices(sm){
+            font-size: 20px;
+        }
+        @include devices(xs){
+            font-size: 18px;
+        }
     }
 
     ul {
@@ -377,9 +764,29 @@
         color: #000;
         padding: 0 0 1px 0;
 
+        @include devices(xl){
+            font-size: 16px;
+        }
+
+        @include devices(lg){
+            font-size: 14px;
+        }
+
+        @include devices(sm){
+            font-size:11px;
+        }
+
         img {
-            max-width: 21px;
+            max-width: 17px;
             margin: 0 5px 0 0;
+
+            @include devices(lg){
+                max-width: 14px;
+            }
+
+            @include devices(sm){
+                max-width: 10px;
+            }
         }
     }
 
@@ -415,7 +822,34 @@
         max-width: 565px;
         margin: auto;
         font-size: 34px;
-        border-bottom: 1px dashed white;
+        border-bottom: 1px dashed #a4a1a2;
+
+        @include devices(xl){
+            padding: 0px 0 23px 0;
+            width: 80%;
+            margin: auto;
+            font-size: 30px;
+        }
+
+        @include devices(lg){
+            font-size: 22px;
+        }
+
+        @include devices(md){
+            width: 92%;
+            font-size:27px;
+            max-width:100%;
+            text-align:unset;
+            border-bottom:none;
+        }
+
+        @include devices(sm){
+            width: 100%;
+            font-size: 17px;
+            max-width: 100%;
+            text-align: center;
+            border-bottom: none;
+        }
 
     }
 
@@ -426,6 +860,35 @@
         text-align: center;
         font-size: 20px;
         margin-top: 30px;
+
+        @include devices(xl){
+            margin-left: 214px;
+            margin-right: 23px;
+            font-size: 13px;
+            margin-top: 24px;
+        }
+
+        @include devices(lg){
+            margin-left: 107px;
+            margin-right: 14px;
+            font-size: 11.5px;
+            margin-top: 20px;
+        }
+
+        @include devices(md){
+            font-size: 16px;
+            margin-top: -10px;
+            padding: 19px;
+            text-align: unset;
+            margin:0;
+        }
+
+        @include devices(sm){
+            font-size: 14px;
+            margin-top: -10px;
+            padding: 8px;
+            text-align: justify;
+        }
     }
 
     .btn-text {
@@ -435,6 +898,10 @@
         position: relative;
         top: 9px;
         left: -39px;
+
+        @include devices(md){
+            display:none;
+        }
     
 
         p {
@@ -457,12 +924,36 @@
     top: -57px;
     display: inline-block;
     margin: -289px 0 0 -17px;
+
+    @include devices(xl){
+        top: -31px;
+    }
+    
+    @include devices(lg){
+        top: -85px;
+    }
+
+    @include devices(md){
+        position:absolute;
+        top: 27%;
+        left: 64%;
+        margin:0;
+    }
+
+    @include devices(sm){
+        top: -29.5%;
+        left: 72%;
+    }
 }
 
 .lead-booster-pro-strip {
     margin: 0px 0 31px 0;
     width: 100%;
     display: inline-block;
+
+    @include devices(lg){
+        margin:0;
+    }
 
     .btn.orange-btn {
         padding: 0px 88px;
@@ -472,14 +963,42 @@
         line-height: 43px;
         position: relative;
 
+        @include devices(xl){
+            font-size:24px;
+        }
+
+        @include devices(lg){
+            padding: 0px 68px;
+            font-size: 18px;
+            line-height: 36px;
+        }
+
+        @include devices(sm){
+            padding: 0px 60px;
+            font-size: 15px;
+            line-height: 39px;
+        }
+
         &::after {
             position: absolute;
             content: "";
             background: url("../images/Asset_2.svg");
+            background-repeat: no-repeat;
             width: 163px;
             height: 50px;
             right: -131px;
             top: -3px;
+
+            @include devices(lg){
+                width: 135px;
+                height: 33px;
+                right: -98px;
+                top: 1px;
+            }
+
+            @include devices(md){
+                display:none;
+            }
         }
     }
 
@@ -491,14 +1010,41 @@
         line-height: 43px;
         position: relative;
 
+        @include devices(xl){
+            font-size:24px;
+        }
+
+        @include devices(lg){
+            font-size: 18px;
+            line-height: 36px;
+        }
+
+        @include devices(sm){
+            padding:0px 42px;
+            font-size: 15px;
+            line-height: 39px;
+        }
+
         &::after {
             position: absolute;
             content: "";
             background: url("../images/Asset_3.svg");
+            background-repeat: no-repeat;
             width: 163px;
             height: 50px;
             right: -131px;
             top: -3px;
+
+            @include devices(lg){
+                width: 135px;
+                height: 33px;
+                right: -98px;
+                top: 1px;
+            }
+
+            @include devices(md){
+                display:none;
+            }
         }
     }
 
@@ -509,6 +1055,10 @@
         width: 50%;
         float: right;
         text-align: center;
+
+        @include devices(sm){
+            margin: 9px 0 0 0px;
+        }
 
         &.sr-2 {
             color: #e6d99b;
@@ -524,10 +1074,29 @@
         content: "";
         right: -669px;
         top: -10px;
-        background: url("../images/Asset_4.svg");
+        background: url("../images/ser-page-line.svg");
         background-repeat: no-repeat;
         width: 683px;
         height: 138px;
+
+        @include devices(xl){
+            right: -588px;
+            top: -12px;
+            background-repeat: no-repeat;
+            width: 589px;
+            height: 97px;
+        }
+
+        @include devices(lg){
+            right: -574px;
+            top: -12px;
+            width: 573px;
+            height: 81px;
+        }
+
+        @include devices(md){
+            display:none;
+        }
     }
 }
 

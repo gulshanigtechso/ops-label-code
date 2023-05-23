@@ -31,6 +31,9 @@ const caseSwiper = new Swiper('.caseSwiper', {
 let arr_1 = document.querySelectorAll(".nav-link");
 let arr_2 = document.querySelectorAll(".price");
 
+// ------- window screen size ----------
+let x = window.matchMedia("(max-width: 427px)")
+
 const show = (id) => {
     document.getElementById("sales_show").style.display = 'block';
     document.getElementById('sales_hide').style.display = 'none';
@@ -46,12 +49,36 @@ const show = (id) => {
     if (id == '#ex1-tabs-1') {
         arr_1.forEach((item)=>{item.style.backgroundColor='white'});
         document.getElementById("blue_bg").style.backgroundColor = "#3aa4d8";
+
+        if(x.matches){
+            arr_1.forEach((item)=>{item.style.display = 'none'});
+            document.getElementById("blue_bg").style.display = "block";
+            document.querySelector('.lead-booster-pro-section').style.display = "block";
+            document.querySelector('.lead-booster-block').style.marginTop = '155px';
+        }
+
     } else if (id == '#ex1-tabs-2') {
         arr_1.forEach((item)=>{item.style.backgroundColor='white'});
         document.getElementById("orng_bg").style.backgroundColor = "#ff9027";
+
+        if(x.matches){
+            arr_1.forEach((item)=>{item.style.display = 'none'});
+            document.getElementById("orng_bg").style.display = "block";
+            document.querySelector('.lead-booster-pro-section').style.display = "block";
+            document.querySelector('.lead-booster-block').style.marginTop = '190px';
+        }
+
     } else if (id == '#ex1-tabs-3') {
         arr_1.forEach((item)=>{item.style.backgroundColor='white'});
-        document.getElementById("prple_bg").style.backgroundColor = "#ad7bc0";       
+        document.getElementById("prple_bg").style.backgroundColor = "#ad7bc0";      
+        
+        if(x.matches){
+            arr_1.forEach((item)=>{item.style.display = 'none'});
+            document.getElementById("prple_bg").style.display = "block";
+            document.querySelector('.lead-booster-pro-section').style.display = "block";
+            document.querySelector('.lead-booster-block').style.marginTop = '216px';
+        }
+        
     } else{
         arr_1.forEach((item)=>{item.style.backgroundColor='white'});
         document.getElementById("lprple_bg").style.backgroundColor = "#dec7e6";
