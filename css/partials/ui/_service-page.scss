@@ -6,10 +6,15 @@
 
 
     .services-main {
+        // background: #2a2a2a;
+        // width: 94%;
+        // position: relative;
+        // float: left;
         background: #2a2a2a;
-        width: 94%;
+        width: 92.5%;
         position: relative;
         float: left;
+        margin-left: 7.5%;
     
         @include devices(lg) {
             width: 93%;
@@ -44,7 +49,7 @@
     
     .services-logo-main {
         max-width: 1530px;
-        margin: 0 0 0 80px;
+        margin: 0 50px 0 49px;
         overflow: hidden;
         padding: 66px 0 0 0px;
 
@@ -67,13 +72,12 @@
         img {
             position: absolute;
             margin: 86px 0 0 28px;
-            z-index: 999;
+            z-index: 99;
             max-width: 217px;
 
             @include devices(xl){
-                margin: 53px 0 0 28px;
-                z-index: 99;
-                max-width: 210px;
+                margin: 53px 0 0 42px;
+                max-width: 170px;
             }
     
             @include devices(lg) {
@@ -304,7 +308,7 @@
                         margin: auto;
                         font-size: 1.2rem;
                         text-align: center;
-                        font-weight:bold;
+                        // font-weight:bold;
 
                         img{
                             @include devices(xs){
@@ -434,7 +438,6 @@
                 h2{
                     font-size: 2rem;
                     color: #e50764;
-                    text-transform: uppercase;
                     text-decoration: underline;
                     text-align: center;
 
@@ -455,7 +458,7 @@
                         content:"";
                         position:absolute;
                         top: 35%;
-                        left: 19%;
+                        left: 23%;
                         width: 62%;
                         margin: auto;
                         border: 0.5px dashed #a4a1a2;
@@ -519,7 +522,7 @@
 
                     @include devices(xl){
                         width:77%;
-                        margin-left:19%;
+                        margin-left:15%;
                         margin-top:75px;
                     }
 
@@ -568,7 +571,9 @@
                     }
 
                     .txt{
-                        font-size:0.71rem;
+                        font-size: 0.75rem;
+                        font-weight: 400;
+                        text-transform: none;
 
                         @include devices(lg){
                             font-size: 0.61rem;
@@ -650,7 +655,7 @@
     font-size: 74px;
     font-weight: bolder;
     position: relative;
-    padding: 0px 0 10px 0px;
+    padding: 20px 0 10px 0px;
 
     @include devices(xl){
         font-size: 53px;
@@ -659,6 +664,7 @@
 
     @include devices(md){
         font-size: 45px;
+        padding: 0px 0 10px 0px;
     }
 
     @include devices(sm){
@@ -677,13 +683,6 @@
         border-radius: 10px;
     }
 }
-
-// @media screen and (max-width: 1445px){
-//     .services-head h1{
-//         font-size: 53px;
-//         padding:11px 0px 10px 0px;
-//     }
-// }
 
 .sr-1 {
     color: #fff;
@@ -736,7 +735,7 @@
     }
 
     h2 {
-        font-size: 29px;
+        font-size: 22.8px;
         color: #000;
         font-weight: bold;
         padding: 0 0 14px 0;
@@ -815,20 +814,19 @@
     h3 {
         text-align: right;
         color: #e50764;
-        font-weight: 600;
         text-decoration: underline;
         padding: 33px 0 30px 0;
-        position: relative;
+        position: relative;             
         max-width: 565px;
         margin: auto;
-        font-size: 34px;
+        font-size: 30px;
         border-bottom: 1px dashed #a4a1a2;
 
         @include devices(xl){
             padding: 0px 0 23px 0;
             width: 80%;
             margin: auto;
-            font-size: 30px;
+            font-size: 27px;
         }
 
         @include devices(lg){
@@ -860,6 +858,7 @@
         text-align: center;
         font-size: 20px;
         margin-top: 30px;
+        letter-spacing: 0.0135rem;
 
         @include devices(xl){
             margin-left: 214px;
@@ -926,7 +925,7 @@
     margin: -289px 0 0 -17px;
 
     @include devices(xl){
-        top: -31px;
+        top: -79px;
     }
     
     @include devices(lg){
@@ -950,6 +949,10 @@
     margin: 0px 0 31px 0;
     width: 100%;
     display: inline-block;
+
+    @include devices(xl){
+        margin:0;
+    }
 
     @include devices(lg){
         margin:0;
@@ -1107,11 +1110,18 @@
 // }
 
 .services-left_block {
-    width: 6%;
+    // width: 6%;
+    // float: left;
+    // position: relative;
+    // background: #eaeeef;
+    // height: 1165px;
+    width: 7.5%;
     float: left;
-    position: relative;
+    position: fixed;
     background: #eaeeef;
     height: 1165px;
+    z-index: 999;
+    height: 100vh;
 }
 
 .services-left_block-toggle {
@@ -1124,14 +1134,12 @@
     position: absolute;
     content: "";
     background: url("../images/stars.png");
-    background-repeat: repeat;
-    background-size: auto;
-    width: 69px;
-    height: 69px;
-    right: -35px;
-    top: -18px;
+    width: 32px;
+    height: 34px;
+    right: 7px;
+    top: -13px; 
     background-repeat: no-repeat;
-    background-size: 24px;
+    background-size: 26px;
 }
 
 .lead-booster-pro-strip22 {
