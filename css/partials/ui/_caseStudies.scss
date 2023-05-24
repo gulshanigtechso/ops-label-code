@@ -1,6 +1,17 @@
 .services-template{
+
+    // #left-block{
+    //     width: 7.5%;
+    //     float: left;
+    //     position: absolute;
+    //     background: #eaeeef;
+    //     height: 1165px;
+    //     z-index: 999;
+    //     height: 100vh;
+    // }
+
     .services-left_block{
-        height: auto;
+        // height: auto;
     
         @include devices(lg) {
 
@@ -20,69 +31,84 @@
         @include devices(sm) {
             width: 19%;
         }
+
+
+            .services-left_block-logo {
+                img {
+                    @include devices(md) {
+                        max-width: 166px;
+                    }
+                }
+            }
+            
+            .service-left_block-toggle {
+                .menu_btn {
+                    position: absolute;
+                }
+            }
+            
+            .services-left_social_media {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                padding: 20px;
+                width: 100%;
+            
+                .social_media_contact {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+            
+                    div {
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 50%;
+                        background-color: #2a2a2a;
+                        text-align: center;
+            
+                        @include devices(sm) {
+                            height: 25px;
+                            width: 25px;
+                        }
+                    }
+                }
+            
+            }
+            
+            .studiesDetails-left_menu {
+                .menu_btn {
+                    position: absolute;
+                    top: 40%;
+                    left: 29px;
     
-        .services-left_block-logo {
-            img {
-                @include devices(md) {
-                    max-width: 166px;
-                }
-            }
-        }
-        
-        .service-left_block-toggle {
-            .menu_btn {
-                position: absolute;
-            }
-        }
-        
-        .services-left_social_media {
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
-            padding: 20px;
-            width: 100%;
-        
-            .social_media_contact {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 20px;
-        
-                div {
-                    height: 40px;
-                    width: 40px;
-                    border-radius: 50%;
-                    background-color: #2a2a2a;
-                    text-align: center;
-        
-                    @include devices(sm) {
-                        height: 35px;
-                        width: 35px;
+                    @include devices(lg){
+                        top:42%;
+                        left:17px;
                     }
-                }
-            }
-        
-        }
-        
-        .studiesDetails-left_menu {
-            .menu_btn {
-                position: absolute;
-                top: 40%;
-                left: 18px;
-
-                @include devices(md){
-                    top:40%;
-                    left:15px;
-                }
-
-                span{
+    
                     @include devices(md){
-                        width: 84%;
+                        top: 43%;
+                        left: 30px;
+                    }
+    
+                    @include devices(sm){
+                        left: 24px;
+                    }
+    
+                    @include devices(xs){
+                        left: 13px;
+                    }
+    
+                    span{
+                        @include devices(md){
+                            width: 84%;
+                        }
                     }
                 }
             }
-        }
+
     }
     
    .services-main{
@@ -90,7 +116,7 @@
         display: flex;
         flex-direction: row;
     
-        @include devices(md) {
+        @include devices(lg) {
             flex-direction: column;
         }
     
@@ -108,7 +134,7 @@
                 padding: 31px;
             }
     
-            @include devices(md) {
+            @include devices(lg) {
                 width: 100%;
             }
     
@@ -157,6 +183,14 @@
                 justify-content: center;
                 gap: 20px;
                 padding: 0px 10px 0px 10px;
+
+                @include devices(lg){
+                    justify-content: flex-start;
+                }
+
+                @include devices(md){
+                    justify-content: center;
+                }
     
                 div {
                     height: 35px;
@@ -241,16 +275,17 @@
                 p {
                     &:first-child {
                         font-size: 1rem;
-                        margin-top: 20px;
+                        margin-top: 53px;
     
                         @include devices(lg) {
                             font-size: 0.8rem;
+
                         }
                     }
     
                     &:last-child {
                         text-transform: uppercase;
-                        margin-top: 15px;
+                        margin-top: 36px;
                         line-height: 20px;
     
                         @include devices(lg) {
@@ -280,12 +315,11 @@
                 }
     
                 @include devices(lg) {
-                    grid-template-columns: repeat(1, 1fr);
-                    margin-top: 7px;
+                    margin-top: 25px;
+                    gap: 25px;
                 }
     
                 @include devices(md) {
-                    grid-template-columns: repeat(2, 1fr);
                     font-size: 0.9rem;
                     padding-left: 14px;
                 }
@@ -303,10 +337,10 @@
     
                 .green-btn {
                     top: -23px;
-                    left: 29px;
+                    left: 0;
                     height: 58px;
                     margin-top: 26px;
-                    margin-right: 27px;
+                    margin-right: 0;
                     padding-top: 14px;
 
                     &::after{
@@ -320,8 +354,7 @@
                             left: 19px;
                             width: 44px;
                             height: 44px;
-                        }
-                        
+                        }    
                     }
 
                     @include devices(xl){
@@ -368,7 +401,7 @@
                     }
 
                     @include devices(lg){
-                        padding: 6px 22px;
+                        padding: 14px 22px;
                     }
 
     
@@ -405,8 +438,8 @@
                         }
     
                         @include devices(lg) {
-                            top: -72px;
-                            left: 82%;
+                            top: -68px;
+                            left: 91%;                        
                             height: 51px;
                             width: 51px;
                         }
@@ -433,10 +466,13 @@
             @include grid-cols(2, 1fr, 0);
             grid-auto-rows: 1fr;
     
-            @include devices(md) {
+            @include devices(lg) {
                 width: 100%;
             }
     
+            @include devices(sm){
+                grid-template-columns: auto;
+            }
     
             .image {
                 position: relative;
@@ -444,13 +480,19 @@
 
                 &:hover .hide {
                     display: block;
-                }
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        cursor:pointer;
-                        object-fit: cover;
+                    opacity: 1;
+
+                    @include devices(lg){
+                        display:none;
                     }
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    cursor:pointer;
+                    object-fit: cover;
+                }
     
                 .show_on_hover {
                     position: absolute;
@@ -458,7 +500,9 @@
                     left: 0;
                     width: 100%;
                     text-transform: uppercase;
-    
+                    transition: opacity .5s ease-in-out;
+                    -moz-transition: opacity .5s ease-in-out;
+                    -webkit-transition: opacity .5s ease-in-out;
     
                     div {
                         padding: 20px;
@@ -468,19 +512,21 @@
                         background-color: white;
                         font-size: 0.9rem;
                         text-align: justify;
-                        line-height: 19px;
+                        line-height: 35px;
     
                         h3 {
                             font-size: 1.5rem;
                             font-weight: bold;
 
                             @include devices(xl){
-                                font-size:1rem !important;
+                                font-size:1rem;
                             }
     
                             @include devices(sm) {
-                                font-size: 22px;
+                                font-size: 13px;
                             }
+
+
                         }
     
                         p {
@@ -491,7 +537,7 @@
                             }
     
                             @include devices(sm) {
-                                font-size: 1rem;
+                                font-size: 0.75rem;
                             }
                         }
                     }
@@ -499,7 +545,10 @@
     
                 .hide {
                     display: none;
-    
+
+                    @include devices(lg){
+                        display: block;
+                    }
                 }
     
             }

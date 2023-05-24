@@ -75,7 +75,6 @@ button:not(:disabled) {
             background-image: url(../images/plane.png);
             background-repeat: no-repeat;
             background-size: contain;
-
             @include devices(xl) {
                 width: 30px;
             }

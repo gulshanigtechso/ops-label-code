@@ -61,7 +61,7 @@
 
                 div{
                     border:1px solid white;
-                    width:60%;
+                    width: 70%;
                     height: 140px;
                     border: 5px solid black;
                     border-radius: 26px;
@@ -230,6 +230,7 @@
             margin:auto;
             height:100%;
             padding:24px 0px;
+            letter-spacing: 0.02rem;
 
             @include devices(sm){
                 padding:15px 0px;
@@ -278,7 +279,7 @@
 
             p{
                 line-height: 28px;
-                font-size: 1.6rem;
+                font-size: 1.5rem;
                 font-weight: lighter;
 
                 @include devices(xl){
