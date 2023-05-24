@@ -4,21 +4,11 @@
     z-index: 1;
     margin-top: -340px;
     background-repeat: no-repeat;
-    background-size: 101% 100%;
+    background-size: 100% 100%;
     background-position-x: -3px;
 
     @include devices(lg) {
         background-size: 103% 100%;
-    }
-
-    @include devices(md) {
-        background-size: 128% 100%;
-        background-position-x: -130px;
-    }
-
-    @include devices(xs) {
-        background-size: 197% 100%;
-        background-position-x: -186px;
     }
 
     &::after {
@@ -51,7 +41,7 @@
         margin: 100px 0;
 
         @include devices(md) {
-            gap: 6rem;
+            gap: 5rem;
         }
 
         .ser_box {
@@ -59,10 +49,6 @@
 
             @include devices(md) {
                 @include padding-x(1.5rem, 1.5rem);
-            }
-
-            @include devices(sm) {
-                @include padding-x(0, 0);
             }
         }
     }
@@ -102,14 +88,6 @@
             @include padding-x(3rem, 3rem);
         }
 
-        @include devices(sm) {
-            @include padding-x(2rem, 2rem);
-        }
-
-        @include devices(xs) {
-            @include padding-x(1rem, 1rem);
-        }
-
         .heart_icon {
             position: absolute;
             left: 0;
@@ -132,15 +110,14 @@
 
         .btn {
             position: absolute;
-            bottom: -16px;
+            bottom: -22px;
             left: 0;
             right: 0;
             font-size: 1.3rem;
             font-weight: bold;
             max-width: 85%;
             margin: auto;
-            @include padding-x(0.4rem, 0.4rem);
-            pointer-events: none;
+            @include padding-y(0.4rem, 0.4rem);
 
             @include devices(xl) {
                 font-size: 0.9rem;
@@ -157,16 +134,6 @@
                 max-width: 80%;
                 bottom: -27px;
             }
-
-            @include devices(sm) {
-                font-size: 1.4rem;
-            }
-
-            @include devices(xs) {
-                font-size: 1rem;
-                max-width: 90%;
-                bottom: -20px;
-            }
         }
 
         .ser-icon {
@@ -179,14 +146,6 @@
 
             @include devices(md) {
                 width: 250px;
-            }
-
-            @include devices(md) {
-                width: 200px;
-            }
-
-            @include devices(xs) {
-                width: 150px;
             }
 
             img {
@@ -203,10 +162,6 @@
         font-size: 30px;
         font-weight: bold;
         font-style: italic;
-
-        @include devices(xs) {
-            font-size: 20px;
-        }
 
         a {
             color: #fff;
@@ -312,14 +267,6 @@
             font-size: 1.5rem;
         }
 
-        @include devices(md) {
-            font-size: 1.3rem;
-        }
-
-        @include devices(xs) {
-            font-size: 1rem;
-        }
-
         &.slide1 {
             p {
                 @include margin-y(2.5rem, 2.5rem);
@@ -350,37 +297,26 @@
                 @include devices(md) {
                     font-size: 1.5rem;
                 }
-
-                @include devices(sm) {
-                    font-size: 1.4rem;
-                }
-
-                @include devices(xs) {
-                    font-size: 1.1rem;
-                }
             }
 
             .plus-btn {
                 position: unset;
-                padding: 0.2rem 4rem;
+                padding: 0.2rem 4.5rem;
                 max-width: unset;
                 font-weight: 800;
                 font-size: 1rem;
                 pointer-events: none;
                 filter: none;
-                @include margin-y(1.2rem, 1.8rem);
+                @include margin-y(1.4rem, 2rem);
 
                 @include devices(lg) {
                     font-size: 0.9rem;
+                    @include margin-y(1.2rem, 1.8rem);
                 }
 
                 @include devices(md) {
                     font-size: 1.4rem;
                     @include margin-y(1.4rem, 2rem);
-                }
-
-                @include devices(xs) {
-                    font-size: 1rem;
                 }
             }
         }
@@ -416,10 +352,6 @@
 
         @include devices(md) {
             width: 16px;
-        }
-
-        @include devices(xs) {
-            width: 11px;
         }
     }
 }

@@ -1,7 +1,7 @@
 .section3-logo {
-    position: relative;
     background: #f7f9fb;
-    @include padding-y(3rem, 3.5rem);
+    padding: 30px;
+    position: relative;
 
     .row {
         align-items: center;

@@ -22,16 +22,6 @@
         left: 16px;
     }
 
-    @include devices(md) {
-        left: 40px;
-    }
-
-    @include devices(sm) {
-        transform: scale(0.6);
-        top: 26px;
-        left: 4px;
-    }
-
     span {
         background-color: $black;
         width: 100%;
@@ -42,7 +32,7 @@
     }
 
     &.clicked {
-        top: 44%;
+        top: 45%;
         height: 35px;
         justify-content: center;
 
@@ -89,7 +79,6 @@
     }
 
     .menu_left_col {
-        padding-right: 0;
 
         div {
             display: flex;
@@ -124,28 +113,15 @@
     }
 
     .menu_mid_col {
-        background-color: #2a2a2a;
+        background-color: #1E2224;
         display: grid;
         place-items: center;
         position: relative;
 
-        @include devices(md) {
-            min-height: 100vh;
-        }
-
         nav {
-            display: flex;
+            display: inline-flex;
             flex-direction: column;
             margin-top: 2rem;
-
-            @include devices(md) {
-                gap: 3rem;
-                margin-top: 0;
-            }
-
-            @include devices(xs) {
-                gap: 1rem;
-            }
 
             a {
                 font-size: 4.4rem;
@@ -161,14 +137,6 @@
 
                 @include devices(lg) {
                     font-size: 2.5rem;
-                }
-
-                @include devices(md) {
-                    font-size: 3rem;
-                }
-
-                @include devices(xs) {
-                    font-size: 2rem;
                 }
 
                 &:nth-child(1) {
@@ -200,17 +168,6 @@
         .menu_btns_group {
             margin-top: 2rem;
 
-            @include devices(md) {
-                display: flex;
-                flex-direction: column;
-                gap: 2rem;
-                margin-top: 3rem;
-            }
-
-            @include devices(xs) {
-                margin-top: 1.5rem;
-            }
-
             .green-btn {
                 margin-right: 3rem;
 
@@ -220,10 +177,6 @@
 
                 @include devices(lg) {
                     margin-right: 0.7rem;
-                }
-
-                @include devices(md) {
-                    margin-right: 0;
                 }
             }
         }
@@ -242,16 +195,6 @@
                 width: 135px;
                 left: -60px;
             }
-
-            @include devices(md) {
-                width: 200px;
-                left: -80px;
-            }
-
-            @include devices(xs) {
-                width: 100px;
-                left: -30px;
-            }
         }
 
         .arrowfly-img {
@@ -266,21 +209,12 @@
             @include devices(lg) {
                 width: 160px;
             }
-
-            @include devices(md) {
-                display: none;
-            }
         }
     }
 
     .menu_right_col {
         display: grid;
         min-height: 100vh;
-        border-left: 12px solid #1d1b15;
-
-        @include devices(md) {
-            display: none;
-        }
 
         div {
             img {
