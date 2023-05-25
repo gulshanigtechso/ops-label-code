@@ -17,7 +17,7 @@
 
         @include devices(sm){
             height:60vh;
-            padding-top:7px;
+            padding-top:0px;
         }
 
         .client-details-img{
@@ -42,6 +42,7 @@
             @include devices(sm){
                 grid-template-columns: auto;
                 gap:0;
+                margin-top:0px;
             }
 
             .client-details{
@@ -62,19 +63,19 @@
                 div{
                     border:1px solid white;
                     width: 70%;
-                    height: 140px;
+                    height: 120px;
                     border: 5px solid black;
-                    border-radius: 26px;
+                    border-radius: 20px;
                     border-bottom: 12px solid black;
                     border-right: 12px solid black;
                     text-align: center;
-                    padding-top: 32px;
-                    font-size: 1.2rem;
+                    padding-top: 22px;
+                    font-size: 1rem;
                     font-weight: 600;
                     line-height:30px;
 
                     @include devices(xl){
-                        width: 81%;
+                        width: 76%;
                     }
 
                     @include devices(lg){
@@ -105,7 +106,7 @@
                     p{
                         &:last-child{
                             font-weight:normal;
-                            font-size:2.5rem;
+                            font-size: 2.2rem;
                             font-style:italic;
 
                             @include devices(lg){
@@ -150,6 +151,10 @@
                             background-size: 26% 50%;
                         }
 
+                        @include devices(lg){
+                            background-size: 26% 41%;
+                        }
+
                         @include devices(sm){
                             height: 36px;
                         }
@@ -177,6 +182,66 @@
                     }
                 }
             }
+
+            .image-section-3{
+                @include devices(sm){
+                    height: 199px;
+                    width: 66%;
+                    margin: auto;
+                    margin-bottom: 8.5px;
+                    margin-top: 8px;
+                }
+
+                div{
+                    &:first-child{
+                        height:50px;
+                        width:100%;
+                        border:3px solid black;
+                        background-color: white;
+                        background-image: url("../images/Asset-39.png");
+                        background-repeat: no-repeat;
+                        background-position: 95%;
+                        background-size: 26% 60%;
+
+                        @include devices(xl){
+                            background-size: 26% 50%;
+                        }
+
+                        @include devices(lg){
+                            background-size: 26% 41%;                            
+                            height: 43px;
+                        }
+
+                        @include devices(sm){
+                            height: 36px;
+                        }
+                    }
+                    
+                    &:last-child{
+                        height:90%;
+                        width:100%;
+                        background-image: url("../images/costudio.svg");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        border:2px solid black;
+
+                        @include devices(xl){
+                            height: 86%;
+                        }
+
+                        @include devices(lg){
+                            background-size: cover;
+                        }
+
+                        @include devices(sm){
+                            height:82%;
+                            background-size: cover;
+                            background-position-y: -34px;
+                        }
+                    }
+                }
+            }
         }
 
     }
@@ -191,6 +256,11 @@
 
         @include devices(lg){
             font-size:1rem;
+        }
+
+        @include devices(sm){
+            font-size: 0.6rem;
+            padding-top: 14px;
         }
     }
 
@@ -218,9 +288,9 @@
                 width: 47px;
             }
             @include devices(sm){
-                top: 65%;
+                top: 70%;
                 left: 5%;
-                height: 60px;
+                height: 23px;
                 width: 31px;
             }
         }
@@ -235,6 +305,10 @@
             @include devices(sm){
                 width: 86%;
                 padding:15px 0px;
+            }
+
+            @include devices(xs){
+                padding: 7px 0px;
             }
 
             h1{

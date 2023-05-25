@@ -3,11 +3,11 @@ let btns = document.querySelector('.image');
 let closeBtn = document.querySelector(".close");
 
 function showPopUp(){
+    document.documentElement.classList.add('overflow_hide');
     document.querySelector("#modals").style.display = 'block';
-    console.log("modal opened")
 }
 function hidePopUp(){
-    console.log('close button')
+    document.documentElement.classList.remove('overflow_hide');
     document.querySelector("#modals").style.display = 'none';
 }
 
@@ -43,12 +43,13 @@ const show = (id) => {
     });
     arr.forEach((item) => {
         item.classList.remove('active');
-    });
+    }); 
     arr_2.forEach((item)=>{item.style.backgroundColor='whitesmoke'});
     document.querySelector(id).classList.add('active');
-    if (id == '#ex1-tabs-1') {
+    if (id == '#lead-starter') {
         arr_1.forEach((item)=>{item.style.backgroundColor='white'});
         document.getElementById("blue_bg").style.backgroundColor = "#3aa4d8";
+        document.getElementById("pink-btn").style.backgroundColor = "#3aa4d8";
 
         if(x.matches){
             arr_1.forEach((item)=>{item.style.display = 'none'});
@@ -57,9 +58,10 @@ const show = (id) => {
             document.querySelector('.lead-booster-block').style.marginTop = '155px';
         }
 
-    } else if (id == '#ex1-tabs-2') {
+    } else if (id == '#appointment-starter') {
         arr_1.forEach((item)=>{item.style.backgroundColor='white'});
         document.getElementById("orng_bg").style.backgroundColor = "#ff9027";
+        document.getElementById("pink-btn").style.backgroundColor = "#ff9027";
 
         if(x.matches){
             arr_1.forEach((item)=>{item.style.display = 'none'});
@@ -68,9 +70,10 @@ const show = (id) => {
             document.querySelector('.lead-booster-block').style.marginTop = '190px';
         }
 
-    } else if (id == '#ex1-tabs-3') {
+    } else if (id == '#closer-starter') {
         arr_1.forEach((item)=>{item.style.backgroundColor='white'});
         document.getElementById("prple_bg").style.backgroundColor = "#ad7bc0";      
+        document.getElementById("pink-btn").style.backgroundColor = "#ad7bc0";
         
         if(x.matches){
             arr_1.forEach((item)=>{item.style.display = 'none'});
@@ -96,13 +99,13 @@ function starter() {
         item.classList.remove('active');
     });
     arr_2.forEach((item)=>{item.style.backgroundColor='whitesmoke'});
-    if (id === '#ex1-tabs-1') {
+    if (id === '#lead-starter') {
         btn1.style.backgroundColor = '#3aa4d8';
         document.querySelector('#lead-starter').classList.add('active');
-    } else if (id === '#ex1-tabs-2') {
+    } else if (id === '#appointment-starter') {
         btn1.style.backgroundColor = '#ff9027';
         document.querySelector('#appointment-starter').classList.add('active');
-    } else if (id === '#ex1-tabs-3') {
+    } else if (id === '#closer-starter') {
         btn1.style.backgroundColor = '#ad7bc0';
         document.querySelector('#closer-starter').classList.add('active');
     } else {
@@ -119,13 +122,13 @@ function pro() {
         item.classList.remove('active');
     });
     arr_2.forEach((item)=>{item.style.backgroundColor='whitesmoke'});
-    if (id === '#ex1-tabs-1') {
+    if (id === '#lead-starter') {
         btn2.style.backgroundColor = '#3aa4d8';
         document.querySelector('#lead-pro').classList.add('active');
-    }else if (id === '#ex1-tabs-2') {
+    }else if (id === '#appointment-starter') {
         btn2.style.backgroundColor = '#ff9027';
         document.querySelector('#appointment-pro').classList.add('active');
-    } else if (id === '#ex1-tabs-3') {
+    } else if (id === '#closer-starter') {
         btn2.style.backgroundColor = '#ad7bc0';
         document.querySelector('#closer-pro').classList.add('active');
     } else {
@@ -142,13 +145,13 @@ function premium() {
         item.classList.remove('active');
     });
     arr_2.forEach((item)=>{item.style.backgroundColor='whitesmoke'});
-    if (id === '#ex1-tabs-1') {
+    if (id === '#lead-starter') {
         btn3.style.backgroundColor = '#3aa4d8';
         document.querySelector('#lead-premium').classList.add('active');
-    } else if (id === '#ex1-tabs-2') {
+    } else if (id === '#appointment-starter') {
         btn3.style.backgroundColor = '#ff9027';
         document.querySelector('#appointment-premium').classList.add('active');
-    } else if (id === '#ex1-tabs-3') {
+    } else if (id === '#closer-starter') {
         btn3.style.backgroundColor = '#ad7bc0';
         document.querySelector('#closer-premium').classList.add('active');
     } else {

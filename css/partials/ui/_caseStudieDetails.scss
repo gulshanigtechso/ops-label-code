@@ -169,7 +169,8 @@
                         background-size: 26% 60%;
   
                         @include devices(xl){
-                            background-size: 26% 41%;
+                            background-size: 26% 41%;                         
+                            height: 43px;
                         }
 
                         @include devices(sm) {
