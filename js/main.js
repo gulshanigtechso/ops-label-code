@@ -1,3 +1,61 @@
+const whyopsSwiper = new Swiper('.whyops_swiper', {
+    slidesPerView: 1,
+    slideToClickedSlide: true,
+    touchMoveStopPropagation: false,
+    simulateTouch: false,
+    allowSwipeToNext: true,
+    allowSwipeToPrev: true,
+    allowPageScroll: "auto ",
+    navigation: {
+        nextEl: '.whyops_swiper .swiper-button-next',
+        prevEl: '.whyops_swiper .swiper-button-prev',
+    },
+});
+
+const whyopsInnerSwiper = new Swiper('.whyops_inner_swiper', {
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
+});
+
+// const whyopsSwiper2 = new Swiper('.whyops_swiper2', {
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true
+//     },
+// });
+
+// const whyopsSwiper3 = new Swiper('.whyops_swiper3', {
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true
+//     },
+// });
+
+// const whyopsSwiper4 = new Swiper('.whyops_swiper4', {
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true
+//     },
+// });
+
+// const whyopsSwiper5 = new Swiper('.whyops_swiper5', {
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true
+//     },
+// });
+
+// const whyopsSwiper6 = new Swiper('.whyops_swiper6', {
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true
+//     },
+// });
+
+
+
 // menubar
 const menuBtn = document.querySelector(".menu_btn");
 const menubar = document.querySelector("#menubar");
