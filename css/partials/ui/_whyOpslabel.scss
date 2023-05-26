@@ -7,33 +7,45 @@
         height: unset;
     }
 
-    .services-left_block-logo {
-        width: 200px;
-        margin-left: 5rem;
-        margin-top: 3rem;
+    .services-template {
+        .services-left_block {
+            @include devices(lg) {
+                width: 7.5%;
+            }
 
-        @include devices(xl) {
-            width: 160px;
-            margin-left: 4rem;
-        }
+            @include devices(md) {
+                width: 9%;
+            }
 
-        @include devices(lg) {
-            width: 120px;
-            margin-top: 6rem;
-            margin-left: 2.5rem;
-        }
+            @include devices(sm) {
+                width: 10%;
+            }
 
-        @include devices(md) {
-            width: 100px;
-            margin-left: 2rem;
-        }
+            @include devices(xs) {
+                width: 12%;
+            }
 
-        @include devices(sm) {
-            margin-top: 2rem;
-            margin-left: 0.5rem;
+            .studiesDetails-left_menu {
+                .menu_btn {
+                    top: 44%;
+                    left: 45px;
 
-            img {
-                max-width: 90px;
+                    @include devices(xl) {
+                        left: 30px;
+                    }
+
+                    @include devices(lg) {
+                        left: 18px;
+                    }
+
+                    @include devices(sm) {
+                        left: 16px;
+                    }
+
+                    @include devices(xs) {
+                        left: 6px;
+                    }
+                }
             }
         }
     }
@@ -49,12 +61,25 @@
 
         @include devices(md) {
             display: block;
+            width: 91%;
+        }
+
+        @include devices(sm) {
+            width: 90%;
+        }
+
+        @include devices(xs) {
+            width: 88%;
         }
 
         .whyops_head_btn {
             position: absolute;
             top: 30px;
             right: 50px;
+
+            @include devices(xs) {
+                right: 20px;
+            }
         }
 
         .whyops_content {
@@ -67,6 +92,10 @@
             @include devices(md) {
                 margin-top: 0;
                 padding-top: 8rem;
+                padding-bottom: 3rem;
+            }
+
+            @include devices(xs) {
                 padding-bottom: 2rem;
             }
 
@@ -87,6 +116,10 @@
                     gap: 4rem;
                 }
 
+                @include devices(xs) {
+                    gap: 2.5rem;
+                }
+
                 .whyops_left_col {
                     width: 38%;
 
@@ -94,8 +127,16 @@
                         width: 36.66%;
                     }
 
+                    @include devices(lg) {
+                        width: 37%;
+                    }
+
                     @include devices(md) {
                         width: 80%;
+                    }
+
+                    @include devices(xs) {
+                        width: 96%;
                     }
                 }
 
@@ -162,6 +203,10 @@
                     color: $white;
                     @include margin-x(1rem, 1rem);
 
+                    @include devices(xs) {
+                        @include margin-x(0.6rem, 0.6rem);
+                    }
+
                     h2 {
                         text-transform: uppercase;
                         margin-bottom: 0.5rem;
@@ -173,6 +218,18 @@
 
                         @include devices(lg) {
                             font-size: 1.8rem;
+                        }
+
+                        @include devices(md) {
+                            font-size: 2.5rem;
+                        }
+
+                        @include devices(sm) {
+                            font-size: 2rem;
+                        }
+
+                        @include devices(xs) {
+                            font-size: 1.5rem;
                         }
 
                     }
@@ -189,8 +246,16 @@
                             font-size: 0.875rem;
                         }
 
+                        @include devices(md) {
+                            font-size: 1rem;
+                        }
+
+                        @include devices(xs) {
+                            font-size: 0.8rem;
+                        }
+
                         br {
-                            @include devices(sm) {
+                            @include devices(md) {
                                 display: none;
                             }
                         }
@@ -257,6 +322,11 @@
         padding-top: 1.5rem;
     }
 
+    @include devices(md) {
+        padding-top: 2rem;
+        margin-top: 1rem;
+    }
+
     .swiper-slide {
 
         .box {
@@ -266,11 +336,23 @@
             border-radius: 15px;
             box-shadow: rgba(0, 0, 0, 4.15) 4px 4px 0.6px;
 
+            @include devices(sm) {
+                @include margin-x(0.4rem, 0.4rem);
+            }
+
             &:not(:last-child) {
                 margin-bottom: 2rem;
 
                 @include devices(xl) {
                     margin-bottom: 1.5rem;
+                }
+
+                @include devices(lg) {
+                    margin-bottom: 1.2rem;
+                }
+
+                @include devices(md) {
+                    margin-bottom: 1.8rem;
                 }
             }
 
@@ -303,6 +385,10 @@
             font-size: 2rem;
             top: 8px;
         }
+
+        @include devices(md) {
+            font-size: 2.2rem;
+        }
     }
 
     .swiper-button-prev {
@@ -328,6 +414,10 @@
             @include padding-y(0.6rem, 0.6rem);
         }
 
+        @include devices(xs) {
+            @include padding-x(0.6rem, 0.6rem);
+        }
+
         h4 {
             font-size: 1.3rem;
             font-weight: bold;
@@ -339,6 +429,14 @@
             }
 
             @include devices(lg) {
+                font-size: 1rem;
+            }
+
+            @include devices(md) {
+                font-size: 1.3rem;
+            }
+
+            @include devices(xs) {
                 font-size: 1rem;
             }
         }
@@ -353,6 +451,14 @@
 
             @include devices(lg) {
                 font-size: 0.875rem;
+            }
+
+            @include devices(md) {
+                font-size: 1rem;
+            }
+
+            @include devices(xs) {
+                font-size: 0.8rem;
             }
         }
     }

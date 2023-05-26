@@ -19,41 +19,6 @@ const whyopsInnerSwiper = new Swiper('.whyops_inner_swiper', {
     },
 });
 
-// const whyopsSwiper2 = new Swiper('.whyops_swiper2', {
-//     pagination: {
-//         el: '.swiper-pagination',
-//         clickable: true
-//     },
-// });
-
-// const whyopsSwiper3 = new Swiper('.whyops_swiper3', {
-//     pagination: {
-//         el: '.swiper-pagination',
-//         clickable: true
-//     },
-// });
-
-// const whyopsSwiper4 = new Swiper('.whyops_swiper4', {
-//     pagination: {
-//         el: '.swiper-pagination',
-//         clickable: true
-//     },
-// });
-
-// const whyopsSwiper5 = new Swiper('.whyops_swiper5', {
-//     pagination: {
-//         el: '.swiper-pagination',
-//         clickable: true
-//     },
-// });
-
-// const whyopsSwiper6 = new Swiper('.whyops_swiper6', {
-//     pagination: {
-//         el: '.swiper-pagination',
-//         clickable: true
-//     },
-// });
-
 
 
 // menubar
@@ -117,19 +82,11 @@ const brandsSwiper = new Swiper('.brands-swiper', {
 
     // Responsive breakpoints
     breakpoints: {
-        // when window width is >= 480px
-        640: {
-            slidesPerView: 3,
-            // spaceBetween: 30
-        },
-        // when window width is >= 640px
-        768: {
+        576: {
             slidesPerView: 4,
-            // spaceBetween: 40
         },
         1000: {
             slidesPerView: 6,
-            // spaceBetween: 40
         },
     }
 });
