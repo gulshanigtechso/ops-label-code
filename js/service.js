@@ -30,32 +30,38 @@ const caseSwiper = new Swiper('.caseSwiper', {
 
 let arr_1 = document.querySelectorAll(".nav-link");
 let arr_2 = document.querySelectorAll(".price");
+let arr_3 = document.querySelectorAll(".mobie-view");
 
 // ------- window screen size ----------
-let x = window.matchMedia("(max-width: 427px)")
+let x = window.matchMedia("(max-width: 567px)")
 
 const show = (id) => {
     document.getElementById("sales_show").style.display = 'block';
     document.getElementById('sales_hide').style.display = 'none';
     localStorage.setItem('id', id);
+
+    // ---------- hide all content box --------
     arr.forEach((item) => {
         item.classList.add('hide1');
     });
+
+    // ---------- removing active class from all content box -------
     arr.forEach((item) => {
         item.classList.remove('active');
     }); 
+    // ----------- adding background clr to all price btn
     arr_2.forEach((item)=>{item.style.backgroundColor='whitesmoke'});
     document.querySelector(id).classList.add('active');
+
     if (id == '#lead-starter') {
-        arr_1.forEach((item)=>{item.style.backgroundColor='white'});
-        document.getElementById("blue_bg").style.backgroundColor = "#3aa4d8";
-        document.getElementById("pink-btn").style.backgroundColor = "#3aa4d8";
+        arr_1.forEach((item)=>{item.style.backgroundColor='white'}); // adding bgColor to all btn
+        document.getElementById("blue_bg").style.backgroundColor = "#3aa4d8"; // adding bgcolor to particular btn
+        document.getElementById("pink-btn").style.backgroundColor = "#3aa4d8"; // adding bgcolor to particular btn
 
         if(x.matches){
-            arr_1.forEach((item)=>{item.style.display = 'none'});
-            document.getElementById("blue_bg").style.display = "block";
-            document.querySelector('.lead-booster-pro-section').style.display = "block";
-            document.querySelector('.lead-booster-block').style.marginTop = '155px';
+            arr_1.forEach((item)=>{item.style.display = 'none'}); // removing all btn
+            arr_3.forEach((item)=>{item.style.display = 'block'}); // showing all price btn
+            document.getElementById("blue_bg").style.display = "block"; //adding bgColor to highlight btn
         }
 
     } else if (id == '#appointment-starter') {
@@ -65,9 +71,8 @@ const show = (id) => {
 
         if(x.matches){
             arr_1.forEach((item)=>{item.style.display = 'none'});
+            arr_3.forEach((item)=>{item.style.display = 'block'});
             document.getElementById("orng_bg").style.display = "block";
-            document.querySelector('.lead-booster-pro-section').style.display = "block";
-            document.querySelector('.lead-booster-block').style.marginTop = '190px';
         }
 
     } else if (id == '#closer-starter') {
@@ -77,17 +82,20 @@ const show = (id) => {
         
         if(x.matches){
             arr_1.forEach((item)=>{item.style.display = 'none'});
+            arr_3.forEach((item)=>{item.style.display = 'block'});
             document.getElementById("prple_bg").style.display = "block";
-            document.querySelector('.lead-booster-pro-section').style.display = "block";
-            document.querySelector('.lead-booster-block').style.marginTop = '216px';
         }
         
     } else{
-        console.log('lprple_bg',id)
         arr_1.forEach((item)=>{item.style.backgroundColor='white'});
         document.getElementById("lprple_bg").style.backgroundColor = "#dec7e6";
         document.getElementById("sales_show").style.display = 'none';
         document.getElementById('sales_hide').style.display = 'block';
+
+        if(x.matches){
+            arr_1.forEach((item)=>{item.style.display = 'none'});
+            document.getElementById("lprple_bg").style.display = "block";
+        }
     }
 };
 

@@ -10,26 +10,28 @@
         background-color: #ebeef1;
 
         .services-left_social_media{
-            width:7.5%;
+            width:100%;
         }
     }
 
     .contact-right-side{
         width:92.5%;
-        height:100%;
+        height:100%;    
+        margin-left: 7.5%;
         background-color: #151315;
         position: relative;
+        color:white;
 
         .contact-bg-1{
             background-image: url("../images/contact_1.svg");
             background-position:center;
             background-repeat: no-repeat;
             background-size: cover;
-            height: 499px;
-            width: 635px;
+            height: 344px;
+            width: 441px;
             position: absolute;
-            top: -23%;
-            left: 74%;
+            top: -21%;
+            left: 76%;
         }
 
         .contact-bg-2{
@@ -37,11 +39,11 @@
             background-position:center;
             background-repeat: no-repeat;
             background-size: 100% 100%;
-            height: 370px;
-            width: 378px;
+            height: 303px;
+            width: 269px;
             position: absolute;
-            top: 56%;
-            left: 66%;        
+            top: 52%;
+            left: 59%;        
         }
 
         .contact-line-1{
@@ -49,11 +51,11 @@
             background-position:center;
             background-repeat: no-repeat;
             background-size: 100% 100%;
-            height: 401px;
-            width: 791px;
+            height: 332px;
+            width: 705px;
             position: absolute;
-            top: 49.5%;
-            left: 0;
+            top: 47.5%;
+            left: 2px;
         }
 
         .contact-line-2{
@@ -61,11 +63,11 @@
             background-position:center;
             background-repeat: no-repeat;
             background-size: 100% 100%;
-            height: 401px;
+            height: 192px;
             width: 361px;
             position: absolute;
-            top: 21.5%;
-            left: 79%;
+            top: 27%;
+            left: 77%;
         }
 
     }

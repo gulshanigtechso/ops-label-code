@@ -519,15 +519,15 @@
                         }
     
                         @include devices(md) {
-                            top: -64px;
+                            top: -58px;
                             left: 96%;
                         }
     
                         @include devices(sm) {
-                            top: -58px;
-                            left: 91%;
-                            height: 45px;
-                            width: 45px;
+                            top: -53px;
+                            left: 94%;
+                            height: 39px;
+                            width: 39px;
                         }
                     }
                 }

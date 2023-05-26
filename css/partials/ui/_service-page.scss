@@ -51,7 +51,7 @@
         margin: 0 50px 0 49px;
         overflow: hidden;
         padding: 44px 0 0 0px;
-
+ 
         @include devices(xl){
             margin: 28px 25px 0px 55px;
         }
@@ -62,6 +62,10 @@
 
         @include devices(md){
             padding:0;
+        }
+
+        @include devices(xs){
+            margin:25px 7px 0px 7px;
         }
 
         .pdng{
@@ -152,6 +156,13 @@
     padding: 7px 0 0 0;
 
     .nav-tabs{
+
+        .btn{
+            background-color: white;
+            font-weight:500;
+            display:none;
+        }
+
         @include devices(md){
             display:grid;
             grid-template-columns: repeat(2, 1fr);
@@ -264,8 +275,13 @@
                 gap:20px;
             }
 
-
             .lead-booster-sales{
+                @include devices(xl){
+                    margin:-18px 0px 0px 0px;
+                }
+                @include devices(lg){
+                    margin:0;
+                }
                 .exclusive-contact{
                     .btn{
                         pointer-events: none;
@@ -276,6 +292,7 @@
                         left: 23%;
 
                         @include devices(xl){
+                            top: 33px;
                             font-size:1rem;
                         }
 
@@ -297,10 +314,9 @@
                     }
                     .sky-btn-light{
                         padding: 20px 50px;
-                        background-color: white;
 
                         @include devices(xl){
-                            padding: 15px 24px;
+                            padding: 10px 24px;
                         }
 
                         @include devices(lg){
@@ -317,7 +333,7 @@
                         
 
                         @include devices(xl){
-                            padding: 15px 79px;
+                            padding: 10px 79px;
                         }
 
                         @include devices(xs){
@@ -352,7 +368,7 @@
                         }
 
                         @include devices(xl){
-                            padding: 53px 24px 24px 24px;
+                            padding: 47px 18px 18px 18px;
                             width: 77%;
                             font-size: 1rem;
                             line-height: 19.5px;
@@ -381,7 +397,7 @@
                             height: 122px;
                             
                             @include devices(xl){    
-                                top: 169px;  
+                                top: 133px; 
                                 left: 36%;
                                 width: 22%;
                                 height: 103px;
@@ -434,7 +450,7 @@
                             top:578px;
 
                             @include devices(xl){
-                                top: 445px;
+                                top: 394px;
                             }
 
                             @include devices(lg){
@@ -478,6 +494,10 @@
                     margin-right: 74px;
                     margin-top: 52px;
 
+                    @include devices(xl){
+                        margin-top: 0;
+                    }
+
                     @include devices(md){
                         display:none;
                     }
@@ -516,7 +536,7 @@
 
                         @include devices(xl){
                             left: 29%;
-                            top:34%;
+                            top:28%;
                         }
 
                         @include devices(lg){
@@ -543,7 +563,7 @@
 
                     @include devices(xl){
                         width:77%;
-                        margin-top: 95px;
+                        margin-top: 70px;
                         margin-left: 93px;
                         font-size: 0.9rem;
                     }
@@ -662,8 +682,15 @@
                     color: white;
                     margin-top: 37px;
 
+                    @include devices(xl){
+                        margin-top: 10px;
+                    }
+
                     @include devices(lg){
                         margin-top: 20px;
+                    }
+                    @include devices(xs){
+                        font-size: 0.75rem;
                     }
                 }
             }
