@@ -173,7 +173,7 @@
                 @include devices(xl){
                     font-size: 43px;
                     line-height: 42px;
-                    margin-top: 6.2rem;
+                    margin-top: 5.2rem;
                     margin-right: 42%;
                     padding: 0px;
                 }
@@ -541,7 +541,7 @@
             grid-auto-rows: 1fr;
 
             @include devices(xl){
-                grid-auto-rows:278px;
+                grid-auto-rows: 273px;
             }
 
             @include devices(lg){
@@ -744,7 +744,7 @@
   }
   
   .active, .dot:hover {
-    background-color: #717171;
+    background-color: transparent;
   }
   
   /* Fading animation */

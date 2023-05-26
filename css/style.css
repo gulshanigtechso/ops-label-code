@@ -3359,7 +3359,7 @@ footer::before {
   .services-template .services-main .feature-right_block .case_studies .case_studies_heading {
     font-size: 43px;
     line-height: 42px;
-    margin-top: 6.2rem;
+    margin-top: 5.2rem;
     margin-right: 42%;
     padding: 0px;
   }
@@ -3745,7 +3745,7 @@ footer::before {
 }
 @media (max-width: 1399.98px) {
   .services-template .services-main .feature-right_block .image_grid {
-    grid-auto-rows: 278px;
+    grid-auto-rows: 273px;
   }
 }
 @media (max-width: 1199.98px) {
@@ -3947,7 +3947,7 @@ footer::before {
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: transparent;
 }
 
 /* Fading animation */
@@ -4790,7 +4790,7 @@ footer::before {
   max-width: 1530px;
   margin: 0 50px 0 49px;
   overflow: hidden;
-  padding: 66px 0 0 0px;
+  padding: 44px 0 0 0px;
 }
 @media (max-width: 1399.98px) {
   .services-template .services-logo-main {
@@ -4834,8 +4834,8 @@ footer::before {
 }
 @media (max-width: 1399.98px) {
   .services-template .services-left_block-logo img {
-    margin: 39px 0 0 42px;
-    max-width: 170px;
+    margin: 32px 0 0 42px;
+    max-width: 142px;
   }
 }
 @media (max-width: 1199.98px) {
@@ -4873,10 +4873,12 @@ footer::before {
   font-weight: 700;
   font-size: 0.75rem;
   padding: 12px;
+  margin-bottom: 10px;
 }
 @media (max-width: 1199.98px) {
   .talk-btn a {
     padding: 10px;
+    margin-bottom: 0px;
   }
 }
 @media (max-width: 767.98px) {
@@ -5081,8 +5083,8 @@ footer::before {
 }
 @media (max-width: 575.98px) {
   .services-tabbs .lead-booster-block-container .lead-booster-scnd-section .lead-booster-sales .exclusive-contact .contact-details-div img {
-    width: 15px;
-    height: 15px;
+    width: 11px;
+    height: 11px;
   }
 }
 @media (max-width: 1399.98px) {
@@ -5105,6 +5107,11 @@ footer::before {
     padding: 49px 15px 15px 15px;
     width: 100%;
     font-size: 0.65rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .services-tabbs .lead-booster-block-container .lead-booster-scnd-section .lead-booster-sales .exclusive-contact .contact-details-div {
+    line-height: 13.5px;
   }
 }
 .services-tabbs .lead-booster-block-container .lead-booster-scnd-section .lead-booster-sales .exclusive-contact .contact-details-div .heart-div {

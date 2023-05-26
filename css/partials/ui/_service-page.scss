@@ -4,7 +4,6 @@
     flex-direction:row;
 
 
-
     .services-main {
         // background: #2a2a2a;
         // width: 94%;
@@ -51,7 +50,7 @@
         max-width: 1530px;
         margin: 0 50px 0 49px;
         overflow: hidden;
-        padding: 66px 0 0 0px;
+        padding: 44px 0 0 0px;
 
         @include devices(xl){
             margin: 25px 25px 0px 55px;
@@ -92,8 +91,8 @@
             max-width: 217px;
 
             @include devices(xl){
-                margin: 39px 0 0 42px;
-                max-width: 170px;
+                margin: 32px 0 0 42px;
+                max-width: 142px;
             }
     
             @include devices(lg) {
@@ -131,9 +130,11 @@
         font-weight: 700;
         font-size: 0.75rem;
         padding: 12px;
+        margin-bottom: 10px;
 
         @include devices(lg){
             padding: 10px;
+            margin-bottom: 0px;
         }
 
         @include devices(sm){
@@ -345,8 +346,8 @@
                             }
 
                             @include devices(xs){
-                                width:15px;
-                                height:15px;
+                                width: 11px;
+                                height: 11px;
                             }
                         }
 
@@ -367,6 +368,9 @@
                             padding: 49px 15px 15px 15px;
                             width: 100%;
                             font-size: 0.65rem;
+                        }
+                        @include devices(xs){
+                            line-height: 13.5px;
                         }
 
                         .heart-div{

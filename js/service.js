@@ -83,6 +83,7 @@ const show = (id) => {
         }
         
     } else{
+        console.log('lprple_bg',id)
         arr_1.forEach((item)=>{item.style.backgroundColor='white'});
         document.getElementById("lprple_bg").style.backgroundColor = "#dec7e6";
         document.getElementById("sales_show").style.display = 'none';
