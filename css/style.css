@@ -3745,7 +3745,7 @@ footer::before {
 }
 @media (max-width: 1399.98px) {
   .services-template .services-main .feature-right_block .image_grid {
-    grid-auto-rows: 273px;
+    grid-auto-rows: 274px;
   }
 }
 @media (max-width: 1199.98px) {
@@ -4794,7 +4794,7 @@ footer::before {
 }
 @media (max-width: 1399.98px) {
   .services-template .services-logo-main {
-    margin: 25px 25px 0px 55px;
+    margin: 28px 25px 0px 55px;
   }
 }
 @media (max-width: 1199.98px) {
