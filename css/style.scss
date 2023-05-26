@@ -31,7 +31,6 @@ $fonts-noto: 'NotoSans';
 @import "./partials/ui/service-page";
 @import "./partials/ui/subPage2";
 @import "./partials/ui/whyOpslabel";
-
 @import "./partials/ui/contactPage";
 
 // fonts
@@ -160,11 +159,11 @@ p {
   font-family: $fonts;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $fonts-noto;
-}
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   font-family: $fonts-noto;
+// }

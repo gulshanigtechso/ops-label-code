@@ -1,75 +1,489 @@
-.contact-page{
+#contact_page {
     height: 100vh;
-    width:100%;
-    display: flex;
-    flex-direction: row;
+    overflow: hidden;
+    position: relative;
 
-    .contact-left-side{
-        width:7.5%;
-        height:100%;
-        background-color: #ebeef1;
+    @include devices(md) {
+        height: unset;
+    }
 
-        .services-left_social_media{
-            width:100%;
+    .services-template {
+        .services-left_block {
+            @include devices(lg) {
+                width: 7.5%;
+            }
+
+            @include devices(md) {
+                width: 9%;
+            }
+
+            @include devices(sm) {
+                width: 10%;
+            }
+
+            @include devices(xs) {
+                width: 12%;
+            }
+
+            .studiesDetails-left_menu {
+                .menu_btn {
+                    top: 44%;
+                    left: 45px;
+
+                    @include devices(xl) {
+                        left: 30px;
+                    }
+
+                    @include devices(lg) {
+                        left: 18px;
+                    }
+
+                    @include devices(sm) {
+                        left: 16px;
+                    }
+
+                    @include devices(xs) {
+                        left: 6px;
+                    }
+                }
+            }
         }
     }
 
-    .contact-right-side{
-        width:92.5%;
-        height:100%;    
-        margin-left: 7.5%;
-        background-color: #151315;
+    .contactpage-right-block {
         position: relative;
-        color:white;
+        width: 92.5%;
+        height: 100%;
+        margin-left: auto;
+        background-color: #2a2a2a;
+        display: grid;
+        place-items: center;
 
-        .contact-bg-1{
-            background-image: url("../images/contact_1.svg");
-            background-position:center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 344px;
-            width: 441px;
-            position: absolute;
-            top: -21%;
-            left: 76%;
+        @include devices(md) {
+            display: block;
+            width: 91%;
         }
 
-        .contact-bg-2{
-            background-image: url("../images/contact_2.svg");
-            background-position:center;
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            height: 303px;
-            width: 269px;
-            position: absolute;
-            top: 52%;
-            left: 59%;        
+        @include devices(sm) {
+            width: 90%;
         }
 
-        .contact-line-1{
-            background-image: url("../images/contact-line1.svg");
-            background-position:center;
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            height: 332px;
-            width: 705px;
-            position: absolute;
-            top: 47.5%;
-            left: 2px;
+        @include devices(xs) {
+            width: 88%;
         }
-
-        .contact-line-2{
-            background-image: url("../images/contact-line2.svg");
-            background-position:center;
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            height: 192px;
-            width: 361px;
-            position: absolute;
-            top: 27%;
-            left: 77%;
-        }
-
     }
 
+    .contactpage_head_btn {
+        position: absolute;
+        top: 25px;
+        right: 40px;
+
+        @include devices(xl) {
+            top: 20px;
+            right: 20px;
+        }
+
+        @include devices(md) {
+            top: 40px;
+            right: 50px;
+        }
+    }
+
+    .contactpage_content {
+        margin-top: 3rem;
+
+        @include devices(md) {
+            margin-top: 0;
+            padding-top: 10rem;
+            padding-bottom: 5rem;
+        }
+
+        @include devices(sm) {
+            padding-top: 8rem;
+            padding-bottom: 4rem;
+        }
+    }
+
+    .contact_form_box {
+        border: 5px solid $black;
+        border-radius: 12px;
+        overflow: hidden;
+
+        @include devices(lg) {
+            border-width: 3px;
+        }
+
+        .contact_head {
+            background-color: #b8ddcf;
+            border-bottom: 5px solid #000;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include devices(xl) {
+                @include padding-y(0.6rem, 0.6rem);
+                border-width: 3px;
+            }
+
+            @include devices(lg) {
+                @include padding-y(0.4rem, 0.4rem);
+            }
+
+            @include devices(md) {
+                @include padding-y(1.2rem, 1.2rem);
+            }
+
+            @include devices(sm) {
+                @include padding-y(0.8rem, 0.8rem);
+            }
+
+            @include devices(xs) {
+                @include padding-x(0.8rem, 0.8rem);
+            }
+
+            div {
+                &:first-child {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                }
+
+                &:last-child {
+                    h2 {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        font-size: 2.5rem;
+
+                        @include devices(xl) {
+                            font-size: 1.8rem;
+                        }
+
+                        @include devices(lg) {
+                            font-size: 1.5rem;
+                        }
+
+                        @include devices(md) {
+                            font-size: 2.5rem;
+                        }
+
+                        @include devices(sm) {
+                            font-size: 2rem;
+                        }
+
+                        @include devices(xs) {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+
+            span.circle-span {
+                padding: 12px;
+                border-radius: 50%;
+                border: 3px solid black;
+
+                @include devices(xl) {
+                    padding: 8px;
+                }
+
+                @include devices(lg) {
+                    padding: 6px;
+                }
+
+                @include devices(md) {
+                    padding: 10px;
+                }
+
+                @include devices(sm) {
+                    padding: 8px;
+                }
+
+                @include devices(xs) {
+                    padding: 6px;
+                }
+
+                &.sky-circle {
+                    background: #a0d2d6;
+                }
+
+                &.purple-circle {
+                    background: #b183ba;
+                }
+
+                &.blue-cicle {
+                    background: #2d2765;
+                }
+            }
+        }
+
+        .contact_body {
+            background-color: $white;
+            padding: 2.5rem 0 5rem;
+
+            @include devices(xl) {
+                padding: 1.5rem 0 2.8rem;
+            }
+
+            @include devices(lg) {
+                padding: 1rem 0 2rem;
+            }
+
+            @include devices(md) {
+                padding: 3rem 3rem 5rem;
+            }
+
+            @include devices(sm) {
+                padding: 2rem 2rem 4rem;
+            }
+
+            @include devices(xs) {
+                padding: 1.5rem 1.3rem 3rem;
+            }
+
+            .row {
+                justify-content: center;
+                gap: 5rem;
+
+                @include devices(lg) {
+                    gap: 4rem;
+                }
+
+                @include devices(md) {
+                    gap: 5rem;
+                }
+
+                @include devices(sm) {
+                    gap: 4rem;
+                }
+            }
+        }
+    }
+
+    .contact_left_col {
+        display: flex;
+        align-items: end;
+
+        h3 {
+            font-weight: 600;
+
+            @include devices(xl) {
+                font-size: 1.3rem;
+            }
+
+            @include devices(lg) {
+                font-size: 1.175rem;
+            }
+
+            @include devices(md) {
+                font-size: 2rem;
+            }
+
+            @include devices(sm) {
+                font-size: 1.5rem;
+            }
+
+            @include devices(xs) {
+                font-size: 1.2rem;
+            }
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.3;
+            @include margin-y(1rem, 2.2rem);
+
+            @include devices(xl) {
+                font-size: 0.875rem;
+                @include margin-y(0.9rem, 2rem);
+            }
+
+            @include devices(md) {
+                font-size: 1.3rem;
+                @include margin-y(1rem, 2.5rem);
+            }
+
+            @include devices(sm) {
+                font-size: 1rem;
+                @include margin-y(0.9rem, 2.2rem);
+            }
+
+            @include devices(xs) {
+                font-size: 0.9rem;
+            }
+        }
+
+        h5 {
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+
+            @include devices(xl) {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            @include devices(md) {
+                font-size: 1.8rem;
+                margin-bottom: 2rem;
+            }
+
+            @include devices(sm) {
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .mail_box {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            border-top: 1px solid rgba($color: #000000, $alpha: 0.5);
+            border-bottom: 1px solid rgba($color: #000000, $alpha: 0.5);
+            @include padding-y(1.2rem, 1.2rem);
+
+            @include devices(xl) {
+                @include padding-y(1rem, 1rem);
+            }
+
+            @include devices(md) {
+                @include padding-y(1.5rem, 1.5rem);
+            }
+
+            @include devices(sm) {
+                gap: 1.2rem;
+            }
+
+            img {
+                width: 45px;
+
+                @include devices(xl) {
+                    width: 35px;
+                }
+
+                @include devices(md) {
+                    width: 50px;
+                }
+
+                @include devices(sm) {
+                    width: 40px;
+                }
+            }
+
+            span {
+                font-size: 1.2rem;
+
+                @include devices(xl) {
+                    font-size: 0.875rem;
+                }
+
+                @include devices(md) {
+                    font-size: 1.4rem;
+                }
+
+                @include devices(sm) {
+                    font-size: 1rem;
+                }
+            }
+
+            a {
+                font-size: 1.2rem;
+                font-weight: bold;
+                opacity: 0.9;
+
+                @include devices(xl) {
+                    font-size: 0.95rem;
+                }
+
+                @include devices(md) {
+                    font-size: 1.6rem;
+                }
+
+                @include devices(sm) {
+                    font-size: 1.2rem;
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .contact_right_col {
+
+        .input_box {
+            margin-bottom: 1.5rem;
+
+            @include devices(xl) {
+                margin-bottom: 0.9rem;
+            }
+
+            @include devices(lg) {
+                margin-bottom: 0.8rem;
+            }
+
+            @include devices(md) {
+                margin-bottom: 1.5rem;
+            }
+
+            @include devices(sm) {
+                margin-bottom: 1.2rem;
+            }
+        }
+
+        label {
+            @include devices(xl) {
+                font-size: 0.875rem;
+            }
+
+            @include devices(md) {
+                font-size: 1.2rem;
+            }
+
+            @include devices(sm) {
+                font-size: 1rem;
+            }
+
+            sup {
+                color: red;
+                font-size: 1rem;
+                top: 0;
+            }
+        }
+
+        .form-control {
+            background-color: #fbfbfb;
+            border-radius: 2px;
+            @include padding-y(0.5rem, 0.5rem);
+            font-size: 1.1rem;
+
+            @include devices(xl) {
+                @include padding-y(0.375rem, 0.375rem);
+                font-size: 1rem;
+            }
+
+            @include devices(md) {
+                @include padding-y(0.5rem, 0.5rem);
+                font-size: 1.4rem;
+            }
+
+            @include devices(sm) {
+                @include padding-y(0.4rem, 0.4rem);
+                font-size: 1rem;
+            }
+        }
+
+        .btn {
+            margin-top: 1rem;
+
+            @include devices(md) {
+                margin-top: 2rem;
+            }
+
+            &::after {
+                display: none;
+            }
+        }
+    }
 }
