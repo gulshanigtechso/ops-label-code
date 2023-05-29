@@ -22,7 +22,7 @@
 
     &::before {
         @include pseudo("", -12px, 50%, 110px, 27px);
-        background-image: url(../images/Asset-39.png);
+        background-image: url(../images/dots.svg);
         background-repeat: no-repeat;
         transform: translateX(-50%);
     }
