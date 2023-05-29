@@ -172,6 +172,9 @@
                         @include devices(sm){
                             height:82%;
                         }
+                        @include devices(xs){
+                            background-size: 110% 115%;
+                        }
                     }
                 }
             }

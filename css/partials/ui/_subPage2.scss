@@ -42,7 +42,7 @@
             @include devices(sm){
                 grid-template-columns: auto;
                 gap:0;
-                margin-top:0px;
+                margin-top: 7px;
             }
 
             .client-details{
@@ -153,6 +153,7 @@
 
                         @include devices(lg){
                             background-size: 26% 41%;
+                            height: 43px;
                         }
 
                         @include devices(sm){
@@ -262,6 +263,9 @@
             font-size: 0.6rem;
             padding-top: 14px;
         }
+        @include devices(xs){
+            padding-top: 6px;
+        }
     }
 
     .caseStudies-footer{
@@ -292,6 +296,9 @@
                 left: 5%;
                 height: 23px;
                 width: 31px;
+            }
+            @include devices(xs){
+                top: 69.5%;
             }
         }
 
