@@ -5,9 +5,9 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./images/plane.png" type="image/x-icon">
+    
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/plane.png" type="image/icon"/>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -26,7 +26,14 @@
 
   <div class="services-template">
     <div class="services-left_block">
-      <div class="services-left_block-logo"><a href="/"><img src="images/OPSLABLE-LOGO.png"></a></div>
+      <!-- image of logo -->
+      <div class="services-left_block-logo">
+        <a href="/">
+          <img src="images/OPSLABLE-LOGO.png">
+        </a>
+      </div>
+
+      <!-- menu btn -->
       <div class="studiesDetails-left_menu">
         <div class="menu_btn">
           <span></span>
@@ -38,69 +45,69 @@
       <!-- Menubar -->
       <div id="menubar">
         <div class="row menu_content">
-          <div class="col-2 col-lg-1 menu_left_col">
-            <div>
-              <a href="#">
-                <img src="./images/linkedin.svg" alt="">
-              </a>
-              <a href="#">
-                <img src="./images/mail.svg" alt="">
-              </a>
-              <a href="#">
-                <img src="./images/instagram.svg" alt="">
-              </a>
+            <div class="col-2 col-lg-1 menu_left_col">
+                <div>
+                    <a href="#">
+                        <img src="./images/linkedin.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./images/mail.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./images/instagram.svg" alt="">
+                    </a>
+                </div>
             </div>
-          </div>
+ 
+            <div class="col-10 col-lg-6 menu_mid_col">
+                <div>
+                    <nav>
+                        <a href="/">About</a>
+                        <a href="services.html">Services</a>
+                        <a href="caseStudies.html">Case Studies</a>
+                        <a href="whyOpslabel.html">Why Opslabel</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
 
-          <div class="col-10 col-lg-6 menu_mid_col">
-            <div>
-              <nav>
-                <a href="/">About</a>
-                <a href="services.html">Services</a>
-                <a href="caseStudies.html">Case Studies</a>
-                <a href="/">Why Opslabel</a>
-                <a href="contact.html">Contact</a>
-              </nav>
+                    <div class="menu_btns_group">
+                        <a class="btn green-btn" href="https://calendly.com/bookedcall/opslabelsintro">Book a Free
+                            Demo</a>
+                        <a class="btn perple-btn claim-btn"
+                            href="https://calendly.com/bookedcall/1-free-appointmentwithopslabel">Claim your 1 free
+                            appt offer!</a>
+                    </div>
+                </div>
 
-              <div class="menu_btns_group">
-                <a class="btn green-btn" href="https://calendly.com/bookedcall/opslabelsintro">Book a Free
-                  Demo</a>
-                <a class="btn perple-btn claim-btn"
-                  href="https://calendly.com/bookedcall/1-free-appointmentwithopslabel">Claim your 1 free
-                  appt offer!</a>
-              </div>
+                <div class="logo-img">
+                    <img src="./images/OPSLABLE-LOGO.png" alt="">
+                </div>
+
+                <div class="arrowfly-img">
+                    <img src="./images/arrow-fly.png" alt="">
+                </div>
             </div>
 
-            <div class="logo-img">
-              <img src="./images/OPSLABLE-LOGO.png" alt="">
+            <div class="col-lg-5 ps-0 menu_right_col">
+                <div>
+                    <img src="./images/menubar/menu-img.jpg" alt="">
+                </div>
             </div>
-
-            <div class="arrowfly-img">
-              <img src="./images/arrow-fly.png" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-5 ps-0 menu_right_col">
-            <div>
-              <img src="./images/menubar/menu-img.jpg" alt="">
-            </div>
-          </div>
         </div>
       </div>
 
       <!-- left section -->
       <div class="services-left_social_media">
         <div class="social_media_contact">
-          <div style="background-color: rgb(245, 209, 143);">
-            <a href="#"><img src="./images/Asset 28.png" alt="social_media_contact" /></a>
-          </div>
-          <div><a href="#"><img src="./images/Asset 29.png" alt="social_media_contact" /></a></div>
-          <div><a href="#"><img src="./images/Asset 30.png" alt="social_media_contact" /></a></div>
+          <div>
+            <a href="#1"><img src="./images/linkedin.svg"
+              alt="social_media_contact" /></a></div>
+          <div><a href="#2"><img src="./images/mail.svg" alt="social_media_contact" /></a></div>
+          <div><a href="#3"><img src="./images/instagram.svg" alt="social_media_contact" /></a></div>
         </div>
       </div>
     </div>
-    <div class="services-main">
 
+    <div class="services-main">
       <div class="services-logo-main">
 
         <div class="row pdng">
@@ -114,9 +121,9 @@
           <div class="services-head">
             <h1>SERVICES</h1>
           </div>
-          <p class="sr-1">CHOOSE A PACKAGE</p>
+          <p class="sr-1">CHOOSE A PACKAGE <br/><a href="services.html">Back To Options</a></p>
         </div>
-
+ 
         <div class="services-tabbs">
           <!-- Tabs navs -->
           <ul class="nav nav-tabs mb-1" id="ex1" role="tablist">
@@ -129,116 +136,41 @@
             <li class="nav-item" role="presentation" onclick="show('#closer-starter')">
               <span class="nav-link" id="prple_bg" data-toggle="tab">SALES ACCELERATOR + CLOSER</span>
             </li>
-            <li class="nav-item" role="presentation" onclick="show('#ex1-tabs-4')">
+            <li class="nav-item" role="presentation" onclick="show('#sales_hide')">
               <span class="nav-link" id="lprple_bg" data-toggle="tab">SALE CONTRIBUTORS</span>
             </li>
-          </ul>
-          <!-- Tabs navs -->
 
-          <!-- Tabs content -->
+            <li class="btn mobie-view price" id="pink-btn" onclick="starter()">
+              STARTER
+            </li>
+            <li class="btn mobie-view price" id="orange-btn" onclick="pro()">
+              PRO
+            </li>
+            <li class="btn mobie-view price" id="white-btn" onclick="premium()">
+              PREMIUM
+            </li>
+
+          </ul>
+
+          <!-- Tabs navs ended -->
           <div class="tab-content" id="ex1-content">
             <div class="fade show ">
               <div class="lead-booster-block">
                 <div class="lead-booster-block-container" id="sales_show">
+                  <!-- all lead booster content -->
                   <div class="lead-booster-left sr-3">
-                    <!-- <div class="lead-booster-info hide1" id="ex1-tabs-1"> 
-                      <h2>LEAD BOOSTER STARTER: <span> £995</span> </h2>
-                      <ul>
-                        <li><img src="images/check.svg">3 Linkedin & 3 Email accounts included</li>
-                        <li><img src="images/check.svg">Avg leads generated: 30-60</li>
-                        <li><img src="images/check.svg">7500 prospects contacted per month</li>
-                        <li><img src="images/burn.svg">HOT Leads supplied to your inbox</li>
-                        <li><img src="images/check.svg">QUALIFIED leads wanting more information</li>
-                        <li><img src="images/check.svg">Campaign Targeting and Messaging Design</li>
-                        <li><img src="images/check.svg">List Building included</li>
-                        <li><img src="images/check.svg">Sales outreach messaging included</li>
-                        <li><img src="images/check.svg">Enriched data – emails and phone numbers included</li>
-                        <li><img src="images/check.svg">Dedicated Account Manager</li>
-                        <li><img src="images/check.svg">Daily and Weekly Reports</li>
-                        <li><img src="images/check.svg">Real-time Sales Engagement CRM access</li>
-                        <li><img src="images/check.svg">Integrated with Pipedrive and Zapier</li>
-                        <li><img src="images/check.svg">Easy to use software & Auto rolling subscription</li>
-                      </ul>
-                    </div> 
-
-                    <div class="lead-booster-info hide1" id="ex1-tabs-2">
-                      <h2>APPOINTMENT SETTER - <span> £1495</span> </h2>
-                      <ul>
-                        <li><img src="images/check.svg">APPOINTMENTS booked in your calendar with HOT leads</li>
-                        <li><img src="images/check.svg">Lead responses handled and managed by Appt setter</li>
-                        <li><img src="images/burn.svg">Call FOLLOW UPS to convert leads into appointments +++</li>
-                        <li><img src="images/check.svg">QUALIFIED leads wanting more information</li>
-                        <li><img src="images/check.svg">Campaign Targeting and Messaging Design</li>
-                        <li><img src="images/check.svg">List Building included</li>
-                        <li><img src="images/check.svg">Sales outreach messaging included</li>
-                        <li><img src="images/check.svg">Enriched data – emails and phone numbers included</li>
-                        <li><img src="images/check.svg">Dedicated Account Manager</li>
-                        <li><img src="images/check.svg">Daily and Weekly Reports</li>
-                        <li><img src="images/check.svg">Real-time Sales Engagement CRM access</li>
-                        <li><img src="images/check.svg">Integrated with Pipedrive and Zapier</li>
-                        <li><img src="images/check.svg">Easy to use software & Auto rolling subscription</li>
-                      </ul>
-                    </div>
-
-                    <div class="lead-booster-info hide1" id="ex1-tabs-3">
-                      <h2>SALES ACCELERATOR + CLOSER </h2>
-                      <ul>
-                        <li><img src="images/check.svg">Sales calls done for you service</li>
-                        <li><img src="images/check.svg">APPOINTMENTS booked in your calendar with HOT leads</li>
-                        <li><img src="images/check.svg">Call Follow ups to convert leads into appointments</li>
-                        <li><img src="images/check.svg">Sales calls and 1-2-1 zoom calls handled by Sales Closer +++++
-                        </li>
-                        <li><img src="images/check.svg">3 Linkedin & 3 Email accounts included</li>
-                        <li><img src="images/check.svg">7500 prospects contacted per month</li>
-                        <li><img src="images/burn.svg">HOT Leads supplied to your inbox</li>
-                        <li><img src="images/check.svg">QUALIFIED leads wanting more information</li>
-                        <li><img src="images/check.svg">Campaign Targeting and Messaging Design</li>
-                        <li><img src="images/check.svg">List Building included</li>
-                        <li><img src="images/check.svg">Sales outreach messaging included</li>
-                        <li><img src="images/check.svg">Enriched data – emails and phone numbers included</li>
-                        <li><img src="images/check.svg">Dedicated Account Manager</li>
-                        <li><img src="images/check.svg">Daily and Weekly Reports</li>
-                        <li><img src="images/check.svg">Real-time Sales Engagement CRM access</li>
-                        <li><img src="images/check.svg">Integrated with Pipedrive and Zapier</li>
-                      </ul>
-                    </div>
-
-                    <div class="lead-booster-info hide1" id="ex1-tabs-4">
-                      <h2>SALE CONTRIBUTORS </h2>
-                      <ul>
-                        <li><b>ROCKET STARTER:</b></li>
-                        <li>🚀Ready but no option for you?</li>
-                        <li>First reach out and then Pick our brain over a demo call for maybe some different starter
-                          options or contacts.</li>
-                        <li><b>CONTACT BOOK</b></li>
-                        <li><b>EXCLUSIVE CONTACT BOOK - Free!</b></li>
-                        <li><img src="images/check.svg">Whenever or whatever service you’re looking for; we have an
-                          exclusive contact book for you to tap into and get hold of RIGHT Now.</li>
-                        <li>If it’s something outside our scope. We’ll put you in touch with the right people INSIDE the
-                          best businesses & run an onhand servcie dedicated to you.</li>
-                        <li><b>REFFERALS</b></li>
-                        <li><b>REFER FOR £%</b></li>
-                        <li>Know Someone Who Needs Opslabel Services?!</li>
-                        <li><img src="images/check.svg">Make £hundreds in commission simply for reccommending us
-                          <br />on deals we close.</li>
-                        <li><img src="images/check.svg">Speak with us for extra PR partnerships & affliate offers.</li>
-                      </ul>
-
-
-                    </div> -->
-
                     <div class="lead-booster-info hide" id="lead-starter">
                       <h2>LEAD BOOSTER STARTER: <span> £995</span> </h2>
                       <ul>
-                        <li><img src="images/check.svg">3 Linkedin & 3 Email accounts included</li>
+                        <li><img src="images/check.svg">3 Linkedin & 3 Email accounts includes</li>
                         <li><img src="images/check.svg">Avg leads generated: 30-60</li>
                         <li><img src="images/check.svg">7500 prospects contacted per month</li>
                         <li><img src="images/burn.svg">HOT Leads supplied to your inbox</li>
                         <li><img src="images/check.svg">QUALIFIED leads wanting more information</li>
                         <li><img src="images/check.svg">Campaign Targeting and Messaging Design</li>
-                        <li><img src="images/check.svg">List Building included</li>
-                        <li><img src="images/check.svg">Sales outreach messaging included</li>
-                        <li><img src="images/check.svg">Enriched data – emails and phone numbers included</li>
+                        <li><img src="images/check.svg">List Building includes</li>
+                        <li><img src="images/check.svg">Sales outreach messaging includes</li>
+                        <li><img src="images/check.svg">Enriched data – emails and phone numbers includes</li>
                         <li><img src="images/check.svg">Dedicated Account Manager</li>
                         <li><img src="images/check.svg">Daily and Weekly Reports</li>
                         <li><img src="images/check.svg">Real-time Sales Engagement CRM access</li>
@@ -251,14 +183,14 @@
                     <div class="lead-booster-info hide1" id="lead-pro">
                       <h2>LEAD BOOSTER PRO: <span> £1495</span> </h2>
                       <ul>
-                        <li><img src="images/check.svg">5 Linkedin & 5 Email accounts included </li>
+                        <li><img src="images/check.svg">5 Linkedin & 5 Email accounts includes </li>
                         <li><img src="images/check.svg">10,000 prospects contacted per month</li>
                         <li><img src="images/burn.svg">HOT Leads supplied to your inbox</li>
                         <li><img src="images/check.svg">QUALIFIED leads wanting more information</li>
                         <li><img src="images/check.svg">Campaign Targeting and Messaging Design</li>
-                        <li><img src="images/check.svg">List Building included</li>
-                        <li><img src="images/check.svg">Sales outreach messaging included</li>
-                        <li><img src="images/check.svg">Enriched data – emails and phone numbers included</li>
+                        <li><img src="images/check.svg">List Building includes</li>
+                        <li><img src="images/check.svg">Sales outreach messaging includes</li>
+                        <li><img src="images/check.svg">Enriched data – emails and phone numbers includes</li>
                         <li><img src="images/check.svg">Dedicated Account Manager</li>
                         <li><img src="images/check.svg">Daily and Weekly Reports</li>
                         <li><img src="images/check.svg">Real-time Sales Engagement CRM access</li>
@@ -274,14 +206,14 @@
                     <div class="lead-booster-info hide1" id="lead-premium">
                       <h2>LEAD BOOSTER PREMIUM - <span> £2500</span> </h2>
                       <ul>
-                        <li><img src="images/check.svg">10 Linkedin & 10 Email accounts included</li>
+                        <li><img src="images/check.svg">10 Linkedin & 10 Email accounts includes</li>
                         <li><img src="images/check.svg">12,500 prospects contacted per month</li>
                         <li><img src="images/burn.svg">HOT Leads supplied to your inbox</li>
                         <li><img src="images/check.svg">QUALIFIED leads wanting more information</li>
                         <li><img src="images/check.svg">Campaign Targeting and Messaging Design</li>
-                        <li><img src="images/check.svg">List Building included</li>
-                        <li><img src="images/check.svg">Sales outreach messaging included</li>
-                        <li><img src="images/check.svg">Enriched data – emails and phone numbers included</li>
+                        <li><img src="images/check.svg">List Building includes</li>
+                        <li><img src="images/check.svg">Sales outreach messaging includes</li>
+                        <li><img src="images/check.svg">Enriched data – emails and phone numbers includes</li>
                         <li><img src="images/check.svg">Dedicated Account Manager</li>
                         <li><img src="images/check.svg">Daily and Weekly Reports</li>
                         <li><img src="images/check.svg">Real-time Sales Engagement CRM access</li>
@@ -293,16 +225,16 @@
                     </div>
 
                     <div class="lead-booster-info hide1" id="appointment-starter">
-                      <h2>APPOINTMENT SETTER START - <span> £1495</span> </h2>
+                      <h2>APPOINTMENT SETTER STARTER - <span> £1495</span> </h2>
                       <ul>
                         <li><img src="images/check.svg">APPOINTMENTS booked in your calendar with HOT leads</li>
                         <li><img src="images/check.svg">Lead responses handled and managed by Appt setter</li>
                         <li><img src="images/burn.svg">Call FOLLOW UPS to convert leads into appointments +++</li>
                         <li><img src="images/check.svg">QUALIFIED leads wanting more information</li>
                         <li><img src="images/check.svg">Campaign Targeting and Messaging Design</li>
-                        <li><img src="images/check.svg">List Building included</li>
-                        <li><img src="images/check.svg">Sales outreach messaging included</li>
-                        <li><img src="images/check.svg">Enriched data – emails and phone numbers included</li>
+                        <li><img src="images/check.svg">List Building includes</li>
+                        <li><img src="images/check.svg">Sales outreach messaging includes</li>
+                        <li><img src="images/check.svg">Enriched data – emails and phone numbers includes</li>
                         <li><img src="images/check.svg">Dedicated Account Manager</li>
                         <li><img src="images/check.svg">Daily and Weekly Reports</li>
                         <li><img src="images/check.svg">Real-time Sales Engagement CRM access</li>
@@ -317,16 +249,16 @@
                         <li><img src="images/check.svg">APPOINTMENTS booked in your calendar with HOT leads</li>
                         <li><img src="images/check.svg">Lead responses handled and managed by Appt setter</li>
                         <li><img src="images/check.svg">Call FOLLOW UPS to convert leads into appointments +++</li>
-                        <li><img src="images/check.svg">5 Linkedin & 5 Email accounts included</li>
+                        <li><img src="images/check.svg">5 Linkedin & 5 Email accounts includes</li>
                         <li><img src="images/check.svg">10,000 prospects contacted per month</li>
                         <li><img src="images/check.svg">Avg leads generated: 30-50</li>
                         <li><img src="images/check.svg">DONE FOR YOU service</li>
                         <li><img src="images/burn.svg">HOT Leads supplied to your inbox</li>
                         <li><img src="images/check.svg">QUALIFIED leads wanting more information</li>
                         <li><img src="images/check.svg">Campaign Targeting and Messaging Design</li>
-                        <li><img src="images/check.svg">List Building included</li>
-                        <li><img src="images/check.svg">Sales outreach messaging included</li>
-                        <li><img src="images/check.svg">Enriched data – emails and phone numbers included</li>
+                        <li><img src="images/check.svg">List Building includes</li>
+                        <li><img src="images/check.svg">Sales outreach messaging includes</li>
+                        <li><img src="images/check.svg">Enriched data – emails and phone numbers includes</li>
                         <li><img src="images/check.svg">Dedicated Account Manager</li>
                         <li><img src="images/check.svg">Daily and Weekly Reports</li>
                         <li><img src="images/check.svg">Real-time Sales Engagement CRM access</li>
@@ -341,16 +273,16 @@
                         <li><img src="images/check.svg">APPOINTMENTS booked in your calendar with HOT leads</li>
                         <li><img src="images/check.svg">Lead responses handled and managed by Appt setter</li>
                         <li><img src="images/check.svg">Call FOLLOW UPS to convert leads into appointments +++</li>
-                        <li><img src="images/check.svg">10 Linkedin & 10 Email accounts included</li>
+                        <li><img src="images/check.svg">10 Linkedin & 10 Email accounts includes</li>
                         <li><img src="images/check.svg">12,500 prospects contacted per month</li>
                         <li><img src="images/check.svg">Avg leads generated: 40-60</li>
                         <li><img src="images/check.svg">DONE FOR YOU service</li>
                         <li><img src="images/burn.svg">HOT Leads supplied to your inbox</li>
                         <li><img src="images/check.svg">QUALIFIED leads wanting more information</li>
                         <li><img src="images/check.svg">Campaign Targeting and Messaging Design</li>
-                        <li><img src="images/check.svg">List Building included</li>
-                        <li><img src="images/check.svg">Sales outreach messaging included</li>
-                        <li><img src="images/check.svg">Enriched data – emails and phone numbers included</li>
+                        <li><img src="images/check.svg">List Building includes</li>
+                        <li><img src="images/check.svg">Sales outreach messaging includes</li>
+                        <li><img src="images/check.svg">Enriched data – emails and phone numbers includes</li>
                         <li><img src="images/check.svg">Dedicated Account Manager</li>
                         <li><img src="images/check.svg">Daily and Weekly Reports</li>
                         <li><img src="images/check.svg">Real-time Sales Engagement CRM access</li>
@@ -360,21 +292,21 @@
                     </div>
 
                     <div class="lead-booster-info hide1" id="closer-starter">
-                      <h2>SALES ACCELERATOR CLOSER PLUS - <span> £2500</span> </h2>
+                      <h2>SALES ACCELERATOR CLOSER STARTER - <span> £2500</span> </h2>
                       <ul>
                         <li><img src="images/check.svg">Sales calls done for you service</li>
                         <li><img src="images/check.svg">APPOINTMENTS booked in your calendar with HOT leads</li>
                         <li><img src="images/check.svg">Call Follow ups to convert leads into appointments</li>
                         <li><img src="images/check.svg">Sales calls and 1-2-1 zoom calls handled by Sales Closer +++++
                         </li>
-                        <li><img src="images/check.svg">3 Linkedin & 3 Email accounts included</li>
+                        <li><img src="images/check.svg">3 Linkedin & 3 Email accounts includes</li>
                         <li><img src="images/check.svg">7500 prospects contacted per month</li>
                         <li><img src="images/burn.svg">HOT Leads supplied to your inbox</li>
                         <li><img src="images/check.svg">QUALIFIED leads wanting more information</li>
                         <li><img src="images/check.svg">Campaign Targeting and Messaging Design</li>
-                        <li><img src="images/check.svg">List Building included</li>
-                        <li><img src="images/check.svg">Sales outreach messaging included</li>
-                        <li><img src="images/check.svg">Enriched data – emails and phone numbers included</li>
+                        <li><img src="images/check.svg">List Building includes</li>
+                        <li><img src="images/check.svg">Sales outreach messaging includes</li>
+                        <li><img src="images/check.svg">Enriched data – emails and phone numbers includes</li>
                         <li><img src="images/check.svg">Dedicated Account Manager</li>
                         <li><img src="images/check.svg">Daily and Weekly Reports</li>
                         <li><img src="images/check.svg">Real-time Sales Engagement CRM access</li>
@@ -391,15 +323,15 @@
                         <li><img src="images/check.svg">Call FOLLOW UPS to convert leads into appointments</li>
                         <li><img src="images/check.svg">Sales calls and 1-2-1 zoom calls handled by Sales Closer +++++
                         </li>
-                        <li><img src="images/check.svg">5 Linkedin & 5 Email accounts included</li>
+                        <li><img src="images/check.svg">5 Linkedin & 5 Email accounts includes</li>
                         <li><img src="images/check.svg">10,000 prospects contacted per month</li>
                         <li><img src="images/check.svg">DONE FOR YOU service</li>
                         <li><img src="images/burn.svg">HOT Leads supplied to your inbox</li>
                         <li><img src="images/check.svg">QUALIFIED leads wanting more information</li>
                         <li><img src="images/check.svg">Campaign Targeting and Messaging Design</li>
-                        <li><img src="images/check.svg">List Building included</li>
-                        <li><img src="images/check.svg">Sales outreach messaging included</li>
-                        <li><img src="images/check.svg">Enriched data – emails and phone numbers included</li>
+                        <li><img src="images/check.svg">List Building includes</li>
+                        <li><img src="images/check.svg">Sales outreach messaging includes</li>
+                        <li><img src="images/check.svg">Enriched data – emails and phone numbers includes</li>
                         <li><img src="images/check.svg">Dedicated Account Manager</li>
                         <li><img src="images/check.svg">Daily and Weekly Reports</li>
                         <li><img src="images/check.svg">Real-time Sales Engagement CRM access</li>
@@ -416,15 +348,15 @@
                         <li><img src="images/check.svg">Call FOLLOW UPS to convert leads into appointments</li>
                         <li><img src="images/check.svg">Sales calls and 1-2-1 zoom calls handled by Sales Closer +++++
                         </li>
-                        <li><img src="images/check.svg">10 Linkedin & 10 Email accounts included</li>
+                        <li><img src="images/check.svg">10 Linkedin & 10 Email accounts includes</li>
                         <li><img src="images/check.svg">12500 prospects contacted per month</li>
                         <li><img src="images/check.svg">DONE FOR YOU service</li>
                         <li><img src="images/burn.svg">HOT Leads supplied to your inbox</li>
                         <li><img src="images/check.svg">QUALIFIED leads wanting more information</li>
                         <li><img src="images/check.svg">Campaign Targeting and Messaging Design</li>
-                        <li><img src="images/check.svg">List Building included</li>
-                        <li><img src="images/check.svg">Sales outreach messaging included</li>
-                        <li><img src="images/check.svg">Enriched data – emails and phone numbers included</li>
+                        <li><img src="images/check.svg">List Building includes</li>
+                        <li><img src="images/check.svg">Sales outreach messaging includes</li>
+                        <li><img src="images/check.svg">Enriched data – emails and phone numbers includes</li>
                         <li><img src="images/check.svg">Dedicated Account Manager</li>
                         <li><img src="images/check.svg">Daily and Weekly Reports</li>
                         <li><img src="images/check.svg">Real-time Sales Engagement CRM access</li>
@@ -434,40 +366,38 @@
 
                   </div>
 
+                  <!-- right section content -->
                   <div class="lead-booster-left" id="booster">
                     <div class="lead-booster-text">
                       <div class="lead-booster-btn hide1"><a class="btn green-btn-secondary">MONTHLY</a><span href="#"
                           class="btn white-btn">PAY PER LEAD</span></div>
-                      <a href="#">
-                        <h3>SELECT THIS PLAN - LET'S GO</h3>
-                      </a>
-                      <p>READY TO TAKE IT 99% OFF your plate? This really is a KILLER PACKAGE - we can do it all for you
-                        form and initial introductions, warm up, taking appointments and CLOSING the sales call FOR you.
-                        Sit back and relax whilst we made you "<<"INCLUDE everything in our Lead Booster & Appointment
-                          Packages>> </p>
+                      <a href="contact.html"><h3 >SELECT THIS PLAN - LET'S GO</h3></a>
+                      <p id="lead-text">READY TO BOOST YOUR NUMBER OF CLIENTS? We build and launch your campaigns delivering a flurry of HOT leads into your inbox & DM's. Real genuine conversation builders beased on our service and when we've qualified them based on your criteria we'll hand them over to you ! Simple. We don't call it the Client LEAD BOOSTER for nothing !</p>
                       <div class="btn-text">
                         <p>OUR MOST POPULAR</p>
-                        <br />
-                        <p>INCREDIBLE RESULTS <br />BY MAXIMIZING ACCOUNT</p>
+                        <!-- <br /> -->
+                        <p>INCREDIBLE RESULTS BY MAXIMIZING ACCOUNT</p>
                       </div>
                       <div class="options"><a href="contact.html">Need More Options & Price Ranges?</a></div>
-                    </div>
+                    </div> 
                     <div class="lead-booster-pro-section">
                       <div class="lead-booster-pro-strip">
                         <div class="lead-booster-pro-strip22"> <span class="btn pink-btn price" onclick="starter()"
-                            id="pink-btn">STARTER</span></div>
-                      </div>
+                            id="pink-btns">STARTER</span></div>
+                        </div>
                       <div class="lead-booster-pro-strip">
                         <div class="lead-booster-pro-strip22"> <span class="btn orange-btn price" onclick="pro()"
-                            id="orange-btn">PRO</span></div>
+                            id="orange-btns">PRO</span></div>
                       </div>
                       <div class="lead-booster-pro-strip">
                         <div class="lead-booster-pro-strip22"><span class="btn white-btn price" onclick="premium()"
-                            id="white-btn">PREMIUM</span></div>
+                            id="white-btns">PREMIUM</span></div>
                       </div>
                     </div>
                   </div>
                 </div>
+
+                <!-- sales contributor content -->
                 <div class="lead-booster-block-container" id="sales_hide">
                   <div class="lead-booster-scnd-section">
                     <div class="lead-booster-sales">
@@ -479,20 +409,17 @@
                             <div></div>
                             <div>Our Most Popular</div>
                           </div>
-                          Whenever or whatever service you're looking for; we have an exclusive contact book for you to
-                          tap into and get hold of RIGHT NOW.
-                          <br />
-                          <br />
-                          <img src="images/check.svg">
-                          <img src="images/check.svg">
-                          <img src="images/check.svg">
-                          <br />
-                          Pass IF we are out side your price range or you don't have the price range. Don't worry we get
-                          it. This one's for you and we have plenty of partners to refer you to.
-                          <br />
-                          <br />
-                          If it's something our scope. We will put you in touch with the right people INSIDE the best
-                          business & run an onhand service dedicated to you.
+                          Whenever or whatever service you're looking for; we have an exclusive contact book for you to tap into and get hold of RIGHT NOW.
+                          <br/>
+                          <br/>
+                          <img src="images/check.svg" >
+                          <img src="images/check.svg" >
+                          <img src="images/check.svg" >
+                          <br/>
+                          Pass IF we are out side your price range or you don't have the price range. Don't worry we get it. This one's for you and we have plenty of partners to refer you to.
+                          <br/>
+                          <br/>
+                          If it's something our scope. We will put you in touch with the right people INSIDE the best business & run an onhand service dedicated to you.
                         </div>
                       </div>
 
@@ -503,34 +430,28 @@
                             <div></div>
                             <div>INCREDIBLE RESULT FOR NEW STARTERS</div>
                           </div>
-                          READY but no option for you? > First reach out and then Pick our brain over a demo call for
-                          may be some different starter options or contacts.
+                          READY but no option for you? > First reach out and then Pick our brain over a demo call for may be some different starter options or contacts.
                         </div>
                       </div>
-                    </div>
+                    </div> 
 
                     <div class="lead-booster-consultant">
                       <div class="line_plane"></div>
                       <h2>GET IN TOUCH - FREE Consultation</h2>
                       <div class="consultant-text">
-                        <p>We don't like shying away from what we can offer and unlike offers we don't hide our costs
-                          becuase we want to get you MAX ROI.</p>
-                        <br />
-                        <p>That said we want success to be achievable for everyone and so if you really can't find
-                          service that fits you, we have ROCKET STARTER options that you can discuss with the team so we
-                          mould to your business. We also have an exclusive contact book for other projects.</p>
+                        <p>We don't like shying away from what we can offer and unlike offers we don't hide our costs becuase we want to get you MAX ROI.</p>
+                        <br/>
+                        <p>That said we want success to be achievable for everyone and so if you really can't find service that fits you, we have ROCKET STARTER options that you can discuss with the team so we mould to your business. We also have an exclusive contact book for other projects.</p>
                       </div>
                       <div class="refer-box">
                         <p><span><img src="../images/burn.svg" alt="fire" height="18px" width="18px"> </span>
-                          Refer for £ > Know someone who needs opslabel?!
+                          Refer for £ > Know someone who  needs opslabel?!
                         </p>
-                        <br />
-                        <p class="txt"><span><img src="../images/check.svg" alt="fire" height="15px"
-                              width="15px"></span>
-                          Make hundreds in commission simply for recommending us on deals we done
+                        <br/>
+                        <p class="txt"><span><img src="../images/check.svg" alt="fire" height="15px" width="15px"></span>
+                          Make hundreds in commission simply for recommending us on deals we done 
                         </p>
-                        <p class="txt"><span><img src="../images/check.svg" alt="fire" height="15px"
-                              width="15px"></span>
+                        <p class="txt"><span><img src="../images/check.svg" alt="fire" height="15px" width="15px"></span>
                           Speak with us for extra PR partnerships & affiliate offers.
                         </p>
                       </div>
@@ -540,23 +461,9 @@
                 </div>
               </div>
             </div>
-
-            <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
-              APPOINTMENT SETTER
-            </div>
-            <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
-              SALES ACCELERATOR + CLOSER
-            </div>
-            <div class="tab-pane fade" id="ex1-tabs-4" role="tabpanel" aria-labelledby="ex1-tab-4">
-              SALES ACCELERATOR + CLOSER
-            </div>
           </div>
-          <!-- Tabs content -->
-
         </div>
-
       </div>
-
     </div>
   </div>
 
@@ -567,7 +474,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
     integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
     crossorigin="anonymous"></script>
-
 
   <script>
     JS;
@@ -581,6 +487,7 @@
       });
     });
   </script>
+  
   <script>
     const triggerEl = document.querySelector('#myTab a[href="#profile"]');
     mdb.Tab.getInstance(triggerEl).show(); // Select tab by name

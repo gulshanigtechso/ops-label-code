@@ -293,6 +293,9 @@
                 height: 23px;
                 width: 31px;
             }
+            @include devices(xs){
+                top: 68.5%;
+            }
         }
 
         .footer-div{
