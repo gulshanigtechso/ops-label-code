@@ -105,8 +105,8 @@
                     }
     
                     @include devices(xs){
-                        left: 21px;
-                        top:26%;
+                        left: 14px;
+                        top: 41%;
                     }
     
                     span{
@@ -133,6 +133,13 @@
 
         @include devices(sm){
             width: 20.5%;
+        }
+
+        .studiesDetails-left_menu{
+            .menu_btn{
+                left: 15px;
+                top: 23%;
+            }
         }
     }
 

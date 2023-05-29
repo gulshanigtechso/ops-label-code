@@ -797,7 +797,11 @@
     a{
         color:#3aa4d8;
         text-decoration: underline;
-        
+        display:none;
+
+        @include devices(sm){
+            display: block;
+        }
     }
 }
 
@@ -825,6 +829,9 @@
 
     @include devices(sm){
         width: 100%;
+    }
+    @include devices(xs){
+        padding-right:0;
     }
 }
 
@@ -978,7 +985,9 @@
             text-align: center;
             border-bottom: none;
         }
-
+        @include devices(xs){
+            font-size: 16px;
+        }
     }
 
     #lead-text {

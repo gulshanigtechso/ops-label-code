@@ -3282,8 +3282,8 @@ footer::before {
 }
 @media (max-width: 575.98px) {
   .services-template .services-left_block .studiesDetails-left_menu .menu_btn {
-    left: 21px;
-    top: 26%;
+    left: 14px;
+    top: 41%;
   }
 }
 @media (max-width: 991.98px) {
@@ -3309,6 +3309,10 @@ footer::before {
   .services-template #left-block {
     width: 20.5%;
   }
+}
+.services-template #left-block .studiesDetails-left_menu .menu_btn {
+  left: 15px;
+  top: 23%;
 }
 .services-template #right {
   margin-left: 0;
@@ -5561,6 +5565,12 @@ footer::before {
 .sr-1 a {
   color: #3aa4d8;
   text-decoration: underline;
+  display: none;
+}
+@media (max-width: 767.98px) {
+  .sr-1 a {
+    display: block;
+  }
 }
 
 .lead-booster-block {
@@ -5590,6 +5600,11 @@ footer::before {
 @media (max-width: 767.98px) {
   .lead-booster-left {
     width: 100%;
+  }
+}
+@media (max-width: 575.98px) {
+  .lead-booster-left {
+    padding-right: 0;
   }
 }
 
@@ -5757,6 +5772,11 @@ footer::before {
     max-width: 100%;
     text-align: center;
     border-bottom: none;
+  }
+}
+@media (max-width: 575.98px) {
+  .lead-booster-text h3 {
+    font-size: 16px;
   }
 }
 .lead-booster-text #lead-text {
