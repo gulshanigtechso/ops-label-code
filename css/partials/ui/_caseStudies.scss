@@ -83,11 +83,11 @@
             .studiesDetails-left_menu {
                 .menu_btn {
                     position: absolute;
-                    top: 40%;
+                    top: 42%;
                     left: 43px;
 
                     @include devices(xl){
-                        left: 32px;
+                        left: 30px;
                     }
     
                     @include devices(lg){
@@ -137,8 +137,10 @@
 
         .studiesDetails-left_menu{
             .menu_btn{
-                left: 15px;
-                top: 23%;
+                @include devices(xs){
+                    left: 15px;
+                    top: 23%;
+                }
             }
         }
     }
@@ -179,13 +181,13 @@
             }
     
             .case_studies_heading {
-                font-size: 82px;
+                font-size: 77px;
                 text-transform: uppercase;
                 font-weight: 600;
                 font-style: italic;
                 line-height: 82px;
-                margin-top: 10rem;
-                margin-right: 12%;
+                margin-top: 8rem;
+                margin-right: 23%;
                 padding: 0px 10px 0px 10px;
 
                 @include devices(xl){
@@ -214,6 +216,7 @@
                     font-size: 24px;
                     margin-top: 7rem;
                     line-height: 24px;
+                    text-align: center;
                 }
     
             }
@@ -334,7 +337,7 @@
     
                 p {
                     &:first-child {
-                        font-size: 0.8rem;
+                        font-size: 0.95rem;
                         margin-top: 2%;
                         letter-spacing: 0.015rem;
                         text-transform: capitalize;
@@ -346,7 +349,7 @@
                         margin-top: 13px;
                         line-height: 20px;
                         letter-spacing: 0.01rem;
-                        font-size: 0.7rem;
+                        font-size: 0.95rem;
 
                         @include devices(xl){
                             margin-top: 10px;
@@ -358,6 +361,7 @@
                         @include devices(lg) {
                             font-size: 0.8rem;
                         }
+                        
     
                         span {
                             text-transform: none !important;
@@ -454,10 +458,10 @@
                     @include devices(md){
                         top: -12px;
                         left: -4px;
-                        height: 58px;
+                        height: 50px;
                         margin-top: 26px;
-                        padding-top: 14px;
-                        margin-right:5px;
+                        padding-top: 11px;
+                        margin-right: 5px;
                     }
                     @include devices(xs){
                         height: 47px;
@@ -486,17 +490,17 @@
 
                     @include devices(lg){
                         font-size: 0.75rem;
-                        padding: 7px 22px;
-                        height: 41px;
-                        margin-top: 6px;
+                        padding: 9px 22px;
+                        height: 45px;
+                        margin-top: 4px;
                     }
 
     
                     @include devices(md) {
                         margin-top: 15px;
-                        height:55px;
+                        height: 51px;
                         font-size: 13px;
-                        padding: 14px 22px;
+                        padding: 12px 22px;
                     }
     
                     @include devices(sm) {
@@ -505,6 +509,7 @@
                         height: 48px;
                         padding:12px 27px;
                     }
+
     
                     .star_bg_img {
                         position: relative;
@@ -679,6 +684,10 @@
         @include devices(sm){
             font-size:19px;
         }
+    }
+
+    @include devices(sm){
+        top: 37%;
     }
 }
 

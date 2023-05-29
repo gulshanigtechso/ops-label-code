@@ -70,7 +70,7 @@ const show = (id) => {
     arr_2.forEach((item)=>{item.style.backgroundColor='whitesmoke'});
     document.querySelector(id).classList.add('active');
  
-    if (id == '#lead-starter') {
+    if (id == '#lead-starter') { 
         text.innerText = txt1;
         arr_1.forEach((item)=>{item.style.backgroundColor='white'}); // adding bgColor to all btn
         document.getElementById("blue_bg").style.backgroundColor = "#3aa4d8"; // adding bgcolor to particular btn
@@ -198,6 +198,11 @@ function premium() {
     } else {
         document.querySelector(id).classList.add('active');
     }
+}
+
+function goBack(){
+    arr_3.forEach((item)=>{item.style.display = 'none'});
+    arr_1.forEach((item)=>{item.style.display = 'block'});
 }
 
 // ----------- carousle ------------
