@@ -3313,7 +3313,7 @@ footer::before {
 @media (max-width: 575.98px) {
   .services-template #left-block .studiesDetails-left_menu .menu_btn {
     left: 15px;
-    top: 23%;
+    top: 25%;
   }
 }
 .services-template #right {
@@ -3537,6 +3537,11 @@ footer::before {
   text-transform: capitalize;
   font-weight: lighter;
 }
+@media (max-width: 575.98px) {
+  .services-template .services-main .feature-right_block .case_studies .experience p:first-child {
+    font-size: 0.8rem;
+  }
+}
 .services-template .services-main .feature-right_block .case_studies .experience p:last-child {
   text-transform: uppercase;
   margin-top: 13px;
@@ -3559,8 +3564,7 @@ footer::before {
 }
 @media (max-width: 575.98px) {
   .services-template .services-main .feature-right_block .case_studies .experience p:last-child {
-    font-size: 0.72rem;
-    text-align: center;
+    font-size: 0.7rem;
   }
 }
 .services-template .services-main .feature-right_block .case_studies .experience p:last-child span {
@@ -3887,6 +3891,17 @@ footer::before {
   }
 }
 
+#brands {
+  padding-top: 0.25rem;
+  padding-bottom: 0.5rem;
+}
+@media (max-width: 575.98px) {
+  #brands {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
 .clr {
   color: white;
 }
@@ -4067,7 +4082,6 @@ footer::before {
 #btn-close, #btn-close-1, #btn-close-2 {
   background-color: transparent;
   color: white;
-  font-size: 43px;
   outline: none;
   border: none;
   float: right;
@@ -4081,13 +4095,17 @@ footer::before {
   #btn-close, #btn-close-1, #btn-close-2 {
     margin-right: 8px;
     margin-top: -7px;
-    font-size: 30px;
   }
 }
 @media (max-width: 767.98px) {
   #btn-close, #btn-close-1, #btn-close-2 {
     width: 27px;
     height: 53px;
+  }
+}
+@media (max-width: 575.98px) {
+  #btn-close, #btn-close-1, #btn-close-2 {
+    margin-top: -3px;
   }
 }
 
@@ -4301,6 +4319,11 @@ footer::before {
     margin-top: 8px;
   }
 }
+@media (max-width: 575.98px) {
+  .caseStudies-details .caseStudies-client-details .client-details-img .image-section {
+    height: 245px;
+  }
+}
 .caseStudies-details .caseStudies-client-details .client-details-img .image-section div:first-child {
   height: 50px;
   width: 100%;
@@ -4343,6 +4366,9 @@ footer::before {
 @media (max-width: 767.98px) {
   .caseStudies-details .caseStudies-client-details .client-details-img .image-section div:last-child {
     height: 82%;
+    background-size: cover;
+    background-image: url("../images/testi/testi1.png");
+    border: 2px solid black;
   }
 }
 .caseStudies-details .caseStudies-business {
@@ -4608,6 +4634,11 @@ footer::before {
     margin-top: 8px;
   }
 }
+@media (max-width: 575.98px) {
+  .caseStudies-details .caseStudies-client-details .client-details-img .image-section-1 {
+    height: 245px;
+  }
+}
 .caseStudies-details .caseStudies-client-details .client-details-img .image-section-1 div:first-child {
   height: 50px;
   width: 100%;
@@ -4657,6 +4688,7 @@ footer::before {
 @media (max-width: 575.98px) {
   .caseStudies-details .caseStudies-client-details .client-details-img .image-section-1 div:last-child {
     background-size: 110% 115%;
+    border: 2px solid black;
   }
 }
 .caseStudies-details .caseStudies-business {
@@ -5176,7 +5208,7 @@ footer::before {
 }
 @media (max-width: 575.98px) {
   .services-tabbs .lead-booster-block-container .lead-booster-scnd-section .lead-booster-sales .exclusive-contact .contact-details-div {
-    line-height: 13.5px;
+    line-height: 11.5px;
   }
 }
 .services-tabbs .lead-booster-block-container .lead-booster-scnd-section .lead-booster-sales .exclusive-contact .contact-details-div .heart-div {
@@ -5443,7 +5475,7 @@ footer::before {
 }
 @media (max-width: 575.98px) {
   .services-tabbs .lead-booster-block-container .lead-booster-scnd-section .lead-booster-consultant .refer-box p {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
   }
 }
 .services-tabbs .lead-booster-block-container .lead-booster-scnd-section .lead-booster-consultant .refer-box p span img {
@@ -5456,29 +5488,44 @@ footer::before {
     height: 11.5px;
   }
 }
-.services-tabbs .lead-booster-block-container .lead-booster-scnd-section .lead-booster-consultant .refer-box .txt {
+@media (max-width: 575.98px) {
+  .services-tabbs .lead-booster-block-container .lead-booster-scnd-section .lead-booster-consultant .refer-box p span img {
+    width: 9px;
+    height: 9px;
+  }
+}
+.services-tabbs .lead-booster-block-container .lead-booster-scnd-section .lead-booster-consultant .refer-box div {
+  margin-top: 4%;
+}
+.services-tabbs .lead-booster-block-container .lead-booster-scnd-section .lead-booster-consultant .refer-box div .txt {
   font-size: 0.75rem;
   font-weight: 400;
   text-transform: none;
 }
 @media (max-width: 1199.98px) {
-  .services-tabbs .lead-booster-block-container .lead-booster-scnd-section .lead-booster-consultant .refer-box .txt {
+  .services-tabbs .lead-booster-block-container .lead-booster-scnd-section .lead-booster-consultant .refer-box div .txt {
     font-size: 0.61rem;
   }
 }
 @media (max-width: 575.98px) {
-  .services-tabbs .lead-booster-block-container .lead-booster-scnd-section .lead-booster-consultant .refer-box .txt {
+  .services-tabbs .lead-booster-block-container .lead-booster-scnd-section .lead-booster-consultant .refer-box div .txt {
     font-size: 0.51rem;
   }
 }
-.services-tabbs .lead-booster-block-container .lead-booster-scnd-section .lead-booster-consultant .refer-box .txt span img {
+.services-tabbs .lead-booster-block-container .lead-booster-scnd-section .lead-booster-consultant .refer-box div .txt span img {
   width: 14px;
   height: 14px;
 }
 @media (max-width: 1399.98px) {
-  .services-tabbs .lead-booster-block-container .lead-booster-scnd-section .lead-booster-consultant .refer-box .txt span img {
+  .services-tabbs .lead-booster-block-container .lead-booster-scnd-section .lead-booster-consultant .refer-box div .txt span img {
     width: 11px;
     height: 11px;
+  }
+}
+@media (max-width: 575.98px) {
+  .services-tabbs .lead-booster-block-container .lead-booster-scnd-section .lead-booster-consultant .refer-box div .txt span img {
+    width: 8px;
+    height: 8px;
   }
 }
 .services-tabbs .lead-booster-block-container .lead-booster-scnd-section .lead-booster-consultant .prices {
@@ -6084,6 +6131,11 @@ footer::before {
     padding-top: 0px;
   }
 }
+@media (max-width: 575.98px) {
+  .caseStudies-details .caseStudies-client-details {
+    height: 63vh;
+  }
+}
 .caseStudies-details .caseStudies-client-details .client-details-img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -6212,6 +6264,11 @@ footer::before {
     margin-top: 8px;
   }
 }
+@media (max-width: 575.98px) {
+  .caseStudies-details .caseStudies-client-details .client-details-img .image-section-2 {
+    height: 245px;
+  }
+}
 .caseStudies-details .caseStudies-client-details .client-details-img .image-section-2 div:first-child {
   height: 50px;
   width: 100%;
@@ -6270,6 +6327,11 @@ footer::before {
     margin-top: 8px;
   }
 }
+@media (max-width: 575.98px) {
+  .caseStudies-details .caseStudies-client-details .client-details-img .image-section-3 {
+    height: 245px;
+  }
+}
 .caseStudies-details .caseStudies-client-details .client-details-img .image-section-3 div:first-child {
   height: 50px;
   width: 100%;
@@ -6322,6 +6384,13 @@ footer::before {
     background-position-y: -34px;
   }
 }
+@media (max-width: 575.98px) {
+  .caseStudies-details .caseStudies-client-details .client-details-img .image-section-3 div:last-child {
+    background-image: url("../images/Asset 46.png");
+    background-position-y: 0;
+    border: none;
+  }
+}
 .caseStudies-details .caseStudies-business {
   height: 5vh;
   text-align: right;
@@ -6337,7 +6406,7 @@ footer::before {
 }
 @media (max-width: 767.98px) {
   .caseStudies-details .caseStudies-business {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     padding-top: 14px;
   }
 }
@@ -6351,6 +6420,11 @@ footer::before {
   width: 100%;
   background-color: #000;
   color: white;
+}
+@media (max-width: 575.98px) {
+  .caseStudies-details .caseStudies-footer {
+    height: 25vh;
+  }
 }
 .caseStudies-details .caseStudies-footer .plane-bg {
   position: absolute;
@@ -6381,7 +6455,9 @@ footer::before {
 }
 @media (max-width: 575.98px) {
   .caseStudies-details .caseStudies-footer .plane-bg {
-    top: 69.5%;
+    top: 72%;
+    height: 28px;
+    width: 41px;
   }
 }
 .caseStudies-details .caseStudies-footer .footer-div {
