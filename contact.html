@@ -153,7 +153,7 @@
                                         </div>
 
                                         <div class="col-lg-5 contact_right_col">
-                                            <form action="">
+                                            <form action="javascript:sendMail()" method="post">
                                                 <div class="input_box">
                                                     <label for="nameInput">Name<sup>*</sup></label>
                                                     <input type="text" class="form-control" id="nameInput" required>
@@ -197,8 +197,44 @@
 
     <!-- JavaScript Files -->
 
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
     <!-- Swiper-slider -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8.3.0/swiper-bundle.min.js"></script>
+
+    <!-- smtp.js -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+        function sendMail() {
+            let name = $("#nameInput").val();
+            let email = $("#mailInput").val();
+            let message = $("#msgInput").val();
+            let subject = $("#subInput").val();
+
+            let body = `
+                <b>Name: </b> ${name},
+                <br/>
+                <b>Email: </b> ${email},
+                <br/>
+                <b>Subject: </b> ${subject},
+                <br/>
+                <b>Message: </b> ${message}
+            `;
+
+            Email.send({
+                SecureToken: "d58c4f95-f503-44de-8e8b-af42b6d64b0a",
+                To: 'contact@opslabel.com',
+                From: "kumaririnki@igtechso.com",
+                Subject: `This email is from ${email}`,
+                Body: body
+            }).then(
+                message => alert(message)
+            );
+
+        }
+    </script>
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
