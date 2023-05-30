@@ -3394,7 +3394,14 @@ footer::before {
     font-size: 24px;
     margin-top: 7rem;
     line-height: 24px;
-    text-align: center;
+    text-align: unset;
+  }
+}
+@media (max-width: 575.98px) {
+  .services-template .services-main .feature-right_block .case_studies .case_studies_heading {
+    font-size: 36px;
+    margin-top: 7rem;
+    line-height: 40px;
   }
 }
 .services-template .services-main .feature-right_block .case_studies .circular_div_section {
@@ -3508,6 +3515,11 @@ footer::before {
     line-height: 19px;
   }
 }
+@media (max-width: 575.98px) {
+  .services-template .services-main .feature-right_block .case_studies .case_studies_paragraph p {
+    margin-bottom: 1rem;
+  }
+}
 .services-template .services-main .feature-right_block .case_studies hr {
   display: block;
   margin-top: 0.5em;
@@ -3543,6 +3555,12 @@ footer::before {
 @media (max-width: 1199.98px) {
   .services-template .services-main .feature-right_block .case_studies .experience p:last-child {
     font-size: 0.8rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .services-template .services-main .feature-right_block .case_studies .experience p:last-child {
+    font-size: 0.72rem;
+    text-align: center;
   }
 }
 .services-template .services-main .feature-right_block .case_studies .experience p:last-child span {
@@ -3582,6 +3600,11 @@ footer::before {
     gap: 11px;
     margin-top: 0px;
     padding-left: 2px;
+  }
+}
+@media (max-width: 575.98px) {
+  .services-template .services-main .feature-right_block .case_studies .case_studies_btn_grid {
+    margin: 20px 0px;
   }
 }
 .services-template .services-main .feature-right_block .case_studies .case_studies_btn_grid .btn {
@@ -6089,6 +6112,11 @@ footer::before {
     margin-top: 7px;
   }
 }
+@media (max-width: 575.98px) {
+  .caseStudies-details .caseStudies-client-details .client-details-img {
+    margin-top: 17px;
+  }
+}
 .caseStudies-details .caseStudies-client-details .client-details-img .client-details {
   display: flex;
   flex-direction: column;
@@ -6371,7 +6399,7 @@ footer::before {
 }
 @media (max-width: 575.98px) {
   .caseStudies-details .caseStudies-footer .footer-div {
-    padding: 7px 0px;
+    padding: 18px 0px;
   }
 }
 .caseStudies-details .caseStudies-footer .footer-div h1 {

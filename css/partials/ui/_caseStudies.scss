@@ -216,9 +216,14 @@
                     font-size: 24px;
                     margin-top: 7rem;
                     line-height: 24px;
-                    text-align: center;
+                    text-align: unset;
                 }
     
+                @include devices(xs){
+                    font-size: 36px;
+                    margin-top: 7rem;
+                    line-height: 40px;
+                }
             }
     
             .circular_div_section {
@@ -318,6 +323,10 @@
                         font-size: 1.1rem;
                         line-height: 19px;
                     }
+
+                    @include devices(xs){
+                        margin-bottom: 1rem;
+                    }
                 }
             }
     
@@ -362,6 +371,10 @@
                             font-size: 0.8rem;
                         }
                         
+                        @include devices(xs){
+                            font-size: 0.72rem;
+                            text-align: center;
+                        }
     
                         span {
                             text-transform: none !important;
@@ -401,7 +414,9 @@
                     margin-top: 0px;
                     padding-left: 2px;
                 }
-
+                @include devices(xs){
+                    margin: 20px 0px;
+                }
                 .btn{
                     border-radius: 50px;
                 }
