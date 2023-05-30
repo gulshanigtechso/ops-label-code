@@ -20,16 +20,16 @@
     }
 
     @include devices(md) {
-        height: 900px;
+        height: 954px;
     }
 
     @include devices(sm) {
-        height: 880px;
+        height: 987px;
     }
 
     @include devices(xs) {
         padding-top: 120px;
-        height: 850px;
+        height: 790px;
     }
 
     .hero-left {
@@ -56,13 +56,24 @@
                 font-size: 2rem;
             }
 
+            @include devices(sm) {
+                font-size: 2.8rem;
+            }
+
             @include devices(xs) {
-                font-size: 1.5rem;
+                font-size: 1.85rem;
             }
 
             span {
-                // color: #129740;
                 color: #9fd1d6;
+
+                @include devices(sm) {
+                    font-size: 2.4rem;
+                }
+
+                @include devices(xs) {
+                    font-size: 1.55rem;
+                }
             }
         }
 
@@ -70,6 +81,7 @@
             color: #333;
             width: 580px;
             font-size: 1rem;
+            line-height: 1.34;
 
             @include devices(xl) {
                 font-size: 0.92rem;
@@ -84,9 +96,13 @@
                 width: 580px;
             }
 
-            @include devices(xs) {
-                font-size: 1rem;
+            @include devices(sm) {
                 width: auto;
+                line-height: 1.3;
+            }
+
+            @include devices(xs) {
+                font-size: 0.9rem;
             }
         }
 
@@ -142,7 +158,7 @@
             }
 
             @include devices(xs) {
-                height: 500px;
+                height: 450px;
             }
         }
 

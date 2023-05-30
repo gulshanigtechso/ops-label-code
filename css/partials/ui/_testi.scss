@@ -16,8 +16,8 @@
     }
 
     @include devices(xs) {
-        background-size: 300% 100%;
-        padding-bottom: 10rem;
+        background-size: 260% 100%;
+        padding-bottom: 2rem;
     }
 
     &::before {
@@ -262,7 +262,6 @@
             @include devices(xs) {
                 @include padding-x(1rem, 1rem);
                 right: 14px;
-                bottom: -100px;
             }
 
             &.orange {

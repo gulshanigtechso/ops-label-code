@@ -189,10 +189,6 @@ h2.title_h2 {
     @include devices(sm) {
         font-size: 1.7rem;
     }
-
-    @include devices(xs) {
-        font-size: 1rem;
-    }
 }
 
 .site-title {
@@ -200,13 +196,14 @@ h2.title_h2 {
     font-size: 40px;
     font-weight: bold;
     font-family: $fonts;
+    font-style: oblique 14deg;
 
     @include devices(sm) {
         font-size: 30px;
     }
 
     @include devices(xs) {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 }
 
