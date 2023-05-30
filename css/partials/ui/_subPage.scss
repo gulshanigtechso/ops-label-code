@@ -132,6 +132,11 @@
                     margin-bottom: 8.5px;
                     margin-top: 8px;
                 }
+
+                @include devices(xs){
+                    height: 245px;
+                }
+                
                 div{
                     &:first-child{
                         height:50px;
@@ -174,6 +179,7 @@
                         }
                         @include devices(xs){
                             background-size: 110% 115%;
+                            border: 2px solid black;
                         }
                     }
                 }

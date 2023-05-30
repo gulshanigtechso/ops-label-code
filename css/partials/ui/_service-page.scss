@@ -384,7 +384,7 @@
                             font-size: 0.65rem;
                         }
                         @include devices(xs){
-                            line-height: 13.5px;
+                            line-height: 11.5px;
                         }
 
                         .heart-div{
@@ -633,7 +633,7 @@
                         }
 
                         @include devices(xs){
-                            font-size: 0.6rem;
+                            font-size: 0.5rem;
                         }
 
                         span{
@@ -645,31 +645,42 @@
                                     width:11.5px;
                                     height:11.5px;
                                 }
+                                @include devices(xs){
+                                    width:9px;
+                                    height:9px;
+                                }
                             }
                         }
                     }
 
-                    .txt{
-                        font-size: 0.75rem;
-                        font-weight: 400;
-                        text-transform: none;
-
-                        @include devices(lg){
-                            font-size: 0.61rem;
-                        }
-
-                        @include devices(xs){
-                            font-size: 0.51rem;
-                        }
-                        
-                        span{
-                            img{
-                                width:14px;
-                                height:14px;
-
-                                @include devices(xl){
-                                    width: 11px;
-                                    height: 11px;
+                    div{
+                        margin-top:4%;
+                        .txt{
+                            font-size: 0.75rem;
+                            font-weight: 400;
+                            text-transform: none;
+    
+                            @include devices(lg){
+                                font-size: 0.61rem;
+                            }
+    
+                            @include devices(xs){
+                                font-size: 0.51rem;
+                            }
+                            
+                            span{
+                                img{
+                                    width:14px;
+                                    height:14px;
+    
+                                    @include devices(xl){
+                                        width: 11px;
+                                        height: 11px;
+                                    }
+                                    @include devices(xs){
+                                        width:8px;
+                                        height:8px;
+                                    }
                                 }
                             }
                         }

@@ -1,3 +1,4 @@
+
 .services-template{
 
     .services-left_block{
@@ -139,7 +140,7 @@
             .menu_btn{
                 @include devices(xs){
                     left: 15px;
-                    top: 23%;
+                    top: 25%;
                 }
             }
         }
@@ -149,7 +150,7 @@
         margin-left:0;
     }
     
-   .services-main{
+    .services-main{
     .feature-right_block {
         display: flex;
         flex-direction: row;
@@ -216,9 +217,14 @@
                     font-size: 24px;
                     margin-top: 7rem;
                     line-height: 24px;
-                    text-align: center;
+                    text-align: unset;
                 }
     
+                @include devices(xs){
+                    font-size: 36px;
+                    margin-top: 7rem;
+                    line-height: 40px;
+                }
             }
     
             .circular_div_section {
@@ -318,6 +324,10 @@
                         font-size: 1.1rem;
                         line-height: 19px;
                     }
+
+                    @include devices(xs){
+                        margin-bottom: 1rem;
+                    }
                 }
             }
     
@@ -342,6 +352,10 @@
                         letter-spacing: 0.015rem;
                         text-transform: capitalize;
                         font-weight: lighter;
+
+                        @include devices(xs){
+                            font-size:0.8rem;
+                        }
                     }
     
                     &:last-child {
@@ -362,6 +376,9 @@
                             font-size: 0.8rem;
                         }
                         
+                        @include devices(xs){
+                            font-size: 0.7rem;
+                        }
     
                         span {
                             text-transform: none !important;
@@ -401,7 +418,9 @@
                     margin-top: 0px;
                     padding-left: 2px;
                 }
-
+                @include devices(xs){
+                    margin: 20px 0px;
+                }
                 .btn{
                     border-radius: 50px;
                 }
@@ -671,8 +690,17 @@
             }
         }
     }
-   }
+    }
 }
+
+#brands{
+    @include padding-y(0.25rem, 0.5rem);
+    
+    @include devices(xs){
+        @include padding-y(1rem,1rem);
+    }
+}
+
 
 .clr{
     color:white;
@@ -853,7 +881,6 @@
 #btn-close, #btn-close-1, #btn-close-2{
     background-color: transparent;
     color: white;
-    font-size: 43px;
     outline: none;
     border: none;
     float: right;
@@ -866,12 +893,15 @@
     @include devices(xl){
         margin-right: 8px;
         margin-top: -7px;
-        font-size:30px;
     }
 
     @include devices(sm){     
         width: 27px;
         height: 53px;
+    }
+
+    @include devices(xs){
+        margin-top: -3px;
     }
 }
 

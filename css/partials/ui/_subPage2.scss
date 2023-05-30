@@ -15,9 +15,15 @@
         height:58vh;
         width:100%;
 
+        
+
         @include devices(sm){
             height:60vh;
             padding-top:0px;
+        }
+
+        @include devices(xs){
+            height:63vh;
         }
 
         .client-details-img{
@@ -43,6 +49,9 @@
                 grid-template-columns: auto;
                 gap:0;
                 margin-top: 7px;
+            }
+            @include devices(xs){
+                margin-top:17px;
             }
 
             .client-details{
@@ -136,6 +145,10 @@
                     margin-top: 8px;
                 }
 
+                @include devices(xs){
+                    height: 245px;
+                }
+
                 div{
                     &:first-child{
                         height:50px;
@@ -193,6 +206,10 @@
                     margin-top: 8px;
                 }
 
+                @include devices(xs){
+                    height: 245px;
+                }
+
                 div{
                     &:first-child{
                         height:50px;
@@ -240,6 +257,11 @@
                             background-size: cover;
                             background-position-y: -34px;
                         }
+                        @include devices(xs){
+                            background-image: url("../images/Asset 46.png");
+                            background-position-y: 0;
+                            border:none;
+                        }
                     }
                 }
             }
@@ -260,7 +282,7 @@
         }
 
         @include devices(sm){
-            font-size: 0.6rem;
+            font-size: 0.7rem;
             padding-top: 14px;
         }
         @include devices(xs){
@@ -273,6 +295,10 @@
         width:100%;
         background-color: #000;
         color:white;
+
+        @include devices(xs){
+            height: 25vh;
+        }
 
         .plane-bg{
             position: absolute;
@@ -298,7 +324,9 @@
                 width: 31px;
             }
             @include devices(xs){
-                top: 69.5%;
+                top: 72%;
+                height:28px;
+                width:41px;
             }
         }
 
@@ -315,7 +343,7 @@
             }
 
             @include devices(xs){
-                padding: 7px 0px;
+                padding: 18px 0px;
             }
 
             h1{

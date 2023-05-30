@@ -157,6 +157,9 @@
                     margin-top: 8px;
                 }
 
+                @include devices(xs){
+                    height: 245px;
+                }
                 div {
                     &:first-child {
                         height: 50px;
@@ -196,6 +199,9 @@
 
                         @include devices(sm) {
                             height: 82%;
+                            background-size: cover;
+                            background-image: url("../images/testi/testi1.png");
+                            border: 2px solid black;
                         }
                     }
                 }
