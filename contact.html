@@ -230,7 +230,14 @@
                 Subject: `This email is from ${email}`,
                 Body: body
             }).then(
-                message => alert(message)
+                message => {
+                    if (message === 'OK') {
+                        window.location.href = '/contactSuccess.html';
+                        console.log(message);
+                    } else {
+                        console.log('something went wrong');
+                    }
+                }
             );
 
         }
