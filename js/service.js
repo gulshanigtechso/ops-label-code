@@ -42,6 +42,7 @@ let arr_3 = document.querySelectorAll(".mobie-view");
 
 // ------- window screen size ----------
 let x = window.matchMedia("(max-width: 567px)");
+
 let txt1 = "READY TO BOOST YOUR NUMBER OF CLIENTS? We build and launch your campaigns delivering a flurry of HOT leads into your inbox & DM's. Real genuine conversation builders beased on our service and when we've qualified them based on your criteria we'll hand them over to you ! Simple. We don't call it the Client LEAD BOOSTER for nothing !";
 
 let txt2 ="WANT A JAMMED-PACKED SALES CALENDAR? We nurture your HOT Leads through your campaigns by delivering your sales message and unique brand selling point> getting them officially BOOKED into your calendar ready to talk business with you. Interested, nothing from strach & INCLUDED everything in our Lead Booster Pakages !";
@@ -53,12 +54,12 @@ const show = (id) => {
     document.getElementById('sales_hide').style.display = 'none';
     localStorage.setItem('id', id);
 
-    // ---------- hide all content box --------
+    // ---------- hide all content box ----------
     arr.forEach((item) => {
         item.classList.add('hide1');
     });
 
-    // ---------- removing active class from all content box -------
+    // ---------- removing active class from all content box ----------
     arr.forEach((item) => {
         item.classList.remove('active');
     }); 
@@ -120,9 +121,14 @@ const show = (id) => {
 };
 
 function starter() {
-    
     let id = localStorage.getItem('id');
-    if(id===''){
+    if(id===null){
+        arr.forEach((item) => {
+            item.classList.add('hide1');
+        });
+        arr.forEach((item) => {
+            item.classList.remove('active');
+        });
         document.querySelector("#lead-starter").classList.add('active');
     }else{
         arr.forEach((item) => {
@@ -148,12 +154,17 @@ function starter() {
             document.querySelector(id).classList.add('active');
         }
     }
-    
 }
 
 function pro() {
     let id = localStorage.getItem('id');
-    if(id===''){
+    if(id===null){
+        arr.forEach((item) => {
+            item.classList.add('hide1');
+        });
+        arr.forEach((item) => {
+            item.classList.remove('active');
+        });
         document.querySelector("#lead-pro").classList.add('active');
     }else{
         arr.forEach((item) => {
@@ -179,12 +190,17 @@ function pro() {
             document.querySelector(id).classList.add('active');
         }
     }
-    
 }
 
 function premium() {
     let id = localStorage.getItem('id');
-    if(id===''){
+    if(id===null){
+        arr.forEach((item) => {
+            item.classList.add('hide1');
+        });
+        arr.forEach((item) => {
+            item.classList.remove('active');
+        });
         document.querySelector('#lead-premium').classList.add('active');
     }else{
         arr.forEach((item) => {
@@ -210,7 +226,6 @@ function premium() {
             document.querySelector(id).classList.add('active');
         }
     }
-    
 }
 
 function goBack(){

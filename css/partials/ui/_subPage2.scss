@@ -29,14 +29,15 @@
         .client-details-img{
             display:grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 68px;
-            width:75%;
+            gap: 60px;
+            width: 77%;
             height:97%;
             margin:auto;
             margin-top:1.5%;
 
             @include devices(lg){
-                gap:30px;
+                width: 83%;
+                gap:24px;
                 margin-top:1%;
             }
 
@@ -89,15 +90,15 @@
 
                     @include devices(lg){
                         height:100px;
-                        width:80%;
+                        width:72%;
                         padding-top:13px;
                         font-size:0.8rem;
                         line-height:28px;
                     }
 
                     @include devices(md){
-                        height: 87px;
-                        width: 75%;
+                        height: 84px;
+                        width: 68%;
                         padding-top: 15px;
                         font-size: 0.6rem;
                         line-height: 21px;
@@ -146,8 +147,8 @@
                 }
 
                 @include devices(xs){
-                    height: 245px;
-                    width: 72%;
+                    height: 41vh;
+                    width: 80%;
                 }
 
                 div{
@@ -204,8 +205,8 @@
                 }
 
                 @include devices(xs){
-                    height: 245px;
-                    width: 72%;
+                    height: 41vh;
+                    width: 80%;
                 }
 
                 div{
