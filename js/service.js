@@ -23,7 +23,6 @@ function showPopUp(n){
 }
 
 console.log(window.innerHeight)
-
 // caseSwiper.setWrapperTranslate(0);
 
 function hidePopUp(){
@@ -65,6 +64,7 @@ const show = (id) => {
     }); 
     // ----------- adding background clr to all price btn
     arr_2.forEach((item)=>{item.style.backgroundColor='whitesmoke'});
+    // adding display block to that particular lead booster content box
     document.querySelector(id).classList.add('active');
  
     if (id == '#lead-starter') { 
@@ -120,81 +120,97 @@ const show = (id) => {
 };
 
 function starter() {
+    
     let id = localStorage.getItem('id');
-    arr.forEach((item) => {
-        item.classList.add('hide1');
-    });
-    arr.forEach((item) => {
-        item.classList.remove('active');
-    });
-    arr_2.forEach((item)=>{item.style.backgroundColor='whitesmoke'});
-    if (id === '#lead-starter') {
-        btn1.style.backgroundColor = '#3aa4d8';
-        document.getElementById("pink-btns").style.backgroundColor = "#3aa4d8";
-        document.querySelector('#lead-starter').classList.add('active');
-    } else if (id === '#appointment-starter') {
-        btn1.style.backgroundColor = '#ff9027';
-        document.getElementById("pink-btns").style.backgroundColor = "#ff9027";
-        document.querySelector('#appointment-starter').classList.add('active');
-    } else if (id === '#closer-starter') {
-        btn1.style.backgroundColor = '#ad7bc0';
-        document.getElementById("pink-btns").style.backgroundColor = "#ad7bc0";
-        document.querySelector('#closer-starter').classList.add('active');
-    } else {
-        document.querySelector(id).classList.add('active');
+    if(id===''){
+        document.querySelector("#lead-starter").classList.add('active');
+    }else{
+        arr.forEach((item) => {
+            item.classList.add('hide1');
+        });
+        arr.forEach((item) => {
+            item.classList.remove('active');
+        });
+        arr_2.forEach((item)=>{item.style.backgroundColor='whitesmoke'});
+        if (id === '#lead-starter') {
+            btn1.style.backgroundColor = '#3aa4d8';
+            document.getElementById("pink-btns").style.backgroundColor = "#3aa4d8";
+            document.querySelector('#lead-starter').classList.add('active');
+        } else if (id === '#appointment-starter') {
+            btn1.style.backgroundColor = '#ff9027';
+            document.getElementById("pink-btns").style.backgroundColor = "#ff9027";
+            document.querySelector('#appointment-starter').classList.add('active');
+        } else if (id === '#closer-starter') {
+            btn1.style.backgroundColor = '#ad7bc0';
+            document.getElementById("pink-btns").style.backgroundColor = "#ad7bc0";
+            document.querySelector('#closer-starter').classList.add('active');
+        } else {
+            document.querySelector(id).classList.add('active');
+        }
     }
+    
 }
 
 function pro() {
     let id = localStorage.getItem('id');
-    arr.forEach((item) => {
-        item.classList.add('hide1');
-    });
-    arr.forEach((item) => {
-        item.classList.remove('active');
-    });
-    arr_2.forEach((item)=>{item.style.backgroundColor='whitesmoke'});
-    if (id === '#lead-starter') {
-        btn2.style.backgroundColor = '#3aa4d8';
-        document.getElementById("orange-btns").style.backgroundColor = "#3aa4d8";
-        document.querySelector('#lead-pro').classList.add('active');
-    }else if (id === '#appointment-starter') {
-        btn2.style.backgroundColor = '#ff9027';
-        document.getElementById("orange-btns").style.backgroundColor = "#ff9027";
-        document.querySelector('#appointment-pro').classList.add('active');
-    } else if (id === '#closer-starter') {
-        btn2.style.backgroundColor = '#ad7bc0';
-        document.getElementById("orange-btns").style.backgroundColor = "#ad7bc0";
-        document.querySelector('#closer-pro').classList.add('active');
-    } else {
-        document.querySelector(id).classList.add('active');
+    if(id===''){
+        document.querySelector("#lead-pro").classList.add('active');
+    }else{
+        arr.forEach((item) => {
+            item.classList.add('hide1');
+        });
+        arr.forEach((item) => {
+            item.classList.remove('active');
+        });
+        arr_2.forEach((item)=>{item.style.backgroundColor='whitesmoke'});
+        if (id === '#lead-starter') {
+            btn2.style.backgroundColor = '#3aa4d8';
+            document.getElementById("orange-btns").style.backgroundColor = "#3aa4d8";
+            document.querySelector('#lead-pro').classList.add('active');
+        }else if (id === '#appointment-starter') {
+            btn2.style.backgroundColor = '#ff9027';
+            document.getElementById("orange-btns").style.backgroundColor = "#ff9027";
+            document.querySelector('#appointment-pro').classList.add('active');
+        } else if (id === '#closer-starter') {
+            btn2.style.backgroundColor = '#ad7bc0';
+            document.getElementById("orange-btns").style.backgroundColor = "#ad7bc0";
+            document.querySelector('#closer-pro').classList.add('active');
+        } else {
+            document.querySelector(id).classList.add('active');
+        }
     }
+    
 }
 
 function premium() {
     let id = localStorage.getItem('id');
-    arr.forEach((item) => {
-        item.classList.add('hide1');
-    });
-    arr.forEach((item) => {
-        item.classList.remove('active');
-    });
-    arr_2.forEach((item)=>{item.style.backgroundColor='whitesmoke'});
-    if (id === '#lead-starter') {
-        btn3.style.backgroundColor = '#3aa4d8';
-        document.getElementById("white-btns").style.backgroundColor = '#3aa4d8';
+    if(id===''){
         document.querySelector('#lead-premium').classList.add('active');
-    } else if (id === '#appointment-starter') {
-        btn3.style.backgroundColor = '#ff9027';
-        document.getElementById("white-btns").style.backgroundColor = "#ff9027";
-        document.querySelector('#appointment-premium').classList.add('active');
-    } else if (id === '#closer-starter') {
-        btn3.style.backgroundColor = '#ad7bc0';
-        document.getElementById("white-btns").style.backgroundColor = "#ad7bc0";
-        document.querySelector('#closer-premium').classList.add('active');
-    } else {
-        document.querySelector(id).classList.add('active');
+    }else{
+        arr.forEach((item) => {
+            item.classList.add('hide1');
+        });
+        arr.forEach((item) => {
+            item.classList.remove('active');
+        });
+        arr_2.forEach((item)=>{item.style.backgroundColor='whitesmoke'});
+        if (id === '#lead-starter') {
+            btn3.style.backgroundColor = '#3aa4d8';
+            document.getElementById("white-btns").style.backgroundColor = '#3aa4d8';
+            document.querySelector('#lead-premium').classList.add('active');
+        } else if (id === '#appointment-starter') {
+            btn3.style.backgroundColor = '#ff9027';
+            document.getElementById("white-btns").style.backgroundColor = "#ff9027";
+            document.querySelector('#appointment-premium').classList.add('active');
+        } else if (id === '#closer-starter') {
+            btn3.style.backgroundColor = '#ad7bc0';
+            document.getElementById("white-btns").style.backgroundColor = "#ad7bc0";
+            document.querySelector('#closer-premium').classList.add('active');
+        } else {
+            document.querySelector(id).classList.add('active');
+        }
     }
+    
 }
 
 function goBack(){

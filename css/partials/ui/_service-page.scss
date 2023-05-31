@@ -121,6 +121,16 @@
     margin: 0 30px 0 0px;
     position: relative;
 
+    @include devices(xl){
+        margin: 0 30px 32px 0px;
+        margin-top: -30px;
+    }
+
+    @include devices(lg){
+        margin:0px 30px 0px 0px;
+        margin-top:0;
+    }
+
     a {
         width: 100%;
         max-width: 266px;
@@ -366,7 +376,7 @@
                         }
 
                         @include devices(xl){
-                            padding: 47px 18px 18px 18px;
+                            padding: 47px 15px 15px 15px;
                             width: 77%;
                             font-size: 1rem;
                             line-height: 19.5px;
@@ -466,7 +476,7 @@
                                     color:#e6d99b;
 
                                     @include devices(xl){
-                                        margin-left: 119px;
+                                        margin-left: 123px;
                                     }
 
                                     @include devices(lg){
@@ -556,7 +566,7 @@
                     width:70%;
                     margin:auto;
                     margin-top:100px;
-                    text-align: justify;
+                    text-align: right;
                     color:white;
                     font-size: 1.1rem;
 
@@ -582,6 +592,7 @@
                     @include devices(xs){
                         width:100%;
                         text-align: justify;
+                        padding: 0px 8px;
                     }
                 }
                 .refer-box{
@@ -633,7 +644,7 @@
                         }
 
                         @include devices(xs){
-                            font-size: 0.5rem;
+                            font-size: 0.55rem;
                         }
 
                         span{
@@ -665,7 +676,7 @@
                             }
     
                             @include devices(xs){
-                                font-size: 0.51rem;
+                                font-size: 0.53rem;
                             }
                             
                             span{
@@ -1047,7 +1058,7 @@
         width: 47%;
         position: relative;
         top: 32px;
-        left: 30%;
+        left: 38.5%;
         font-size: 1rem;
         line-height: 53px;
 
@@ -1145,7 +1156,32 @@
         }
 
         &::after {
-            display:none;
+            content: "";
+            background-image: url('../Images/Asset_2.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 45px;
+            width: 149px;
+            position: absolute;
+            top: 2px;
+            left: 87%;
+
+            @include devices(xl){
+                height: 37px;
+                width: 122px;
+                top: 0;
+                left: 87%;
+            }
+
+            @include devices(lg){
+                height: 31px;
+                width: 104px;
+                top: 3px;
+                left: 87%;
+            }
+            @include devices(md){
+                display:none;
+            }
         }
     }
 
@@ -1172,7 +1208,31 @@
         }
 
         &::after {
-            display:none;
+            content: "";
+            background-image: url("../Images/Asset_3.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 45px;
+            width: 149px;
+            position: absolute;
+            top: 2px;
+            left: 87%;
+
+            @include devices(xl){
+                height: 37px;
+                width: 122px;
+                top: 0;
+                left: 87%;
+            }
+            @include devices(lg){
+                height: 31px;
+                width: 104px;
+                top: 3px;
+                left: 87%;
+            }
+            @include devices(md){
+                display:none;
+            }
         }
     }
 

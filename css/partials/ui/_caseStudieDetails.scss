@@ -159,6 +159,7 @@
 
                 @include devices(xs){
                     height: 245px;
+                    width: 72%;
                 }
                 div {
                     &:first-child {
@@ -198,7 +199,7 @@
                         }
 
                         @include devices(sm) {
-                            height: 82%;
+                            height: 86%;
                             background-size: cover;
                             background-image: url("../images/testi/testi1.png");
                             border: 2px solid black;

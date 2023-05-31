@@ -135,6 +135,7 @@
 
                 @include devices(xs){
                     height: 245px;
+                    width: 72%;
                 }
                 
                 div{
@@ -149,10 +150,7 @@
                         background-size: 26% 60%;
 
                         @include devices(xl){
-                            background-size: 26% 50%;
-                        }
-                        @include devices(lg){
-                            background-size: 26% 41%;                          
+                            background-size: 26% 41%;
                             height: 43px;
                         }
                         @include devices(sm){
@@ -178,6 +176,7 @@
                             height:82%;
                         }
                         @include devices(xs){
+                            height:86%;
                             background-size: 110% 115%;
                             border: 2px solid black;
                         }
