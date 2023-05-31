@@ -201,12 +201,8 @@
 
     <!-- JavaScript Files -->
 
-    <!-- smtp.js -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-
 
     <!-- Swiper-slider -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8.3.0/swiper-bundle.min.js"></script>
@@ -238,7 +234,14 @@
                 Subject: `This email is from ${email}`,
                 Body: body
             }).then(
-                message => alert(message)
+                message =>{
+                    if(message==='OK'){
+                        window.location.href = '/contactSuccess.html';
+                        console.log(message);
+                    }else{
+                        console.log('something went wrong');
+                    }
+                }
             );
 
         }
