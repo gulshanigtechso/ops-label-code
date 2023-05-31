@@ -701,7 +701,7 @@
 }
 
 #brands{
-    @include padding-y(1rem,1rem);
+    @include padding-y(0.5rem,0.5rem);
     
     @include devices(xs){
         @include padding-y(1rem,1rem);

@@ -11,19 +11,16 @@ const caseSwiper = new Swiper('.caseSwiper', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-      },
+    },
 });
 
 function showPopUp(n){
     document.documentElement.classList.add('overflow_hide');
     document.querySelector("#modals").style.display = 'block';
-
+    // ------- assigning the index number of slider to start slider from that slide 
     let slide_index = n;
     caseSwiper.slideTo(slide_index+1,2,false);
 }
-
-console.log(window.innerHeight)
-// caseSwiper.setWrapperTranslate(0);
 
 function hidePopUp(){
     document.documentElement.classList.remove('overflow_hide');
