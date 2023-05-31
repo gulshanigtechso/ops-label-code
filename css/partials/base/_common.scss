@@ -218,11 +218,44 @@ h2.title_h2 {
     }
 }
 
+.social_links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    padding-bottom: 2rem;
+
+    @include devices(xl) {
+        padding-bottom: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    a {
+        transition: transform 0.3s;
+
+        img {
+            width: 40px;
+
+            @include devices(xl) {
+                width: 30px;
+            }
+
+            @include devices(xs) {
+                width: 26px;
+            }
+        }
+
+        &:hover {
+            transform: translateY(-4px);
+        }
+    }
+}
 
 .overflow_hide {
     overflow: hidden;
 }
-
 
 .swiper {
     width: 100%;

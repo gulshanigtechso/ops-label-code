@@ -1,73 +1,49 @@
 .menu_btn {
     position: fixed;
-    top: 45px;
-    left: 45px;
-    width: 45px;
-    height: 25px;
+    top: calc(58px - 32.5px);
+    left: calc(4% - 32.5px);
     z-index: 1005;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
     overflow: hidden;
     transition: all 0.25s linear;
 
     @include devices(xl) {
-        width: 40px;
-        left: 30px;
-    }
-
-    @include devices(lg) {
-        width: 40px;
-        left: 16px;
+        top: calc(58px - 25px);
+        left: calc(4% - 25px);
     }
 
     @include devices(md) {
-        left: 40px;
+        top: calc(54px - 25px);
+        left: calc(6% - 25px);
     }
 
-    @include devices(sm) {
-        transform: scale(0.6);
-        top: 26px;
-        left: 4px;
-    }
-
-    span {
-        background-color: $black;
-        width: 100%;
-        height: 2.9px;
-        pointer-events: none;
-        border-radius: 100px;
-        transition: all 0.3s linear;
+    @include devices(xs) {
+        top: calc(38px - 20px);
+        left: calc(6% - 20px);
     }
 
     &.clicked {
-        top: 44%;
-        height: 35px;
-        justify-content: center;
+        top: calc(50% - 32.5px);
 
-        span {
-            margin-top: -1.45px;
-            margin-bottom: -1.45px;
+        @include devices(md) {
+            left: calc(8.33% - 25px);
+        }
 
-            &:first-child {
-                transform: rotate(45deg);
-            }
+    }
 
-            &:nth-child(2) {
-                opacity: 0;
-                transform: translateX(-100%);
-            }
+    svg {
+        width: 65px;
 
-            &:last-child {
-                transform: rotate(-45deg);
-            }
+        @include devices(xl) {
+            width: 50px;
+        }
+
+        @include devices(xs) {
+            width: 40px;
         }
     }
 }
 
 #menubar {
-    // background-color: #E3EEED;
     background-color: #EAEEEF;
     position: fixed;
     top: 0;
@@ -90,37 +66,6 @@
 
     .menu_left_col {
         padding-right: 0;
-
-        div {
-            display: flex;
-            flex-direction: column;
-            gap: 1.8rem;
-            align-items: center;
-            justify-content: flex-end;
-            height: 100%;
-            padding-bottom: 2.5rem;
-
-            @include devices(xl) {
-                gap: 1.5rem;
-                padding-bottom: 2rem;
-            }
-
-            a {
-                transition: transform 0.3s;
-
-                img {
-                    width: 45px;
-
-                    @include devices(xl) {
-                        width: 30px;
-                    }
-                }
-
-                &:hover {
-                    transform: translateY(-4px);
-                }
-            }
-        }
     }
 
     .menu_mid_col {
