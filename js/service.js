@@ -22,7 +22,7 @@ function showPopUp(n){
     caseSwiper.slideTo(slide_index+1,2,false);
 }
 
-
+console.log(window.innerHeight)
 
 // caseSwiper.setWrapperTranslate(0);
 
@@ -36,9 +36,6 @@ let arr = document.querySelectorAll('.lead-booster-info');
 let btn1 = document.querySelector('#pink-btn');
 let btn2 = document.querySelector('#orange-btn');
 let btn3 = document.querySelector("#white-btn");
-
-
-
 
 let arr_1 = document.querySelectorAll(".nav-link");
 let arr_2 = document.querySelectorAll(".price");
@@ -235,5 +232,3 @@ function goBack(){
 //   slides[slideIndex-1].style.display = "block";  
 //   dots[slideIndex-1].className += " active";
 // }
-
-
