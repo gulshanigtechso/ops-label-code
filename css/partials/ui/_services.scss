@@ -1,5 +1,5 @@
 .services_sect {
-    background: url(../images/section_2.png);
+    background-image: url(../images/section_2.png);
     position: relative;
     z-index: 1;
     margin-top: -340px;
@@ -12,27 +12,28 @@
     }
 
     @include devices(md) {
-        background-size: 128% 100%;
-        background-position-x: -130px;
+        background-image: url(../images/section_2.svg);
+        background-size: cover;
+        background-position: center;
     }
 
     @include devices(xs) {
-        background-size: 197% 100%;
-        background-position-x: -186px;
+        padding-top: 5rem;
     }
 
     &::after {
-        @include pseudo("", 45px, 50%, 90px, 90px);
+        @include pseudo("", 3.3%, 50%, 90px, 90px);
         background-image: url(../images/plane.png);
         background-repeat: no-repeat;
         background-size: contain;
+        transform: translateX(-50%);
 
         @include devices(xl) {
             @include dimension(70px, 70px);
         }
 
         @include devices(md) {
-            top: 180px;
+            top: 6%;
         }
     }
 

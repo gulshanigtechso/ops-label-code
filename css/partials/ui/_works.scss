@@ -222,37 +222,41 @@
 
                 span {
                     position: absolute;
-                    top: -45px;
+                    top: -40px;
                     left: 0;
                     right: 0;
                     @include mx-auto();
                     background: black;
                     color: white;
-                    width: 65px;
-                    height: 65px;
+                    @include dimension(56px, 56px);
                     font-weight: 600;
-                    font-size: 42px;
-                    font-style: italic;
+                    font-size: 32px;
+                    font-style: oblique 14deg;
                     border-radius: 50%;
                     align-items: center;
                     font-family: 'NotoSans';
-                    padding-right: 7px;
+                    padding-right: 6px;
+                    display: grid;
+                    place-items: center;
 
                     @include devices(xl) {
-                        @include dimension(50px, 50px);
-                        font-size: 32px;
-                        top: -36px;
+                        top: -35px;
+                        @include dimension(46px, 46px);
+                        font-size: 26px;
+                        padding-right: 5px;
                     }
 
                     @include devices(md) {
                         @include dimension(65px, 65px);
-                        font-size: 42px;
+                        font-size: 40px;
+                        padding-right: 7px;
                     }
 
                     @include devices(xs) {
-                        @include dimension(46px, 46px);
-                        font-size: 28px;
+                        @include dimension(44px, 44px);
+                        font-size: 24px;
                         top: -30px;
+                        padding-right: 4px;
                     }
                 }
 
