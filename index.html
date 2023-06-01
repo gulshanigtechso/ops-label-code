@@ -45,16 +45,31 @@
 
     <!-- Menu-btn -->
     <div class="menu_btn">
-        <span></span>
-        <span></span>
-        <span></span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#000" stroke-width=".6" fill="rgba(0,0,0,0)"
+            stroke-linecap="round" style="cursor: pointer">
+            <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+                <animate dur="0.2s" attributeName="d"
+                    values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze"
+                    begin="start.begin" />
+                <animate dur="0.2s" attributeName="d"
+                    values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze"
+                    begin="reverse.begin" />
+            </path>
+            <rect width="10" height="10" stroke="none">
+                <animate dur="2s" id="reverse" attributeName="width" begin="click" />
+            </rect>
+            <rect width="10" height="10" stroke="none">
+                <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="click" />
+                <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
+            </rect>
+        </svg>
     </div>
 
     <!-- Menubar -->
     <div id="menubar">
         <div class="row menu_content">
             <div class="col-2 col-lg-1 menu_left_col">
-                <div>
+                <div class="social_links">
                     <a href="#">
                         <img src="./images/linkedin.svg" alt="">
                     </a>
@@ -86,7 +101,9 @@
                 </div>
 
                 <div class="logo-img">
-                    <img src="./images/OPSLABLE-LOGO.png" alt="">
+                    <a href="/">
+                        <img src="./images/OPSLABLE-LOGO.png" alt="">
+                    </a>
                 </div>
 
                 <div class="arrowfly-img">
@@ -983,7 +1000,7 @@
                             as possible. We often only have a few spots left each month so
                             what are you waiting for!</p>
                     </div>
-                    <!-- <div class="col-lg-1"></div> -->
+
                     <div class="col-lg-3 contact-box" data-aos="fade-up">
                         <div class="contact-outer shadow-lg">
                             <img src="./images/OPSLABLE-LOGO.png" alt="">
@@ -1000,13 +1017,14 @@
                                             class="book-demo btn bg-purple-light">Book a FREE Demo</a>
                                         <img src="./images/bg-star.svg" alt="">
                                     </li>
-                                    <li><a href="tel:+447718248627" class="book-demo btn bg-sky-light">Call Us Direct</a>
+                                    <li><a href="tel:07718248627" class="book-demo btn bg-sky-light">Call Us Direct</a>
                                     </li>
                                     <li class="heart-bg">
-                                        <a class="book-demo btn bg-orange-light" href="mailto:contact@opslabel.com">Email Us</a>
+                                        <a href="mailto:contact@opslabel.com"
+                                            class="book-demo btn bg-orange-light">Email Us</a>
                                         <img src="./images/bg-heart.svg" alt="">
                                     </li>
-                                    <li><a class="book-demo btn bg-peach-light" href="#">Follow us on Instagram</a></li>
+                                    <li><a class="book-demo btn bg-peach-light">Follow us on Instagram</a></li>
                                 </ul>
                                 <p class="contact-foot-title">Under Reconstruction</p>
                             </div>
@@ -1041,7 +1059,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="mailto:contact@opslabel.com">
+                                <a href="#">
                                     <img src="./images/mail2.svg" alt="mail">
                                 </a>
                             </li>
@@ -1056,8 +1074,8 @@
                         <h3 class="footer-links-title"><b>COMPANY</b></h3>
                         <ul class="footer-links">
                             <li><a href="#">ABOUT</a></li>
-                            <li><a href="#">ALL OUR SERVICE PACKAGES</a></li>
-                            <li><a href="#">TERMS & CONDITIONS</a></li>
+                            <li><a href="services.html">ALL OUR SERVICE PACKAGES</a></li>
+                            <li><a href="https://calendly.com/bookedcall/opslabelsintro">TERMS & CONDITIONS</a></li>
                             <li><a href="https://calendly.com/bookedcall/opslabelsintro">FREE DEMO</a></li>
                             <li><a href="appointment.html">CLAIM A FREE APPOINTMENT</a></li>
                         </ul>
@@ -1065,12 +1083,12 @@
                     <div class="col-lg-3">
                         <h3 class="footer-links-title"><b>OVERVIEW</b></h3>
                         <ul class="footer-links">
-                            <li><a href="services.html">SERVICES</a></li>
+                            <li><a href="#services">SERVICES</a></li>
                             <li><a href="whyOpslabel.html">WHY OPSLABEL</a></li>
                             <li><a href="caseStudies.html">CASE STUDIES & REVIEWS</a></li>
                             <li><a href="#works">HOW IT WORKS</a></li>
                             <li><a href="#faq">FAQ’S</a></li>
-                            <li><a href="#">GET STARTED</a></li>
+                            <li><a href="https://calendly.com/bookedcall/opslabelsintro">GET STARTED</a></li>
                         </ul>
                     </div>
                 </div>

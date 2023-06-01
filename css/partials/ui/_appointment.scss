@@ -201,6 +201,10 @@
                         @include margin-y(2.2rem, 2.4rem);
                     }
 
+                    @include devices(xs) {
+                        margin-top: 1.5rem;
+                    }
+
                     li {
                         display: flex;
                         align-items: center;
@@ -208,6 +212,11 @@
 
                         div {
                             &:first-child {
+
+                                @include devices(sm) {
+                                    width: 5%;
+                                }
+
                                 img {
                                     width: 22px;
                                     vertical-align: unset;
@@ -231,6 +240,11 @@
                             }
 
                             &:last-child {
+
+                                @include devices(sm) {
+                                    width: 95%;
+                                }
+
                                 span {
                                     font-size: 1.4rem;
 
@@ -256,27 +270,9 @@
                     }
                 }
 
-                .btn {
+                .appt_btn {
                     position: relative;
-                    z-index: 2;
-                    background-color: #feeacf;
-                    color: #000;
-                    font-size: 2rem;
-                    font-weight: 800;
-                    font-style: oblique 14deg;
-                    @include padding-x(22px, 22px);
-
-                    @include devices(xl) {
-                        font-size: 1.4rem;
-                    }
-
-                    @include devices(lg) {
-                        font-size: 1.2rem;
-                    }
-
-                    @include devices(md) {
-                        font-size: 1.5rem;
-                    }
+                    display: inline-block;
 
                     &::after {
                         @include pseudo("", -280px, auto, 500px, 500px);
@@ -308,21 +304,44 @@
                         }
                     }
 
-                    span {
-                        &:nth-child(1) {
-                            color: #ce036b;
+                    .btn {
+                        position: relative;
+                        z-index: 2;
+                        background-color: #feeacf;
+                        color: #000;
+                        font-size: 2rem;
+                        font-weight: 800;
+                        font-style: oblique 14deg;
+                        @include padding-x(22px, 22px);
+
+                        @include devices(xl) {
+                            font-size: 1.4rem;
                         }
 
-                        &:nth-child(2) {
-                            color: #a89dbf;
+                        @include devices(lg) {
+                            font-size: 1.2rem;
                         }
 
-                        &:nth-child(3) {
-                            color: #c6818b;
+                        @include devices(md) {
+                            font-size: 1.5rem;
                         }
 
-                        &:nth-child(4) {
-                            color: #b183ba;
+                        span {
+                            &:nth-child(1) {
+                                color: #ce036b;
+                            }
+
+                            &:nth-child(2) {
+                                color: #a89dbf;
+                            }
+
+                            &:nth-child(3) {
+                                color: #c6818b;
+                            }
+
+                            &:nth-child(4) {
+                                color: #b183ba;
+                            }
                         }
                     }
                 }

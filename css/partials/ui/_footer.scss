@@ -28,7 +28,7 @@ footer {
         background-position-y: 400px;
 
         @include devices(xl) {
-            background-position-y: 480px;
+            background-position-y: 430px;
         }
 
         @include devices(lg) {
@@ -37,17 +37,6 @@ footer {
 
         @include devices(md) {
             background-position-y: 800px;
-        }
-    }
-
-    &::before {
-        @include pseudo("", 658px, 150px, 60px, 50px);
-        background-image: url(../images/plane.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-
-        @include devices(md) {
-            display: none;
         }
     }
 }
@@ -403,11 +392,12 @@ footer {
 }
 
 .footer-section {
-    padding-top: 3rem;
+    position: relative;
+    padding-top: 2rem;
     padding-bottom: 2rem;
 
-    @include devices(xl) {
-        @include padding-y(6rem, 1.2rem);
+    @include devices(lg) {
+        padding-top: 3rem;
     }
 
     @include devices(md) {
@@ -417,6 +407,26 @@ footer {
 
     @include devices(xs) {
         padding-top: 2rem;
+    }
+
+    &::before {
+        @include pseudo("", -120px, 150px, 70px, 50px);
+        background-image: url(../images/plane.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include devices(xl) {
+            @include dimension(60px, 40px);
+            top: -70px;
+        }
+
+        @include devices(lg) {
+            top: -20px;
+        }
+
+        @include devices(md) {
+            display: none;
+        }
     }
 
     .container-fluid {
@@ -450,9 +460,9 @@ footer {
             font-size: 1.1rem;
         }
 
-        &.foot-para {
-            margin-top: 1rem;
-        }
+        // &.foot-para {
+        //     margin-top: 1rem;
+        // }
     }
 
     h3 {
