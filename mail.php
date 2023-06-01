@@ -5,9 +5,9 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 $subj = $_POST['subj'];
 $to = "gulshansongara@igtechso.com";
-$subject = "Mail from Opslabel";
-$txt = "Name = ". $name . "\r\n Email = " . $email . "\r\n Message =" . $message . "\r\n Subject =" . $subj;
-$headers = "From: noreply@opslabel.com";
+$subject = $subj;
+$txt = "Name: ". $name . "\r\nEmail: ". $email . "\r\nSubject: ". $subj . "\r\nMessage: ". $message;
+$headers = "From: ". $email;
 
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
