@@ -175,25 +175,28 @@
                                         </div>
 
                                         <div class="col-lg-5 contact_right_col">
-                                            <form action="javascript:sendMail()" method="post">
+                                            <form action="mail.php" method="post">
                                                 <div class="input_box">
                                                     <label for="nameInput">Name<sup>*</sup></label>
-                                                    <input type="text" class="form-control" id="nameInput" required>
+                                                    <input type="text" name="name" class="form-control" id="nameInput"
+                                                        required>
                                                 </div>
 
                                                 <div class="input_box">
                                                     <label for="mailInput">Email<sup>*</sup></label>
-                                                    <input type="email" class="form-control" id="mailInput" required>
+                                                    <input type="email" name="email" class="form-control" id="mailInput"
+                                                        required>
                                                 </div>
 
                                                 <div class="input_box">
                                                     <label for="subInput">Subject<sup>*</sup></label>
-                                                    <input type="text" class="form-control" id="subInput" required>
+                                                    <input type="text" name="subj" class="form-control" id="subInput"
+                                                        required>
                                                 </div>
 
                                                 <div class="input_box">
                                                     <label for="msgInput">Message<sup>*</sup></label>
-                                                    <textarea class="form-control" id="msgInput" rows="3"
+                                                    <textarea class="form-control" name="message" id="msgInput" rows="3"
                                                         required></textarea>
                                                 </div>
 
@@ -226,9 +229,9 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8.3.0/swiper-bundle.min.js"></script>
 
     <!-- smtp.js -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
 
-    <script>
+    <!-- <script>
         function sendMail() {
             let name = $("#nameInput").val();
             let email = $("#mailInput").val();
@@ -263,7 +266,7 @@
             );
 
         }
-    </script>
+    </script> -->
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
