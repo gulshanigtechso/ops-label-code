@@ -5,13 +5,9 @@
     margin-top: -340px;
     background-repeat: no-repeat;
     background-size: 101% 100%;
-    background-position-x: -3px;
+    background-position-x: center;
 
     @include devices(lg) {
-        background-size: 103% 100%;
-    }
-
-    @include devices(md) {
         background-image: url(../images/section_2.svg);
         background-size: cover;
         background-position: center;

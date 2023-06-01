@@ -23,8 +23,8 @@
         .client-details-img{
             display:grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 68px;
-            width:75%;
+            gap: 60px;
+            width: 77%;
             height:97%;
             margin:auto;
             margin-top:1.5%;
@@ -76,7 +76,7 @@
 
                     @include devices(lg){
                         height:100px;
-                        width:80%;
+                        width:72%;
                         padding-top:13px;
                         font-size:0.8rem;
                         line-height:28px;
@@ -134,7 +134,8 @@
                 }
 
                 @include devices(xs){
-                    height: 245px;
+                    height: 41vh;
+                    width: 80%;
                 }
                 
                 div{
@@ -149,10 +150,7 @@
                         background-size: 26% 60%;
 
                         @include devices(xl){
-                            background-size: 26% 50%;
-                        }
-                        @include devices(lg){
-                            background-size: 26% 41%;                          
+                            background-size: 26% 41%;
                             height: 43px;
                         }
                         @include devices(sm){
@@ -178,6 +176,7 @@
                             height:82%;
                         }
                         @include devices(xs){
+                            height:86%;
                             background-size: 110% 115%;
                             border: 2px solid black;
                         }
