@@ -7945,7 +7945,6 @@ footer::after {
 @media (max-width: 991.98px) {
   #contact_page .contactSuccess_body h4 {
     font-size: 1.25rem;
-    text-align: center;
   }
 }
 @media (max-width: 767.98px) {
@@ -7970,7 +7969,6 @@ footer::after {
 @media (max-width: 991.98px) {
   #contact_page .contactSuccess_body p {
     font-size: 1rem;
-    text-align: center;
   }
 }
 #contact_page .contactSuccess_body .btns_group {
