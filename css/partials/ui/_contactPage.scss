@@ -699,6 +699,7 @@
 
             @include devices(md) {
                 font-size: 1.25rem;
+                text-align: center;
             }
 
             @include devices(sm) {
@@ -720,6 +721,7 @@
 
             @include devices(md) {
                 font-size: 1rem;
+                text-align: center;
             }
         }
 
